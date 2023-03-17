@@ -106,7 +106,7 @@ unsigned int baseColor = random(0xFFFF);
 
 unsigned long lastRandomPulse;
 
-byte numberOfAutoPulseTypes = randomPulsesEnabled + cubePulsesEnabled + starburstPulsesEnabled;
+byte numberOfAutoPulseTypes = randomPulsesEnabled + cubePulsesEnabled + starburstPulsesEnabled + centerPulseEnabled;
 
 unsigned long nextSimulatedHeartbeat;
 unsigned long nextSimulatedEda;
@@ -212,7 +212,7 @@ void getNextAnimation()
 
     while (true)
     {
-      possiblePulse = random(NUMBER_OF_ANIMATIONS);
+      possiblePulse = random(numberOfAutoPulseTypes);
 
       if (possiblePulse == currentAutoPulseType)
         continue;
@@ -231,6 +231,11 @@ void getNextAnimation()
 
       case 2:
         if (!starburstPulsesEnabled)
+          continue;
+        break;
+
+      case 3:
+        if (!centerPulseEnabled)
           continue;
         break;
 
@@ -395,6 +400,40 @@ void starburstPulse()
   }
 }
 
+float getSpeed()
+{
+  return random(500, 800) / 1000.0;
+  // return 0.5;
+}
+
+void centerPulse()
+{
+  //  int node = cubeNodes[random(numberOfCubeNodes)];
+  unsigned int startingNode = starburstNode;
+
+  rippleBehavior behavior = BEHAVIOR_FEISTY;
+  for (int i = 0; i < MAX_PATHS_PER_NODES; i++)
+  {
+    if (nodeConnections[startingNode][i] >= 0)
+    {
+      for (int j = 0; j < NUMBER_OF_RIPPLES; j++)
+      {
+        if (ripples[j].state == STATE_DEAD)
+        {
+          ripples[j].start(
+              startingNode,
+              i,
+              getRandomColor(),
+              getSpeed(),
+              5000,
+              behavior);
+          break;
+        }
+      }
+    }
+  }
+}
+
 void startAnimation(byte animation)
 {
   switch (currentAutoPulseType)
@@ -417,6 +456,12 @@ void startAnimation(byte animation)
   case 2:
   {
     starburstPulse();
+    break;
+  }
+
+  case 3:
+  {
+    centerPulse();
     break;
   }
 

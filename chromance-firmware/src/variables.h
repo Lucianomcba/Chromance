@@ -38,7 +38,6 @@
 #define LEDS_PER_SEGMENTS 14
 
 #define NUMBER_OF_STRIPS 4
-#define NUMBER_OF_ANIMATIONS 3
 
 #define BLUE_LENGTH 154
 #define GREEN_LENGTH 168
@@ -77,6 +76,7 @@
 #define randomPulsesEnabled true    // Fire random rainbow pulses from random nodes
 #define cubePulsesEnabled true      // Draw cubes at random nodes
 #define starburstPulsesEnabled true // Draw starbursts
+#define centerPulseEnabled true     // Draw starbursts
 
 #define randomPulseTime 2000 // Fire a random pulse every (this many) ms
 
