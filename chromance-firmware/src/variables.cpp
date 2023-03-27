@@ -12,3 +12,4 @@ unsigned int debugPort = 8000; // local port to listen on
 bool connected = false;
 
 bool activeOTAUpdate = false;
+bool animating = true;

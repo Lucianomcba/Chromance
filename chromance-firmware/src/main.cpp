@@ -106,7 +106,7 @@ unsigned int baseColor = random(0xFFFF);
 
 unsigned long lastRandomPulse;
 
-byte numberOfAutoPulseTypes = randomPulsesEnabled + cubePulsesEnabled + starburstPulsesEnabled + centerPulseEnabled;
+byte numberOfAutoPulseTypes = randomPulsesEnabled + cubePulsesEnabled + starburstPulsesEnabled + centerPulseEnabled + rainbowEnabled;
 
 unsigned long nextSimulatedHeartbeat;
 unsigned long nextSimulatedEda;
@@ -133,6 +133,17 @@ void HandleArduinoOTA(void *pvParameters)
 
     if (timeinfo.tm_hour >= 22 || timeinfo.tm_hour <= 1)
     {
+      activeOTAUpdate = true;
+      while (animating)
+      {
+        delay(100);
+      }
+      for (int i = 0; i < NUMBER_OF_STRIPS; i++)
+      {
+        strips[i].clear();
+        strips[i].show();
+      }
+
       esp_deep_sleep_start();
     }
 
@@ -239,6 +250,11 @@ void getNextAnimation()
           continue;
         break;
 
+      case 4:
+        if (!rainbowEnabled)
+          continue;
+        break;
+
       default:
         continue;
       }
@@ -254,13 +270,13 @@ void getNextAnimation()
 void fade()
 {
   // Fade all dots to create trails
-  for (int strip = 0; strip < NUMBER_OF_SEGMENTS; strip++)
+  for (int segement = 0; segement < NUMBER_OF_SEGMENTS; segement++)
   {
     for (int led = 0; led < LEDS_PER_SEGMENTS; led++)
     {
-      for (int i = 0; i < (NUMBER_OF_STRIPS - 1); i++)
+      for (int strip = 0; strip < (NUMBER_OF_STRIPS - 1); strip++)
       {
-        ledColors[strip][led][i] *= decay;
+        ledColors[segement][led][strip] *= decay;
       }
     }
   }
@@ -434,6 +450,15 @@ void centerPulse()
   }
 }
 
+void rainbow()
+{
+  for (int i = 0; i < NUMBER_OF_STRIPS; i++)
+  {
+    strips[i].rainbow();
+    strips[i].show();
+  }
+}
+
 void startAnimation(byte animation)
 {
   switch (currentAutoPulseType)
@@ -465,6 +490,12 @@ void startAnimation(byte animation)
     break;
   }
 
+  case 4:
+  {
+    rainbow();
+    break;
+  }
+
   default:
     break;
   }
@@ -493,6 +524,7 @@ void loop()
   // We are doing an OTA update, might as well just stop
   if (activeOTAUpdate)
   {
+    animating = false;
     return;
   }
 

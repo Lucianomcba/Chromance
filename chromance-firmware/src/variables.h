@@ -77,6 +77,7 @@
 #define cubePulsesEnabled true      // Draw cubes at random nodes
 #define starburstPulsesEnabled true // Draw starbursts
 #define centerPulseEnabled true     // Draw starbursts
+#define rainbowEnabled false
 
 #define randomPulseTime 2000 // Fire a random pulse every (this many) ms
 
@@ -92,4 +93,5 @@ extern byte lastAutoPulseNode;
 extern byte currentAutoPulseType;
 extern unsigned long lastAutoPulseChange;
 extern bool activeOTAUpdate;
+extern bool animating;
 #endif
