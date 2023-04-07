@@ -11,7 +11,9 @@ This will cover how to get this codebase up and running on your Chromance by Zac
 1. Change directory to the cloned repo `cd Chromance`
 1. Change directory to the `chromance-firmware` folder `cd chromance-firmware`
 1. Open this folder in VSCode `code .` or via the VSCode UI (File -> Open Folder)
-1. You should verify the contents of platformio.ini, details in How to Setup, then you will open the platformio extension and run build then upload (choose USB for initial)
+1. You should verify the contents of platformio.ini, details in How to Setup.
+1. Configure the project environment at the bottom of the VSC to `env:board_name-usb` and on the left side select the port with the board connected.
+1. Then you can compile and program the board
 
 ## How to Setup
 
@@ -30,10 +32,11 @@ The following might need to be changed depending on your setup/hardware.
 
 #### Optionally Edit the Following as needed
 
-- `BLUE_STRIP_DATA_PIN`: With the Data Pin you are using for the blue
-- `GREEN_STRIP_DATA_PIN`: With the Data Pin you are using for the green
-- `RED_STRIP_DATA_PIN`: With the Data Pin you are using for the red
-- `BLACK_STRIP_DATA_PIN`: With the Data Pin you are using for the black
+- For both types of leds
+  - `BLUE_STRIP_DATA_PIN`: With the Data Pin you are using for the blue
+  - `GREEN_STRIP_DATA_PIN`: With the Data Pin you are using for the green
+  - `RED_STRIP_DATA_PIN`: With the Data Pin you are using for the red
+  - `BLACK_STRIP_DATA_PIN`: With the Data Pin you are using for the black
 - If using DOTSTAR LEDS
   - `BLUE_STRIP_CLOCK_PIN`: With the Clock Pin you are using for the blue
   - `GREEN_STRIP_CLOCK_PIN`: With the Clock Pin you are using for the red
@@ -45,6 +48,8 @@ The following might need to be changed depending on your setup/hardware.
 This bad boy will create a wifi network named `Chromance` you simply need to join this network and a popup UI will guide you through joining it to your network.
 
 Once it is on your network I recommend going into your router and assigning the mac address a static IP, to make uploading easier since you'll specify the IP in your [platformio.ini](platformio.ini) file.
+
+To upload an update you must set the project environment at the bottom of the VSC from usb to default, make sure to set on the left side the port with the IP of the board.
 
 ## How to make an animation
 
