@@ -1,5 +1,36 @@
 #include "LedController.h"
 #include "Utils.h"
+#if defined(ESP32) && !defined(NATIVE_TEST)
+#include <driver/gpio.h>
+#include <esp_err.h>
+
+namespace {
+const int sleepDataPins[] = {Constants::BLUE_STRIP_DATA_PIN,
+    Constants::GREEN_STRIP_DATA_PIN, Constants::RED_STRIP_DATA_PIN,
+    Constants::BLACK_STRIP_DATA_PIN
+#ifdef USING_DOTSTAR
+    , Constants::BLUE_STRIP_CLOCK_PIN, Constants::GREEN_STRIP_CLOCK_PIN,
+    Constants::RED_STRIP_CLOCK_PIN, Constants::BLACK_STRIP_CLOCK_PIN
+#endif
+};
+
+void configureSleepPinLow(int pin)
+{
+  // Preload LOW before gpio_config enables output and routes SIG_GPIO_OUT_IDX.
+  // Do not use gpio_reset_pin: it disables output and enables a pull-up.
+  // Retained holds stay enabled while the underlying configuration changes.
+  ESP_ERROR_CHECK(gpio_set_level(static_cast<gpio_num_t>(pin), 0));
+  ESP_ERROR_CHECK(gpio_set_pull_mode(static_cast<gpio_num_t>(pin), GPIO_PULLDOWN_ONLY));
+  gpio_config_t config = {};
+  config.pin_bit_mask = 1ULL << pin;
+  config.mode = GPIO_MODE_OUTPUT;
+  config.pull_up_en = GPIO_PULLUP_DISABLE;
+  config.pull_down_en = GPIO_PULLDOWN_ENABLE;
+  config.intr_type = GPIO_INTR_DISABLE;
+  ESP_ERROR_CHECK(gpio_config(&config));
+}
+}
+#endif
 
 LedController::LedController()
 {
@@ -42,6 +73,13 @@ void LedController::initStrips()
 
 void LedController::begin()
 {
+#if defined(ESP32) && !defined(NATIVE_TEST)
+  // Configure LOW before releasing retained sleep holds to avoid a wake glitch.
+  for (int pin : sleepDataPins) configureSleepPinLow(pin);
+  gpio_deep_sleep_hold_dis();
+  for (int pin : sleepDataPins)
+    ESP_ERROR_CHECK(gpio_hold_dis(static_cast<gpio_num_t>(pin)));
+#endif
   initStrips();
   clear();
 
@@ -50,7 +88,37 @@ void LedController::begin()
     strips[i]->begin();
     strips[i]->setBrightness(255);
     strips[i]->show();
+    latchedChannelSum[i] = 0;
   }
+}
+
+void LedController::prepareForDeepSleep()
+{
+  clear();
+  // The legacy NeoPixel RMT driver returns no delivery status. Repeat a full
+  // physical-strip black frame, not just the mapped topology, so a missed or
+  // interrupted one-shot transfer does not leave a strip at its last color.
+  for (int pass = 0; pass < 3; ++pass)
+  {
+    for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
+    {
+      strips[strip]->clear();
+      strips[strip]->show();
+      latchedChannelSum[strip] = 0;
+    }
+    // show() waits for TX; the final strip still needs its reset/latch LOW.
+    // 2 ms comfortably exceeds NeoPixel's 300 us library reset interval.
+    delay(2);
+  }
+#if defined(ESP32) && !defined(NATIVE_TEST)
+  for (int pin : sleepDataPins)
+  {
+    configureSleepPinLow(pin);
+    ESP_ERROR_CHECK(gpio_hold_en(static_cast<gpio_num_t>(pin)));
+  }
+  // gpio_hold_en alone does not retain digital pads during ESP32 deep sleep.
+  gpio_deep_sleep_hold_en();
+#endif
 }
 
 void LedController::clear()
@@ -102,22 +170,28 @@ void LedController::addPixelColor(int segment, int led, byte r, byte g, byte b)
 void LedController::show()
 {
   // Power limiting logic
-  unsigned long totalCurrent = 200; // Base current for ESP32 in mA
+  constexpr unsigned long fixedCurrent = Constants::CONTROLLER_CURRENT_MA
+      + Constants::NUM_OF_PIXELS * Constants::LED_IDLE_CURRENT_MA;
+  unsigned long channelSum = 0;
   for (int segment = 0; segment < Constants::NUMBER_OF_SEGMENTS; segment++)
   {
     for (int led = 0; led < Constants::LEDS_PER_SEGMENT; led++)
     {
-      // Approximate current: 20mA per channel at full brightness
-      totalCurrent += (ledColors[segment][led][0] * 20) / 255;
-      totalCurrent += (ledColors[segment][led][1] * 20) / 255;
-      totalCurrent += (ledColors[segment][led][2] * 20) / 255;
+      channelSum += ledColors[segment][led][0];
+      channelSum += ledColors[segment][led][1];
+      channelSum += ledColors[segment][led][2];
     }
   }
 
   float scale = 1.0f;
-  if (totalCurrent > Constants::MAX_CURRENT_MA)
+  // Sum before division: truncating every dim channel underestimated load by
+  // as much as 1 mA per channel. Reserve the controller's allowance first.
+  const float ledCurrent = channelSum * (20.0f / 255.0f);
+  const float ledBudget = Constants::MAX_CURRENT_MA > fixedCurrent
+      ? Constants::MAX_CURRENT_MA - fixedCurrent : 0;
+  if (ledCurrent > ledBudget)
   {
-    scale = (float)Constants::MAX_CURRENT_MA / (float)totalCurrent;
+    scale = ledBudget / ledCurrent;
   }
 
   for (int segment = 0; segment < Constants::NUMBER_OF_SEGMENTS; segment++)
@@ -152,9 +226,31 @@ void LedController::show()
     }
   }
 
-  for (int i = 0; i < Constants::NUMBER_OF_STRIPS; i++)
+  // Measure the actual mapped bytes after scaling/truncation, rather than the
+  // requested frame. Each strip retains its old output until show() latches it.
+  unsigned long nextChannelSum[Constants::NUMBER_OF_STRIPS] = {};
+  for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
   {
-    strips[i]->show();
+    for (int pixel = 0; pixel < strips[strip]->numPixels(); ++pixel)
+    {
+      const uint32_t color = strips[strip]->getPixelColor(pixel);
+      nextChannelSum[strip] += (color >> 16) & 255;
+      nextChannelSum[strip] += (color >> 8) & 255;
+      nextChannelSum[strip] += color & 255;
+    }
+  }
+  // Reductions precede increases: every intermediate installation load is
+  // bounded by max(previous frame load, next frame load), even when light
+  // moves abruptly between strips. Do not clear the installation between frames.
+  for (int pass = 0; pass < 2; ++pass)
+  {
+    for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
+    {
+      const bool decreases = nextChannelSum[strip] <= latchedChannelSum[strip];
+      if ((pass == 0) != decreases) continue;
+      strips[strip]->show();
+      latchedChannelSum[strip] = nextChannelSum[strip];
+    }
   }
 }
 

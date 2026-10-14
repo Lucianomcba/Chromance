@@ -20,6 +20,9 @@
 #include "AnimationController.h"
 #include "ChromanceWebServer.h"
 #include "Configuration.h"
+#include "RuntimeLock.h"
+#include "SleepControl.h"
+#include <atomic>
 
 // Globals
 Configuration configuration;
@@ -36,8 +39,26 @@ const uint64_t uS_TO_S_FACTOR = 1000000; /* Conversion factor for micro seconds 
 TaskHandle_t Core0TaskHandle;
 
 // Semaphore for protecting shared variables (activeOTAUpdate, animating)
-volatile bool activeOTAUpdate = false;
-volatile bool animating = true;
+std::atomic<bool> activeOTAUpdate{false};
+std::atomic<bool> animating{true};
+// Core0 requests sleep; the rendering core owns every LED transmission.
+// Access under RuntimeLock so publishing also waits for an in-flight frame.
+bool sleepRequested = false;
+uint64_t requestedSleepUs = 0;
+bool requestedSleepValidation = false;
+uint32_t sleepRequestStartedAt = 0;
+
+bool requestDeepSleepValidation()
+{
+  RuntimeLock guard;
+  if (sleepRequested || activeOTAUpdate.load()) return false;
+  requestedSleepUs = 30ULL * uS_TO_S_FACTOR;
+  requestedSleepValidation = true;
+  sleepRequestStartedAt = static_cast<uint32_t>(millis());
+  sleepRequested = true;
+  animating.store(false);
+  return true;
+}
 
 // Function declarations
 void connectToWiFi();
@@ -51,7 +72,16 @@ void Core0Task(void *pvParameters)
 
   for (;;)
   {
-    ArduinoOTA.handle();
+    bool stopNetworkWork;
+    {
+      RuntimeLock guard;
+      stopNetworkWork = sleepRequested;
+      // Publish OTA's onStart flag under the same barrier as sleep requests.
+      // Otherwise OTA could start between checking the flag and handle().
+      if (!stopNetworkWork) ArduinoOTA.handle();
+    }
+    // Release the shared lock before suspending this task.
+    if (stopNetworkWork) vTaskSuspend(nullptr);
     webServer.broadcastLedData();
 
     static unsigned long lastTimeCheck = 0;
@@ -60,30 +90,24 @@ void Core0Task(void *pvParameters)
     {
       lastTimeCheck = millis();
       struct tm timeinfo;
-      if (!getLocalTime(&timeinfo))
+      if (!getLocalTime(&timeinfo, 10))
       {
         Serial.println("Failed to obtain time");
+        delay(100);
         continue;
       }
 
       // Sleep between 10pm and 8am
       if (timeinfo.tm_hour >= 22 || timeinfo.tm_hour < 8)
       {
-        if (!configuration.isSleepEnabled())
+        bool sleepEnabled;
+        {
+          RuntimeLock guard;
+          sleepEnabled = configuration.isSleepEnabled();
+        }
+        if (!sleepEnabled)
         {
           continue;
-        }
-
-        // Stop animations before sleeping
-        activeOTAUpdate = true;
-        bool stillAnimating = true;
-        while (stillAnimating)
-        {
-          stillAnimating = animating;
-          if (stillAnimating)
-          {
-            delay(100);
-          }
         }
 
         // Calculate sleep duration to wake up at 8am
@@ -107,20 +131,15 @@ void Core0Task(void *pvParameters)
         Serial.printf("Wakeup time:  %s", asctime(&wakeup_time_info));
         Serial.printf("Going to sleep for %.f seconds.\n", sleep_seconds);
 
-        esp_sleep_enable_timer_wakeup(sleep_us);
-        // Enable wakeup from deep sleep on Button press (GPIO 0, Active Low)
-        esp_sleep_enable_ext0_wakeup(GPIO_NUM_0, 0);
-
-        ledController.clear();
-        ledController.show();
-
-        Serial.println("Going to sleep now...");
-        Serial.flush();
-
-        WiFi.disconnect(true);
-        WiFi.mode(WIFI_OFF);
-
-        esp_deep_sleep_start();
+        {
+          RuntimeLock guard;
+          // Recheck after acquiring the render barrier; do not sleep mid OTA.
+          if (sleepRequested || !configuration.isSleepEnabled() || activeOTAUpdate.load()) continue;
+          requestedSleepUs = sleep_us;
+          requestedSleepValidation = false;
+          sleepRequested = true;
+          animating.store(false);
+        }
       }
     }
 
@@ -144,7 +163,12 @@ void setupOTA()
       type = "filesystem";
 
     // Protect shared variable access with mutex
-    activeOTAUpdate = true;
+    activeOTAUpdate.store(true);
+    {
+      // Wait for any in-flight frame to finish before OTA starts writing.
+      RuntimeLock guard;
+      animating.store(false);
+    }
     // NOTE: if updating SPIFFS this would be the place to unmount SPIFFS using SPIFFS.end()
     Serial.println("Start updating " + type); });
   ArduinoOTA.onEnd([]()
@@ -219,13 +243,18 @@ void setup()
   configuration.setAnimationController(&animationController);
   configuration.load();
 
+#ifdef CHROMANCE_RECOVERY_MODE
+  // Recovery images boot into the user's manual selection for observation.
+  animationController.setAutoSwitching(false);
+  animationController.startAnimation(6); // Fireflies: stable legacy ID.
+#endif
+
   // Check wakeup cause
   esp_sleep_wakeup_cause_t wakeup_reason = esp_sleep_get_wakeup_cause();
   if (wakeup_reason == ESP_SLEEP_WAKEUP_TIMER)
   {
     Serial.println("Woke up from deep sleep (Timer)!");
-    // Ensure sleep remains enabled
-    configuration.setSleepEnabled(true);
+    // Preserve the saved sleep preference, including after a validation nap.
   }
   else if (wakeup_reason == ESP_SLEEP_WAKEUP_EXT0)
   {
@@ -241,21 +270,55 @@ void setup()
 
 void loop()
 {
-  // We are doing an OTA update, might as well just stop
-  // Check and update with mutex protection
-  bool shouldStop = false;
-  if (activeOTAUpdate)
+  const unsigned long started = millis();
+  uint64_t sleepUs = 0;
+  bool validationSleep = false;
+  uint32_t requestStartedAt = 0;
   {
-    animating = false;
-    shouldStop = true;
+    RuntimeLock guard;
+    // Recheck after acquiring the same lock OTA uses as its render barrier.
+    if (sleepRequested)
+    {
+      animating.store(false);
+      sleepUs = requestedSleepUs;
+      validationSleep = requestedSleepValidation;
+      requestStartedAt = sleepRequestStartedAt;
+    }
+    else if (activeOTAUpdate.load())
+      animating.store(false);
+    else
+    {
+      animating.store(true);
+      animationController.update();
+    }
   }
-
-  if (shouldStop)
+  if (sleepUs > 0)
   {
-    delay(10); // Small delay to prevent tight loop
-    return;
+    // Let the POST response leave AsyncTCP before shutting WiFi down. Rendering
+    // has already stopped; elapsed subtraction also works across millis wrap.
+    if (validationSleep)
+      while (static_cast<uint32_t>(millis()) - requestStartedAt < 1000U)
+        delay(10);
+    esp_sleep_enable_timer_wakeup(sleepUs);
+    esp_sleep_enable_ext0_wakeup(GPIO_NUM_0, 0);
+    // Stop WiFi before the last RMT transfers, on the usual rendering core.
+    // Do not hold RuntimeLock while stopping WiFi: callbacks may need it.
+    WiFi.disconnect(true);
+    WiFi.mode(WIFI_OFF);
+    {
+      // Prevent any remaining asynchronous controller/config callbacks from
+      // touching buffers during blackout or the transition into sleep.
+      RuntimeLock guard;
+      ledController.prepareForDeepSleep();
+      Serial.printf("Sleep blackout complete on core %d; data held LOW.\n", xPortGetCoreID());
+      Serial.flush();
+      // Fixed validation pause distinguishes failed blackout from entry noise.
+      // Scheduled overnight sleep retains its normal immediate transition.
+      if (validationSleep) delay(5000);
+      esp_deep_sleep_start();
+    }
   }
-
-  animationController.update();
-  // webServer.broadcastLedData(); // Moved to Core 0
+  const unsigned long frameDuration = millis() - started;
+  // Bound refresh rate and always let the idle/network tasks run.
+  delay(frameDuration < 20 ? 20 - frameDuration : 1);
 }

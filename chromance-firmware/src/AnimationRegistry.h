@@ -31,12 +31,29 @@ public:
     std::vector<RegistryEntry> getSortedEntries() {
         std::vector<RegistryEntry> sorted = entries;
         std::sort(sorted.begin(), sorted.end(), [](const RegistryEntry& a, const RegistryEntry& b) {
-            return a.name < b.name;
+            const int aId = stableId(a.name), bId = stableId(b.name);
+            return aId == bId ? a.name < b.name : aId < bId;
         });
         return sorted;
     }
 
 private:
+    // Configuration files and API clients store numeric IDs. Keep the original
+    // 24 IDs and append new effects; alphabetical insertion corrupts presets.
+    static int stableId(const std::string& name) {
+        static const char* const names[] = {
+            "BioPulseAnimation", "BouncingBallsAnimation", "CenterAnimation", "ChaseAnimation",
+            "CubeAnimation", "DigitalRainAnimation", "FirefliesAnimation", "FireworksAnimation",
+            "GlitchAnimation", "HeartbeatAnimation", "InfernoAnimation", "LightningAnimation",
+            "MeteorShowerAnimation", "PlasmaAnimation", "RainbowAnimation", "RainbowPinwheelAnimation",
+            "RainbowRadiateAnimation", "RandomAnimation", "SearchlightAnimation", "ShootingStarAnimation",
+            "SnakeAnimation", "StarburstAnimation", "WaterAnimation", "WaveAnimation",
+            "AuroraAnimation", "ColorWavesAnimation", "LavaLampAnimation", "NoiseDriftAnimation", "OceanWavesAnimation"
+        };
+        const int count = sizeof(names) / sizeof(names[0]);
+        for (int i = 0; i < count; ++i) if (name == names[i]) return i;
+        return count;
+    }
     std::vector<RegistryEntry> entries;
 };
 

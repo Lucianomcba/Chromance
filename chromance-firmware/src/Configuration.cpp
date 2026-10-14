@@ -3,7 +3,7 @@
 #include "animations/Animation.h"
 #include "Constants.h"
 
-Configuration::Configuration() : sleepEnabled(false), rainbowBrightness(30)
+Configuration::Configuration() : sleepEnabled(false), rainbowBrightness(30), autoResumeMinutes(10)
 {
 }
 
@@ -25,10 +25,19 @@ void Configuration::setRainbowBrightness(int brightness)
     }
 }
 
+void Configuration::setAutoResumeMinutes(int minutes)
+{
+    if (minutes < 0 || minutes > MAX_AUTO_RESUME_MINUTES || autoResumeMinutes == minutes) return;
+    autoResumeMinutes = minutes;
+    if (animationController) animationController->onAutoResumeSettingChanged();
+    save();
+}
+
 void Configuration::serialize(JsonObject &doc)
 {
     doc["sleepEnabled"] = sleepEnabled;
     doc["rainbowBrightness"] = rainbowBrightness;
+    doc["autoResumeMinutes"] = autoResumeMinutes;
 
     if (animationController) {
         JsonArray anims = doc.createNestedArray("animations");
@@ -63,6 +72,17 @@ void Configuration::deserialize(const JsonObject &doc)
         {
             rainbowBrightness = newBright;
             changed = true;
+        }
+    }
+
+    if (doc["autoResumeMinutes"].is<int>())
+    {
+        int minutes = doc["autoResumeMinutes"];
+        if (minutes >= 0 && minutes <= MAX_AUTO_RESUME_MINUTES && autoResumeMinutes != minutes)
+        {
+            autoResumeMinutes = minutes;
+            changed = true;
+            if (animationController) animationController->onAutoResumeSettingChanged();
         }
     }
 
@@ -141,6 +161,16 @@ void Configuration::load()
     if (doc["rainbowBrightness"].is<int>())
     {
         rainbowBrightness = doc["rainbowBrightness"];
+    }
+
+    if (doc["autoResumeMinutes"].is<int>())
+    {
+        int minutes = doc["autoResumeMinutes"];
+        if (minutes >= 0 && minutes <= MAX_AUTO_RESUME_MINUTES)
+        {
+            autoResumeMinutes = minutes;
+            if (animationController) animationController->onAutoResumeSettingChanged();
+        }
     }
 
     if (animationController && doc["animations"].is<JsonArray>()) {

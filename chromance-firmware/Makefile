@@ -1,10 +1,10 @@
 CXX = g++
 CXXFLAGS = -std=c++11 -D NATIVE_TEST -D DEBUG=1 -D USING_NEOPIXEL
+ARDUINOJSON_DIR ?= .pio/libdeps/esp-wrover-kit/ArduinoJson/src
 INCLUDES = -I src \
            -I test/mocks \
            -I src/animations \
-           -I .pio/libdeps/esp-wrover-kit/ArduinoJson/src \
-           -I .pio/libdeps/esp-wrover-kit/ArduinoJson/src/src
+           -I $(ARDUINOJSON_DIR)
 
 BUILD_DIR = build
 OBJ_DIR = $(BUILD_DIR)/obj
@@ -48,13 +48,14 @@ run_tests: tests
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@echo "Compiling $<"
-	@$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+	@$(CXX) $(CXXFLAGS) $(INCLUDES) -MMD -MP -c $< -o $@
+
+-include $(EMULATOR_OBJS:.o=.d) $(TEST_OBJS:.o=.d)
 
 clean:
 	rm -rf $(BUILD_DIR) emulator tests
 
-list:
-	@echo "Registered Animations (Index: Name):"
-	@grep -rh "REGISTER_ANIMATION" src/animations | awk -F'(' '{print $$2}' | awk -F')' '{print $$1}' | sort | uniq | cat -n | awk '{print $$1-1 ": " $$2}'
+list: emulator
+	@./emulator --list
 
-.PHONY: all clean run_tests list_animations
+.PHONY: all clean run_tests list

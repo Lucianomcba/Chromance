@@ -60,7 +60,11 @@ namespace Constants
   constexpr bool rainbowEnabled = true;
   constexpr bool chaseEnabled = true;
   constexpr bool heartbeatEnabled = true;
-  constexpr int MAX_CURRENT_MA = 2500; // Limit total current to 2500mA to prevent voltage drop
+  constexpr int MAX_CURRENT_MA = 1500; // Conservative recovery limit, including fixed loads.
+  constexpr int CONTROLLER_CURRENT_MA = 350; // Headroom for controller/board and Wi-Fi peaks.
+  // Provisionally assume 1mA per powered LED even at RGB=0. Verify against the
+  // actual strip's datasheet/measurement before relaxing this safety margin.
+  constexpr int LED_IDLE_CURRENT_MA = 1;
 
   constexpr int randomPulseTime = 2000; // ms
 

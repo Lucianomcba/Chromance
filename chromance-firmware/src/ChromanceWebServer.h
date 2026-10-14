@@ -5,6 +5,7 @@
 #include <ArduinoJson.h>
 #include <vector>
 #include <set>
+#include <atomic>
 #include "AnimationController.h"
 #include "Configuration.h"
 
@@ -23,6 +24,7 @@ private:
     std::vector<uint32_t> emulatorClients;
     std::set<uint32_t> clientsNeedingFullFrame;
     std::vector<uint8_t> lastLedData;
+    std::atomic<bool> pendingStatus{false};
 
     void setupRoutes();
     void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len);

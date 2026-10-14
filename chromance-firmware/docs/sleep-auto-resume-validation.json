@@ -1,0 +1,103 @@
+{
+  "firmwareRevision": "sleep-auto-resume-1",
+  "firmwareSha256": "cf839b266eb3af8e95e7fae6a054c1fb251dbbe0daf0b3bbcdbdc4161ae0b2de",
+  "platform": "official Espressif32 v7.1.3, ac95e7a",
+  "arduinoVersion": "2.0.17",
+  "nativeAssertions": 2917,
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "cliShutdownCommand": "./emulator --validate-sleep",
+  "cliShutdownControl": "Unguarded in-flight frame finishes after blackout and relights pixels",
+  "cliShutdownGuarded": "Waits for frame; all physical mock pixels black; later frame blocked",
+  "originalElectricalCause": "Unproven; missed final transfer and sleep-entry pad transitions were hypotheses",
+  "autoResume": {
+    "verifiedAt": "2026-10-14T14:59:32.840Z",
+    "samples": [
+      {
+        "elapsedMs": 412,
+        "uptimeMs": 169450,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 60,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 10621,
+        "uptimeMs": 179662,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 50,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 20812,
+        "uptimeMs": 189853,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 40,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 31039,
+        "uptimeMs": 200081,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 30,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 41280,
+        "uptimeMs": 210323,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 19,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 51517,
+        "uptimeMs": 220559,
+        "autoSwitching": false,
+        "pending": true,
+        "remainingSeconds": 9,
+        "currentAnimation": 25
+      },
+      {
+        "elapsedMs": 61758,
+        "uptimeMs": 230801,
+        "autoSwitching": true,
+        "pending": false,
+        "remainingSeconds": 0,
+        "currentAnimation": 11
+      }
+    ],
+    "restoredMinutes": 10,
+    "automaticAfter": true
+  },
+  "sleepCycles": [
+    {
+      "verifiedAt": "2026-10-14T15:02:02.157Z",
+      "firstOfflineMs": 3029,
+      "totalMs": 40775,
+      "resetReason": 8,
+      "sleepWakeupCause": 4,
+      "autoResumeMinutes": 10,
+      "autoSwitching": true,
+      "sleepEnabled": true
+    },
+    {
+      "verifiedAt": "2026-10-14T15:04:42.666Z",
+      "firstOfflineMs": 3064,
+      "totalMs": 40856,
+      "resetReason": 8,
+      "sleepWakeupCause": 4,
+      "autoResumeMinutes": 10,
+      "autoSwitching": true,
+      "sleepEnabled": true
+    }
+  ],
+  "physicalFeedback": "User missed first test; on coordinated repeat reported all dark",
+  "manualWindowDefaultMinutes": 10,
+  "finalAnimationIdsPreserved": true
+}

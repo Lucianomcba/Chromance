@@ -1,5 +1,6 @@
 #include "ripple.h"
 #include "Utils.h"
+#include <cmath>
 
 // #define DEBUG_ADVANCEMENT
 // #define DEBUG_RENDERING
@@ -22,6 +23,9 @@ void Ripple::start(int node, int direction, unsigned long color, float speed, un
 
     birthday = millis();
     pressure = 0;
+    completedSteps = 0;
+    motionBirthday = static_cast<uint32_t>(birthday);
+    motionInitialized = true;
     state = STATE_WITHIN_NODE;
 
     Ripple::node = node;
@@ -63,29 +67,78 @@ void Ripple::renderLed(LedController &ledController, unsigned long age)
     float brightness = fmap(float(age), 0.0f, float(lifespan), 1.0f, 0.0f);
     brightness = constrain(brightness, 0.0f, 1.0f);
 
-    byte valR = (byte)(r * brightness);
-    byte valG = (byte)(g * brightness);
-    byte valB = (byte)(b * brightness);
+    const int nextLed = led + (state == STATE_TRAVEL_UP ? 1 : -1);
+    const bool hasNext = nextLed >= 0 && nextLed < Constants::LEDS_PER_SEGMENT;
+    const float fraction = hasNext ? static_cast<float>(pressure) : 0.0f;
+    const byte totalR = static_cast<byte>(std::lround(r * brightness));
+    const byte totalG = static_cast<byte>(std::lround(g * brightness));
+    const byte totalB = static_cast<byte>(std::lround(b * brightness));
+    const byte valR = static_cast<byte>(std::lround(totalR * (1.0f - fraction)));
+    const byte valG = static_cast<byte>(std::lround(totalG * (1.0f - fraction)));
+    const byte valB = static_cast<byte>(std::lround(totalB * (1.0f - fraction)));
 
     ledController.addPixelColor(segment, led, valR, valG, valB);
+    if (hasNext)
+    {
+        // Preserve the rounded total intensity instead of rounding each share
+        // independently, which can make a dim ripple pulse as it moves.
+        ledController.addPixelColor(segment, nextLed,
+                                   totalR - valR, totalG - valG, totalB - valB);
+    }
 }
 
 void Ripple::advance(LedController &ledController)
 {
-    unsigned long age = millis() - birthday;
-
     if (state == STATE_DEAD)
     {
+        motionInitialized = false;
         return;
     }
 
-    pressure += fmap(float(age), 0.0, float(lifespan), speed, 0.0); // Ripple slows down as it ages
-    // TODO: Motion of ripple is severely affected by loop speed. Make it time invariant
-
-    if (pressure < 1 && (state == STATE_TRAVEL_UP || state == STATE_TRAVEL_DOWN))
+    // Explicit 32-bit subtraction matches the device timer on native hosts too.
+    const uint32_t age = static_cast<uint32_t>(millis()) - static_cast<uint32_t>(birthday);
+    const bool withinNode = state == STATE_WITHIN_NODE;
+    const bool traveling = state == STATE_TRAVEL_UP || state == STATE_TRAVEL_DOWN;
+    const bool validPosition = withinNode
+        ? node >= 0 && node < Constants::NUMBER_OF_NODES &&
+          direction >= 0 && direction < Constants::MAX_PATHS_PER_NODE
+        : traveling && node >= 0 && node < Constants::NUMBER_OF_SEGMENTS &&
+          direction >= 0 && direction < Constants::LEDS_PER_SEGMENT;
+    if (age >= lifespan || !std::isfinite(speed) || speed < 0.0f || !validPosition)
     {
-        // Ripple is visible but hasn't moved - render it to avoid flickering
-        renderLed(ledController, age);
+        state = STATE_DEAD;
+        node = direction = 0;
+        pressure = completedSteps = 0;
+        motionInitialized = false;
+        return;
+    }
+
+    // Fireworks also initializes traveling ripples directly through public
+    // fields. Recognize a new birthday so a reused slot has no old progress.
+    if (!motionInitialized || motionBirthday != static_cast<uint32_t>(birthday))
+    {
+        motionBirthday = static_cast<uint32_t>(birthday);
+        completedSteps = 0;
+        motionInitialized = true;
+    }
+
+    // Integral of speed * (1 - age/lifespan), with speed historically specified
+    // per ~20 ms hardware frame. Evaluate from birth rather than accumulating
+    // frame deltas, so every cadence produces the same fractional position.
+    // Catch-up walks only elapsed LED/state steps, never individual milliseconds;
+    // the age guard above prevents any expired ripple from replaying its path.
+    const double elapsed = age;
+    const double distance = static_cast<double>(speed) * (elapsed / 20.0) *
+                            (1.0 - elapsed / (2.0 * lifespan));
+    pressure = distance - completedSteps;
+    // Public fields can be initialized by animations. Discard an unreasonable
+    // catch-up request instead of monopolizing the firmware task; ordinary
+    // ripple lifetimes traverse only a few hundred steps in total.
+    if (!std::isfinite(pressure) || pressure < 0.0 || pressure > 4096.0)
+    {
+        state = STATE_DEAD;
+        motionInitialized = false;
+        return;
     }
 
     while (pressure >= 1)
@@ -100,6 +153,12 @@ void Ripple::advance(LedController &ledController)
         {
         case STATE_WITHIN_NODE:
         {
+            if (node < 0 || node >= Constants::NUMBER_OF_NODES ||
+                direction < 0 || direction >= Constants::MAX_PATHS_PER_NODE)
+            {
+                state = STATE_DEAD;
+                return;
+            }
             if (justStarted)
             {
                 justStarted = false;
@@ -140,7 +199,7 @@ void Ripple::advance(LedController &ledController)
                             Serial.println("  Never continue ... too lazy - stopping");
 #endif
                             // Die now
-                            age = lifespan;
+                            state = STATE_DEAD;
                             break;
                         }
 
@@ -154,7 +213,7 @@ void Ripple::advance(LedController &ledController)
                                 Serial.println("  Can't go straight - stopping");
 #endif
                                 // Die now
-                                age = lifespan;
+                                state = STATE_DEAD;
                                 break;
                                 // break;
                             }
@@ -541,13 +600,14 @@ void Ripple::advance(LedController &ledController)
             break;
         }
 
-        pressure -= 1;
+        completedSteps += 1;
+        pressure = distance - completedSteps;
+    }
 
-        if (state == STATE_TRAVEL_UP || state == STATE_TRAVEL_DOWN)
-        {
-            // Ripple is visible - render it
-            renderLed(ledController, age);
-        }
+    if (state == STATE_TRAVEL_UP || state == STATE_TRAVEL_DOWN)
+    {
+        // Draw only the current position, never a trail of skipped catch-up LEDs.
+        renderLed(ledController, age);
     }
 
 #ifdef DEBUG_AGE
@@ -556,16 +616,6 @@ void Ripple::advance(LedController &ledController)
     Serial.print('/');
     Serial.println(lifespan);
 #endif
-
-    if (lifespan && age >= lifespan)
-    {
-        // We STATE_DEAD
-#ifdef DEBUG_AGE
-        Serial.println("  Lifespan is up! Ripple is STATE_DEAD.");
-#endif
-        state = STATE_DEAD;
-        node = direction = pressure = age = 0;
-    }
 
 #ifdef DEBUG_RENDERING
     Serial.print("Rendering ripple position (");

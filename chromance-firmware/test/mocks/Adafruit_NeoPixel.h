@@ -4,6 +4,7 @@
 #include <vector>
 #include <cstdint>
 #include <algorithm>
+#include <functional>
 #include "Arduino.h"
 
 // Constants
@@ -16,12 +17,14 @@ public:
   Adafruit_NeoPixel(uint16_t n, uint16_t p, uint8_t t) : numLEDs(n), pin(p), type(t)
   {
     pixels.resize(n, 0);
+    latchedPixels.resize(n, 0);
   }
 
   void begin() {}
   void show()
   {
-    // Maybe notify a listener?
+    latchedPixels = pixels;
+    if (onShow) onShow();
   }
   void clear()
   {
@@ -129,6 +132,8 @@ public:
 
   // Public for inspection
   std::vector<uint32_t> pixels;
+  std::vector<uint32_t> latchedPixels;
+  std::function<void()> onShow;
 
 private:
   uint16_t numLEDs;

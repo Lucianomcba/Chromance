@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+cd "$(dirname "$0")"
 
 # Help / Usage
 if [[ "$1" == "-h" || "$1" == "--help" ]]; then
@@ -12,6 +13,7 @@ if [[ "$1" == "-h" || "$1" == "--help" ]]; then
     echo "  -a, --animation <id>     Force specific animation (default: auto-cycle)"
     echo "  -m, --multiplier <float> Time speed multiplier (e.g. 2.0 = 2x speed, default: 1.0)"
     echo "  -h, --help               Show this help"
+    echo "  -l, --list               List animations and their stable IDs"
     echo ""
     echo "Examples:"
     echo "  ./run_emulator.sh                    # Run normally"

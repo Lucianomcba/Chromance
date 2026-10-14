@@ -7,3 +7,5 @@ tests.exe
 .emulator_build_hash
 .tests_build_hash
 **/*.o
+build/
+tmp_spiffs/

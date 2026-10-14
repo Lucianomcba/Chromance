@@ -37,6 +37,9 @@ public:
   void changeAnimation(byte animation);
   void setAutoSwitching(bool enabled);
   bool isAutoSwitching() const { return autoSwitching; }
+  bool isAutoResumePending() const { return autoResumePending; }
+  uint32_t getAutoResumeRemainingSeconds() const;
+  void onAutoResumeSettingChanged();
   Ripple &getRipple(int index);
   Animation *getAnimation(int index);
   void setStateChangeCallback(StateChangeCallback callback) { stateChangeCallback = callback; }
@@ -50,21 +53,24 @@ private:
   Ripple ripples[Constants::NUMBER_OF_RIPPLES];
   std::vector<Animation *> animations;
 
-  unsigned int baseColor;
-  unsigned long lastRandomPulse;
+  unsigned int baseColor = 0;
+  unsigned long lastRandomPulse = 0;
   bool autoSwitching = true;
+  bool autoResumePending = false;
+  uint32_t manualPauseStartedAt = 0;
 
   byte currentAutoPulseType = 255;
-  unsigned long lastAutoPulseChange;
+  unsigned long lastAutoPulseChange = 0;
   byte lastAutoPulseNode = 255;
 
   // Auto pulse types count
-  byte numberOfAutoPulseTypes;
+  byte numberOfAutoPulseTypes = 0;
 
   StateChangeCallback stateChangeCallback;
 
-  void getNextAnimation();
+  byte getNextAnimation(); // Select without mutating the active animation.
   void notifyStateChange();
+  void restartAutoResumeTimer();
   void rollNewBaseColor();  // Picks a new random baseColor different from the previous
 };
 

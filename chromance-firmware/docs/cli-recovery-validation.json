@@ -1,0 +1,107 @@
+[
+  {
+    "id": 24,
+    "name": "Aurora",
+    "frames": 91,
+    "distinct_visible_frames": 91,
+    "changed_adjacent_frames": 90,
+    "max_visible_channel_change_66ms": 14,
+    "lit_cells_range": [
+      118,
+      151
+    ],
+    "unlit_visible_cells_percent_range": [
+      59.9,
+      68.7
+    ],
+    "start_ms": 0,
+    "end_ms": 5940,
+    "sampling_66ms": true,
+    "capture_command": "./emulator -d 6000 -a 24 -m 1",
+    "measurement": "Visible ANSI * samples; . cells are below the emulator >10 RGB visibility threshold; # node markers excluded. Merged terminal cells, before hardware power limiting."
+  },
+  {
+    "id": 25,
+    "name": "Color Waves",
+    "frames": 91,
+    "distinct_visible_frames": 91,
+    "changed_adjacent_frames": 90,
+    "max_visible_channel_change_66ms": 25,
+    "lit_cells_range": [
+      116,
+      170
+    ],
+    "unlit_visible_cells_percent_range": [
+      54.9,
+      69.2
+    ],
+    "start_ms": 0,
+    "end_ms": 5940,
+    "sampling_66ms": true,
+    "capture_command": "./emulator -d 6000 -a 25 -m 1",
+    "measurement": "Visible ANSI * samples; . cells are below the emulator >10 RGB visibility threshold; # node markers excluded. Merged terminal cells, before hardware power limiting."
+  },
+  {
+    "id": 26,
+    "name": "Lava Lamp",
+    "frames": 91,
+    "distinct_visible_frames": 91,
+    "changed_adjacent_frames": 90,
+    "max_visible_channel_change_66ms": 20,
+    "lit_cells_range": [
+      54,
+      114
+    ],
+    "unlit_visible_cells_percent_range": [
+      69.8,
+      85.7
+    ],
+    "start_ms": 0,
+    "end_ms": 5940,
+    "sampling_66ms": true,
+    "capture_command": "./emulator -d 6000 -a 26 -m 1",
+    "measurement": "Visible ANSI * samples; . cells are below the emulator >10 RGB visibility threshold; # node markers excluded. Merged terminal cells, before hardware power limiting."
+  },
+  {
+    "id": 27,
+    "name": "Noise Drift",
+    "frames": 91,
+    "distinct_visible_frames": 91,
+    "changed_adjacent_frames": 90,
+    "max_visible_channel_change_66ms": 24,
+    "lit_cells_range": [
+      98,
+      132
+    ],
+    "unlit_visible_cells_percent_range": [
+      65.0,
+      74.0
+    ],
+    "start_ms": 0,
+    "end_ms": 5940,
+    "sampling_66ms": true,
+    "capture_command": "./emulator -d 6000 -a 27 -m 1",
+    "measurement": "Visible ANSI * samples; . cells are below the emulator >10 RGB visibility threshold; # node markers excluded. Merged terminal cells, before hardware power limiting."
+  },
+  {
+    "id": 28,
+    "name": "Ocean Waves",
+    "frames": 91,
+    "distinct_visible_frames": 91,
+    "changed_adjacent_frames": 90,
+    "max_visible_channel_change_66ms": 25,
+    "lit_cells_range": [
+      179,
+      219
+    ],
+    "unlit_visible_cells_percent_range": [
+      41.9,
+      52.5
+    ],
+    "start_ms": 0,
+    "end_ms": 5940,
+    "sampling_66ms": true,
+    "capture_command": "./emulator -d 6000 -a 28 -m 1",
+    "measurement": "Visible ANSI * samples; . cells are below the emulator >10 RGB visibility threshold; # node markers excluded. Merged terminal cells, before hardware power limiting."
+  }
+]

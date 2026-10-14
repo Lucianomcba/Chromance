@@ -1,0 +1,97 @@
+{
+  "verifiedAt": "2026-10-08T00:24:51.548Z",
+  "firmwareRevision": "smooth-recovery-4",
+  "platform": "official Espressif32 v7.1.3, ac95e7aa3b0e5f309359a028706f809f03ffa612",
+  "arduinoVersion": "2.0.17",
+  "firmwareSha256": "b5a88d9bdc910265d70d76e6cdb66da72cf15ca8ac82e1c747d73abd310d57aa",
+  "currentAnimation": 28,
+  "autoSwitching": false,
+  "sleepEnabled": true,
+  "durationMs": 33230,
+  "stream": {
+    "frames": 259,
+    "fullFrames": 254,
+    "distinctFrames": 256,
+    "topology": true
+  },
+  "samples": [
+    {
+      "uptimeMs": 21067,
+      "freeHeap": 154976,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 24942,
+      "freeHeap": 143612,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 28141,
+      "freeHeap": 155600,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 31316,
+      "freeHeap": 155596,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 34493,
+      "freeHeap": 155560,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 37912,
+      "freeHeap": 150624,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 41223,
+      "freeHeap": 151976,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 44424,
+      "freeHeap": 155612,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 47593,
+      "freeHeap": 153748,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    },
+    {
+      "uptimeMs": 50770,
+      "freeHeap": 155376,
+      "resetReason": 3,
+      "currentAnimation": 28,
+      "autoSwitching": false
+    }
+  ],
+  "servedUiMatchesBuild": true,
+  "nativeAssertionsPassed": 601,
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "physicalFeedback": "User subsequently confirmed smooth motion with diagnostic traffic running and good contrast on the October7 deployment.",
+  "currentModel": "1500mA total; includes350mA controller and1mA/pixel idle assumptions; not an electrical measurement"
+}

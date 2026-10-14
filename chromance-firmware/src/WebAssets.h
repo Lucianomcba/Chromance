@@ -57,6 +57,12 @@ const char index_html[] PROGMEM = R"html(
                 <input type="number" id="global_rainbowBrightness" min="0" max="255">
             </div>
             
+            <div class="config-field">
+                <label for="global_autoResumeMinutes">Resume Auto Switching After (minutes)</label>
+                <input type="number" id="global_autoResumeMinutes" min="0" max="1440" step="1">
+                <small>After Play or turning Auto Switching off. 0 keeps manual mode until you turn it on. Saving a changed timeout starts a fresh countdown.</small>
+            </div>
+
             <h4>Enabled Animations</h4>
             <div id="global_animationsList" style="max-height: 200px; overflow-y: auto; border: 1px solid #555; padding: 5px; margin-bottom: 10px;">
                 Loading...
@@ -295,6 +301,11 @@ const char script_js[] PROGMEM = R"js(
       }
   }
 
+  function animationsByName(animations) {
+      return animations.slice().sort((a, b) =>
+          a.name.localeCompare(b.name, undefined, {sensitivity: 'base'}) || a.id - b.id);
+  }
+
   function updateUI(data) {
     if (data.autoSwitching !== undefined) {
         document.getElementById('autoSwitch').checked = data.autoSwitching;
@@ -304,7 +315,7 @@ const char script_js[] PROGMEM = R"js(
     if (data.animations) {
         const list = document.getElementById('animationsList');
         list.innerHTML = '';
-        data.animations.forEach(anim => {
+        animationsByName(data.animations).forEach(anim => {
             const isActive = data.currentAnimation === anim.id;
             const row = document.createElement('div');
             row.className = 'anim-row';
@@ -363,6 +374,9 @@ const char script_js[] PROGMEM = R"js(
           if (data.rainbowBrightness !== undefined) {
               document.getElementById('global_rainbowBrightness').value = data.rainbowBrightness;
           }
+          if (data.autoResumeMinutes !== undefined) {
+              document.getElementById('global_autoResumeMinutes').value = data.autoResumeMinutes;
+          }
           if (data.sleepEnabled !== undefined) {
               document.getElementById('global_sleepToggle').checked = data.sleepEnabled;
           }
@@ -372,7 +386,7 @@ const char script_js[] PROGMEM = R"js(
           if (data.animations) {
               const container = document.getElementById('global_animationsList');
               container.innerHTML = '';
-              data.animations.forEach(anim => {
+              animationsByName(data.animations).forEach(anim => {
                   const div = document.createElement('div');
                   div.style.display = 'flex';
                   div.style.alignItems = 'center';
@@ -416,7 +430,13 @@ const char script_js[] PROGMEM = R"js(
   }
 
   function saveGlobalConfig() {
+      const autoResumeMinutes = Number(document.getElementById('global_autoResumeMinutes').value);
+      if (!Number.isInteger(autoResumeMinutes) || autoResumeMinutes < 0 || autoResumeMinutes > 1440) {
+          alert('Resume timeout must be a whole number from 0 to 1440 minutes.');
+          return;
+      }
       const config = {
+          autoResumeMinutes: autoResumeMinutes,
           rainbowBrightness: parseInt(document.getElementById('global_rainbowBrightness').value),
           sleepEnabled: document.getElementById('global_sleepToggle').checked,
           animations: []
@@ -475,12 +495,25 @@ const char script_js[] PROGMEM = R"js(
                   const div = document.createElement('div');
                   div.className = 'config-field';
                   const label = document.createElement('label');
-                  label.innerText = key;
+                  label.innerText = key === 'scale' ? 'Pattern scale (lower = broader colors)' : key;
                   div.appendChild(label);
-                  const input = document.createElement('input');
+                  const input = document.createElement(key === 'palette' ? 'select' : 'input');
                   input.id = 'cfg_' + key;
-                  if (typeof val === 'number') {
+                  if (key === 'palette') {
+                      ['Aurora', 'Ocean', 'Rainbow', 'Sunset', 'Lava'].forEach((name, id) => {
+                          const option = document.createElement('option');
+                          option.value = id;
+                          option.textContent = name;
+                          input.appendChild(option);
+                      });
+                      input.value = val;
+                  } else if (typeof val === 'number') {
                       input.type = 'number';
+                      input.step = 'any';
+                      if (keys.includes('palette')) {
+                          const limits = {speed: [0, 3, 0.05], scale: [0.25, 3, 0.05], brightness: [0, 255, 1]};
+                          if (limits[key]) [input.min, input.max, input.step] = limits[key];
+                      }
                       input.value = val;
                   } else if (typeof val === 'boolean') {
                       input.type = 'checkbox';
@@ -503,7 +536,9 @@ const char script_js[] PROGMEM = R"js(
           if (key === 'enabled') return; // Don't overwrite enabled from here
           const input = document.getElementById('cfg_' + key);
           if (input) {
-            if (input.type === 'checkbox') {
+            if (key === 'palette') {
+                newConfig[key] = parseInt(input.value, 10);
+            } else if (input.type === 'checkbox') {
                 newConfig[key] = input.checked;
             } else if (input.type === 'number') {
                 newConfig[key] = parseFloat(input.value);

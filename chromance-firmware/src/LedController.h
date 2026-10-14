@@ -23,6 +23,9 @@ public:
   void begin();
   void show();
   void clear();
+  // Call after stopping render/network work, on the normal rendering core.
+  // Powered pixels need a latched black frame; LOW data alone cannot clear them.
+  void prepareForDeepSleep();
   void fade(float decay);
 
   // Accessors for ripple logic
@@ -51,6 +54,7 @@ private:
 #endif
 
   void initStrips();
+  unsigned long latchedChannelSum[Constants::NUMBER_OF_STRIPS] = {};
 };
 
 #endif // LEDCONTROLLER_H

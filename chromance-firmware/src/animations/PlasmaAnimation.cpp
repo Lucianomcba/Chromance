@@ -3,6 +3,7 @@
 #include "../Topology.h"
 #include "../Constants.h"
 #include "../AnimationRegistry.h"
+#include "ColorConversion.h"
 #include <cmath>
 
 REGISTER_ANIMATION(PlasmaAnimation)
@@ -46,10 +47,10 @@ void PlasmaAnimation::update()
             
             // Map to color
             // Hue based on val
-            uint16_t hue = (uint16_t)((val + 1.0f) * 32768.0f);
+            uint16_t hue = ColorConversion::hue((val + 1.0f) * 32768.0f);
             
             // Brightness variation
-            uint8_t bright = 128 + (uint8_t)(sin(val * 3.14f) * 127);
+            uint8_t bright = ColorConversion::channel(128.0f + sin(val * 3.14f) * 127.0f);
             
             uint32_t color = leds.ColorHSV(hue, 255, bright);
             

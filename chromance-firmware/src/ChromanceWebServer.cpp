@@ -3,6 +3,14 @@
 #include "animations/Animation.h"
 #include "WebAssets.h"
 #include "Topology.h"
+#include "RuntimeLock.h"
+#include "SleepControl.h"
+#include <array>
+#ifdef ESP32
+#include <esp_system.h>
+#include <esp_sleep.h>
+#include <esp_arduino_version.h>
+#endif
 
 ChromanceWebServer::ChromanceWebServer(AnimationController &animationController, Configuration &configuration)
     : server(80), ws("/ws"), animationController(animationController), configuration(configuration)
@@ -12,11 +20,12 @@ ChromanceWebServer::ChromanceWebServer(AnimationController &animationController,
 void ChromanceWebServer::begin()
 {
     setupRoutes();
+    {
+        RuntimeLock guard;
+        animationController.setStateChangeCallback([this](byte, bool)
+                                                   { pendingStatus.store(true); });
+    }
     server.begin();
-
-    // Register callback for animation changes
-    animationController.setStateChangeCallback([this](byte anim, bool autoSwitch)
-                                               { this->broadcastStatus(); });
 }
 
 void ChromanceWebServer::setupRoutes()
@@ -43,144 +52,164 @@ void ChromanceWebServer::setupRoutes()
         response->print(getStatusJson());
         request->send(response); });
 
-    // API Set Animation
-    server.on("/api/animation", HTTP_POST, [](AsyncWebServerRequest *request) {}, NULL, [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total)
-              {
-        JsonDocument doc;
-        deserializeJson(doc, data);
-
-        if (doc["id"].is<int>()) {
-            int id = doc["id"];
-            // Disable auto switching if manually selecting
-            animationController.setAutoSwitching(false);
-            animationController.changeAnimation(id);
-            request->send(200, "application/json", "{\"status\":\"ok\"}");
-        } else {
-            request->send(400, "application/json", "{\"status\":\"error\", \"message\":\"Missing id\"}");
-        } });
-
-    // API Set AutoSwitch
-    server.on("/api/autoswitch", HTTP_POST, [](AsyncWebServerRequest *request) {}, NULL, [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total)
-              {
-        JsonDocument doc;
-        deserializeJson(doc, data);
-
-        if (doc["enabled"].is<bool>()) {
-            bool enabled = doc["enabled"];
-            animationController.setAutoSwitching(enabled);
-            request->send(200, "application/json", "{\"status\":\"ok\"}");
-            this->broadcastStatus();
-        } else {
-            request->send(400, "application/json", "{\"status\":\"error\", \"message\":\"Missing enabled\"}");
-        } });
-
-    // API Set Sleep
-    server.on("/api/sleep", HTTP_POST, [](AsyncWebServerRequest *request) {}, NULL, [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total)
-              {
-        JsonDocument doc;
-        deserializeJson(doc, data);
-
-        if (doc["enabled"].is<bool>()) {
-            bool enabled = doc["enabled"];
-            configuration.setSleepEnabled(enabled);
-            request->send(200, "application/json", "{\"status\":\"ok\"}");
-            this->broadcastStatus();
-        } else {
-            request->send(400, "application/json", "{\"status\":\"error\", \"message\":\"Missing enabled\"}");
-        } });
-
-    // API Get Global Config
-    server.on("/api/config/global", HTTP_GET, [this](AsyncWebServerRequest *request)
-              {
-        AsyncResponseStream *response = request->beginResponseStream("application/json");
-        JsonDocument doc;
-        JsonObject obj = doc.to<JsonObject>();
-        configuration.serialize(obj);
-        
-        JsonArray anims = obj.createNestedArray("animations");
-        int count = animationController.getAnimationCount();
-        for (int i = 0; i < count; i++) {
-            Animation *anim = animationController.getAnimation(i);
-            if (anim != nullptr) {
-                JsonObject animObj = anims.add<JsonObject>();
-                animObj["id"] = i;
-                animObj["name"] = anim->getName();
-                animObj["enabled"] = anim->isEnabled();
-            }
+    // Explicit, bounded validation of the normal hardware shutdown path.
+    // Network response grace and a dark pause precede the 30-second sleep.
+    server.on("/api/sleep/test", HTTP_POST, [](AsyncWebServerRequest *request) {
+        if (!requestDeepSleepValidation()) {
+            request->send(409, "application/json", "{\"status\":\"busy\"}");
+            return;
         }
-        
-        serializeJson(doc, *response);
-        request->send(response); });
+        request->send(200, "application/json",
+            "{\"status\":\"ok\",\"sleepSeconds\":30,\"blackoutPauseSeconds\":5}");
+    });
 
-    // API Set Global Config
-    server.on("/api/config/global", HTTP_POST, [](AsyncWebServerRequest *request) {}, NULL, [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total)
-              {
-        JsonDocument doc;
-        deserializeJson(doc, data);
-        configuration.deserialize(doc.as<JsonObject>());
-
-        if (doc["animations"].is<JsonArray>()) {
-            JsonArray anims = doc["animations"];
-            for (JsonObject a : anims) {
-                if (a["id"].is<int>() && a["enabled"].is<bool>()) {
-                    int id = a["id"];
-                    bool enabled = a["enabled"];
-                    Animation* anim = animationController.getAnimation(id);
-                    if (anim) {
-                         // We can hack setConfig to set enabled, 
-                         // or ideally Animation class would have a setEnabled method.
-                         // But for now, let's use the JsonObject approach we have on Animation base class.
-                         // Wait, getConfig sets "enabled". setConfig checks for "enabled".
-                         // So we can just call setConfig with this object.
-                         anim->setConfig(a);
-                    }
+    // Parse bounded JSON bodies: never read beyond the supplied async chunk.
+    server.on("/api/animation", HTTP_POST, [](AsyncWebServerRequest *) {}, NULL,
+        [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+            if (index != 0) return; // A rejected fragmented body gets one response.
+            JsonDocument doc;
+            if (len != total || deserializeJson(doc, data, len) || !doc["id"].is<int>()) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Missing or invalid id\"}");
+                return;
+            }
+            bool validId;
+            {
+                RuntimeLock guard;
+                const int id = doc["id"].as<int>();
+                validId = id >= 0 && id < animationController.getAnimationCount();
+                if (validId) {
+                    animationController.setAutoSwitching(false);
+                    animationController.changeAnimation(id);
                 }
             }
-            animationController.recalculateAutoPulseTypes();
+            request->send(validId ? 200 : 400, "application/json",
+                validId ? "{\"status\":\"ok\"}" : "{\"status\":\"error\",\"message\":\"Invalid animation id\"}");
+        });
+
+    server.on("/api/autoswitch", HTTP_POST, [](AsyncWebServerRequest *) {}, NULL,
+        [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+            if (index != 0) return; // A rejected fragmented body gets one response.
+            JsonDocument doc;
+            if (len != total || deserializeJson(doc, data, len) || !doc["enabled"].is<bool>()) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Missing enabled\"}");
+                return;
+            }
+            {
+                RuntimeLock guard;
+                animationController.setAutoSwitching(doc["enabled"].as<bool>());
+            }
+            request->send(200, "application/json", "{\"status\":\"ok\"}");
+        });
+
+    server.on("/api/sleep", HTTP_POST, [](AsyncWebServerRequest *) {}, NULL,
+        [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+            if (index != 0) return; // A rejected fragmented body gets one response.
+            JsonDocument doc;
+            if (len != total || deserializeJson(doc, data, len) || !doc["enabled"].is<bool>()) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Missing enabled\"}");
+                return;
+            }
+            {
+                RuntimeLock guard;
+                configuration.setSleepEnabled(doc["enabled"].as<bool>());
+                pendingStatus.store(true);
+            }
+            request->send(200, "application/json", "{\"status\":\"ok\"}");
+        });
+
+    server.on("/api/config/global", HTTP_GET, [this](AsyncWebServerRequest *request) {
+        JsonDocument doc;
+        {
+            RuntimeLock guard;
+            JsonObject obj = doc.to<JsonObject>();
+            configuration.serialize(obj);
+            JsonArray anims = obj["animations"].to<JsonArray>();
+            for (int i = 0; i < animationController.getAnimationCount(); ++i) {
+                Animation *anim = animationController.getAnimation(i);
+                if (anim) {
+                    JsonObject item = anims.add<JsonObject>();
+                    item["id"] = i;
+                    item["name"] = anim->getName();
+                    item["enabled"] = anim->isEnabled();
+                }
+            }
         }
+        String body;
+        serializeJson(doc, body);
+        request->send(200, "application/json", body);
+    });
 
-        this->broadcastStatus();
-        request->send(200, "application/json", "{\"status\":\"ok\"}"); });
-
-    // API Get Config
-    server.on("/api/config", HTTP_GET, [this](AsyncWebServerRequest *request)
-              {
-        if (request->hasParam("id")) {
-            int id = request->getParam("id")->value().toInt();
-            Animation* anim = animationController.getAnimation(id);
-            if (anim) {
-                 AsyncResponseStream *response = request->beginResponseStream("application/json");
-                 JsonDocument doc;
-                 JsonObject obj = doc.to<JsonObject>();
-                 anim->getConfig(obj);
-                 serializeJson(doc, *response);
-                 request->send(response);
-            } else {
-                request->send(404, "application/json", "{\"status\":\"error\", \"message\":\"Animation not found\"}");
+    server.on("/api/config/global", HTTP_POST, [](AsyncWebServerRequest *) {}, NULL,
+        [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+            if (index != 0) return; // A rejected fragmented body gets one response.
+            JsonDocument doc;
+            if (len != total || deserializeJson(doc, data, len)) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Invalid JSON\"}");
+                return;
             }
-        } else {
-             request->send(400, "application/json", "{\"status\":\"error\", \"message\":\"Missing id\"}");
-        } });
-
-    // API Set Config
-    server.on("/api/config", HTTP_POST, [](AsyncWebServerRequest *request) {}, NULL, [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total)
-              {
-        if (request->hasParam("id")) {
-            int id = request->getParam("id")->value().toInt();
-            Animation* anim = animationController.getAnimation(id);
-            if (anim) {
-                JsonDocument doc;
-                deserializeJson(doc, data);
-                anim->setConfig(doc.as<JsonObject>());
-                animationController.recalculateAutoPulseTypes();
-                this->broadcastStatus();
-                request->send(200, "application/json", "{\"status\":\"ok\"}");
-            } else {
-                request->send(404, "application/json", "{\"status\":\"error\", \"message\":\"Animation not found\"}");
+            if (doc.containsKey("autoResumeMinutes") &&
+                (!doc["autoResumeMinutes"].is<int>() || doc["autoResumeMinutes"].as<int>() < 0 ||
+                 doc["autoResumeMinutes"].as<int>() > Configuration::MAX_AUTO_RESUME_MINUTES)) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"autoResumeMinutes must be 0-1440\"}");
+                return;
             }
-        } else {
-             request->send(400, "application/json", "{\"status\":\"error\", \"message\":\"Missing id\"}");
-        } });
+            {
+                RuntimeLock guard;
+                configuration.deserialize(doc.as<JsonObject>());
+                pendingStatus.store(true);
+            }
+            request->send(200, "application/json", "{\"status\":\"ok\"}");
+        });
+
+    server.on("/api/config", HTTP_GET, [this](AsyncWebServerRequest *request) {
+        if (!request->hasParam("id")) {
+            request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Missing id\"}");
+            return;
+        }
+        JsonDocument doc;
+        bool found = false;
+        {
+            RuntimeLock guard;
+            Animation *anim = animationController.getAnimation(request->getParam("id")->value().toInt());
+            if (anim) {
+                JsonObject obj = doc.to<JsonObject>();
+                anim->getConfig(obj);
+                found = true;
+            }
+        }
+        String body;
+        if (found) serializeJson(doc, body);
+        else body = "{\"status\":\"error\",\"message\":\"Animation not found\"}";
+        request->send(found ? 200 : 404, "application/json", body);
+    });
+
+    server.on("/api/config", HTTP_POST, [](AsyncWebServerRequest *) {}, NULL,
+        [this](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+            if (index != 0) return; // A rejected fragmented body gets one response.
+            if (!request->hasParam("id")) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Missing id\"}");
+                return;
+            }
+            JsonDocument doc;
+            if (len != total || deserializeJson(doc, data, len)) {
+                request->send(400, "application/json", "{\"status\":\"error\",\"message\":\"Invalid JSON\"}");
+                return;
+            }
+            bool found = false;
+            {
+                RuntimeLock guard;
+                Animation *anim = animationController.getAnimation(request->getParam("id")->value().toInt());
+                if (anim) {
+                    anim->setConfig(doc.as<JsonObject>());
+                    animationController.recalculateAutoPulseTypes();
+                    configuration.save();
+                    pendingStatus.store(true);
+                    found = true;
+                }
+            }
+            request->send(found ? 200 : 404, "application/json",
+                found ? "{\"status\":\"ok\"}" : "{\"status\":\"error\",\"message\":\"Animation not found\"}");
+        });
 }
 
 void ChromanceWebServer::onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len)
@@ -196,12 +225,14 @@ void ChromanceWebServer::onEvent(AsyncWebSocket *server, AsyncWebSocketClient *c
         client->text(getStatusJson());
 
         // Default to enabled for backward compatibility
+        RuntimeLock guard;
         emulatorClients.push_back(client->id());
         clientsNeedingFullFrame.insert(client->id());
     }
     else if (type == WS_EVT_DISCONNECT)
     {
         Serial.printf("WebSocket client #%u disconnected\n", client->id());
+        RuntimeLock guard;
         auto it = std::find(emulatorClients.begin(), emulatorClients.end(), client->id());
         if (it != emulatorClients.end())
         {
@@ -220,9 +251,8 @@ void ChromanceWebServer::handleWebSocketMessage(AsyncWebSocketClient *client, vo
     AwsFrameInfo *info = (AwsFrameInfo *)arg;
     if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
     {
-        data[len] = 0;
         JsonDocument doc;
-        DeserializationError error = deserializeJson(doc, (char *)data);
+        DeserializationError error = deserializeJson(doc, data, len);
         if (error)
         {
             return;
@@ -236,6 +266,7 @@ void ChromanceWebServer::handleWebSocketMessage(AsyncWebSocketClient *client, vo
 
         if (doc["emulator"].is<bool>())
         {
+            RuntimeLock guard;
             bool enabled = doc["emulator"];
             auto it = std::find(emulatorClients.begin(), emulatorClients.end(), client->id());
             if (enabled)
@@ -259,23 +290,33 @@ void ChromanceWebServer::handleWebSocketMessage(AsyncWebSocketClient *client, vo
 
 void ChromanceWebServer::broadcastStatus()
 {
-    ws.textAll(getStatusJson());
+    pendingStatus.store(true);
 }
 
 void ChromanceWebServer::broadcastLedData()
 {
-    if (ws.count() == 0 || emulatorClients.empty())
-        return;
-
-    // Throttle to ~30fps
+    // Controller callbacks run inside the render mutex. Network work is
+    // deferred here so AsyncTCP can never wait on a mutex held by its sender.
+    if (pendingStatus.exchange(false)) ws.textAll(getStatusJson());
+    if (ws.count() == 0) return;
     static unsigned long lastUpdate = 0;
-    if (millis() - lastUpdate < 33)
-        return;
+    if (millis() - lastUpdate < 33) return;
     lastUpdate = millis();
 
-    size_t bufferSize = Constants::NUMBER_OF_SEGMENTS * Constants::LEDS_PER_SEGMENT * 3;
-    LedController &led = animationController.getLedController();
-    uint8_t *currentData = &led.ledColors[0][0][0];
+    constexpr size_t bufferSize = Constants::NUMBER_OF_SEGMENTS * Constants::LEDS_PER_SEGMENT * 3;
+    std::array<uint8_t, bufferSize> frame;
+    std::vector<uint32_t> recipients;
+    std::set<uint32_t> fullRecipients;
+    {
+        RuntimeLock guard;
+        if (emulatorClients.empty()) return;
+        recipients = emulatorClients;
+        fullRecipients = clientsNeedingFullFrame;
+        for (uint32_t id : recipients) clientsNeedingFullFrame.erase(id);
+        const LedController &led = animationController.getLedController();
+        memcpy(frame.data(), &led.ledColors[0][0][0], bufferSize);
+    }
+    const uint8_t *currentData = frame.data();
 
     // Initialize lastLedData if empty
     if (lastLedData.empty())
@@ -326,7 +367,7 @@ void ChromanceWebServer::broadcastLedData()
     // or we could use a static buffer.
     // Let's just create a vector for it if we need it.
     std::vector<uint8_t> fullPayload;
-    if (preferFull || !clientsNeedingFullFrame.empty())
+    if (preferFull || !fullRecipients.empty())
     {
         fullPayload.clear();
         fullPayload.reserve(bufferSize + 1);
@@ -334,17 +375,13 @@ void ChromanceWebServer::broadcastLedData()
         fullPayload.insert(fullPayload.end(), currentData, currentData + bufferSize);
     }
 
-    for (uint32_t id : emulatorClients)
+    for (uint32_t id : recipients)
     {
-        bool needsFull = clientsNeedingFullFrame.count(id) > 0;
+        bool needsFull = fullRecipients.count(id) > 0;
 
         if (needsFull || preferFull)
         {
             ws.binary(id, fullPayload.data(), fullPayload.size());
-            if (needsFull)
-            {
-                clientsNeedingFullFrame.erase(id);
-            }
         }
         else
         {
@@ -358,25 +395,68 @@ void ChromanceWebServer::broadcastLedData()
 
 String ChromanceWebServer::getStatusJson()
 {
+    struct AnimationStatus {
+        int id;
+        const char *name;
+        bool enabled;
+        bool hasConfig;
+    };
+    // Registry membership is immutable after init(), before the web server
+    // starts. Reserve outside the render lock so the snapshot cannot allocate.
+    const int count = animationController.getAnimationCount();
+    std::vector<AnimationStatus> animations;
+    animations.reserve(count);
+    byte currentAnimation;
+    bool autoSwitching;
+    bool sleepEnabled;
+    bool autoResumePending;
+    uint32_t autoResumeRemainingSeconds;
+    int autoResumeMinutes;
+    {
+        RuntimeLock guard;
+        currentAnimation = animationController.getCurrentAnimation();
+        autoSwitching = animationController.isAutoSwitching();
+        sleepEnabled = configuration.isSleepEnabled();
+        autoResumeMinutes = configuration.getAutoResumeMinutes();
+        autoResumePending = animationController.isAutoResumePending();
+        autoResumeRemainingSeconds = animationController.getAutoResumeRemainingSeconds();
+        for (int i = 0; i < count; ++i)
+        {
+            Animation *anim = animationController.getAnimation(i);
+            if (anim)
+                animations.push_back({i, anim->getName(), anim->isEnabled(), anim->hasConfig()});
+        }
+    }
+
+    // JSON allocations, ESP diagnostics and serialization must not delay the
+    // renderer. Names are static literals owned by the long-lived animations.
     JsonDocument doc;
     doc["type"] = "status";
-    doc["currentAnimation"] = animationController.getCurrentAnimation();
-    doc["autoSwitching"] = animationController.isAutoSwitching();
-    doc["sleepEnabled"] = configuration.isSleepEnabled();
+    doc["uptimeMs"] = millis();
+    doc["firmwareRevision"] = "sleep-auto-resume-1";
+#ifdef ESP32
+    doc["freeHeap"] = ESP.getFreeHeap();
+    doc["resetReason"] = static_cast<int>(esp_reset_reason());
+    doc["sleepWakeupCause"] = static_cast<int>(esp_sleep_get_wakeup_cause());
+    doc["arduinoVersion"] = String(ESP_ARDUINO_VERSION_MAJOR) + "." +
+        String(ESP_ARDUINO_VERSION_MINOR) + "." + String(ESP_ARDUINO_VERSION_PATCH);
+    doc["idfVersion"] = ESP.getSdkVersion();
+#endif
+    doc["currentAnimation"] = currentAnimation;
+    doc["autoSwitching"] = autoSwitching;
+    doc["sleepEnabled"] = sleepEnabled;
+    doc["autoResumeMinutes"] = autoResumeMinutes;
+    doc["autoResumePending"] = autoResumePending;
+    doc["autoResumeRemainingSeconds"] = autoResumeRemainingSeconds;
 
     JsonArray anims = doc["animations"].to<JsonArray>();
-    int count = animationController.getAnimationCount();
-    for (int i = 0; i < count; i++)
+    for (const AnimationStatus &anim : animations)
     {
-        Animation *anim = animationController.getAnimation(i);
-        if (anim != nullptr)
-        {
-            JsonObject animObj = anims.add<JsonObject>();
-            animObj["id"] = i;
-            animObj["name"] = anim->getName();
-            animObj["enabled"] = anim->isEnabled();
-            animObj["hasConfig"] = anim->hasConfig();
-        }
+        JsonObject animObj = anims.add<JsonObject>();
+        animObj["id"] = anim.id;
+        animObj["name"] = anim.name;
+        animObj["enabled"] = anim.enabled;
+        animObj["hasConfig"] = anim.hasConfig;
     }
 
     String jsonString;

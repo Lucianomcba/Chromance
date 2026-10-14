@@ -51,7 +51,7 @@ public:
   static int runnerNode;
   int targetNode = -1;
 
-  float speed;            // Each loop, ripples move this many LED's.
+  float speed;            // LED steps per nominal 20 ms, slowing linearly with age.
   unsigned long lifespan; // The ripple stops after this many milliseconds
   RippleBehavior behavior;
   unsigned long birthday; // Used to track age of ripple
@@ -60,7 +60,10 @@ private:
   void renderLed(LedController &ledController, unsigned long age);
 
   bool justStarted = false;
-  float pressure;         // When Pressure reaches 1, ripple will move
+  double pressure = 0;    // Fractional progress toward the next LED/state step.
+  double completedSteps = 0;
+  uint32_t motionBirthday = 0;
+  bool motionInitialized = false;
 
   // static byte rippleCount; // Unused?
   byte rippleId; // Used to identify this ripple in debug output

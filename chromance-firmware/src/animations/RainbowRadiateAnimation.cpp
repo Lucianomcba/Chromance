@@ -3,6 +3,7 @@
 #include "../LedController.h"
 #include "../Topology.h"
 #include "../Constants.h"
+#include "ColorConversion.h"
 #include <math.h>
 
 void RainbowRadiateAnimation::run()
@@ -76,14 +77,14 @@ void RainbowRadiateAnimation::update()
 
             // Map distance + phase to hue space
             float hueValue = (normalizedDistance * 65536.0f + phaseOffset);
-            uint16_t hue = (uint16_t)hueValue % 65536;
+            uint16_t hue = ColorConversion::hue(hueValue);
 
             // Apply rainbow color to this pixel
             // Brightness is reduced to prevent ESP32 crash due to high power draw from the LED wall
             int brightness = controller.getConfiguration().getRainbowBrightness();
             if (brightness > 40) brightness = 40; // Hard cap for safety
             
-            uint32_t color = controller.getLedController().ColorHSV(hue, 255, brightness);
+            uint32_t color = controller.getLedController().ColorHSV(hue, 255, ColorConversion::channel(brightness));
             byte r = (uint8_t)(color >> 16);
             byte g = (uint8_t)(color >> 8);
             byte b = (uint8_t)(color);

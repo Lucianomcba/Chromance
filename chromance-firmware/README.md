@@ -92,6 +92,14 @@ This guide will walk you through compiling and uploading the firmware to your Ch
     - Use the portal to select your home WiFi network and enter the password. The device will then connect to your network.
     - It is highly recommended to assign a static IP address to your Chromance via your router's settings. This makes OTA updates much easier.
 
+The `esp-wrover-kit-7_1_3` environment pins the deployed official `v7.1.3` Git
+tag; `esp-wrover-kit` retains 6.9.0 as an alternative. Both use Arduino 2.0.17.
+Normal builds start automatic switching on boot and after timer wake. The
+modeled total current limit remains 1.5 A, including controller and LED idle
+allowances. Global settings include a manual-mode timeout (default 10 minutes,
+0 disables automatic resume). See [recovery, sleep, and auto-resume validation](docs/Smooth_Animations.md)
+for artifact identities, power assumptions, and the OTA authentication caveat.
+
 ## Development & Testing
 
 This project includes powerful tools to help you develop and test animations without needing to constantly upload to the ESP32.
@@ -104,6 +112,10 @@ To run the tests, execute the following script:
 ```bash
 ./run_tests.sh
 ```
+
+The script runs native `make` on macOS, Linux, or inside WSL. It uses ArduinoJson
+from the PlatformIO dependency directory. To use a separate installation, pass
+`./run_tests.sh ARDUINOJSON_DIR=/path/to/ArduinoJson/src`.
 
 ### CLI Emulator
 
@@ -125,8 +137,9 @@ You can pass arguments to control the emulation:
 | `-d`, `--duration` | `<ms>` | Run the emulator for a specific duration in milliseconds. |
 | `-a`, `--animation`| `<id>` | Force a specific animation to run. |
 | `-m`, `--multiplier`| `<float>` | Speed up or slow down time (e.g., `2.0` for 2x speed). |
+| `--validate-sleep` | None | Run concurrent shutdown controls and verify the final mock strip output stays black. |
 
-**Example:** Run the "Cube" animation (ID 1) for 10 seconds at double speed.
+**Example:** Run "Bouncing Balls" (ID 1) for 10 seconds at double speed.
 ```bash
 ./run_emulator.sh -d 10000 -a 1 -m 2.0
 ```
@@ -176,9 +189,12 @@ You can pass arguments to control the emulation:
     ```
 
 4.  **Register the Animation**:
-    - Open `src/AnimationController.cpp`.
-    - Include your new animation's header file.
-    - In the `AnimationController::init()` method, add your new animation to the `animations` array.
+    - Include `../AnimationRegistry.h` in the animation's `.cpp` file and add
+      `REGISTER_ANIMATION(MyAnimation)`.
+    - Append its class name to the stable ID list in `src/AnimationRegistry.h`.
+      Existing IDs must remain in place because saved configuration uses them.
+    - For continuous color fields, subclass `SmoothAnimation` to reuse topology
+      interpolation, elapsed-time motion, and palette controls.
 
 5.  **Test with the Emulator**:
     - Run `./run_emulator.sh` and pass the ID of your new animation to see it in action!
@@ -204,6 +220,11 @@ void setConfig(const JsonObject &doc) override {
 Once connected to your network, you can access the web interface by navigating to the device's IP address in a web browser. The interface allows for real-time control of animations and settings.
 
 ## Available Animations
+
+Five new effects emphasize smooth color flow across the wall: **Aurora** (24),
+**Color Waves** (25), **Lava Lamp** (26), **Noise Drift** (27), and **Ocean Waves**
+(28). Each has speed, pattern scale, brightness, and palette controls. See
+[smooth animation research and controls](docs/Smooth_Animations.md).
 
 The firmware comes with a variety of built-in animations:
 

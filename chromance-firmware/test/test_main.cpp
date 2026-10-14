@@ -14,6 +14,7 @@
 #include "mocks/SPIFFS.h"
 #include "Configuration.h"
 #include "Topology.h"
+#include "helpers/SleepRaceValidation.h"
 
 namespace ArduinoMock
 {
@@ -237,6 +238,8 @@ int main(int argc, char *argv[])
 {
   long duration = 0;
   bool durationSet = false;
+  bool listOnly = false;
+  bool validateSleep = false;
   int forceAnimation = -1;
   bool animationSet = false;
   float timeSpeed = 1.0f;
@@ -246,7 +249,15 @@ int main(int argc, char *argv[])
   for (int i = 1; i < argc; ++i)
   {
     std::string arg = argv[i];
-    if (arg == "-m" || arg == "--multiplier" || arg == "--speed")
+    if (arg == "--validate-sleep")
+    {
+      validateSleep = true;
+    }
+    else if (arg == "-l" || arg == "--list")
+    {
+      listOnly = true;
+    }
+    else if (arg == "-m" || arg == "--multiplier" || arg == "--speed")
     {
       if (i + 1 < argc)
       {
@@ -298,6 +309,20 @@ int main(int argc, char *argv[])
   ledController.begin();
   animationController.init();
 
+  if (validateSleep)
+  {
+    const auto unsafe = SleepRaceValidation::run(ledController, animationController, false);
+    std::cout << "Unguarded control: frame finishes after blackout; pixels "
+              << (unsafe.allPixelsBlack ? "black" : "relit") << "\n";
+    const auto guarded = SleepRaceValidation::run(ledController, animationController, true);
+    std::cout << "Render barrier: waited=" << guarded.waitedForFrame
+              << ", all physical pixels black=" << guarded.allPixelsBlack
+              << ", later frame blocked=" << guarded.laterFrameBlocked << "\n";
+    std::cout << "Host validation covers ordering and buffers; GPIO/RMT require hardware.\n";
+    return !unsafe.allPixelsBlack && guarded.waitedForFrame &&
+        guarded.allPixelsBlack && guarded.laterFrameBlocked ? 0 : 1;
+  }
+
   // Print available animations
   std::cout << "\nAvailable Animations:" << std::endl;
   for (int i = 0; i < animationController.getAnimationCount(); i++)
@@ -306,6 +331,7 @@ int main(int argc, char *argv[])
       std::cout << i << ": " << anim->getName() << std::endl;
   }
   std::cout << "----------------------\n" << std::endl;
+  if (listOnly) return 0;
 
   if (forceAnimation >= 0)
   {

@@ -9,6 +9,7 @@
 #include "mocks/Arduino.h"
 #include "mocks/SPIFFS.h"
 #include "Topology.h"
+#include "animations/Animation.h"
 
 // Mock Definitions
 namespace ArduinoMock
@@ -43,6 +44,14 @@ void reset_mocks()
   std::srand(12345);
 }
 
+int animationId(AnimationController& controller, const char* name)
+{
+  for (int i = 0; i < controller.getAnimationCount(); ++i)
+    if (std::string(controller.getAnimation(i)->getName()) == name) return i;
+  TEST_ASSERT(false);
+  return 255;
+}
+
 void test_random_animation()
 {
   TEST_CASE("RandomAnimation");
@@ -55,8 +64,7 @@ void test_random_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // RandomAnimation is index 14 (Alphabetical order)
-  animController.startAnimation(14);
+  animController.startAnimation(animationId(animController, "Random Pulse"));
 
   // RandomAnimation::run() immediately starts ripples at a random node.
 
@@ -90,8 +98,7 @@ void test_cube_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // CubeAnimation is index 4 (Alphabetical)
-  animController.startAnimation(4);
+  animController.startAnimation(animationId(animController, "Cube Pulse"));
 
   // It should spawn ripples immediately or over time
   // CubeAnimation::run() iterates over nodes and starts ripples
@@ -116,8 +123,7 @@ void test_starburst_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // StarburstAnimation is index 17 (Alphabetical)
-  animController.startAnimation(17);
+  animController.startAnimation(animationId(animController, "Starburst"));
 
   // Starburst spawns multiple ripples from a central node
   int count = animController.getActiveRippleCount();
@@ -137,8 +143,7 @@ void test_center_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // CenterAnimation is index 2 (Alphabetical)
-  animController.startAnimation(2);
+  animController.startAnimation(animationId(animController, "Center Pulse"));
 
   int count = animController.getActiveRippleCount();
   std::cout << "CenterAnimation Ripple Count: " << count << std::endl;
@@ -157,8 +162,7 @@ void test_rainbow_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // RainbowAnimation is index 11 (Alphabetical)
-  animController.startAnimation(11);
+  animController.startAnimation(animationId(animController, "Rainbow"));
 
   // Force a show to update the strips from the internal buffer
   ledController.show();
@@ -201,8 +205,7 @@ void test_chase_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // ChaseAnimation is index 3 (Alphabetical)
-  animController.startAnimation(3);
+  animController.startAnimation(animationId(animController, "Chase"));
 
   // Should have exactly 2 ripples initially (runner and chaser)
   int count = animController.getActiveRippleCount();
@@ -241,8 +244,7 @@ void test_heartbeat_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // HeartbeatAnimation is index 8 (Alphabetical)
-  animController.startAnimation(8);
+  animController.startAnimation(animationId(animController, "Heartbeat"));
 
   // Run update to set the LEDs
   animController.update();
@@ -282,8 +284,7 @@ void test_wave_animation()
   animController.init();
   animController.setAutoSwitching(false);
 
-  // WaveAnimation is index 19
-  animController.startAnimation(19);
+  animController.startAnimation(animationId(animController, "Wave"));
 
   // Run update
   animController.update();
@@ -306,6 +307,15 @@ void test_wave_animation()
   TEST_ASSERT(anyLit);
 }
 
+#include "test_flow.h"
+#include "test_ripple_flow.h"
+#include "test_color_ranges.h"
+#include "test_power_limit.h"
+#include "test_transitions.h"
+#include "test_sleep_shutdown.h"
+#include "test_auto_resume.h"
+#include "test_sleep_race.h"
+
 int main()
 {
   std::cout << "Starting Animation Tests..." << std::endl;
@@ -318,6 +328,14 @@ int main()
   test_chase_animation();
   test_heartbeat_animation();
   test_wave_animation();
+  test_smooth_animations();
+  test_ripple_flow();
+  test_color_ranges();
+  test_power_limit();
+  test_transitions();
+  test_sleep_shutdown();
+  test_auto_resume();
+  test_sleep_race();
 
   std::cout << "\nTest Summary:" << std::endl;
   std::cout << "Passed: " << tests_passed << std::endl;

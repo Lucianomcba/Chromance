@@ -1,6 +1,7 @@
 #include "AnimationController.h"
 #include "AnimationRegistry.h"
 #include "animations/Animation.h"
+#include "RuntimeLock.h"
 
 AnimationController::AnimationController(LedController &controller, Configuration &config)
     : ledController(controller), configuration(config)
@@ -25,6 +26,7 @@ AnimationController::~AnimationController()
 
 void AnimationController::recalculateAutoPulseTypes()
 {
+  RuntimeLock guard;
   numberOfAutoPulseTypes = 0;
   for (auto anim : animations)
   {
@@ -37,6 +39,7 @@ void AnimationController::recalculateAutoPulseTypes()
 
 void AnimationController::init()
 {
+  RuntimeLock guard;
   if (animations.empty())
   {
     auto entries = AnimationRegistry::getInstance().getSortedEntries();
@@ -54,6 +57,15 @@ void AnimationController::init()
 
 void AnimationController::update()
 {
+  RuntimeLock guard;
+  if (autoResumePending &&
+      uint32_t(uint32_t(millis()) - manualPauseStartedAt) >=
+          uint32_t(configuration.getAutoResumeMinutes()) * 60000U)
+  {
+    // Resume through the normal scheduling path below; never run an effect
+    // twice or advance a ripple twice when the manual window expires.
+    setAutoSwitching(true);
+  }
   // Fade all dots to create trails
   float decay = 0.97f;
   ledController.fade(decay);
@@ -63,9 +75,6 @@ void AnimationController::update()
   {
     ripples[i].advance(ledController);
   }
-
-  // Show strips
-  ledController.show();
 
   // Update current animation
   if (currentAutoPulseType < animations.size() && animations[currentAutoPulseType])
@@ -90,15 +99,16 @@ void AnimationController::update()
     {
       if (autoSwitching)
       {
-        if (currentAutoPulseType < animations.size() && animations[currentAutoPulseType])
+        const byte previous = currentAutoPulseType;
+        const byte next = getNextAnimation();
+        // Continuous effects keep their phase throughout their 30-second slot.
+        // Finite effects can still launch a new pulse every two seconds.
+        if (previous != next ||
+            (previous < animations.size() && animations[previous]->isFinished()))
         {
-          animations[currentAutoPulseType]->stop();
+          baseColor = random(0xFFFF);
+          startAnimation(next);
         }
-
-        baseColor = random(0xFFFF);
-
-        getNextAnimation();
-        startAnimation(currentAutoPulseType);
 
         lastRandomPulse = millis();
       }
@@ -114,6 +124,9 @@ void AnimationController::update()
       }
     }
   }
+
+  // Present this frame, after the animation has rendered it.
+  ledController.show();
 }
 
 void AnimationController::rollNewBaseColor()
@@ -127,7 +140,7 @@ void AnimationController::rollNewBaseColor()
     baseColor = (prev + 0x8000) & 0xFFFF;
 }
 
-void AnimationController::getNextAnimation()
+byte AnimationController::getNextAnimation()
 {
   if (currentAutoPulseType == 255 || (numberOfAutoPulseTypes > 1 && millis() - lastAutoPulseChange >= Constants::RIPPLE_TIMEOUT))
   {
@@ -147,17 +160,29 @@ void AnimationController::getNextAnimation()
 
       if (animations[possiblePulse] != nullptr && animations[possiblePulse]->isEnabled())
       {
-        currentAutoPulseType = possiblePulse;
-        lastAutoPulseChange = millis();
-        break;
+        return possiblePulse;
       }
       attempts++;
     }
   }
+  return currentAutoPulseType;
 }
 
 void AnimationController::startAnimation(byte animation)
 {
+  RuntimeLock guard;
+  if (animation >= animations.size() || !animations[animation]) return;
+  if (animation != currentAutoPulseType)
+  {
+    if (currentAutoPulseType < animations.size() && animations[currentAutoPulseType])
+      animations[currentAutoPulseType]->stop();
+    // A different effect owns a fresh canvas and ripple pool. Re-running the
+    // same finite effect intentionally preserves overlapping pulses/trails.
+    for (auto &ripple : ripples) ripple.state = STATE_DEAD;
+    Ripple::runnerNode = -1;
+    ledController.clear();
+    lastAutoPulseChange = millis();
+  }
   currentAutoPulseType = animation;
   if (animation < animations.size() && animations[animation])
   {
@@ -168,10 +193,9 @@ void AnimationController::startAnimation(byte animation)
 
 void AnimationController::changeAnimation(byte animation)
 {
-  if (currentAutoPulseType < animations.size() && animations[currentAutoPulseType])
-  {
-    animations[currentAutoPulseType]->stop();
-  }
+  RuntimeLock guard;
+  if (animation >= animations.size()) return;
+  if (!autoSwitching) restartAutoResumeTimer();
   rollNewBaseColor();
   startAnimation(animation);
 }
@@ -239,8 +263,32 @@ int AnimationController::getActiveRippleCount() const
 
 void AnimationController::setAutoSwitching(bool enabled)
 {
+  RuntimeLock guard;
   autoSwitching = enabled;
+  if (enabled) autoResumePending = false;
+  else restartAutoResumeTimer();
   notifyStateChange();
+}
+
+void AnimationController::restartAutoResumeTimer()
+{
+  manualPauseStartedAt = uint32_t(millis());
+  autoResumePending = configuration.getAutoResumeMinutes() > 0;
+}
+
+void AnimationController::onAutoResumeSettingChanged()
+{
+  RuntimeLock guard;
+  if (!autoSwitching) restartAutoResumeTimer();
+  notifyStateChange();
+}
+
+uint32_t AnimationController::getAutoResumeRemainingSeconds() const
+{
+  if (!autoResumePending) return 0;
+  const uint32_t duration = uint32_t(configuration.getAutoResumeMinutes()) * 60000U;
+  const uint32_t elapsed = uint32_t(uint32_t(millis()) - manualPauseStartedAt);
+  return elapsed >= duration ? 0 : (duration - elapsed + 999U) / 1000U;
 }
 
 Ripple &AnimationController::getRipple(int index)

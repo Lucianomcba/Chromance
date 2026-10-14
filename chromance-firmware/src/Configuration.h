@@ -19,6 +19,12 @@ public:
     int getRainbowBrightness() const { return rainbowBrightness; }
     void setRainbowBrightness(int brightness);
 
+    // 0 keeps manual mode indefinitely. Changing the window while paused
+    // starts a fresh countdown from the setting change.
+    static constexpr int MAX_AUTO_RESUME_MINUTES = 1440;
+    int getAutoResumeMinutes() const { return autoResumeMinutes; }
+    void setAutoResumeMinutes(int minutes);
+
     void serialize(JsonObject &doc);
     void deserialize(const JsonObject &doc);
 
@@ -28,6 +34,7 @@ public:
 private:
     bool sleepEnabled;
     int rainbowBrightness;
+    int autoResumeMinutes;
     const char *configFilename = "/config.json";
     AnimationController* animationController = nullptr;
 };

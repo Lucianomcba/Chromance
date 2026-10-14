@@ -2,6 +2,7 @@
 #include "../AnimationController.h"
 #include "../Topology.h"
 #include "../Constants.h"
+#include "ColorConversion.h"
 #include <cmath>
 
 void WaveAnimation::run()
@@ -57,11 +58,11 @@ void WaveAnimation::update()
             brightness = brightness * brightness;
 
             // Scale to 0-255
-            uint8_t v = (uint8_t)(brightness * 255);
+            uint8_t v = ColorConversion::channel(brightness * 255);
             
             // Change color on each wave by basing hue on phase
             // ~10000 units per radian gives a good color spread
-            uint16_t ledHue = baseHue + (uint16_t)(phase * 5000);
+            uint16_t ledHue = baseHue + ColorConversion::hue(phase * 5000);
             
             uint32_t color = leds.ColorHSV(ledHue, 255, v);
             

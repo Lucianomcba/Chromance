@@ -3,6 +3,7 @@
 #include "../LedController.h"
 #include "../Topology.h"
 #include "../Constants.h"
+#include "ColorConversion.h"
 #include <math.h>
 
 #ifndef M_PI
@@ -52,13 +53,14 @@ void RainbowPinwheelAnimation::update()
             // Convert angle to hue space (0 to 65536)
             // Normalize angle to 0-2PI, then scale to 0-65536
             float normalizedAngle = angle + M_PI; // Shift from [-PI, PI] to [0, 2PI]
-            uint16_t angleHue = (uint16_t)(normalizedAngle * 65536.0f / (2.0f * M_PI));
+            uint16_t angleHue = ColorConversion::hue(normalizedAngle * 65536.0f / (2.0f * M_PI));
 
             // Apply rotation offset and calculate final hue
-            uint16_t hue = (angleHue + (uint16_t)rotationOffset) % 65536;
+            uint16_t hue = angleHue + ColorConversion::hue(rotationOffset);
 
             // Apply rainbow color to this pixel
-            uint32_t color = controller.getLedController().ColorHSV(hue, 255, controller.getConfiguration().getRainbowBrightness());
+            uint32_t color = controller.getLedController().ColorHSV(hue, 255,
+                ColorConversion::channel(controller.getConfiguration().getRainbowBrightness()));
             byte r = (uint8_t)(color >> 16);
             byte g = (uint8_t)(color >> 8);
             byte b = (uint8_t)(color);
