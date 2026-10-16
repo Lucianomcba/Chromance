@@ -1,83 +1,83 @@
 #include "HeartbeatAnimation.h"
 #include "../AnimationController.h"
 #include "../Constants.h"
+#include "../Topology.h"
+#include <cmath>
+
+namespace {
+constexpr uint32_t FIRST_END_MS = 280;
+constexpr uint32_t SECOND_START_MS = 400;
+constexpr uint32_t SECOND_END_MS = 670;
+
+float beat(uint32_t elapsed, uint32_t start, uint32_t holdEnd, uint32_t end)
+{
+  if (elapsed < start || elapsed >= end) return 0.0f;
+  const uint32_t attackEnd = start + 50;
+  if (elapsed < attackEnd) return float(elapsed - start) / 50.0f;
+  if (elapsed <= holdEnd) return 1.0f;
+  return float(end - elapsed) / float(end - holdEnd);
+}
+}
+
+void HeartbeatAnimation::buildPulseMask()
+{
+  int minX = Topology::nodePositions[0].x, maxX = minX;
+  int minY = Topology::nodePositions[0].y, maxY = minY;
+  for (const auto& node : Topology::nodePositions) {
+    if (node.x < minX) minX = node.x;
+    if (node.x > maxX) maxX = node.x;
+    if (node.y < minY) minY = node.y;
+    if (node.y > maxY) maxY = node.y;
+  }
+  const float width = maxX > minX ? maxX - minX : 1;
+  const float height = maxY > minY ? maxY - minY : 1;
+  const auto center = Topology::nodePositions[Topology::starburstNode];
+  for (int segment = 0; segment < Constants::NUMBER_OF_SEGMENTS; ++segment) {
+    const auto top = Topology::nodePositions[Topology::segmentConnections[segment][0]];
+    const auto bottom = Topology::nodePositions[Topology::segmentConnections[segment][1]];
+    for (int led = 0; led < Constants::LEDS_PER_SEGMENT; ++led) {
+      const float f = Constants::LEDS_PER_SEGMENT > 1
+          ? float(led) / (Constants::LEDS_PER_SEGMENT - 1) : 0.5f;
+      const float x = bottom.x + (top.x - bottom.x) * f;
+      const float y = bottom.y + (top.y - bottom.y) * f;
+      const float dx = 2.0f * (x - center.x) / width;
+      const float dy = 2.0f * (y - center.y) / height;
+      float core = 1.0f - std::sqrt(dx * dx + dy * dy) / 0.55f;
+      if (core < 0.0f) core = 0.0f;
+      // Concentrate the available current at the center. A uniform bright
+      // wall clips at the limiter and makes its beats nearly equal in output.
+      pulseLevels[segment][led] = static_cast<byte>(std::lround(3.0f + 180.0f * core * core));
+    }
+  }
+  maskReady = true;
+}
 
 void HeartbeatAnimation::run()
 {
-  startTime = millis();
+  if (!maskReady) buildPulseMask();
+  startTime = static_cast<uint32_t>(millis());
 }
 
 bool HeartbeatAnimation::isFinished()
 {
-  return (millis() - startTime) >= 1500;
+  return static_cast<uint32_t>(millis()) - startTime >= 1500U;
 }
 
 bool HeartbeatAnimation::canBePreempted()
 {
-  unsigned long t = (millis() - startTime);
-  // If we've finished at least one cycle, we can always be preempted
-  if (t >= 1500)
-    return true;
-  // During a cycle, only allow preemption after the beats (600ms)
-  return t > 600;
+  return static_cast<uint32_t>(millis()) - startTime >= SECOND_END_MS;
 }
 
 void HeartbeatAnimation::update()
 {
-  unsigned long t = millis() - startTime;
-
-  float brightness = 0.1f; // Base brightness (dim red)
-
-  // First beat ("lub") - Sharp attack, fast decay
-  if (t < 200)
-  {
-    float phase = t / 200.0f;
-    // Triangle wave: 0 -> 1 -> 0
-    // Peak at 50ms (0.25)
-    if (phase < 0.25f)
-      brightness += (phase / 0.25f) * 0.8f;
-    else
-      brightness += ((1.0f - phase) / 0.75f) * 0.8f;
-  }
-  // Second beat ("dub") - Slightly lower peak, slightly delayed
-  else if (t >= 300 && t < 600)
-  {
-    float phase = (t - 300) / 300.0f;
-    // Triangle wave
-    // Peak at 100ms into the beat (0.33)
-    if (phase < 0.33f)
-      brightness += (phase / 0.33f) * 0.6f;
-    else
-      brightness += ((1.0f - phase) / 0.67f) * 0.6f;
-  }
-
-  // Clamp brightness
-  if (brightness > 1.0f)
-    brightness = 1.0f;
-
-  // Calculate color (Red with calculated brightness)
-  // HSV: Hue 0 (Red), Sat 255, Val scaled by brightness
-  uint32_t color = controller.getLedController().ColorHSV(0, 255, (uint8_t)(100 * brightness));
-
-  // Apply to all LEDs
-  for (int segment = 0; segment < Constants::NUMBER_OF_SEGMENTS; segment++)
-  {
-    // Skip segments 2 and 3 (Node 1)
-    if (segment == 2 || segment == 3)
-    {
-      continue;
-    }
-
-    for (int led = 0; led < Constants::LEDS_PER_SEGMENT; led++)
-    {
-      // Extract RGB components from packed color
-      byte r = (uint8_t)(color >> 16);
-      byte g = (uint8_t)(color >> 8);
-      byte b = (uint8_t)(color);
-
-      controller.getLedController().setPixelColor(segment, led, r, g, b);
-    }
-  }
+  const uint32_t elapsed = static_cast<uint32_t>(millis()) - startTime;
+  const float strength = beat(elapsed, 0, 150, FIRST_END_MS)
+      + 0.65f * beat(elapsed, SECOND_START_MS, 520, SECOND_END_MS);
+  auto& leds = controller.getLedController();
+  for (int segment = 0; segment < Constants::NUMBER_OF_SEGMENTS; ++segment)
+    for (int led = 0; led < Constants::LEDS_PER_SEGMENT; ++led)
+      leds.setPixelColor(segment, led,
+          static_cast<byte>(std::lround(pulseLevels[segment][led] * strength)), 0, 0);
 }
 
 #include "../AnimationRegistry.h"

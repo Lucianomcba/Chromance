@@ -234,42 +234,60 @@ void test_chase_animation()
 
 void test_heartbeat_animation()
 {
-  TEST_CASE("HeartbeatAnimation");
+  TEST_CASE("Heartbeat has camera-visible double beats after physical power limiting");
   reset_mocks();
+  LedController leds;
+  Configuration config;
+  AnimationController controller(leds, config);
+  leds.begin();
+  controller.init();
+  controller.setAutoSwitching(false);
+  controller.startAnimation(animationId(controller, "Heartbeat"));
 
-  LedController ledController;
-  Configuration configuration;
-  AnimationController animController(ledController, configuration);
-  ledController.begin();
-  animController.init();
-  animController.setAutoSwitching(false);
+  auto frame = [&](uint32_t elapsed) {
+    ArduinoMock::setMillis(elapsed);
+    controller.update();
+    int peak = 0;
+    for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
+      for (uint32_t color : leds.getStrip(strip)->latchedPixels)
+        peak = std::max(peak, int((color >> 16) & 255));
+    return peak;
+  };
+  auto allBlack = [&]() {
+    for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
+      for (uint32_t color : leds.getStrip(strip)->latchedPixels)
+        if (color != 0) return false;
+    return true;
+  };
 
-  animController.startAnimation(animationId(animController, "Heartbeat"));
+  frame(0);
+  TEST_ASSERT(allBlack());
+  const int firstPeak = frame(80);
+  TEST_ASSERT(firstPeak >= 140);
+  TEST_ASSERT(!controller.getAnimation(9)->canBePreempted());
+  TEST_ASSERT(frame(140) == firstPeak); // Hold long enough for camera frames.
+  frame(320);
+  TEST_ASSERT(allBlack()); // Distinct gap between lub and dub.
+  const int secondPeak = frame(470);
+  TEST_ASSERT(secondPeak >= 80 && secondPeak < firstPeak);
+  TEST_ASSERT(frame(510) == secondPeak);
+  frame(800);
+  TEST_ASSERT(allBlack());
+  TEST_ASSERT(controller.getAnimation(9)->canBePreempted());
+  frame(1400);
+  TEST_ASSERT(allBlack()); // No red floor hiding the pulse.
 
-  // Run update to set the LEDs
-  animController.update();
-
-  // Force a show to push internal buffer to the strip mock (since update() showed the *previous* frame)
-  ledController.show();
-
-  // HeartbeatAnimation uses setPixelColor directly, not ripples.
-  // Check if LEDs are lit.
-  bool anyLit = false;
-  auto strip = ledController.getStrip(0);
-  if (strip)
-  {
-    for (int i = 0; i < strip->numPixels(); i++)
-    {
-      if (strip->getPixelColor(i) != 0)
-      {
-        anyLit = true;
-        break;
-      }
-    }
-  }
-
-  std::cout << "HeartbeatAnimation LEDs Lit: " << (anyLit ? "Yes" : "No") << std::endl;
-  TEST_ASSERT(anyLit);
+  // The same waveform must survive the physical device's millis rollover.
+  const uint32_t start = UINT32_MAX - 39U;
+  ArduinoMock::setMillis(start);
+  controller.startAnimation(9);
+  ArduinoMock::setMillis(uint32_t(start + 80U));
+  controller.update();
+  int wrapPeak = 0;
+  for (int strip = 0; strip < Constants::NUMBER_OF_STRIPS; ++strip)
+    for (uint32_t color : leds.getStrip(strip)->latchedPixels)
+      wrapPeak = std::max(wrapPeak, int((color >> 16) & 255));
+  TEST_ASSERT(wrapPeak == firstPeak);
 }
 
 void test_wave_animation()

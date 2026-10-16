@@ -14,7 +14,10 @@ public:
   const char *getName() const override { return "Heartbeat"; }
 
 private:
-  unsigned long startTime;
+  uint32_t startTime = 0;
+  bool maskReady = false;
+  byte pulseLevels[Constants::NUMBER_OF_SEGMENTS][Constants::LEDS_PER_SEGMENT];
+  void buildPulseMask();
 };
 
 #endif

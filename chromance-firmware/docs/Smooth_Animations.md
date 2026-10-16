@@ -115,3 +115,16 @@ Live validation temporarily selected a one-minute window and manual Color Waves.
 `POST /api/sleep/test` queues one fixed validation nap: a 1-second response grace, normal blackout, a 5-second dark observation pause, and 30 seconds of deep sleep. It rejects an active OTA update or another queued sleep. It does not alter the overnight preference. Two device cycles went offline and returned after about 40.8 seconds; both reported reset reason 8 and timer wake cause 4, with automatic switching and the 10-minute timeout restored. The first physical cycle was not observed by the user. On the coordinated repeat, the user reported all LEDs dark. The five-second pause distinguishes a failed black transfer from a change at sleep entry; it is only used by the explicit validation endpoint, not scheduled nightly sleep.
 
 Build usage: 61,220 bytes RAM and 1,381,525 bytes application flash. Deployed image SHA-256: `cf839b266eb3af8e95e7fae6a054c1fb251dbbe0daf0b3bbcdbdc4161ae0b2de`. [Device evidence](sleep-auto-resume-validation.json) records both cycles and the live timeout samples. Native tests prove software invariants; the physical observation and reported timer wake provide the hardware evidence.
+
+
+## Heartbeat camera contrast
+
+On October 16, 2026, Heartbeat was changed to make its beat visible on camera. The previous full-wall red waveform retained a red level of 10 at rest and clipped both beat peaks to 14 under the current limiter. Increasing the requested peak alone would therefore barely change the displayed pulse.
+
+The revised effect has two distinct red punches concentrated around the sculpture's central node. The first has a 50 ms attack and a 100 ms peak hold; the weaker second begins at 400 ms and holds its peak for 70 ms. It returns to true black between the beats and throughout the rest of the existing two-second scheduler cycle. A cached spatial mask keeps per-frame work small. The modeled total current limit remains 1.5 A.
+
+Native physical-strip samples after limiting measured peak red 166 for the first beat, 119 for the second, and 0 at rest. The previous values were 14, 14, and 10. Maximum modeled current in the sampled cycle was 1,470.47 mA, including fixed allowances. [Before/after captures](heartbeat-contrast.png) and [measurements](heartbeat-contrast-validation.json) record the result; these channel values are not camera exposure measurements.
+
+The regression check failed against the prior implementation and passes after the change. It verifies post-limit contrast, full black gaps, camera-length peak holds, beat preemption, and millis rollover. The full native suite passes 2,927 assertions, including ASan/UBSan. Heartbeat also ran for six seconds in the CLI emulator (91 sampled frames), and the post-limit capture was inspected.
+
+Firmware revision `heartbeat-contrast-1` was deployed by OTA on official Espressif32 7.1.3 / Arduino 2.0.17. The user confirmed the stronger central double pulse is clearly visible on camera. Heartbeat was selected for preview, with the existing 10-minute automatic-resume window. Image SHA-256: `fda08f79f5eb2c33e9d8d0cccd9710f6b667caca793bc676d602bfa46ccd9782`; build usage 61,220 bytes static RAM and 1,381,849 bytes application flash.

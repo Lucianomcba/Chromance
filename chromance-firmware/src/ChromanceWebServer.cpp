@@ -433,7 +433,7 @@ String ChromanceWebServer::getStatusJson()
     JsonDocument doc;
     doc["type"] = "status";
     doc["uptimeMs"] = millis();
-    doc["firmwareRevision"] = "sleep-auto-resume-1";
+    doc["firmwareRevision"] = "heartbeat-contrast-1";
 #ifdef ESP32
     doc["freeHeap"] = ESP.getFreeHeap();
     doc["resetReason"] = static_cast<int>(esp_reset_reason());

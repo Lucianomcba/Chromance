@@ -1,0 +1,35 @@
+{
+  "sampleStepMs": 20,
+  "durationMs": 2000,
+  "physicalPixels": 560,
+  "modelLimitMa": 1500,
+  "beforeAndAfter": {
+    "before": {
+      "peakPhysicalRed": 14,
+      "restPhysicalRed": 10,
+      "secondBeatPhysicalRed": 14,
+      "maximumModeledCurrentMa": 1494.16
+    },
+    "after": {
+      "peakPhysicalRed": 166,
+      "restPhysicalRed": 0,
+      "secondBeatPhysicalRed": 119,
+      "maximumModeledCurrentMa": 1470.47
+    }
+  },
+  "testsPassed": 2927,
+  "verifiedAt": "2026-10-16T16:27:45.680704+00:00",
+  "firmwareRevision": "heartbeat-contrast-1",
+  "firmwareSha256": "fda08f79f5eb2c33e9d8d0cccd9710f6b667caca793bc676d602bfa46ccd9782",
+  "physicalFeedback": "User confirmed the stronger central double pulse is clearly visible on camera",
+  "nativeAssertionsPassed": 2927,
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer"
+  ],
+  "cliRun": {
+    "animationId": 9,
+    "durationMs": 6000,
+    "sampledFrames": 91
+  }
+}
