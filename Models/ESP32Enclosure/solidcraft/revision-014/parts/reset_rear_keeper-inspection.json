@@ -1,0 +1,72 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 802.4491385457311,
+        "bbox": {
+          "max": [
+            -2.400000000000011,
+            11.0,
+            4.850000000000001
+          ],
+          "min": [
+            -23.20000000000001,
+            -3.0,
+            0.0
+          ]
+        },
+        "center_of_mass": [
+          -12.678977927685068,
+          4.000000000000001,
+          1.277202829249909
+        ],
+        "edges": 42,
+        "face_types": {
+          "cylinder": 2,
+          "plane": 15
+        },
+        "faces": 17,
+        "kernel": {
+          "edges": 46,
+          "faces": 17,
+          "shells": 1,
+          "vertices": 32
+        },
+        "name": "reset_rear_keeper",
+        "vertices": 28,
+        "visible": true,
+        "volume_mm3": 631.0422878713543
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 1,
+    "metadata": {},
+    "name": "reset_rear_keeper",
+    "params": [],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/revision-014/parts/reset_rear_keeper.json",
+    "redo": 0,
+    "revision": 2,
+    "selection": [],
+    "sketches": [],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 5,
+        "ms": 4.335207,
+        "name": "reset_rear_keeper",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "BaseFeature",
+        "warning": null
+      }
+    ],
+    "undo": 0,
+    "units": "mm"
+  }
+]

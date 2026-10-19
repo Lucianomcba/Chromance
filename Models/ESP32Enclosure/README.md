@@ -1,5 +1,10 @@
 # ESP32 desk enclosure
 
+**[SolidCraft project](solidcraft/README.md):** open the
+[complete enclosure](solidcraft/revision-014/enclosure.solidcraft), individual
+parts and quick fit prints in SolidCraft. This is an exact-solids conversion of
+revision 014, with editable imported bodies and preserved Python parametric source.
+
 Parametric enclosure for the pictured ESP32/perfboard controller, with console-inspired
 curves, chamfers, ventilation, an under-desk bracket and external EN/RESET and BOOT
 paddles. The [measurements](measurements/) distinguish the **49 × 70 × 1 mm

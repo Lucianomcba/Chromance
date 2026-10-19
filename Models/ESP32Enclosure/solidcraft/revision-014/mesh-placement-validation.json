@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "units": "mm",
+  "cases": [
+    {
+      "converted": "print-layout.3mf",
+      "preserved_original": "revisions/014-usb-clearance/print-layout.3mf",
+      "body_count": 15,
+      "maximum_bounds_difference_mm": 0.0016316022,
+      "maximum_relative_volume_difference": 0.00014855041663058214,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    },
+    {
+      "converted": "fit-tests/print-layout.3mf",
+      "preserved_original": "fit-tests/009-usb-clearance/print-layout.3mf",
+      "body_count": 13,
+      "maximum_bounds_difference_mm": 0.0016316022,
+      "maximum_relative_volume_difference": 0.00014826228379239727,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    },
+    {
+      "converted": "fit-tests/replacements-only.3mf",
+      "preserved_original": "fit-tests/009-usb-clearance/replacements-only.3mf",
+      "body_count": 3,
+      "maximum_bounds_difference_mm": 0.0016329999999982192,
+      "maximum_relative_volume_difference": 0.00013177431751994827,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  ]
+}

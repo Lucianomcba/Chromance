@@ -1,0 +1,73 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 16453.82191289816,
+        "bbox": {
+          "max": [
+            36.35000000000001,
+            47.60000000000001,
+            12.200000000000006
+          ],
+          "min": [
+            -38.75000004048,
+            -47.60000000000001,
+            -2.4732993431086925e-12
+          ]
+        },
+        "center_of_mass": [
+          -0.37086616015008106,
+          -0.1902934516525283,
+          4.294619037110157
+        ],
+        "edges": 491,
+        "face_types": {
+          "cone": 12,
+          "cylinder": 42,
+          "plane": 135
+        },
+        "faces": 189,
+        "kernel": {
+          "edges": 507,
+          "faces": 189,
+          "shells": 1,
+          "vertices": 330
+        },
+        "name": "button_fit_frame",
+        "vertices": 314,
+        "visible": true,
+        "volume_mm3": 19933.446285935428
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 1,
+    "metadata": {},
+    "name": "button_fit_frame",
+    "params": [],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/revision-014/fit-tests/button_fit_frame.json",
+    "redo": 0,
+    "revision": 2,
+    "selection": [],
+    "sketches": [],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 5,
+        "ms": 47.379688,
+        "name": "Button fit registration frame",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "BaseFeature",
+        "warning": null
+      }
+    ],
+    "undo": 0,
+    "units": "mm"
+  }
+]

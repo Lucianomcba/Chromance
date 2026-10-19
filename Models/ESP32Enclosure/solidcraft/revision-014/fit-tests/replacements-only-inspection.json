@@ -1,0 +1,144 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 1920.5520923309887,
+        "bbox": {
+          "max": [
+            36.05,
+            19.5,
+            21.000000000000007
+          ],
+          "min": [
+            0.000019718774982635523,
+            3.500808496426089e-7,
+            7.105427357601002e-15
+          ]
+        },
+        "center_of_mass": [
+          22.85222139042416,
+          11.990384935308288,
+          10.417122890429379
+        ],
+        "edges": 117,
+        "face_types": {
+          "cylinder": 4,
+          "plane": 42
+        },
+        "faces": 46,
+        "kernel": {
+          "edges": 122,
+          "faces": 46,
+          "shells": 1,
+          "vertices": 81
+        },
+        "name": "reset_slider",
+        "vertices": 76,
+        "visible": true,
+        "volume_mm3": 2900.1183769398217
+      },
+      {
+        "area_mm2": 1830.113281441643,
+        "bbox": {
+          "max": [
+            80.1,
+            12.499999649919145,
+            21.000000000000007
+          ],
+          "min": [
+            44.05001971877499,
+            0.0,
+            5.828670879282072e-15
+          ]
+        },
+        "center_of_mass": [
+          67.55598117724273,
+          6.161347547555418,
+          10.282305136034298
+        ],
+        "edges": 130,
+        "face_types": {
+          "cylinder": 4,
+          "plane": 46
+        },
+        "faces": 50,
+        "kernel": {
+          "edges": 135,
+          "faces": 50,
+          "shells": 1,
+          "vertices": 90
+        },
+        "name": "boot_slider",
+        "vertices": 85,
+        "visible": true,
+        "volume_mm3": 2702.9971637320436
+      },
+      {
+        "area_mm2": 1814.1945579536814,
+        "bbox": {
+          "max": [
+            111.3,
+            14.0,
+            11.800000000000004
+          ],
+          "min": [
+            88.1,
+            0.0,
+            -7.105427357601002e-15
+          ]
+        },
+        "center_of_mass": [
+          103.27913967887639,
+          6.852742860197949,
+          6.313153703061634
+        ],
+        "edges": 66,
+        "face_types": {
+          "cylinder": 2,
+          "plane": 23
+        },
+        "faces": 25,
+        "kernel": {
+          "edges": 70,
+          "faces": 25,
+          "shells": 1,
+          "vertices": 48
+        },
+        "name": "boot_frame",
+        "vertices": 44,
+        "visible": true,
+        "volume_mm3": 1913.0535903295465
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 1,
+    "metadata": {},
+    "name": "replacements-only",
+    "params": [],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/revision-014/fit-tests/replacements-only.json",
+    "redo": 0,
+    "revision": 2,
+    "selection": [],
+    "sketches": [],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 9,
+        "ms": 18.782383,
+        "name": "Three replacement pieces",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "BaseFeature",
+        "warning": null
+      }
+    ],
+    "undo": 0,
+    "units": "mm"
+  }
+]

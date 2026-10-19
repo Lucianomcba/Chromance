@@ -1,0 +1,506 @@
+{
+  "bodies": [
+    {
+      "area_mm2": 16453.821912899002,
+      "bbox": {
+        "max": [
+          75.10000004048901,
+          95.20000000000002,
+          12.200000000000035
+        ],
+        "min": [
+          8.995471034722868e-12,
+          -7.105427357601002e-15,
+          -2.451427949523577e-12
+        ]
+      },
+      "center_of_mass": [
+        38.37913387508267,
+        47.40970655296913,
+        4.2946190371118815
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 491,
+      "face_types": {
+        "cone": 12,
+        "cylinder": 42,
+        "plane": 135
+      },
+      "faces": 189,
+      "kernel": {
+        "edges": 507,
+        "faces": 189,
+        "shells": 1,
+        "vertices": 330
+      },
+      "mass_g": 25.714145708848218,
+      "material": "Default",
+      "name": "button_fit_frame",
+      "vertices": 314,
+      "volume_mm3": 19933.44628592885
+    },
+    {
+      "area_mm2": 226.20710900564654,
+      "bbox": {
+        "max": [
+          92.65000004048,
+          8.0,
+          2.0
+        ],
+        "min": [
+          83.10000004048,
+          0.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        88.10087213457396,
+        3.9999999999999964,
+        1.0000000000000002
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 15,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 6
+      },
+      "faces": 7,
+      "kernel": {
+        "edges": 17,
+        "faces": 7,
+        "shells": 1,
+        "vertices": 12
+      },
+      "mass_g": 0.1736900662731671,
+      "material": "Default",
+      "name": "pcb_clamp_left_front",
+      "vertices": 10,
+      "volume_mm3": 134.64346222726132
+    },
+    {
+      "area_mm2": 226.20710900564654,
+      "bbox": {
+        "max": [
+          110.20000004047999,
+          8.0,
+          2.0
+        ],
+        "min": [
+          100.65000004048,
+          0.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        105.650872134574,
+        3.999999999999998,
+        1.0000000000000007
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 15,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 6
+      },
+      "faces": 7,
+      "kernel": {
+        "edges": 17,
+        "faces": 7,
+        "shells": 1,
+        "vertices": 12
+      },
+      "mass_g": 0.17369006627316674,
+      "material": "Default",
+      "name": "pcb_clamp_left_rear",
+      "vertices": 10,
+      "volume_mm3": 134.64346222726104
+    },
+    {
+      "area_mm2": 226.2071090056466,
+      "bbox": {
+        "max": [
+          127.750000040489,
+          8.0,
+          2.0
+        ],
+        "min": [
+          118.200000040489,
+          0.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        122.74912794639492,
+        3.9999999999999987,
+        0.9999999999999976
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 15,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 6
+      },
+      "faces": 7,
+      "kernel": {
+        "edges": 17,
+        "faces": 7,
+        "shells": 1,
+        "vertices": 12
+      },
+      "mass_g": 0.17369006627316683,
+      "material": "Default",
+      "name": "pcb_clamp_right_front",
+      "vertices": 10,
+      "volume_mm3": 134.6434622272611
+    },
+    {
+      "area_mm2": 226.20710900564683,
+      "bbox": {
+        "max": [
+          145.30000004048,
+          8.0,
+          2.0
+        ],
+        "min": [
+          135.75000004048,
+          0.0,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        140.299127946386,
+        3.999999999999998,
+        1.0000000000000018
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 15,
+      "face_types": {
+        "cylinder": 1,
+        "plane": 6
+      },
+      "faces": 7,
+      "kernel": {
+        "edges": 17,
+        "faces": 7,
+        "shells": 1,
+        "vertices": 12
+      },
+      "mass_g": 0.1736900662731677,
+      "material": "Default",
+      "name": "pcb_clamp_right_rear",
+      "vertices": 10,
+      "volume_mm3": 134.64346222726175
+    },
+    {
+      "area_mm2": 1884.7945579536797,
+      "bbox": {
+        "max": [
+          176.50000004048,
+          14.0,
+          11.800000000000004
+        ],
+        "min": [
+          153.30000004047997,
+          0.0,
+          -7.105427357601002e-15
+        ]
+      },
+      "center_of_mass": [
+        168.22350472923694,
+        6.999999999999989,
+        6.377836145591819
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 66,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 23
+      },
+      "faces": 25,
+      "kernel": {
+        "edges": 70,
+        "faces": 25,
+        "shells": 1,
+        "vertices": 48
+      },
+      "mass_g": 2.5255227715250856,
+      "material": "Default",
+      "name": "reset_frame",
+      "vertices": 44,
+      "volume_mm3": 1957.7695903295237
+    },
+    {
+      "area_mm2": 1920.5520923309878,
+      "bbox": {
+        "max": [
+          36.05,
+          122.7,
+          21.000000000000007
+        ],
+        "min": [
+          0.000019718774982635523,
+          103.20000035008086,
+          7.105427357601002e-15
+        ]
+      },
+      "center_of_mass": [
+        22.852221390427168,
+        115.19038493531089,
+        10.41712289042946
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 117,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 42
+      },
+      "faces": 46,
+      "kernel": {
+        "edges": 122,
+        "faces": 46,
+        "shells": 1,
+        "vertices": 81
+      },
+      "mass_g": 3.74115270625194,
+      "material": "Default",
+      "name": "reset_slider",
+      "vertices": 76,
+      "volume_mm3": 2900.1183769394884
+    },
+    {
+      "area_mm2": 802.4491385457318,
+      "bbox": {
+        "max": [
+          64.85,
+          117.2,
+          4.850000000000001
+        ],
+        "min": [
+          44.04999999999999,
+          103.2,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        54.57102207231487,
+        110.20000000000014,
+        1.277202829249903
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 42,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 15
+      },
+      "faces": 17,
+      "kernel": {
+        "edges": 46,
+        "faces": 17,
+        "shells": 1,
+        "vertices": 32
+      },
+      "mass_g": 0.8140445513540463,
+      "material": "Default",
+      "name": "reset_rear_keeper",
+      "vertices": 28,
+      "volume_mm3": 631.0422878713538
+    },
+    {
+      "area_mm2": 41.410000000000096,
+      "bbox": {
+        "max": [
+          74.9,
+          107.3,
+          2.0
+        ],
+        "min": [
+          72.85,
+          103.2,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        73.87500000000031,
+        105.25000000000028,
+        1.0000000000000067
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.021684899999999688,
+      "material": "Default",
+      "name": "reset_moving_magnet_keeper",
+      "vertices": 8,
+      "volume_mm3": 16.809999999999757
+    },
+    {
+      "area_mm2": 1814.1945579536796,
+      "bbox": {
+        "max": [
+          106.1,
+          117.19999999999999,
+          11.800000000000004
+        ],
+        "min": [
+          82.89999999999999,
+          103.19999999999999,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        98.07913967887394,
+        110.0527428601946,
+        6.313153703061875
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 66,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 23
+      },
+      "faces": 25,
+      "kernel": {
+        "edges": 70,
+        "faces": 25,
+        "shells": 1,
+        "vertices": 48
+      },
+      "mass_g": 2.4678391315254076,
+      "material": "Default",
+      "name": "boot_frame",
+      "vertices": 44,
+      "volume_mm3": 1913.0535903297732
+    },
+    {
+      "area_mm2": 1830.113281441643,
+      "bbox": {
+        "max": [
+          150.15,
+          115.69999964991914,
+          21.000000000000007
+        ],
+        "min": [
+          114.10001971877499,
+          103.19999999999999,
+          3.3306690738754696e-15
+        ]
+      },
+      "center_of_mass": [
+        137.6059811772399,
+        109.3613475475503,
+        10.282305136034257
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 130,
+      "face_types": {
+        "cylinder": 4,
+        "plane": 46
+      },
+      "faces": 50,
+      "kernel": {
+        "edges": 135,
+        "faces": 50,
+        "shells": 1,
+        "vertices": 90
+      },
+      "mass_g": 3.486866341214069,
+      "material": "Default",
+      "name": "boot_slider",
+      "vertices": 85,
+      "volume_mm3": 2702.9971637318363
+    },
+    {
+      "area_mm2": 802.4491385457343,
+      "bbox": {
+        "max": [
+          178.95,
+          117.19999999999999,
+          4.850000000000001
+        ],
+        "min": [
+          158.14999999999998,
+          103.19999999999999,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        168.67102207231363,
+        110.19999999999905,
+        1.2772028292498847
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 42,
+      "face_types": {
+        "cylinder": 2,
+        "plane": 15
+      },
+      "faces": 17,
+      "kernel": {
+        "edges": 46,
+        "faces": 17,
+        "shells": 1,
+        "vertices": 32
+      },
+      "mass_g": 0.8140445513540752,
+      "material": "Default",
+      "name": "boot_rear_keeper",
+      "vertices": 28,
+      "volume_mm3": 631.0422878713761
+    },
+    {
+      "area_mm2": 41.410000000000096,
+      "bbox": {
+        "max": [
+          189.0,
+          107.3,
+          2.0
+        ],
+        "min": [
+          186.95,
+          103.2,
+          0.0
+        ]
+      },
+      "center_of_mass": [
+        187.97499999999434,
+        105.24999999999642,
+        0.9999999999999256
+      ],
+      "density_g_cm3": 1.29,
+      "edges": 12,
+      "face_types": {
+        "plane": 6
+      },
+      "faces": 6,
+      "kernel": {
+        "edges": 12,
+        "faces": 6,
+        "shells": 1,
+        "vertices": 8
+      },
+      "mass_g": 0.021684900000003157,
+      "material": "Default",
+      "name": "boot_moving_magnet_keeper",
+      "vertices": 8,
+      "volume_mm3": 16.810000000002447
+    }
+  ],
+  "body_count": 13,
+  "total": {
+    "area_mm2": 26496.02311569304,
+    "edges": 1038,
+    "faces": 409,
+    "mass_g": 40.301745827165504,
+    "vertices": 675,
+    "volume_mm3": 31241.66343191125
+  }
+}

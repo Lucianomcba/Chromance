@@ -1,0 +1,72 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 1884.7945579536834,
+        "bbox": {
+          "max": [
+            -2.4000000000000083,
+            11.0,
+            11.800000000000004
+          ],
+          "min": [
+            -25.600000000000016,
+            -3.0,
+            0.0
+          ]
+        },
+        "center_of_mass": [
+          -10.676495311243146,
+          3.9999999999999982,
+          6.377836145591848
+        ],
+        "edges": 66,
+        "face_types": {
+          "cylinder": 2,
+          "plane": 23
+        },
+        "faces": 25,
+        "kernel": {
+          "edges": 70,
+          "faces": 25,
+          "shells": 1,
+          "vertices": 48
+        },
+        "name": "reset_frame",
+        "vertices": 44,
+        "visible": true,
+        "volume_mm3": 1957.7695903295305
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 1,
+    "metadata": {},
+    "name": "reset_frame",
+    "params": [],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/revision-014/parts/reset_frame.json",
+    "redo": 0,
+    "revision": 2,
+    "selection": [],
+    "sketches": [],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 5,
+        "ms": 5.003273,
+        "name": "reset_frame",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "BaseFeature",
+        "warning": null
+      }
+    ],
+    "undo": 0,
+    "units": "mm"
+  }
+]

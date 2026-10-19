@@ -1,0 +1,73 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 35608.12014076939,
+        "bbox": {
+          "max": [
+            47.15,
+            47.60000000000001,
+            32.00000000000002
+          ],
+          "min": [
+            -47.15,
+            -47.60000000000001,
+            -2.451427949523577e-12
+          ]
+        },
+        "center_of_mass": [
+          1.6941543916855937,
+          -0.330668826151874,
+          11.977614681958968
+        ],
+        "edges": 763,
+        "face_types": {
+          "cone": 12,
+          "cylinder": 65,
+          "plane": 212
+        },
+        "faces": 289,
+        "kernel": {
+          "edges": 795,
+          "faces": 289,
+          "shells": 1,
+          "vertices": 522
+        },
+        "name": "body",
+        "vertices": 490,
+        "visible": true,
+        "volume_mm3": 46477.71751114089
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 1,
+    "metadata": {},
+    "name": "body",
+    "params": [],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/revision-014/parts/body.json",
+    "redo": 0,
+    "revision": 2,
+    "selection": [],
+    "sketches": [],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 5,
+        "ms": 68.986599,
+        "name": "body",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "BaseFeature",
+        "warning": null
+      }
+    ],
+    "undo": 0,
+    "units": "mm"
+  }
+]
