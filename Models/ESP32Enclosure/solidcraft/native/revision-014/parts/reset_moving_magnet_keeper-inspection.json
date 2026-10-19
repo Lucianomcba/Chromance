@@ -1,0 +1,2389 @@
+[
+  {
+    "active_sketch": null,
+    "bodies": [],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 0,
+    "metadata": {},
+    "name": "Untitled",
+    "params": [],
+    "path": null,
+    "redo": 0,
+    "revision": 1,
+    "selection": [],
+    "sketches": [],
+    "timeline": [],
+    "undo": 0,
+    "units": "mm"
+  },
+  {
+    "display_value": 49.0,
+    "name": "pcb_width",
+    "unit": "mm",
+    "value": 49.0
+  },
+  {
+    "favorite": true,
+    "name": "pcb_width"
+  },
+  {
+    "display_value": 70.0,
+    "name": "pcb_length",
+    "unit": "mm",
+    "value": 70.0
+  },
+  {
+    "favorite": true,
+    "name": "pcb_length"
+  },
+  {
+    "display_value": 1.0,
+    "name": "pcb_thickness",
+    "unit": "mm",
+    "value": 1.0
+  },
+  {
+    "display_value": 6.6,
+    "name": "solder_clearance",
+    "unit": "mm",
+    "value": 6.6
+  },
+  {
+    "display_value": 22.0,
+    "name": "component_clearance",
+    "unit": "mm",
+    "value": 22.0
+  },
+  {
+    "display_value": 8.0,
+    "name": "side_margin",
+    "unit": "mm",
+    "value": 8.0
+  },
+  {
+    "display_value": 9.0,
+    "name": "end_margin",
+    "unit": "mm",
+    "value": 9.0
+  },
+  {
+    "display_value": 2.4,
+    "name": "wall",
+    "unit": "mm",
+    "value": 2.4
+  },
+  {
+    "favorite": true,
+    "name": "wall"
+  },
+  {
+    "display_value": 2.4,
+    "name": "floor_thickness",
+    "unit": "mm",
+    "value": 2.4
+  },
+  {
+    "display_value": 2.4,
+    "name": "lid_thickness",
+    "unit": "mm",
+    "value": 2.4
+  },
+  {
+    "display_value": 0.3,
+    "name": "lid_fit_clearance",
+    "unit": "mm",
+    "value": 0.3
+  },
+  {
+    "favorite": true,
+    "name": "lid_fit_clearance"
+  },
+  {
+    "display_value": 2.0,
+    "name": "lid_skirt_depth",
+    "unit": "mm",
+    "value": 2.0
+  },
+  {
+    "display_value": 60.0,
+    "name": "left_access_length",
+    "unit": "mm",
+    "value": 60.0
+  },
+  {
+    "display_value": -1.0,
+    "name": "left_access_start_above_pcb",
+    "unit": "mm",
+    "value": -1.0
+  },
+  {
+    "display_value": 24.0,
+    "name": "end_cable_width",
+    "unit": "mm",
+    "value": 24.0
+  },
+  {
+    "display_value": 16.0,
+    "name": "end_cable_height",
+    "unit": "mm",
+    "value": 16.0
+  },
+  {
+    "display_value": 17.0,
+    "name": "clamp_y",
+    "unit": "mm",
+    "value": 17.0
+  },
+  {
+    "display_value": 1.3,
+    "name": "board_edge_overlap",
+    "unit": "mm",
+    "value": 1.3
+  },
+  {
+    "display_value": 0.2,
+    "name": "board_vertical_play",
+    "unit": "mm",
+    "value": 0.2
+  },
+  {
+    "display_value": 3.4,
+    "name": "m3_clearance",
+    "unit": "mm",
+    "value": 3.4
+  },
+  {
+    "display_value": 4.5,
+    "name": "desk_screw_clearance",
+    "unit": "mm",
+    "value": 4.5
+  },
+  {
+    "display_value": 3.2,
+    "name": "bracket_plate_thickness",
+    "unit": "mm",
+    "value": 3.2
+  },
+  {
+    "display_value": 8.0,
+    "name": "bracket_clearance_above_body",
+    "unit": "mm",
+    "value": 8.0
+  },
+  {
+    "display_value": 3.0,
+    "name": "corner_radius",
+    "unit": "mm",
+    "value": 3.0
+  },
+  {
+    "display_value": 0.8,
+    "name": "edge_bevel",
+    "unit": "mm",
+    "value": 0.8
+  },
+  {
+    "display_value": 1.2,
+    "name": "belt_projection",
+    "unit": "mm",
+    "value": 1.2
+  },
+  {
+    "display_value": 3.6,
+    "name": "belt_bottom",
+    "unit": "mm",
+    "value": 3.6
+  },
+  {
+    "display_value": 4.8,
+    "name": "belt_height",
+    "unit": "mm",
+    "value": 4.8
+  },
+  {
+    "display_value": 25.0,
+    "name": "vent_angle",
+    "unit": "deg",
+    "value": 0.4363323129985824
+  },
+  {
+    "display_value": 2.6,
+    "name": "lid_vent_width",
+    "unit": "mm",
+    "value": 2.6
+  },
+  {
+    "display_value": 0.4,
+    "name": "accent_depth",
+    "unit": "mm",
+    "value": 0.4
+  },
+  {
+    "display_value": 3.3,
+    "name": "button_inset_from_left_pcb_edge",
+    "unit": "mm",
+    "value": 3.3
+  },
+  {
+    "display_value": 6.0,
+    "name": "reset_switch_height_above_pcb",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 6.0,
+    "name": "boot_switch_height_above_pcb",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 0.8,
+    "name": "button_stroke",
+    "unit": "mm",
+    "value": 0.8
+  },
+  {
+    "display_value": 0.3,
+    "name": "button_guide_clearance",
+    "unit": "mm",
+    "value": 0.3
+  },
+  {
+    "favorite": true,
+    "name": "button_guide_clearance"
+  },
+  {
+    "display_value": 0.2,
+    "name": "modeled_switch_depression",
+    "unit": "mm",
+    "value": 0.2
+  },
+  {
+    "display_value": 9.2,
+    "name": "button_arm_height_above_pcb",
+    "unit": "mm",
+    "value": 9.2
+  },
+  {
+    "display_value": 4.0,
+    "name": "button_insert_pilot_diameter",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "display_value": 4.4,
+    "name": "button_insert_bore_depth",
+    "unit": "mm",
+    "value": 4.4
+  },
+  {
+    "display_value": 12.0,
+    "name": "reset_contact_screw_length",
+    "unit": "mm",
+    "value": 12.0
+  },
+  {
+    "display_value": 12.0,
+    "name": "boot_contact_screw_length",
+    "unit": "mm",
+    "value": 12.0
+  },
+  {
+    "display_value": 4.6,
+    "name": "button_contact_insert_outer_diameter",
+    "unit": "mm",
+    "value": 4.6
+  },
+  {
+    "display_value": 4.0,
+    "name": "button_contact_insert_pilot_diameter",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "favorite": true,
+    "name": "button_contact_insert_pilot_diameter"
+  },
+  {
+    "display_value": 5.0,
+    "name": "button_contact_insert_length",
+    "unit": "mm",
+    "value": 5.0
+  },
+  {
+    "display_value": 2.0,
+    "name": "desk_gap_above_case_floor",
+    "unit": "mm",
+    "value": 2.0
+  },
+  {
+    "display_value": 8.6,
+    "name": "bracket_leg_width_y",
+    "unit": "mm",
+    "value": 8.6
+  },
+  {
+    "display_value": 0.6,
+    "name": "bracket_belt_clearance",
+    "unit": "mm",
+    "value": 0.6
+  },
+  {
+    "display_value": 4.0,
+    "name": "bracket_root_gusset_height",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "display_value": 7.0,
+    "name": "finger_pad_extension",
+    "unit": "mm",
+    "value": 7.0
+  },
+  {
+    "favorite": true,
+    "name": "finger_pad_extension"
+  },
+  {
+    "display_value": 4.6,
+    "name": "lid_insert_outer_diameter",
+    "unit": "mm",
+    "value": 4.6
+  },
+  {
+    "display_value": 5.0,
+    "name": "lid_insert_length",
+    "unit": "mm",
+    "value": 5.0
+  },
+  {
+    "display_value": 4.0,
+    "name": "lid_insert_pilot_diameter",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "display_value": 6.0,
+    "name": "lid_insert_bore_depth",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 8.0,
+    "name": "lid_screw_length",
+    "unit": "mm",
+    "value": 8.0
+  },
+  {
+    "display_value": 4.6,
+    "name": "pcb_insert_outer_diameter",
+    "unit": "mm",
+    "value": 4.6
+  },
+  {
+    "display_value": 5.0,
+    "name": "pcb_insert_length",
+    "unit": "mm",
+    "value": 5.0
+  },
+  {
+    "display_value": 4.0,
+    "name": "pcb_insert_pilot_diameter",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "favorite": true,
+    "name": "pcb_insert_pilot_diameter"
+  },
+  {
+    "display_value": 6.0,
+    "name": "pcb_insert_bore_depth",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 6.0,
+    "name": "pcb_clamp_screw_length",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 8.8,
+    "name": "pcb_clamp_boss_diameter",
+    "unit": "mm",
+    "value": 8.8
+  },
+  {
+    "display_value": 4.9,
+    "name": "pcb_clamp_screw_offset_from_edge",
+    "unit": "mm",
+    "value": 4.9
+  },
+  {
+    "display_value": 8.4,
+    "name": "lid_corner_projection",
+    "unit": "mm",
+    "value": 8.4
+  },
+  {
+    "display_value": 8.0,
+    "name": "lid_corner_pad_height",
+    "unit": "mm",
+    "value": 8.0
+  },
+  {
+    "display_value": 45.0,
+    "name": "lid_corner_support_angle",
+    "unit": "deg",
+    "value": 0.7853981633974483
+  },
+  {
+    "display_value": 0.4,
+    "name": "lid_corner_wall_overlap",
+    "unit": "mm",
+    "value": 0.4
+  },
+  {
+    "display_value": 7.0,
+    "name": "cable_saddle_projection",
+    "unit": "mm",
+    "value": 7.0
+  },
+  {
+    "display_value": 1.0,
+    "name": "cable_saddle_wall_overlap",
+    "unit": "mm",
+    "value": 1.0
+  },
+  {
+    "display_value": 8.0,
+    "name": "cable_diameter_provisional",
+    "unit": "mm",
+    "value": 8.0
+  },
+  {
+    "display_value": 2.5,
+    "name": "zip_tie_width_provisional",
+    "unit": "mm",
+    "value": 2.5
+  },
+  {
+    "display_value": 1.0,
+    "name": "zip_tie_thickness_provisional",
+    "unit": "mm",
+    "value": 1.0
+  },
+  {
+    "display_value": 0.35,
+    "name": "zip_tie_slot_side_clearance",
+    "unit": "mm",
+    "value": 0.35
+  },
+  {
+    "display_value": 0.2,
+    "name": "zip_tie_slot_vertical_clearance",
+    "unit": "mm",
+    "value": 0.2
+  },
+  {
+    "display_value": 1.0,
+    "name": "zip_tie_slot_floor_below_sill",
+    "unit": "mm",
+    "value": 1.0
+  },
+  {
+    "display_value": 5.0,
+    "name": "zip_tie_head_width_provisional",
+    "unit": "mm",
+    "value": 5.0
+  },
+  {
+    "display_value": 5.0,
+    "name": "zip_tie_head_length_provisional",
+    "unit": "mm",
+    "value": 5.0
+  },
+  {
+    "display_value": 4.0,
+    "name": "zip_tie_head_height_provisional",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "display_value": 0.2,
+    "name": "cable_cradle_radial_clearance",
+    "unit": "mm",
+    "value": 0.2
+  },
+  {
+    "favorite": true,
+    "name": "cable_cradle_radial_clearance"
+  },
+  {
+    "display_value": 2.0,
+    "name": "cable_cradle_side_wall",
+    "unit": "mm",
+    "value": 2.0
+  },
+  {
+    "display_value": 2.0,
+    "name": "cable_cradle_floor_above_tunnel",
+    "unit": "mm",
+    "value": 2.0
+  },
+  {
+    "display_value": 0.5,
+    "name": "board_fit_width_extra",
+    "unit": "mm",
+    "value": 0.5
+  },
+  {
+    "favorite": true,
+    "name": "board_fit_width_extra"
+  },
+  {
+    "display_value": 30.0,
+    "name": "reset_button_from_bottom",
+    "unit": "mm",
+    "value": 30.0
+  },
+  {
+    "display_value": 16.0,
+    "name": "boot_button_from_bottom",
+    "unit": "mm",
+    "value": 16.0
+  },
+  {
+    "display_value": 4.0,
+    "name": "reset_housing_y",
+    "unit": "mm",
+    "value": 4.0
+  },
+  {
+    "display_value": -21.0,
+    "name": "boot_housing_y",
+    "unit": "mm",
+    "value": -21.0
+  },
+  {
+    "display_value": 4.5,
+    "name": "button_arm_elbow_inset",
+    "unit": "mm",
+    "value": 4.5
+  },
+  {
+    "display_value": 2.9,
+    "name": "button_contact_collar_flat_offset",
+    "unit": "mm",
+    "value": 2.9
+  },
+  {
+    "display_value": 10.0,
+    "name": "usb_plug_width",
+    "unit": "mm",
+    "value": 10.0
+  },
+  {
+    "display_value": 6.0,
+    "name": "usb_plug_thickness",
+    "unit": "mm",
+    "value": 6.0
+  },
+  {
+    "display_value": 20.0,
+    "name": "usb_plug_projection",
+    "unit": "mm",
+    "value": 20.0
+  },
+  {
+    "display_value": 9.0,
+    "name": "usb_plug_underside_above_pcb",
+    "unit": "mm",
+    "value": 9.0
+  },
+  {
+    "display_value": 23.0,
+    "name": "usb_center_from_bottom",
+    "unit": "mm",
+    "value": 23.0
+  },
+  {
+    "display_value": 3.5,
+    "name": "usb_cable_diameter",
+    "unit": "mm",
+    "value": 3.5
+  },
+  {
+    "display_value": 0.2,
+    "name": "usb_fit_clearance",
+    "unit": "mm",
+    "value": 0.2
+  },
+  {
+    "favorite": true,
+    "name": "usb_fit_clearance"
+  },
+  {
+    "display_value": 49.5,
+    "name": "retention_width",
+    "unit": "mm",
+    "value": 49.5
+  },
+  {
+    "display_value": 65.5,
+    "name": "cavity_width",
+    "unit": "mm",
+    "value": 65.5
+  },
+  {
+    "display_value": 88.0,
+    "name": "cavity_length",
+    "unit": "mm",
+    "value": 88.0
+  },
+  {
+    "display_value": 70.3,
+    "name": "shell_width",
+    "unit": "mm",
+    "value": 70.3
+  },
+  {
+    "display_value": 92.8,
+    "name": "shell_length",
+    "unit": "mm",
+    "value": 92.8
+  },
+  {
+    "display_value": 9.0,
+    "name": "board_bottom",
+    "unit": "mm",
+    "value": 9.0
+  },
+  {
+    "display_value": 10.0,
+    "name": "board_top",
+    "unit": "mm",
+    "value": 10.0
+  },
+  {
+    "display_value": 32.0,
+    "name": "case_height",
+    "unit": "mm",
+    "value": 32.0
+  },
+  {
+    "display_value": 10.2,
+    "name": "clamp_height",
+    "unit": "mm",
+    "value": 10.2
+  },
+  {
+    "display_value": 34.4,
+    "name": "lid_top",
+    "unit": "mm",
+    "value": 34.4
+  },
+  {
+    "display_value": 40.0,
+    "name": "plate_height",
+    "unit": "mm",
+    "value": 40.0
+  },
+  {
+    "display_value": 38.0,
+    "name": "mount_ceiling",
+    "unit": "mm",
+    "value": 38.0
+  },
+  {
+    "display_value": 11.0,
+    "name": "mount_interface",
+    "unit": "mm",
+    "value": 11.0
+  },
+  {
+    "display_value": 35.4,
+    "name": "lug_y",
+    "unit": "mm",
+    "value": 35.4
+  },
+  {
+    "display_value": 41.15,
+    "name": "lug_x",
+    "unit": "mm",
+    "value": 41.15
+  },
+  {
+    "display_value": 29.65,
+    "name": "clamp_screw_x",
+    "unit": "mm",
+    "value": 29.65
+  },
+  {
+    "display_value": 23.2,
+    "name": "clamp_inner",
+    "unit": "mm",
+    "value": 23.2
+  },
+  {
+    "display_value": 32.75,
+    "name": "clamp_outer",
+    "unit": "mm",
+    "value": 32.75
+  },
+  {
+    "display_value": 9.55,
+    "name": "clamp_width",
+    "unit": "mm",
+    "value": 9.55
+  },
+  {
+    "display_value": 27.975,
+    "name": "clamp_center",
+    "unit": "mm",
+    "value": 27.975
+  },
+  {
+    "display_value": -38.75,
+    "name": "button_face",
+    "unit": "mm",
+    "value": -38.75
+  },
+  {
+    "display_value": -21.2,
+    "name": "button_tip_x",
+    "unit": "mm",
+    "value": -21.2
+  },
+  {
+    "display_value": -5.0,
+    "name": "reset_tip_y",
+    "unit": "mm",
+    "value": -5.0
+  },
+  {
+    "display_value": 19.2,
+    "name": "reset_arm_base",
+    "unit": "mm",
+    "value": 19.2
+  },
+  {
+    "display_value": 8.800000000000004,
+    "name": "reset_slider_width",
+    "unit": "mm",
+    "value": 8.800000000000004
+  },
+  {
+    "display_value": -45.95,
+    "name": "reset_magnet_x",
+    "unit": "mm",
+    "value": -45.95
+  },
+  {
+    "display_value": 11.2,
+    "name": "reset_guide_floor",
+    "unit": "mm",
+    "value": 11.2
+  },
+  {
+    "display_value": 13.0,
+    "name": "reset_slider_bottom",
+    "unit": "mm",
+    "value": 13.0
+  },
+  {
+    "display_value": 8.2,
+    "name": "reset_fixed_magnet_bottom",
+    "unit": "mm",
+    "value": 8.2
+  },
+  {
+    "display_value": 13.8,
+    "name": "reset_moving_magnet_bottom",
+    "unit": "mm",
+    "value": 13.8
+  },
+  {
+    "display_value": 24.799999999999997,
+    "name": "reset_boss_top",
+    "unit": "mm",
+    "value": 24.799999999999997
+  },
+  {
+    "attachment": "fixed",
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "name": "reset_moving_magnet_keeper_plug_profile",
+    "projected": null,
+    "sketch": 1
+  },
+  {
+    "constraints": [],
+    "created": {
+      "constraints": [],
+      "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "dimensions": [],
+      "points": [
+        "l1.start",
+        "l1.end",
+        "l2.end",
+        "l3.end"
+      ]
+    },
+    "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+    ],
+    "sketch": {
+      "dof": 8,
+      "solved": true
+    }
+  },
+  {
+    "constraints": [],
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [],
+      "points": [
+        "p1"
+      ]
+    },
+    "point": "p1",
+    "sketch": {
+      "dof": 10,
+      "solved": true
+    }
+  },
+  {
+    "created": {
+      "constraints": [
+        "k1"
+      ],
+      "curves": [],
+      "dimensions": [],
+      "points": []
+    },
+    "result": {
+      "changed": 1,
+      "fixed": true
+    },
+    "sketch": {
+      "dof": 8,
+      "solved": true
+    }
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k2"
+      ],
+      "points": []
+    },
+    "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))-(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+    "measured": 149.8,
+    "param": "d2",
+    "sketch": {
+      "dof": 7,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k3"
+      ],
+      "points": []
+    },
+    "expression": "(200)+((reset_housing_y)-(2.05))",
+    "measured": 201.95,
+    "param": "d3",
+    "sketch": {
+      "dof": 6,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k4"
+      ],
+      "points": []
+    },
+    "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))+(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+    "measured": 151.85,
+    "param": "d4",
+    "sketch": {
+      "dof": 5,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k5"
+      ],
+      "points": []
+    },
+    "expression": "(200)+((reset_housing_y)-(2.05))",
+    "measured": 201.95,
+    "param": "d5",
+    "sketch": {
+      "dof": 4,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k6"
+      ],
+      "points": []
+    },
+    "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))+(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+    "measured": 151.85,
+    "param": "d6",
+    "sketch": {
+      "dof": 3,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k7"
+      ],
+      "points": []
+    },
+    "expression": "(200)+((reset_housing_y)+(2.05))",
+    "measured": 206.05,
+    "param": "d7",
+    "sketch": {
+      "dof": 2,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k8"
+      ],
+      "points": []
+    },
+    "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))-(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+    "measured": 149.8,
+    "param": "d8",
+    "sketch": {
+      "dof": 1,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "created": {
+      "constraints": [],
+      "curves": [],
+      "dimensions": [
+        "k9"
+      ],
+      "points": []
+    },
+    "expression": "(200)+((reset_housing_y)+(2.05))",
+    "measured": 206.05,
+    "param": "d9",
+    "sketch": {
+      "dof": 0,
+      "solved": true
+    },
+    "type": "LinearDimension",
+    "unit": "mm"
+  },
+  {
+    "dof": 0,
+    "failing": [],
+    "profiles": 1,
+    "status": "solved"
+  },
+  {
+    "profiles": 1,
+    "sketch": 1
+  },
+  {
+    "bodies": [
+      "reset_moving_magnet_keeper"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+      "reset_moving_magnet_keeper"
+    ],
+    "feature": 2,
+    "ms": 1.527015,
+    "name": "reset_moving_magnet_keeper_plug",
+    "removed_bodies": [],
+    "warning": null
+  },
+  {
+    "bodies": [
+      "reset_moving_magnet_keeper"
+    ],
+    "changed_bodies": [
+      "reset_moving_magnet_keeper"
+    ],
+    "created_bodies": [],
+    "feature": 3,
+    "ms": 0.050601,
+    "name": "reset_moving_magnet_keeper_on_bed",
+    "removed_bodies": [],
+    "warning": null
+  },
+  {
+    "bytes": 6589,
+    "name": "reset_moving_magnet_keeper",
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parts/reset_moving_magnet_keeper.solidcraft"
+  },
+  {
+    "active_sketch": null,
+    "bodies": [
+      {
+        "area_mm2": 41.40999999999997,
+        "bbox": {
+          "max": [
+            -48.150000000000006,
+            6.050000000000011,
+            2.0
+          ],
+          "min": [
+            -50.19999999999999,
+            1.9499999999999886,
+            0.0
+          ]
+        },
+        "center_of_mass": [
+          -49.175000000000026,
+          4.0,
+          1.0000000000000002
+        ],
+        "edges": 12,
+        "face_types": {
+          "plane": 6
+        },
+        "faces": 6,
+        "kernel": {
+          "edges": 12,
+          "faces": 6,
+          "shells": 1,
+          "vertices": 8
+        },
+        "name": "reset_moving_magnet_keeper",
+        "vertices": 8,
+        "visible": true,
+        "volume_mm3": 16.809999999999956
+      }
+    ],
+    "dirty": false,
+    "hidden_origin": [],
+    "marker": 3,
+    "metadata": {},
+    "name": "reset_moving_magnet_keeper",
+    "params": [
+      {
+        "comment": "Allowed range: 48.8 to 49.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "49.0 mm",
+        "model": false,
+        "name": "pcb_width",
+        "unit": "mm",
+        "value": 49.0
+      },
+      {
+        "comment": "Allowed range: 70 to 70.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "70.0 mm",
+        "model": false,
+        "name": "pcb_length",
+        "unit": "mm",
+        "value": 70.0
+      },
+      {
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.0 mm",
+        "model": false,
+        "name": "pcb_thickness",
+        "unit": "mm",
+        "value": 1.0
+      },
+      {
+        "comment": "Allowed range: 6.6 to 6.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.6 mm",
+        "model": false,
+        "name": "solder_clearance",
+        "unit": "mm",
+        "value": 6.6
+      },
+      {
+        "comment": "Allowed range: 22 to 22 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "22.0 mm",
+        "model": false,
+        "name": "component_clearance",
+        "unit": "mm",
+        "value": 22.0
+      },
+      {
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.0 mm",
+        "model": false,
+        "name": "side_margin",
+        "unit": "mm",
+        "value": 8.0
+      },
+      {
+        "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "9.0 mm",
+        "model": false,
+        "name": "end_margin",
+        "unit": "mm",
+        "value": 9.0
+      },
+      {
+        "comment": "Allowed range: 2.3 to 2.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "2.4 mm",
+        "model": false,
+        "name": "wall",
+        "unit": "mm",
+        "value": 2.4
+      },
+      {
+        "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.4 mm",
+        "model": false,
+        "name": "floor_thickness",
+        "unit": "mm",
+        "value": 2.4
+      },
+      {
+        "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.4 mm",
+        "model": false,
+        "name": "lid_thickness",
+        "unit": "mm",
+        "value": 2.4
+      },
+      {
+        "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "0.3 mm",
+        "model": false,
+        "name": "lid_fit_clearance",
+        "unit": "mm",
+        "value": 0.3
+      },
+      {
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.0 mm",
+        "model": false,
+        "name": "lid_skirt_depth",
+        "unit": "mm",
+        "value": 2.0
+      },
+      {
+        "comment": "Allowed range: 60 to 60 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "60.0 mm",
+        "model": false,
+        "name": "left_access_length",
+        "unit": "mm",
+        "value": 60.0
+      },
+      {
+        "comment": "Allowed range: -1 to -1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "-1.0 mm",
+        "model": false,
+        "name": "left_access_start_above_pcb",
+        "unit": "mm",
+        "value": -1.0
+      },
+      {
+        "comment": "Allowed range: 24 to 24 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "24.0 mm",
+        "model": false,
+        "name": "end_cable_width",
+        "unit": "mm",
+        "value": 24.0
+      },
+      {
+        "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "16.0 mm",
+        "model": false,
+        "name": "end_cable_height",
+        "unit": "mm",
+        "value": 16.0
+      },
+      {
+        "comment": "Allowed range: 17 to 17 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "17.0 mm",
+        "model": false,
+        "name": "clamp_y",
+        "unit": "mm",
+        "value": 17.0
+      },
+      {
+        "comment": "Allowed range: 1.3 to 1.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.3 mm",
+        "model": false,
+        "name": "board_edge_overlap",
+        "unit": "mm",
+        "value": 1.3
+      },
+      {
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.2 mm",
+        "model": false,
+        "name": "board_vertical_play",
+        "unit": "mm",
+        "value": 0.2
+      },
+      {
+        "comment": "Allowed range: 3.4 to 3.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.4 mm",
+        "model": false,
+        "name": "m3_clearance",
+        "unit": "mm",
+        "value": 3.4
+      },
+      {
+        "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.5 mm",
+        "model": false,
+        "name": "desk_screw_clearance",
+        "unit": "mm",
+        "value": 4.5
+      },
+      {
+        "comment": "Allowed range: 3.2 to 3.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.2 mm",
+        "model": false,
+        "name": "bracket_plate_thickness",
+        "unit": "mm",
+        "value": 3.2
+      },
+      {
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.0 mm",
+        "model": false,
+        "name": "bracket_clearance_above_body",
+        "unit": "mm",
+        "value": 8.0
+      },
+      {
+        "comment": "Allowed range: 3 to 3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.0 mm",
+        "model": false,
+        "name": "corner_radius",
+        "unit": "mm",
+        "value": 3.0
+      },
+      {
+        "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.8 mm",
+        "model": false,
+        "name": "edge_bevel",
+        "unit": "mm",
+        "value": 0.8
+      },
+      {
+        "comment": "Allowed range: 1.2 to 1.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.2 mm",
+        "model": false,
+        "name": "belt_projection",
+        "unit": "mm",
+        "value": 1.2
+      },
+      {
+        "comment": "Allowed range: 3.6 to 3.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.6 mm",
+        "model": false,
+        "name": "belt_bottom",
+        "unit": "mm",
+        "value": 3.6
+      },
+      {
+        "comment": "Allowed range: 4.8 to 4.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.8 mm",
+        "model": false,
+        "name": "belt_height",
+        "unit": "mm",
+        "value": 4.8
+      },
+      {
+        "comment": "Allowed range: 25 to 25 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "25.0 deg",
+        "model": false,
+        "name": "vent_angle",
+        "unit": "deg",
+        "value": 0.4363323129985824
+      },
+      {
+        "comment": "Allowed range: 2.6 to 2.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.6 mm",
+        "model": false,
+        "name": "lid_vent_width",
+        "unit": "mm",
+        "value": 2.6
+      },
+      {
+        "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.4 mm",
+        "model": false,
+        "name": "accent_depth",
+        "unit": "mm",
+        "value": 0.4
+      },
+      {
+        "comment": "Allowed range: 3.3 to 3.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.3 mm",
+        "model": false,
+        "name": "button_inset_from_left_pcb_edge",
+        "unit": "mm",
+        "value": 3.3
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "reset_switch_height_above_pcb",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "boot_switch_height_above_pcb",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.8 mm",
+        "model": false,
+        "name": "button_stroke",
+        "unit": "mm",
+        "value": 0.8
+      },
+      {
+        "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "0.3 mm",
+        "model": false,
+        "name": "button_guide_clearance",
+        "unit": "mm",
+        "value": 0.3
+      },
+      {
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.2 mm",
+        "model": false,
+        "name": "modeled_switch_depression",
+        "unit": "mm",
+        "value": 0.2
+      },
+      {
+        "comment": "Allowed range: 9.2 to 9.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "9.2 mm",
+        "model": false,
+        "name": "button_arm_height_above_pcb",
+        "unit": "mm",
+        "value": 9.2
+      },
+      {
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "button_insert_pilot_diameter",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 4.4 to 4.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.4 mm",
+        "model": false,
+        "name": "button_insert_bore_depth",
+        "unit": "mm",
+        "value": 4.4
+      },
+      {
+        "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "12.0 mm",
+        "model": false,
+        "name": "reset_contact_screw_length",
+        "unit": "mm",
+        "value": 12.0
+      },
+      {
+        "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "12.0 mm",
+        "model": false,
+        "name": "boot_contact_screw_length",
+        "unit": "mm",
+        "value": 12.0
+      },
+      {
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.6 mm",
+        "model": false,
+        "name": "button_contact_insert_outer_diameter",
+        "unit": "mm",
+        "value": 4.6
+      },
+      {
+        "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "button_contact_insert_pilot_diameter",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "5.0 mm",
+        "model": false,
+        "name": "button_contact_insert_length",
+        "unit": "mm",
+        "value": 5.0
+      },
+      {
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.0 mm",
+        "model": false,
+        "name": "desk_gap_above_case_floor",
+        "unit": "mm",
+        "value": 2.0
+      },
+      {
+        "comment": "Allowed range: 8.6 to 8.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.6 mm",
+        "model": false,
+        "name": "bracket_leg_width_y",
+        "unit": "mm",
+        "value": 8.6
+      },
+      {
+        "comment": "Allowed range: 0.6 to 0.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.6 mm",
+        "model": false,
+        "name": "bracket_belt_clearance",
+        "unit": "mm",
+        "value": 0.6
+      },
+      {
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "bracket_root_gusset_height",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 6.8 to 7.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "7.0 mm",
+        "model": false,
+        "name": "finger_pad_extension",
+        "unit": "mm",
+        "value": 7.0
+      },
+      {
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.6 mm",
+        "model": false,
+        "name": "lid_insert_outer_diameter",
+        "unit": "mm",
+        "value": 4.6
+      },
+      {
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "5.0 mm",
+        "model": false,
+        "name": "lid_insert_length",
+        "unit": "mm",
+        "value": 5.0
+      },
+      {
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "lid_insert_pilot_diameter",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "lid_insert_bore_depth",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.0 mm",
+        "model": false,
+        "name": "lid_screw_length",
+        "unit": "mm",
+        "value": 8.0
+      },
+      {
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.6 mm",
+        "model": false,
+        "name": "pcb_insert_outer_diameter",
+        "unit": "mm",
+        "value": 4.6
+      },
+      {
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "5.0 mm",
+        "model": false,
+        "name": "pcb_insert_length",
+        "unit": "mm",
+        "value": 5.0
+      },
+      {
+        "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "pcb_insert_pilot_diameter",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "pcb_insert_bore_depth",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "pcb_clamp_screw_length",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 8.8 to 8.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.8 mm",
+        "model": false,
+        "name": "pcb_clamp_boss_diameter",
+        "unit": "mm",
+        "value": 8.8
+      },
+      {
+        "comment": "Allowed range: 4.9 to 4.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.9 mm",
+        "model": false,
+        "name": "pcb_clamp_screw_offset_from_edge",
+        "unit": "mm",
+        "value": 4.9
+      },
+      {
+        "comment": "Allowed range: 8.4 to 8.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.4 mm",
+        "model": false,
+        "name": "lid_corner_projection",
+        "unit": "mm",
+        "value": 8.4
+      },
+      {
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.0 mm",
+        "model": false,
+        "name": "lid_corner_pad_height",
+        "unit": "mm",
+        "value": 8.0
+      },
+      {
+        "comment": "Allowed range: 45 to 45 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "45.0 deg",
+        "model": false,
+        "name": "lid_corner_support_angle",
+        "unit": "deg",
+        "value": 0.7853981633974483
+      },
+      {
+        "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.4 mm",
+        "model": false,
+        "name": "lid_corner_wall_overlap",
+        "unit": "mm",
+        "value": 0.4
+      },
+      {
+        "comment": "Allowed range: 7 to 7 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "7.0 mm",
+        "model": false,
+        "name": "cable_saddle_projection",
+        "unit": "mm",
+        "value": 7.0
+      },
+      {
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.0 mm",
+        "model": false,
+        "name": "cable_saddle_wall_overlap",
+        "unit": "mm",
+        "value": 1.0
+      },
+      {
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "8.0 mm",
+        "model": false,
+        "name": "cable_diameter_provisional",
+        "unit": "mm",
+        "value": 8.0
+      },
+      {
+        "comment": "Allowed range: 2.5 to 2.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.5 mm",
+        "model": false,
+        "name": "zip_tie_width_provisional",
+        "unit": "mm",
+        "value": 2.5
+      },
+      {
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.0 mm",
+        "model": false,
+        "name": "zip_tie_thickness_provisional",
+        "unit": "mm",
+        "value": 1.0
+      },
+      {
+        "comment": "Allowed range: 0.35 to 0.35 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.35 mm",
+        "model": false,
+        "name": "zip_tie_slot_side_clearance",
+        "unit": "mm",
+        "value": 0.35
+      },
+      {
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "0.2 mm",
+        "model": false,
+        "name": "zip_tie_slot_vertical_clearance",
+        "unit": "mm",
+        "value": 0.2
+      },
+      {
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "1.0 mm",
+        "model": false,
+        "name": "zip_tie_slot_floor_below_sill",
+        "unit": "mm",
+        "value": 1.0
+      },
+      {
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "5.0 mm",
+        "model": false,
+        "name": "zip_tie_head_width_provisional",
+        "unit": "mm",
+        "value": 5.0
+      },
+      {
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "5.0 mm",
+        "model": false,
+        "name": "zip_tie_head_length_provisional",
+        "unit": "mm",
+        "value": 5.0
+      },
+      {
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "zip_tie_head_height_provisional",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: 0.15 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "0.2 mm",
+        "model": false,
+        "name": "cable_cradle_radial_clearance",
+        "unit": "mm",
+        "value": 0.2
+      },
+      {
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.0 mm",
+        "model": false,
+        "name": "cable_cradle_side_wall",
+        "unit": "mm",
+        "value": 2.0
+      },
+      {
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.0 mm",
+        "model": false,
+        "name": "cable_cradle_floor_above_tunnel",
+        "unit": "mm",
+        "value": 2.0
+      },
+      {
+        "comment": "Allowed range: 0.4 to 0.6 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "0.5 mm",
+        "model": false,
+        "name": "board_fit_width_extra",
+        "unit": "mm",
+        "value": 0.5
+      },
+      {
+        "comment": "Allowed range: 30 to 30 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "30.0 mm",
+        "model": false,
+        "name": "reset_button_from_bottom",
+        "unit": "mm",
+        "value": 30.0
+      },
+      {
+        "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "16.0 mm",
+        "model": false,
+        "name": "boot_button_from_bottom",
+        "unit": "mm",
+        "value": 16.0
+      },
+      {
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.0 mm",
+        "model": false,
+        "name": "reset_housing_y",
+        "unit": "mm",
+        "value": 4.0
+      },
+      {
+        "comment": "Allowed range: -21 to -21 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "-21.0 mm",
+        "model": false,
+        "name": "boot_housing_y",
+        "unit": "mm",
+        "value": -21.0
+      },
+      {
+        "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "4.5 mm",
+        "model": false,
+        "name": "button_arm_elbow_inset",
+        "unit": "mm",
+        "value": 4.5
+      },
+      {
+        "comment": "Allowed range: 2.9 to 2.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "2.9 mm",
+        "model": false,
+        "name": "button_contact_collar_flat_offset",
+        "unit": "mm",
+        "value": 2.9
+      },
+      {
+        "comment": "Allowed range: 10 to 10 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "10.0 mm",
+        "model": false,
+        "name": "usb_plug_width",
+        "unit": "mm",
+        "value": 10.0
+      },
+      {
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "6.0 mm",
+        "model": false,
+        "name": "usb_plug_thickness",
+        "unit": "mm",
+        "value": 6.0
+      },
+      {
+        "comment": "Allowed range: 20 to 20 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "20.0 mm",
+        "model": false,
+        "name": "usb_plug_projection",
+        "unit": "mm",
+        "value": 20.0
+      },
+      {
+        "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "9.0 mm",
+        "model": false,
+        "name": "usb_plug_underside_above_pcb",
+        "unit": "mm",
+        "value": 9.0
+      },
+      {
+        "comment": "Allowed range: 23 to 23 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "23.0 mm",
+        "model": false,
+        "name": "usb_center_from_bottom",
+        "unit": "mm",
+        "value": 23.0
+      },
+      {
+        "comment": "Allowed range: 3.5 to 3.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+        "error": null,
+        "expression": "3.5 mm",
+        "model": false,
+        "name": "usb_cable_diameter",
+        "unit": "mm",
+        "value": 3.5
+      },
+      {
+        "comment": "Allowed range: 0.2 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+        "error": null,
+        "expression": "0.2 mm",
+        "model": false,
+        "name": "usb_fit_clearance",
+        "unit": "mm",
+        "value": 0.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(pcb_width)+(board_fit_width_extra)",
+        "model": false,
+        "name": "retention_width",
+        "unit": "mm",
+        "value": 49.5
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(retention_width)+((2)*(side_margin))",
+        "model": false,
+        "name": "cavity_width",
+        "unit": "mm",
+        "value": 65.5
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(pcb_length)+((2)*(end_margin))",
+        "model": false,
+        "name": "cavity_length",
+        "unit": "mm",
+        "value": 88.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(cavity_width)+((2)*(wall))",
+        "model": false,
+        "name": "shell_width",
+        "unit": "mm",
+        "value": 70.3
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(cavity_length)+((2)*(wall))",
+        "model": false,
+        "name": "shell_length",
+        "unit": "mm",
+        "value": 92.8
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(floor_thickness)+(solder_clearance)",
+        "model": false,
+        "name": "board_bottom",
+        "unit": "mm",
+        "value": 9.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(board_bottom)+(pcb_thickness)",
+        "model": false,
+        "name": "board_top",
+        "unit": "mm",
+        "value": 10.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(board_top)+(component_clearance)",
+        "model": false,
+        "name": "case_height",
+        "unit": "mm",
+        "value": 32.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(board_top)+(board_vertical_play)",
+        "model": false,
+        "name": "clamp_height",
+        "unit": "mm",
+        "value": 10.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(case_height)+(lid_thickness)",
+        "model": false,
+        "name": "lid_top",
+        "unit": "mm",
+        "value": 34.4
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(case_height)+(bracket_clearance_above_body)",
+        "model": false,
+        "name": "plate_height",
+        "unit": "mm",
+        "value": 40.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(plate_height)-(desk_gap_above_case_floor)",
+        "model": false,
+        "name": "mount_ceiling",
+        "unit": "mm",
+        "value": 38.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(mount_ceiling)-((case_height)-(5))",
+        "model": false,
+        "name": "mount_interface",
+        "unit": "mm",
+        "value": 11.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((shell_length)/(2))-(11)",
+        "model": false,
+        "name": "lug_y",
+        "unit": "mm",
+        "value": 35.4
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((shell_width)/(2))+(6)",
+        "model": false,
+        "name": "lug_x",
+        "unit": "mm",
+        "value": 41.15
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((retention_width)/(2))+(pcb_clamp_screw_offset_from_edge)",
+        "model": false,
+        "name": "clamp_screw_x",
+        "unit": "mm",
+        "value": 29.65
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((pcb_width)/(2))-(board_edge_overlap)",
+        "model": false,
+        "name": "clamp_inner",
+        "unit": "mm",
+        "value": 23.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((retention_width)/(2))+(8)",
+        "model": false,
+        "name": "clamp_outer",
+        "unit": "mm",
+        "value": 32.75
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(clamp_outer)-(clamp_inner)",
+        "model": false,
+        "name": "clamp_width",
+        "unit": "mm",
+        "value": 9.55
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((clamp_inner)+(clamp_outer))/(2)",
+        "model": false,
+        "name": "clamp_center",
+        "unit": "mm",
+        "value": 27.975
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((-(shell_width))/(2))-(3.6)",
+        "model": false,
+        "name": "button_face",
+        "unit": "mm",
+        "value": -38.75
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "((-(pcb_width))/(2))+(button_inset_from_left_pcb_edge)",
+        "model": false,
+        "name": "button_tip_x",
+        "unit": "mm",
+        "value": -21.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(reset_button_from_bottom)-((pcb_length)/(2))",
+        "model": false,
+        "name": "reset_tip_y",
+        "unit": "mm",
+        "value": -5.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(board_top)+(button_arm_height_above_pcb)",
+        "model": false,
+        "name": "reset_arm_base",
+        "unit": "mm",
+        "value": 19.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(((button_face)-(2.4))-(button_guide_clearance))-(((button_face)-(11.8))+(button_guide_clearance))",
+        "model": false,
+        "name": "reset_slider_width",
+        "unit": "mm",
+        "value": 8.800000000000004
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(button_face)-(7.2)",
+        "model": false,
+        "name": "reset_magnet_x",
+        "unit": "mm",
+        "value": -45.95
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(11.2)+((reset_arm_base)-(19.2))",
+        "model": false,
+        "name": "reset_guide_floor",
+        "unit": "mm",
+        "value": 11.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(13)+((reset_arm_base)-(19.2))",
+        "model": false,
+        "name": "reset_slider_bottom",
+        "unit": "mm",
+        "value": 13.0
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(8.2)+((reset_arm_base)-(19.2))",
+        "model": false,
+        "name": "reset_fixed_magnet_bottom",
+        "unit": "mm",
+        "value": 8.2
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "(reset_slider_bottom)+(0.8)",
+        "model": false,
+        "name": "reset_moving_magnet_bottom",
+        "unit": "mm",
+        "value": 13.8
+      },
+      {
+        "comment": "Derived expression; follows its driving parameters.",
+        "error": null,
+        "expression": "max((reset_arm_base)+(4.8),(((reset_arm_base)-(0.8))+(button_contact_insert_length))+(1.4))",
+        "model": false,
+        "name": "reset_boss_top",
+        "unit": "mm",
+        "value": 24.799999999999997
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))-(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+        "model": true,
+        "name": "d2",
+        "unit": "mm",
+        "value": 149.8
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+((reset_housing_y)-(2.05))",
+        "model": true,
+        "name": "d3",
+        "unit": "mm",
+        "value": 201.95
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))+(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+        "model": true,
+        "name": "d4",
+        "unit": "mm",
+        "value": 151.85
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+((reset_housing_y)-(2.05))",
+        "model": true,
+        "name": "d5",
+        "unit": "mm",
+        "value": 201.95
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))+(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+        "model": true,
+        "name": "d6",
+        "unit": "mm",
+        "value": 151.85
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+((reset_housing_y)+(2.05))",
+        "model": true,
+        "name": "d7",
+        "unit": "mm",
+        "value": 206.05
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+(((((((button_face)-(11.8))+(button_guide_clearance))+(reset_magnet_x))-(2.15))/(2))-(((((reset_magnet_x)-(2.15))-(((button_face)-(11.8))+(button_guide_clearance)))-(0.1))/(2)))",
+        "model": true,
+        "name": "d8",
+        "unit": "mm",
+        "value": 149.8
+      },
+      {
+        "comment": "",
+        "error": null,
+        "expression": "(200)+((reset_housing_y)+(2.05))",
+        "model": true,
+        "name": "d9",
+        "unit": "mm",
+        "value": 206.05
+      }
+    ],
+    "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parts/reset_moving_magnet_keeper.solidcraft",
+    "redo": 0,
+    "revision": 280,
+    "selection": [],
+    "sketches": [
+      {
+        "curves": 4,
+        "dof": 0,
+        "id": 1,
+        "name": "reset_moving_magnet_keeper_plug_profile",
+        "profiles": 1,
+        "status": "solved",
+        "visible": false
+      }
+    ],
+    "timeline": [
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 1,
+        "ms": 0.032691000000000005,
+        "name": "reset_moving_magnet_keeper_plug_profile",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "Sketch",
+        "warning": null
+      },
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 2,
+        "ms": 1.527015,
+        "name": "reset_moving_magnet_keeper_plug",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "ExtrudeFeature",
+        "warning": null
+      },
+      {
+        "boolean_diagnostics": {
+          "events": [],
+          "truncated": false
+        },
+        "error": null,
+        "id": 3,
+        "ms": 0.050601,
+        "name": "reset_moving_magnet_keeper_on_bed",
+        "rolled_back": false,
+        "suppressed": false,
+        "type": "MoveFeature",
+        "warning": null
+      }
+    ],
+    "undo": 150,
+    "units": "mm"
+  }
+]

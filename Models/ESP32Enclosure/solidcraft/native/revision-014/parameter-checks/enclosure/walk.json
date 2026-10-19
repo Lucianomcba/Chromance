@@ -1,0 +1,664 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_width",
+        "expression": "48.8 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_width-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_width",
+        "expression": "49.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_width-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_width",
+        "expression": "49.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_width-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_length",
+        "expression": "70.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_length-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_length",
+        "expression": "70.5 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_length-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_length",
+        "expression": "70.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_length-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "wall",
+        "expression": "2.3 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/wall-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "wall",
+        "expression": "2.5 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/wall-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "wall",
+        "expression": "2.4 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/wall-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "board_fit_width_extra",
+        "expression": "0.4 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/board_fit_width_extra-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "board_fit_width_extra",
+        "expression": "0.6 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/board_fit_width_extra-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "board_fit_width_extra",
+        "expression": "0.5 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/board_fit_width_extra-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "lid_fit_clearance",
+        "expression": "0.25 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/lid_fit_clearance-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "lid_fit_clearance",
+        "expression": "0.35 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/lid_fit_clearance-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "lid_fit_clearance",
+        "expression": "0.3 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/lid_fit_clearance-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_insert_pilot_diameter",
+        "expression": "3.9 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_insert_pilot_diameter-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_insert_pilot_diameter",
+        "expression": "4.1 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_insert_pilot_diameter-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "pcb_insert_pilot_diameter",
+        "expression": "4.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/pcb_insert_pilot_diameter-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_contact_insert_pilot_diameter",
+        "expression": "3.9 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_contact_insert_pilot_diameter-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_contact_insert_pilot_diameter",
+        "expression": "4.1 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_contact_insert_pilot_diameter-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_contact_insert_pilot_diameter",
+        "expression": "4.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_contact_insert_pilot_diameter-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_guide_clearance",
+        "expression": "0.25 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_guide_clearance-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_guide_clearance",
+        "expression": "0.35 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_guide_clearance-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "button_guide_clearance",
+        "expression": "0.3 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/button_guide_clearance-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "usb_fit_clearance",
+        "expression": "0.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/usb_fit_clearance-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "usb_fit_clearance",
+        "expression": "0.25 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/usb_fit_clearance-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "usb_fit_clearance",
+        "expression": "0.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/usb_fit_clearance-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_pad_extension",
+        "expression": "6.8 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/finger_pad_extension-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_pad_extension",
+        "expression": "7.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/finger_pad_extension-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_pad_extension",
+        "expression": "7.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/finger_pad_extension-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "cable_cradle_radial_clearance",
+        "expression": "0.15 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/cable_cradle_radial_clearance-low-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "cable_cradle_radial_clearance",
+        "expression": "0.25 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/cable_cradle_radial_clearance-high-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "cable_cradle_radial_clearance",
+        "expression": "0.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parameter-checks/enclosure/cable_cradle_radial_clearance-default-native.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

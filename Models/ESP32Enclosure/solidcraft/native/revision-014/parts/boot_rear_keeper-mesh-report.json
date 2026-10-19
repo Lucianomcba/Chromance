@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "units": "mm",
+  "linear_deflection_mm": 0.02,
+  "angular_deflection_rad": 0.1,
+  "parts": {
+    "boot_rear_keeper": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    }
+  }
+}

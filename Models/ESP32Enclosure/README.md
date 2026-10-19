@@ -1,9 +1,10 @@
 # ESP32 desk enclosure
 
-**[SolidCraft project](solidcraft/README.md):** open the
-[complete enclosure](solidcraft/revision-014/enclosure.solidcraft), individual
-parts and quick fit prints in SolidCraft. This is an exact-solids conversion of
-revision 014, with editable imported bodies and preserved Python parametric source.
+**[Native SolidCraft project](solidcraft/native/README.md):** open the
+[complete parametric enclosure](solidcraft/native/revision-014/enclosure.solidcraft),
+with rebuilt sketches, dimensions and feature history. Individual parts and
+[quick fit prints](solidcraft/native/revision-014/fit-tests/replacements-only.3mf)
+are included; the earlier source and imported-solid conversion remain preserved.
 
 Parametric enclosure for the pictured ESP32/perfboard controller, with console-inspired
 curves, chamfers, ventilation, an under-desk bracket and external EN/RESET and BOOT

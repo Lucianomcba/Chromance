@@ -1,0 +1,2495 @@
+{
+  "schema": 2,
+  "conversion_kind": "native constrained sketches and parametric feature history",
+  "parametric_feature_history_rebuilt": true,
+  "source_revision": "014-usb-clearance",
+  "quick_test": "009-usb-clearance",
+  "geometry_changes_intended": false,
+  "units": "mm",
+  "source_files": {
+    "revisions/014-usb-clearance/model.py": "2ed6194f550040256ec52c3d48b8d6095675a0efb8aac06163a2f65a01dda8f0",
+    "revisions/014-usb-clearance/base_model.py": "e5de447414db4b66b64e2808a19f0a700ae7311883d2acc0211758a5dccc45cc",
+    "revisions/014-usb-clearance/button_module.py": "5d8f4891703886c74167866bb60752236c2f19b8f8d624a4724eb83d67733ed4",
+    "revisions/014-usb-clearance/mounting.py": "8463a93558364dcd69e2e21c629888b875f51906d5b5c2a1a1768cbdaa96cd8b",
+    "revisions/014-usb-clearance/build-revision.py": "50d8a8ef5e519290c85d79c87fd1d9b728d94b58ba031ec91c4c4597766ac6c8",
+    "revisions/014-usb-clearance/render-details.py": "e26d9e3636eed26d87f5f68be05691b6912776b753222f2b8dd3d008e60a1a10",
+    "revisions/014-usb-clearance/parameters.json": "8912c8ec258901fe42e3d60c04278a17c861ca794a0502efcd8fb7940637bcc2",
+    "fit-tests/009-usb-clearance/model.py": "e29b05787fbed5ca14ce5112ab2d884236da52b2044ade47c898c06c5addce6c",
+    "fit-tests/009-usb-clearance/enclosure_model.py": "2ed6194f550040256ec52c3d48b8d6095675a0efb8aac06163a2f65a01dda8f0",
+    "fit-tests/009-usb-clearance/base_model.py": "e5de447414db4b66b64e2808a19f0a700ae7311883d2acc0211758a5dccc45cc",
+    "fit-tests/009-usb-clearance/button_module.py": "5d8f4891703886c74167866bb60752236c2f19b8f8d624a4724eb83d67733ed4",
+    "fit-tests/009-usb-clearance/mounting.py": "8463a93558364dcd69e2e21c629888b875f51906d5b5c2a1a1768cbdaa96cd8b",
+    "fit-tests/009-usb-clearance/build-test.py": "28f90ad7c226c013690f5180009b5beec2f38b1f3a6583cd096090184a14842f",
+    "fit-tests/009-usb-clearance/check-fit.py": "2c234414dd15dfd98cd596b4f087f9d821338f3a49e39dd03c0068018f53f851",
+    "fit-tests/009-usb-clearance/render-test.py": "c88eb3a2d837ceb96f5d471f7889ffd381a41fb91ae86c0f9ad4d4069b925dc6",
+    "fit-tests/009-usb-clearance/production-source.json": "778d77ad3571a9260ac01be563f80898a00c895617be4e93ddae1b646e1cbae9",
+    "fit-tests/009-usb-clearance/parameters.json": "8912c8ec258901fe42e3d60c04278a17c861ca794a0502efcd8fb7940637bcc2"
+  },
+  "documents": [
+    {
+      "name": "ESP32 enclosure revision014",
+      "path": "enclosure.json",
+      "native": "enclosure.solidcraft",
+      "step": "enclosure.step",
+      "original_step": "revisions/014-usb-clearance/assembly.step",
+      "printable": false,
+      "expected_body_count": 15,
+      "body_names": [
+        "body",
+        "lid",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper",
+        "desk_bracket"
+      ],
+      "inspection": "enclosure-inspection.json",
+      "frozen_reference": {
+        "body": {
+          "volume_mm3": 46477.438668088434,
+          "area_mm2": 35608.21768583918,
+          "center_of_mass": [
+            1.6942001880123971,
+            0.33067513131358767,
+            26.022442091370728
+          ],
+          "bbox": {
+            "min": [
+              -47.15,
+              -47.60000000000001,
+              5.999999999999992
+            ],
+            "max": [
+              47.150000000000006,
+              47.60000000000001,
+              38.00000000000002
+            ]
+          }
+        },
+        "lid": {
+          "volume_mm3": 14188.599539901372,
+          "area_mm2": 14377.524771926086,
+          "center_of_mass": [
+            -0.080354451242177,
+            0.17934285852835313,
+            4.865380431437664
+          ],
+          "bbox": {
+            "min": [
+              -35.15,
+              -46.400000000000006,
+              3.5999999999999917
+            ],
+            "max": [
+              35.15,
+              46.39999999999999,
+              8.000000000000007
+            ]
+          }
+        },
+        "pcb_clamp_left_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            17.000000000000004,
+            26.799999999999997
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              13.0,
+              25.799999999999997
+            ],
+            "max": [
+              -23.2,
+              21.0,
+              27.799999999999997
+            ]
+          }
+        },
+        "pcb_clamp_left_rear": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            -17.000000000000004,
+            26.800000000000004
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              -21.0,
+              25.800000000000004
+            ],
+            "max": [
+              -23.2,
+              -13.0,
+              27.800000000000004
+            ]
+          }
+        },
+        "pcb_clamp_right_front": {
+          "volume_mm3": 134.64159446225096,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.749101536770972,
+            17.0,
+            26.799999999999997
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              13.0,
+              25.799999999999997
+            ],
+            "max": [
+              32.75,
+              21.0,
+              27.799999999999997
+            ]
+          }
+        },
+        "pcb_clamp_right_rear": {
+          "volume_mm3": 134.64159446225096,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.74910153677097,
+            -17.0,
+            26.800000000000004
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              -21.0,
+              25.800000000000004
+            ],
+            "max": [
+              32.75,
+              -13.0,
+              27.800000000000004
+            ]
+          }
+        },
+        "reset_frame": {
+          "volume_mm3": 1957.7478146545618,
+          "area_mm2": 1884.7945834485467,
+          "center_of_mass": [
+            -44.17215853952311,
+            -3.999999999999999,
+            27.323441550125853
+          ],
+          "bbox": {
+            "min": [
+              -50.55,
+              -11.000000000000004,
+              12.399999999999997
+            ],
+            "max": [
+              -38.75,
+              3.0,
+              35.6
+            ]
+          }
+        },
+        "reset_slider": {
+          "volume_mm3": 2900.135165862698,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            -39.55211560365243,
+            -2.490350756237209,
+            14.41713333505674
+          ],
+          "bbox": {
+            "min": [
+              -52.75,
+              -10.000000000000004,
+              4.0
+            ],
+            "max": [
+              -16.7,
+              9.499999999999996,
+              25.0
+            ]
+          }
+        },
+        "reset_rear_keeper": {
+          "volume_mm3": 631.0378267094022,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -51.6727966249598,
+            -4.000000000000003,
+            25.320967785293305
+          ],
+          "bbox": {
+            "min": [
+              -52.95,
+              -11.000000000000004,
+              14.8
+            ],
+            "max": [
+              -48.10000000000001,
+              3.0,
+              35.6
+            ]
+          }
+        },
+        "reset_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            -4.000000000000002,
+            23.1
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              -6.050000000000002,
+              22.1
+            ],
+            "max": [
+              -48.150000000000006,
+              -1.950000000000002,
+              24.1
+            ]
+          }
+        },
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545615,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            -44.23684159408886,
+            21.1472588160019,
+            27.579077974261182
+          ],
+          "bbox": {
+            "min": [
+              -50.55,
+              13.999999999999996,
+              12.399999999999991
+            ],
+            "max": [
+              -38.75,
+              28.0,
+              35.599999999999994
+            ]
+          }
+        },
+        "boot_slider": {
+          "volume_mm3": 2703.0122783532015,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            -40.2058615058894,
+            20.83864238299495,
+            14.282315818518505
+          ],
+          "bbox": {
+            "min": [
+              -52.75,
+              14.499999999999996,
+              3.999999999999998
+            ],
+            "max": [
+              -16.7,
+              27.0,
+              25.0
+            ]
+          }
+        },
+        "boot_rear_keeper": {
+          "volume_mm3": 631.0378267094022,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -51.67279662495979,
+            21.000000000000004,
+            25.320967785293305
+          ],
+          "bbox": {
+            "min": [
+              -52.95,
+              13.999999999999996,
+              14.799999999999994
+            ],
+            "max": [
+              -48.10000000000001,
+              28.0,
+              35.599999999999994
+            ]
+          }
+        },
+        "boot_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            21.0,
+            23.099999999999998
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              18.950000000000003,
+              22.099999999999998
+            ],
+            "max": [
+              -48.150000000000006,
+              23.05,
+              24.099999999999998
+            ]
+          }
+        },
+        "desk_bracket": {
+          "volume_mm3": 22162.354153740176,
+          "area_mm2": 14100.02326755182,
+          "center_of_mass": [
+            -4.965576226745397e-15,
+            -2.195523372982469e-15,
+            34.496291702036956
+          ],
+          "bbox": {
+            "min": [
+              -57.15,
+              -42.4,
+              11.0
+            ],
+            "max": [
+              57.15,
+              42.4,
+              43.2
+            ]
+          }
+        }
+      },
+      "build_script": "enclosure-build.json",
+      "reference_step": "solidcraft/revision-014/references/enclosure.step",
+      "groups": "enclosure-groups.json",
+      "raw_step": "enclosure-native.step",
+      "native_body_names": [
+        "lid",
+        "body",
+        "body_pcb_-1_-1_support",
+        "body_pcb_-1_1_support",
+        "body_pcb_1_-1_support",
+        "body_pcb_1_1_support",
+        "body_lid_corner_-1_-1_support",
+        "body_lid_corner_-1_1_support",
+        "body_lid_corner_1_-1_support",
+        "body_lid_corner_1_1_support",
+        "body_reset_mounting_pad",
+        "body_boot_mounting_pad",
+        "body_cable_cradle_stock",
+        "desk_bracket",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 26,
+      "design_sha256": "8e3ebbff4ea6faf2fc5cba76340e273e13c19d918828ff7f5b48b05c08fe6d4f",
+      "native_sha256": "359cbb632187f6ad70de07a7872e70885fa7cc1397ddf6dedc5d0c3759387b7f",
+      "sketch_count": 199,
+      "feature_count": 493,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "7fe09b12a8d61f780c79a910f6935a3b2c166bd84b30d78156430ecdf469cb38",
+      "raw_step_sha256": "f674de7114a5cdf0f0c34a2a146acc103c7e730138f78fe9ae201a167f873659",
+      "groups_sha256": "5cfcb1f276cd364f274ac5a067797ccaeef57fb3224e9d95c5cb28c6b286f519"
+    },
+    {
+      "name": "body",
+      "path": "parts/body.json",
+      "native": "parts/body.solidcraft",
+      "step": "parts/body.step",
+      "original_step": "revisions/014-usb-clearance/parts/body.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "body"
+      ],
+      "inspection": "parts/body-inspection.json",
+      "frozen_reference": {
+        "body": {
+          "volume_mm3": 46477.438668088434,
+          "area_mm2": 35608.21768583918,
+          "center_of_mass": [
+            1.6942001880124071,
+            -0.3306751313135816,
+            11.977557908629283
+          ],
+          "bbox": {
+            "min": [
+              -47.15,
+              -47.60000000000001,
+              0.0
+            ],
+            "max": [
+              47.150000000000006,
+              47.60000000000001,
+              32.00000000000003
+            ]
+          }
+        }
+      },
+      "mesh": "parts/body.3mf",
+      "build_script": "parts/body-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/body.step",
+      "groups": "parts/body-groups.json",
+      "raw_step": "parts/body-native.step",
+      "native_body_names": [
+        "body",
+        "body_pcb_-1_-1_support",
+        "body_pcb_-1_1_support",
+        "body_pcb_1_-1_support",
+        "body_pcb_1_1_support",
+        "body_lid_corner_-1_-1_support",
+        "body_lid_corner_-1_1_support",
+        "body_lid_corner_1_-1_support",
+        "body_lid_corner_1_1_support",
+        "body_reset_mounting_pad",
+        "body_boot_mounting_pad",
+        "body_cable_cradle_stock"
+      ],
+      "expected_native_body_count": 12,
+      "design_sha256": "2765d84aaefdc4948c5880288264bcca15d26aa2e1822404de96d7b2fd3af1d3",
+      "native_sha256": "0fb0919666ec53327a42f6e4342ed09e7d62be7defc09e0aa866da438bec2cb2",
+      "sketch_count": 87,
+      "feature_count": 197,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "c9e35530ef40d055df65bbc1afbc6f22d6e5855fad98c417bc322e99cfbe7e7c",
+      "raw_step_sha256": "c576416245f53821cc6bc5db0fc9503a72cafd03678b88c3e894feb68b2467ed",
+      "groups_sha256": "94941282a4237828ed3d6d540af8b860ea57755d599f86344995dfec6befc9e2",
+      "mesh_sha256": "88317165044e12f801543601d2a14a6db00a90067b1d2827e676bb4a204bb556",
+      "mesh_report": "parts/body-mesh-report.json"
+    },
+    {
+      "name": "lid",
+      "path": "parts/lid.json",
+      "native": "parts/lid.solidcraft",
+      "step": "parts/lid.step",
+      "original_step": "revisions/014-usb-clearance/parts/lid.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "lid"
+      ],
+      "inspection": "parts/lid-inspection.json",
+      "frozen_reference": {
+        "lid": {
+          "volume_mm3": 14188.599539901368,
+          "area_mm2": 14377.524771926086,
+          "center_of_mass": [
+            -0.08035445124217484,
+            0.1793428585283543,
+            1.265380431437677
+          ],
+          "bbox": {
+            "min": [
+              -35.15,
+              -46.400000000000006,
+              -2.886579864025407e-15
+            ],
+            "max": [
+              35.15,
+              46.39999999999999,
+              4.400000000000013
+            ]
+          }
+        }
+      },
+      "mesh": "parts/lid.3mf",
+      "build_script": "parts/lid-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/lid.step",
+      "groups": "parts/lid-groups.json",
+      "raw_step": "parts/lid-native.step",
+      "native_body_names": [
+        "lid"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "518bd417ec23520f12520d7856e14644c956cdf825de27cda907fba1b726a7bb",
+      "native_sha256": "1de489c2bcabf2562b57b8dba10c348bd1ceda7dcddd830b305c6ce1c9da5f56",
+      "sketch_count": 28,
+      "feature_count": 94,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "192ae0a9799bf1613063574c274110b89e15f9f6b521c94d3c892fa084555852",
+      "raw_step_sha256": "a64f4b30d29c43447e09f5fa4e525ddc47650835d0593ae7b739f561d47f525d",
+      "groups_sha256": "3bfd288b34118d4d4fc33ebf907b5e5dacd57a8d5dc6f3648df4bcc337338dc7",
+      "mesh_sha256": "5172589aa93fadda0e96fcde04c2ed7d507386d8eafaaf1ad0cca379363e267b",
+      "mesh_report": "parts/lid-mesh-report.json"
+    },
+    {
+      "name": "desk_bracket",
+      "path": "parts/desk_bracket.json",
+      "native": "parts/desk_bracket.solidcraft",
+      "step": "parts/desk_bracket.step",
+      "original_step": "revisions/014-usb-clearance/parts/desk_bracket.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "desk_bracket"
+      ],
+      "inspection": "parts/desk_bracket-inspection.json",
+      "frozen_reference": {
+        "desk_bracket": {
+          "volume_mm3": 22162.354153740183,
+          "area_mm2": 14100.02326755182,
+          "center_of_mass": [
+            1.056723866435487e-15,
+            -1.662031712257756e-14,
+            8.70370829796304
+          ],
+          "bbox": {
+            "min": [
+              -57.15,
+              -42.400000000000006,
+              -2.755455298081545e-16
+            ],
+            "max": [
+              57.15,
+              42.39999999999999,
+              32.20000000000002
+            ]
+          }
+        }
+      },
+      "mesh": "parts/desk_bracket.3mf",
+      "build_script": "parts/desk_bracket-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/desk_bracket.step",
+      "groups": "parts/desk_bracket-groups.json",
+      "raw_step": "parts/desk_bracket-native.step",
+      "native_body_names": [
+        "desk_bracket"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "8c1b70f307dbed331ea1cb525aa055fefcd714e0b42707edad69429ffa65ae90",
+      "native_sha256": "2166fb410fe42c40d3b34191bc0f56f1b26eeee4679085b4e45415db131ece5e",
+      "sketch_count": 23,
+      "feature_count": 48,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "6fb7c98449fce8b7339da14dca0c63097f426cceb76dab96ab2c0b36af25b747",
+      "raw_step_sha256": "dafefe7befc15b5693cfbfe654777217ad2f43a0032adfebe90d075a09ce3b88",
+      "groups_sha256": "51ea91c5bffa327811812d6e73aea0c475cd4f3ff415d8d6db74362ead458b51",
+      "mesh_sha256": "2c418f93a2a9bd6d626f3103aca79ec1b209879eba78ee52ac572be51ff0a78c",
+      "mesh_report": "parts/desk_bracket-mesh-report.json"
+    },
+    {
+      "name": "pcb_clamp_left_front",
+      "path": "parts/pcb_clamp_left_front.json",
+      "native": "parts/pcb_clamp_left_front.solidcraft",
+      "step": "parts/pcb_clamp_left_front.step",
+      "original_step": "revisions/014-usb-clearance/parts/pcb_clamp_left_front.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "pcb_clamp_left_front"
+      ],
+      "inspection": "parts/pcb_clamp_left_front-inspection.json",
+      "frozen_reference": {
+        "pcb_clamp_left_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            -17.000000000000004,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              -21.0,
+              0.0
+            ],
+            "max": [
+              -23.2,
+              -13.0,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/pcb_clamp_left_front.3mf",
+      "build_script": "parts/pcb_clamp_left_front-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/pcb_clamp_left_front.step",
+      "groups": "parts/pcb_clamp_left_front-groups.json",
+      "raw_step": "parts/pcb_clamp_left_front-native.step",
+      "native_body_names": [
+        "pcb_clamp_left_front"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "0f4e933a472970c41e0d63e7fbff8ffcc9e07a9142fad3815ac9543f806d4934",
+      "native_sha256": "41dffe2960d6af950fa27b9adaf1ddf16eb7ad4a7642b9c713c44ff15c730b34",
+      "sketch_count": 2,
+      "feature_count": 5,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "89aae3734d79de8222e9716d2e7a57ed779f5a283354c69d5f673b0cd65153e2",
+      "raw_step_sha256": "b50b76c8ef112c5b23b7b5d0c3fcb02b2bc7db02e812aeed1a2b8620327d09d1",
+      "groups_sha256": "eb8e64c504a9fa6b051348188cbaebf0ac1163d3f731dfac5b0a7409a151604c",
+      "mesh_sha256": "b16d6c0f7d3d5142075ebbdaf6a847f8ab534ad6c3d6db890975452dad04392b",
+      "mesh_report": "parts/pcb_clamp_left_front-mesh-report.json"
+    },
+    {
+      "name": "pcb_clamp_left_rear",
+      "path": "parts/pcb_clamp_left_rear.json",
+      "native": "parts/pcb_clamp_left_rear.solidcraft",
+      "step": "parts/pcb_clamp_left_rear.step",
+      "original_step": "revisions/014-usb-clearance/parts/pcb_clamp_left_rear.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "pcb_clamp_left_rear"
+      ],
+      "inspection": "parts/pcb_clamp_left_rear-inspection.json",
+      "frozen_reference": {
+        "pcb_clamp_left_rear": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            17.000000000000004,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              13.0,
+              0.0
+            ],
+            "max": [
+              -23.2,
+              21.0,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/pcb_clamp_left_rear.3mf",
+      "build_script": "parts/pcb_clamp_left_rear-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/pcb_clamp_left_rear.step",
+      "groups": "parts/pcb_clamp_left_rear-groups.json",
+      "raw_step": "parts/pcb_clamp_left_rear-native.step",
+      "native_body_names": [
+        "pcb_clamp_left_rear"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "de4a9b33493ab3b7ce32bd767c5a3cb1fdcebcc45de11e6a4239f03ada671f7c",
+      "native_sha256": "12312f498e424fc236def8890d826ba87d45385cf88ddcf7675c54e8577cef2a",
+      "sketch_count": 2,
+      "feature_count": 5,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "ab2bbf0f02264e09b681c6368a8dfda6c31d8b50c2476932afd1a458f451d13d",
+      "raw_step_sha256": "35f3b24cb491d9e3d80ec3d3a966bf1183d704acc793f5bffe7581b77e2e581b",
+      "groups_sha256": "6ba7312a7388315d61de55d118fbd7c6fb81f9776dd0ec377e3e50129ab65ed6",
+      "mesh_sha256": "95ef6c30640ac025c67b511d3bc19b4846e901c63c0737bfff31aec185655bfb",
+      "mesh_report": "parts/pcb_clamp_left_rear-mesh-report.json"
+    },
+    {
+      "name": "pcb_clamp_right_front",
+      "path": "parts/pcb_clamp_right_front.json",
+      "native": "parts/pcb_clamp_right_front.solidcraft",
+      "step": "parts/pcb_clamp_right_front.step",
+      "original_step": "revisions/014-usb-clearance/parts/pcb_clamp_right_front.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "pcb_clamp_right_front"
+      ],
+      "inspection": "parts/pcb_clamp_right_front-inspection.json",
+      "frozen_reference": {
+        "pcb_clamp_right_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.74910153677096,
+            -17.000000000000004,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              -21.0,
+              0.0
+            ],
+            "max": [
+              32.75,
+              -13.0,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/pcb_clamp_right_front.3mf",
+      "build_script": "parts/pcb_clamp_right_front-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/pcb_clamp_right_front.step",
+      "groups": "parts/pcb_clamp_right_front-groups.json",
+      "raw_step": "parts/pcb_clamp_right_front-native.step",
+      "native_body_names": [
+        "pcb_clamp_right_front"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "2a54e78ebfde063f162af76b3f012a9a94553e293176efd61b863a0ed4e40d58",
+      "native_sha256": "1b7818ca987afa94bb9564a74a8ffb32e4d30b6d43f7f4b2188862f15db35472",
+      "sketch_count": 2,
+      "feature_count": 5,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "8fbab4fb02b11865e12f3f3e2b866e55f1b9fa229a594dae63a585a80b81dae0",
+      "raw_step_sha256": "cf7057a7445e01b885389a38f865bcf431af4189c7cddea552864b0592c02426",
+      "groups_sha256": "e39c7d3282a5343a90ca203b0f7173897bf7d6a0541047c2284832137f6f5299",
+      "mesh_sha256": "f30b551cfed985123de7b001e8d725578a56696624974dc38dd04612a89096eb",
+      "mesh_report": "parts/pcb_clamp_right_front-mesh-report.json"
+    },
+    {
+      "name": "pcb_clamp_right_rear",
+      "path": "parts/pcb_clamp_right_rear.json",
+      "native": "parts/pcb_clamp_right_rear.solidcraft",
+      "step": "parts/pcb_clamp_right_rear.step",
+      "original_step": "revisions/014-usb-clearance/parts/pcb_clamp_right_rear.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "pcb_clamp_right_rear"
+      ],
+      "inspection": "parts/pcb_clamp_right_rear-inspection.json",
+      "frozen_reference": {
+        "pcb_clamp_right_rear": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.74910153677096,
+            17.000000000000004,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              13.0,
+              0.0
+            ],
+            "max": [
+              32.75,
+              21.0,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/pcb_clamp_right_rear.3mf",
+      "build_script": "parts/pcb_clamp_right_rear-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/pcb_clamp_right_rear.step",
+      "groups": "parts/pcb_clamp_right_rear-groups.json",
+      "raw_step": "parts/pcb_clamp_right_rear-native.step",
+      "native_body_names": [
+        "pcb_clamp_right_rear"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "e5d52fbbefb8f6b83e167bc1a501ded740f79eea0776d2b8636bec2a56470b78",
+      "native_sha256": "feb8119d063da262816584b591ae6616d712912b1cd12a6eff35396b4d278c74",
+      "sketch_count": 2,
+      "feature_count": 5,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "5280e976d91df972ea97af1b7ca39126ed1bffd097d4a26576f390be181b5685",
+      "raw_step_sha256": "63435e4029b0352056df6dc26c863e8f5e082a08c53e08ff9376e996a6ecb9df",
+      "groups_sha256": "f0b64ee09e77cabab311bedbfaf0d74d517828ab67e7c6c9511acdd72fd54f33",
+      "mesh_sha256": "9617d40db05426a83a61b1ffadd47c4569543a4218332c1bb4240e133533d35f",
+      "mesh_report": "parts/pcb_clamp_right_rear-mesh-report.json"
+    },
+    {
+      "name": "reset_frame",
+      "path": "parts/reset_frame.json",
+      "native": "parts/reset_frame.solidcraft",
+      "step": "parts/reset_frame.step",
+      "original_step": "revisions/014-usb-clearance/parts/reset_frame.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "reset_frame"
+      ],
+      "inspection": "parts/reset_frame-inspection.json",
+      "frozen_reference": {
+        "reset_frame": {
+          "volume_mm3": 1957.7478146545618,
+          "area_mm2": 1884.7945834485467,
+          "center_of_mass": [
+            -10.676558449874161,
+            4.000000000000001,
+            6.377841460476901
+          ],
+          "bbox": {
+            "min": [
+              -25.600000000000016,
+              -3.0,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              -2.4000000000000083,
+              11.0,
+              11.800000000000008
+            ]
+          }
+        }
+      },
+      "mesh": "parts/reset_frame.3mf",
+      "build_script": "parts/reset_frame-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/reset_frame.step",
+      "groups": "parts/reset_frame-groups.json",
+      "raw_step": "parts/reset_frame-native.step",
+      "native_body_names": [
+        "reset_frame"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "b613a87ea02a7f407067b3d6b0e7fae3f5e84decc243bca6ef89a86398b84a45",
+      "native_sha256": "4080df6b8c59755839038b58c5756f35211db6687accfbdc21cdff11d354667f",
+      "sketch_count": 8,
+      "feature_count": 18,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "47be695d4bc7cfd0957291233e39139ce4ad965220a95c2ea6545a8e7cce54e9",
+      "raw_step_sha256": "775c70d81d53070f8273120e6c513007bbadd451f14d48d323f5df502f2d34f0",
+      "groups_sha256": "48377f519208e4d0d3b2c108a6fcd8d0e333438fe362e1d2955fa9791c3f4b65",
+      "mesh_sha256": "f3497a07397e999b371e66228a639d218695a30f408abf2ba5454e23abd3e7c8",
+      "mesh_report": "parts/reset_frame-mesh-report.json"
+    },
+    {
+      "name": "reset_slider",
+      "path": "parts/reset_slider.json",
+      "native": "parts/reset_slider.solidcraft",
+      "step": "parts/reset_slider.step",
+      "original_step": "revisions/014-usb-clearance/parts/reset_slider.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "reset_slider"
+      ],
+      "inspection": "parts/reset_slider-inspection.json",
+      "frozen_reference": {
+        "reset_slider": {
+          "volume_mm3": 2900.1351658626977,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            39.55211560365244,
+            2.490350756237207,
+            10.417133335056747
+          ],
+          "bbox": {
+            "min": [
+              16.700000000000003,
+              -9.5,
+              -1.0164568432923028e-15
+            ],
+            "max": [
+              52.75,
+              10.0,
+              21.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/reset_slider.3mf",
+      "build_script": "parts/reset_slider-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/reset_slider.step",
+      "groups": "parts/reset_slider-groups.json",
+      "raw_step": "parts/reset_slider-native.step",
+      "native_body_names": [
+        "reset_slider"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "0df68eb9df2162fece7a0572cd3774f10f55a775f122ebb4b36ce5893c8486f2",
+      "native_sha256": "cf04bea4e73639634c70bfe3b796aa9fc3ade00a937433a8fadafe719d3709cd",
+      "sketch_count": 12,
+      "feature_count": 30,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "236b921ded9d8712e780797b94bf7b68a8b24a7934fba5e0f8a786a922e9f608",
+      "raw_step_sha256": "72d90bee2dcf802a65486e27c818e0bc3d5b1aa0ba4b60968b4ea273646cca1d",
+      "groups_sha256": "f3fb8f7a95d583303797515d505f6156587351cd13031d672ba18fd87b27006e",
+      "mesh_sha256": "e19c7b8d3188861b03451ed6eee9c7456782da1db8619849408eb39b780f83c7",
+      "mesh_report": "parts/reset_slider-mesh-report.json"
+    },
+    {
+      "name": "reset_rear_keeper",
+      "path": "parts/reset_rear_keeper.json",
+      "native": "parts/reset_rear_keeper.solidcraft",
+      "step": "parts/reset_rear_keeper.step",
+      "original_step": "revisions/014-usb-clearance/parts/reset_rear_keeper.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "reset_rear_keeper"
+      ],
+      "inspection": "parts/reset_rear_keeper-inspection.json",
+      "frozen_reference": {
+        "reset_rear_keeper": {
+          "volume_mm3": 631.0378267094022,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -12.67903221470671,
+            4.000000000000003,
+            1.2772033750401945
+          ],
+          "bbox": {
+            "min": [
+              -23.200000000000014,
+              -3.0,
+              0.0
+            ],
+            "max": [
+              -2.4000000000000115,
+              11.0,
+              4.85
+            ]
+          }
+        }
+      },
+      "mesh": "parts/reset_rear_keeper.3mf",
+      "build_script": "parts/reset_rear_keeper-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/reset_rear_keeper.step",
+      "groups": "parts/reset_rear_keeper-groups.json",
+      "raw_step": "parts/reset_rear_keeper-native.step",
+      "native_body_names": [
+        "reset_rear_keeper"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "ef8f96ea31f539a695da99043e95776492eac6e39404c54bff7394066b654ed2",
+      "native_sha256": "1a44e154b410dec1554afa9c62f3ef478cd7eaf9cf4bb2537cefdde66d43fee0",
+      "sketch_count": 5,
+      "feature_count": 12,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "241c9ce26957fc3099192e6cf481d85e0aa4d440adfed86bf9df90c319ae1763",
+      "raw_step_sha256": "859afbe8ba9f8312774106f98b9ed0ff53b4bc95dc11434db72d66091e4c5729",
+      "groups_sha256": "034a8cc9666c144c37610d3a65a1b0d9d67cd71ca587939a1cb87187aa2abdb4",
+      "mesh_sha256": "7301497fdff364c5218a30d1206a0c2373e36d2bd2b08ec2025be5365037c532",
+      "mesh_report": "parts/reset_rear_keeper-mesh-report.json"
+    },
+    {
+      "name": "reset_moving_magnet_keeper",
+      "path": "parts/reset_moving_magnet_keeper.json",
+      "native": "parts/reset_moving_magnet_keeper.solidcraft",
+      "step": "parts/reset_moving_magnet_keeper.step",
+      "original_step": "revisions/014-usb-clearance/parts/reset_moving_magnet_keeper.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "reset_moving_magnet_keeper"
+      ],
+      "inspection": "parts/reset_moving_magnet_keeper-inspection.json",
+      "frozen_reference": {
+        "reset_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            4.0,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              1.9500000000000002,
+              0.0
+            ],
+            "max": [
+              -48.150000000000006,
+              6.05,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/reset_moving_magnet_keeper.3mf",
+      "build_script": "parts/reset_moving_magnet_keeper-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/reset_moving_magnet_keeper.step",
+      "groups": "parts/reset_moving_magnet_keeper-groups.json",
+      "raw_step": "parts/reset_moving_magnet_keeper-native.step",
+      "native_body_names": [
+        "reset_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "2a27855fbbf45d6261d55518e9ea58e50b5a3f23e8b099ffd53dcf551dbf5879",
+      "native_sha256": "1ed5e7323f0ee2fb5e2ed23e879bd512a4ceb3036f278641b10a318d454df152",
+      "sketch_count": 1,
+      "feature_count": 3,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "8db19f29f97f42cdbddd71a74963ed823aa8426f7e07e0d9370d8904ed435fcb",
+      "raw_step_sha256": "63bbc3d5c041d5f70c54d264ee73b413f9fb8476122454e8a7af9ff6c7978f6c",
+      "groups_sha256": "d209a92de1c293d4998cbe38ca5384fe7b0ee53e55ef97e259166f0ed68f979b",
+      "mesh_sha256": "9c042c8da7d378bbdf009258cdfb80cc04ddb2e9b232291a9a74c746df96cb5f",
+      "mesh_report": "parts/reset_moving_magnet_keeper-mesh-report.json"
+    },
+    {
+      "name": "boot_frame",
+      "path": "parts/boot_frame.json",
+      "native": "parts/boot_frame.solidcraft",
+      "step": "parts/boot_frame.step",
+      "original_step": "revisions/014-usb-clearance/parts/boot_frame.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "boot_frame"
+      ],
+      "inspection": "parts/boot_frame-inspection.json",
+      "frozen_reference": {
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545624,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            -10.420922025738822,
+            -21.14725881600189,
+            6.313158405911146
+          ],
+          "bbox": {
+            "min": [
+              -25.600000000000016,
+              -28.0,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              -2.4000000000000083,
+              -14.0,
+              11.800000000000008
+            ]
+          }
+        }
+      },
+      "mesh": "parts/boot_frame.3mf",
+      "build_script": "parts/boot_frame-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/boot_frame.step",
+      "groups": "parts/boot_frame-groups.json",
+      "raw_step": "parts/boot_frame-native.step",
+      "native_body_names": [
+        "boot_frame"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "b3f9075a716aa521d384c255d86555c7cb3646d26c5522b479534c1559e6b4bc",
+      "native_sha256": "6a151bf41b2c31d61d0d0596f97f47d66a4bd5e79fa39aaaefdfef7a9da12d12",
+      "sketch_count": 9,
+      "feature_count": 20,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "d37f68a418659d306eaa862005b5dd1a7e66c944db60a7dba1f7a85b11f3c6a5",
+      "raw_step_sha256": "5bb9b0aaba5e8283805fcc670e2218ace2ef776038481389a3725c80f5848d02",
+      "groups_sha256": "7fc339e9074efa58e298d2a6c07a595ec0e88f57d3d5afc96de3c02e4cb8c9c4",
+      "mesh_sha256": "e4078fbdbaa68e29181c8b010e16f04a1949f7574a816cfd1eae67b44bf5857e",
+      "mesh_report": "parts/boot_frame-mesh-report.json"
+    },
+    {
+      "name": "boot_slider",
+      "path": "parts/boot_slider.json",
+      "native": "parts/boot_slider.solidcraft",
+      "step": "parts/boot_slider.step",
+      "original_step": "revisions/014-usb-clearance/parts/boot_slider.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "boot_slider"
+      ],
+      "inspection": "parts/boot_slider-inspection.json",
+      "frozen_reference": {
+        "boot_slider": {
+          "volume_mm3": 2703.0122783532024,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            40.2058615058894,
+            -20.83864238299495,
+            10.282315818518512
+          ],
+          "bbox": {
+            "min": [
+              16.700000000000003,
+              -27.000000000000004,
+              -2.3869795029440866e-15
+            ],
+            "max": [
+              52.75,
+              -14.5,
+              21.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/boot_slider.3mf",
+      "build_script": "parts/boot_slider-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/boot_slider.step",
+      "groups": "parts/boot_slider-groups.json",
+      "raw_step": "parts/boot_slider-native.step",
+      "native_body_names": [
+        "boot_slider"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "c043ef1c7998d88021aaf9d88f4bbc28938223cef10735ddee9ae32bb3b806ea",
+      "native_sha256": "291bd68cf5f3f61e270ea4380d21f5b98286517eaf23c3d4d622950e1daa697a",
+      "sketch_count": 12,
+      "feature_count": 30,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "d195a3c52b7cc5852a3060500ef47f1dc4834e884a27fb1e1d6eab017aa9cd56",
+      "raw_step_sha256": "996d8561da1018f21c837a5c9194e1e0bc8019d9719721087dafc2585f8c494d",
+      "groups_sha256": "008df1efa050248f41217444948574ede82c94126ca2ae591b34a87e2c4589a8",
+      "mesh_sha256": "56a2efc3283ad8563f877bb214000edf9bd086a50c3ed66476f0a0140f2924a0",
+      "mesh_report": "parts/boot_slider-mesh-report.json"
+    },
+    {
+      "name": "boot_rear_keeper",
+      "path": "parts/boot_rear_keeper.json",
+      "native": "parts/boot_rear_keeper.solidcraft",
+      "step": "parts/boot_rear_keeper.step",
+      "original_step": "revisions/014-usb-clearance/parts/boot_rear_keeper.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "boot_rear_keeper"
+      ],
+      "inspection": "parts/boot_rear_keeper-inspection.json",
+      "frozen_reference": {
+        "boot_rear_keeper": {
+          "volume_mm3": 631.0378267094023,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -12.679032214706705,
+            -21.0,
+            1.2772033750402016
+          ],
+          "bbox": {
+            "min": [
+              -23.200000000000014,
+              -28.0,
+              0.0
+            ],
+            "max": [
+              -2.4000000000000115,
+              -14.0,
+              4.85
+            ]
+          }
+        }
+      },
+      "mesh": "parts/boot_rear_keeper.3mf",
+      "build_script": "parts/boot_rear_keeper-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/boot_rear_keeper.step",
+      "groups": "parts/boot_rear_keeper-groups.json",
+      "raw_step": "parts/boot_rear_keeper-native.step",
+      "native_body_names": [
+        "boot_rear_keeper"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "d459b32886da500652430f1cfa190d0d07816e2a3e6f3895004968604930bc44",
+      "native_sha256": "3de4b1255e286a0a0da5662db8e4da84182c7d1ca30cd6e00050fa7b796c505d",
+      "sketch_count": 5,
+      "feature_count": 12,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "bffe36459a780ea2be99ee2c237a6c67c34422e78ff1c08937d95fb32f9d956b",
+      "raw_step_sha256": "6d3211e96e0d0b60c3d507d5e6abccac9fe6e6a762c8448966cff366447abf51",
+      "groups_sha256": "b618055a2241bd479ee382dcb8cc2cd2f868c3e99273db8aaa642ebb16dae53b",
+      "mesh_sha256": "fe4ab5e31e18000d75f59c346b89cc4dbb8fe66cebfc3fea055151ff92c9561b",
+      "mesh_report": "parts/boot_rear_keeper-mesh-report.json"
+    },
+    {
+      "name": "boot_moving_magnet_keeper",
+      "path": "parts/boot_moving_magnet_keeper.json",
+      "native": "parts/boot_moving_magnet_keeper.solidcraft",
+      "step": "parts/boot_moving_magnet_keeper.step",
+      "original_step": "revisions/014-usb-clearance/parts/boot_moving_magnet_keeper.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "boot_moving_magnet_keeper"
+      ],
+      "inspection": "parts/boot_moving_magnet_keeper-inspection.json",
+      "frozen_reference": {
+        "boot_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            -21.0,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              -23.05,
+              0.0
+            ],
+            "max": [
+              -48.150000000000006,
+              -18.950000000000003,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "parts/boot_moving_magnet_keeper.3mf",
+      "build_script": "parts/boot_moving_magnet_keeper-build.json",
+      "reference_step": "solidcraft/revision-014/references/parts/boot_moving_magnet_keeper.step",
+      "groups": "parts/boot_moving_magnet_keeper-groups.json",
+      "raw_step": "parts/boot_moving_magnet_keeper-native.step",
+      "native_body_names": [
+        "boot_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 1,
+      "design_sha256": "7ae1d279bb0e0f3c139d05ec6a35885d69b490e09897ff738a41ec6d23e7eb35",
+      "native_sha256": "1d31341841b02f44018c5175a0ef49c86b7dc3fbd85e412a2cae61d7f099aff1",
+      "sketch_count": 1,
+      "feature_count": 3,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "74879a97cf113a2d35f57e2322c9b6310e39abaa6d1fe280236a0cf25fde0561",
+      "raw_step_sha256": "a6d0866d68136268c786cc9a2f33a69b5be155a4946d96e2c741e907825e4a65",
+      "groups_sha256": "48d0537356b0f83e68de1b15893288366a0c2b186a67f33cf22e6a579e8d12c4",
+      "mesh_sha256": "260b8174cdced91d7248d54a86a20e73d7a7ae9d14c98414c703d105b1ac0619",
+      "mesh_report": "parts/boot_moving_magnet_keeper-mesh-report.json"
+    },
+    {
+      "name": "Button fit registration frame",
+      "path": "fit-tests/button_fit_frame.json",
+      "native": "fit-tests/button_fit_frame.solidcraft",
+      "step": "fit-tests/button_fit_frame.step",
+      "original_step": "fit-tests/009-usb-clearance/parts/button_fit_frame.step",
+      "printable": true,
+      "expected_body_count": 1,
+      "body_names": [
+        "button_fit_frame"
+      ],
+      "inspection": "fit-tests/button_fit_frame-inspection.json",
+      "frozen_reference": {
+        "button_fit_frame": {
+          "volume_mm3": 19933.359994451945,
+          "area_mm2": 16453.901142778202,
+          "center_of_mass": [
+            -0.3707398601376523,
+            -0.1902611659414968,
+            4.294610932560523
+          ],
+          "bbox": {
+            "min": [
+              -38.75000004048902,
+              -47.60000000000001,
+              -2.1871393585115584e-14
+            ],
+            "max": [
+              36.35000000000001,
+              47.60000000000001,
+              12.200000000000001
+            ]
+          }
+        }
+      },
+      "mesh": "fit-tests/button_fit_frame.3mf",
+      "build_script": "fit-tests/button_fit_frame-build.json",
+      "reference_step": "solidcraft/revision-014/references/fit-tests/button_fit_frame.step",
+      "groups": "fit-tests/button_fit_frame-groups.json",
+      "raw_step": "fit-tests/button_fit_frame-native.step",
+      "native_body_names": [
+        "button_fit_frame",
+        "button_fit_frame_pcb_-1_-1_support",
+        "button_fit_frame_pcb_-1_1_support",
+        "button_fit_frame_pcb_1_-1_support",
+        "button_fit_frame_pcb_1_1_support",
+        "button_fit_frame_reset_mounting_pad",
+        "button_fit_frame_boot_mounting_pad",
+        "button_fit_frame_cable_cradle_stock"
+      ],
+      "expected_native_body_count": 8,
+      "design_sha256": "634c980c674ead96098483a6d1fe5b01c2da6d0fe362f6ceaf3a2a7c2872ae50",
+      "native_sha256": "4dbd15294457b2b4a9bb555979b5b3f35d29a311afc49d8c7455815611b4b999",
+      "sketch_count": 49,
+      "feature_count": 101,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "73eedcc30e5e71833ec47a3535350235b2faf215c7be32086566b547cdb15bf9",
+      "raw_step_sha256": "d79980597956418ad65480d479aa2456801e6cd73f527bd938e90fbc75dde7cc",
+      "groups_sha256": "e94923332fe763694e4f6f22bbebf851cd557b37d340367895d101b554786a21",
+      "mesh_sha256": "734227d0d695b41d65cc1db087cbd21a49875aac0fee2322171007220e04a20b",
+      "mesh_report": "fit-tests/button_fit_frame-mesh-report.json"
+    },
+    {
+      "name": "Button and USB fit assembly",
+      "path": "fit-tests/assembly.json",
+      "native": "fit-tests/assembly.solidcraft",
+      "step": "fit-tests/assembly.step",
+      "original_step": "fit-tests/009-usb-clearance/assembly.step",
+      "printable": false,
+      "expected_body_count": 13,
+      "body_names": [
+        "button_fit_frame",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "inspection": "fit-tests/assembly-inspection.json",
+      "frozen_reference": {
+        "button_fit_frame": {
+          "volume_mm3": 19933.359994451945,
+          "area_mm2": 16453.901142778202,
+          "center_of_mass": [
+            -0.3707398601376523,
+            -0.1902611659414968,
+            4.294610932560523
+          ],
+          "bbox": {
+            "min": [
+              -38.75000004048902,
+              -47.60000000000001,
+              -2.1871393585115584e-14
+            ],
+            "max": [
+              36.35000000000001,
+              47.60000000000001,
+              12.200000000000001
+            ]
+          }
+        },
+        "pcb_clamp_left_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            -17.000000000000004,
+            11.2
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              -21.0,
+              10.2
+            ],
+            "max": [
+              -23.2,
+              -13.0,
+              12.2
+            ]
+          }
+        },
+        "pcb_clamp_left_rear": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            -27.749101536770965,
+            17.000000000000004,
+            11.2
+          ],
+          "bbox": {
+            "min": [
+              -32.75,
+              13.0,
+              10.2
+            ],
+            "max": [
+              -23.2,
+              21.0,
+              12.2
+            ]
+          }
+        },
+        "pcb_clamp_right_front": {
+          "volume_mm3": 134.64159446225096,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.74910153677097,
+            -17.0,
+            11.2
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              -21.0,
+              10.2
+            ],
+            "max": [
+              32.75,
+              -13.0,
+              12.2
+            ]
+          }
+        },
+        "pcb_clamp_right_rear": {
+          "volume_mm3": 134.64159446225096,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            27.74910153677097,
+            17.0,
+            11.2
+          ],
+          "bbox": {
+            "min": [
+              23.200000000000003,
+              13.0,
+              10.2
+            ],
+            "max": [
+              32.75,
+              21.0,
+              12.2
+            ]
+          }
+        },
+        "reset_frame": {
+          "volume_mm3": 1957.7478146545618,
+          "area_mm2": 1884.7945834485467,
+          "center_of_mass": [
+            -44.1721585395231,
+            3.999999999999999,
+            10.676558449874152
+          ],
+          "bbox": {
+            "min": [
+              -50.55,
+              -3.0,
+              2.4
+            ],
+            "max": [
+              -38.75,
+              11.0,
+              25.6
+            ]
+          }
+        },
+        "reset_slider": {
+          "volume_mm3": 2900.1351658626986,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            -39.552115603652425,
+            2.490350756237207,
+            23.58286666494325
+          ],
+          "bbox": {
+            "min": [
+              -52.75,
+              -9.5,
+              13.0
+            ],
+            "max": [
+              -16.7,
+              10.0,
+              34.0
+            ]
+          }
+        },
+        "reset_rear_keeper": {
+          "volume_mm3": 631.0378267094023,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -51.6727966249598,
+            4.0,
+            12.679032214706687
+          ],
+          "bbox": {
+            "min": [
+              -52.95,
+              -3.0,
+              2.4
+            ],
+            "max": [
+              -48.10000000000001,
+              11.0,
+              23.2
+            ]
+          }
+        },
+        "reset_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            4.0,
+            14.9
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              1.9500000000000002,
+              13.9
+            ],
+            "max": [
+              -48.150000000000006,
+              6.05,
+              15.9
+            ]
+          }
+        },
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545621,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            -44.23684159408886,
+            -21.147258816001894,
+            10.420922025738813
+          ],
+          "bbox": {
+            "min": [
+              -50.55,
+              -28.0,
+              2.4
+            ],
+            "max": [
+              -38.75,
+              -14.0,
+              25.6
+            ]
+          }
+        },
+        "boot_slider": {
+          "volume_mm3": 2703.0122783532015,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            -40.20586150588942,
+            -20.838642382994944,
+            23.717684181481502
+          ],
+          "bbox": {
+            "min": [
+              -52.75,
+              -27.000000000000004,
+              13.0
+            ],
+            "max": [
+              -16.7,
+              -14.5,
+              34.0
+            ]
+          }
+        },
+        "boot_rear_keeper": {
+          "volume_mm3": 631.0378267094021,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            -51.67279662495982,
+            -21.000000000000004,
+            12.679032214706691
+          ],
+          "bbox": {
+            "min": [
+              -52.95,
+              -28.0,
+              2.4
+            ],
+            "max": [
+              -48.10000000000001,
+              -14.0,
+              23.2
+            ]
+          }
+        },
+        "boot_moving_magnet_keeper": {
+          "volume_mm3": 16.80999999999998,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            -49.175000000000004,
+            -21.0,
+            14.9
+          ],
+          "bbox": {
+            "min": [
+              -50.2,
+              -23.05,
+              13.9
+            ],
+            "max": [
+              -48.150000000000006,
+              -18.950000000000003,
+              15.9
+            ]
+          }
+        }
+      },
+      "build_script": "fit-tests/assembly-build.json",
+      "reference_step": "solidcraft/revision-014/references/fit-tests/assembly.step",
+      "groups": "fit-tests/assembly-groups.json",
+      "raw_step": "fit-tests/assembly-native.step",
+      "native_body_names": [
+        "button_fit_frame",
+        "button_fit_frame_pcb_-1_-1_support",
+        "button_fit_frame_pcb_-1_1_support",
+        "button_fit_frame_pcb_1_-1_support",
+        "button_fit_frame_pcb_1_1_support",
+        "button_fit_frame_reset_mounting_pad",
+        "button_fit_frame_boot_mounting_pad",
+        "button_fit_frame_cable_cradle_stock",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 20,
+      "design_sha256": "9f9793baf158cd45d88f6093c7f6e25e0981697840238d59302d3bd5c70ba0ed",
+      "native_sha256": "7405f6207889977788b902e001a756f3ec9f4f56003d6f8772a96d5834afa00b",
+      "sketch_count": 110,
+      "feature_count": 231,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "a4c8f8eae4789ec0e2e5d8de1f32140a65d894b089af3df44a509996da724db5",
+      "raw_step_sha256": "bc822636f44b20409ac0526c0dae6ea0b636e5f8ea117dbe11109f2b9f70ed08",
+      "groups_sha256": "c348f9a877d02e7e907207627f709e08d0e9b1989f00e166c6f48802b9e5f74b"
+    },
+    {
+      "name": "Three replacement pieces",
+      "path": "fit-tests/replacements-only.json",
+      "native": "fit-tests/replacements-only.solidcraft",
+      "step": "fit-tests/replacements-only.step",
+      "original_step": null,
+      "printable": true,
+      "expected_body_count": 3,
+      "body_names": [
+        "reset_slider",
+        "boot_slider",
+        "boot_frame"
+      ],
+      "inspection": "fit-tests/replacements-only-inspection.json",
+      "frozen_reference": {
+        "reset_slider": {
+          "volume_mm3": 2900.1351658626977,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            22.852115603652436,
+            11.990350756237207,
+            10.417133335056736
+          ],
+          "bbox": {
+            "min": [
+              -8.881784197001252e-16,
+              0.0,
+              -1.0164568432923028e-15
+            ],
+            "max": [
+              36.05,
+              19.5,
+              21.0
+            ]
+          }
+        },
+        "boot_slider": {
+          "volume_mm3": 2703.012278353202,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            67.55586150588941,
+            6.161357617005056,
+            10.282315818518512
+          ],
+          "bbox": {
+            "min": [
+              44.05,
+              -1.3322676295501878e-15,
+              -2.3869795029440866e-15
+            ],
+            "max": [
+              80.1,
+              12.500000000000004,
+              21.0
+            ]
+          }
+        },
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545626,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            103.2790779742612,
+            6.8527411839980985,
+            6.313158405911132
+          ],
+          "bbox": {
+            "min": [
+              88.1,
+              0.0,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              111.30000000000001,
+              14.0,
+              11.800000000000008
+            ]
+          }
+        }
+      },
+      "mesh": "fit-tests/replacements-only.3mf",
+      "build_script": "fit-tests/replacements-only-build.json",
+      "reference_step": "solidcraft/revision-014/references/fit-tests/replacements-only.step",
+      "groups": "fit-tests/replacements-only-groups.json",
+      "raw_step": "fit-tests/replacements-only-native.step",
+      "native_body_names": [
+        "reset_slider",
+        "boot_slider",
+        "boot_frame"
+      ],
+      "expected_native_body_count": 3,
+      "design_sha256": "bd004da5bf924c263354aed4edc5b8de5867b94016991596a4d53e5b4627fe0d",
+      "native_sha256": "a4267649658571eb17b8c5159830d5b6180d6478294cf54b385eec7d8578cc5b",
+      "sketch_count": 33,
+      "feature_count": 83,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "55a8c76d9280267ed34dc283109a5e01aba325d49b8666e5c352bea98216a970",
+      "raw_step_sha256": "08a2d85e705c0a8a85dd0feab6b43ce04181547c381c48bce91aa0bf80c2fcfd",
+      "groups_sha256": "23163ab964e89abbc063cac5671ab1887eb40a45ef7a3f5f3b449d1b8cd065ae",
+      "mesh_sha256": "640009975d555a40c279d116798e4be309f0d54694a93d8e95a877eee24a8448",
+      "mesh_report": "fit-tests/replacements-only-mesh-report.json"
+    },
+    {
+      "name": "Complete button fit print layout",
+      "path": "fit-tests/print-layout.json",
+      "native": "fit-tests/print-layout.solidcraft",
+      "step": "fit-tests/print-layout.step",
+      "original_step": null,
+      "printable": true,
+      "expected_body_count": 13,
+      "body_names": [
+        "button_fit_frame",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "inspection": "fit-tests/print-layout-inspection.json",
+      "frozen_reference": {
+        "button_fit_frame": {
+          "volume_mm3": 19933.35999445192,
+          "area_mm2": 16453.901142778202,
+          "center_of_mass": [
+            38.379260180351366,
+            47.409738834058494,
+            4.294610932560545
+          ],
+          "bbox": {
+            "min": [
+              -4.218847493575595e-15,
+              0.0,
+              0.0
+            ],
+            "max": [
+              75.10000004048904,
+              95.20000000000002,
+              12.200000000000022
+            ]
+          }
+        },
+        "pcb_clamp_left_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            88.10089850371806,
+            3.9999999999999964,
+            1.0000000000000018
+          ],
+          "bbox": {
+            "min": [
+              83.10000004048902,
+              0.0,
+              0.0
+            ],
+            "max": [
+              92.65000004048902,
+              8.0,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_left_rear": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            105.65089850371807,
+            4.0000000000000036,
+            0.9999999999999982
+          ],
+          "bbox": {
+            "min": [
+              100.65000004048903,
+              0.0,
+              0.0
+            ],
+            "max": [
+              110.20000004048903,
+              8.0,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_right_front": {
+          "volume_mm3": 134.641594462251,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            122.74910157725998,
+            3.9999999999999964,
+            1.0000000000000018
+          ],
+          "bbox": {
+            "min": [
+              118.20000004048902,
+              0.0,
+              0.0
+            ],
+            "max": [
+              127.75000004048901,
+              8.0,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_right_rear": {
+          "volume_mm3": 134.64159446225105,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            140.29910157725996,
+            4.0000000000000036,
+            0.9999999999999982
+          ],
+          "bbox": {
+            "min": [
+              135.750000040489,
+              0.0,
+              0.0
+            ],
+            "max": [
+              145.300000040489,
+              8.0,
+              2.0
+            ]
+          }
+        },
+        "reset_frame": {
+          "volume_mm3": 1957.7478146545623,
+          "area_mm2": 1884.7945834485467,
+          "center_of_mass": [
+            168.22344159061487,
+            6.999999999999998,
+            6.377841460476894
+          ],
+          "bbox": {
+            "min": [
+              153.300000040489,
+              0.0,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              176.50000004048903,
+              14.0,
+              11.800000000000008
+            ]
+          }
+        },
+        "reset_slider": {
+          "volume_mm3": 2900.1351658626972,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            22.852115603652443,
+            115.19035075623722,
+            10.417133335056732
+          ],
+          "bbox": {
+            "min": [
+              -8.881784197001252e-16,
+              103.20000000000002,
+              -1.0164568432923028e-15
+            ],
+            "max": [
+              36.05,
+              122.70000000000002,
+              21.0
+            ]
+          }
+        },
+        "reset_rear_keeper": {
+          "volume_mm3": 631.0378267094023,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            54.57096778529332,
+            110.20000000000002,
+            1.2772033750402159
+          ],
+          "bbox": {
+            "min": [
+              44.05000000000001,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              64.85000000000001,
+              117.20000000000002,
+              4.85
+            ]
+          }
+        },
+        "reset_moving_magnet_keeper": {
+          "volume_mm3": 16.809999999999974,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            73.87499999999999,
+            105.25000000000001,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              72.85,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              74.89999999999999,
+              107.30000000000001,
+              2.0
+            ]
+          }
+        },
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545626,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            98.07907797426118,
+            110.05274118399812,
+            6.313158405911146
+          ],
+          "bbox": {
+            "min": [
+              82.89999999999998,
+              103.20000000000002,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              106.1,
+              117.20000000000002,
+              11.800000000000008
+            ]
+          }
+        },
+        "boot_slider": {
+          "volume_mm3": 2703.0122783532015,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            137.6058615058894,
+            109.36135761700507,
+            10.282315818518512
+          ],
+          "bbox": {
+            "min": [
+              114.1,
+              103.2,
+              -2.3869795029440866e-15
+            ],
+            "max": [
+              150.14999999999998,
+              115.70000000000002,
+              21.0
+            ]
+          }
+        },
+        "boot_rear_keeper": {
+          "volume_mm3": 631.0378267094026,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            168.6709677852933,
+            110.20000000000002,
+            1.2772033750402088
+          ],
+          "bbox": {
+            "min": [
+              158.14999999999998,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              178.95,
+              117.20000000000002,
+              4.85
+            ]
+          }
+        },
+        "boot_moving_magnet_keeper": {
+          "volume_mm3": 16.810000000000013,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            187.97499999999997,
+            105.25000000000001,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              186.94999999999996,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              188.99999999999997,
+              107.30000000000001,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "fit-tests/print-layout.3mf",
+      "build_script": "fit-tests/print-layout-build.json",
+      "reference_step": "solidcraft/revision-014/references/fit-tests/print-layout.step",
+      "groups": "fit-tests/print-layout-groups.json",
+      "raw_step": "fit-tests/print-layout-native.step",
+      "native_body_names": [
+        "button_fit_frame",
+        "button_fit_frame_pcb_-1_-1_support",
+        "button_fit_frame_pcb_-1_1_support",
+        "button_fit_frame_pcb_1_-1_support",
+        "button_fit_frame_pcb_1_1_support",
+        "button_fit_frame_reset_mounting_pad",
+        "button_fit_frame_boot_mounting_pad",
+        "button_fit_frame_cable_cradle_stock",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 20,
+      "design_sha256": "ea968b6596ea98371a07e9936d98271c371c91c0d1e55b90cb545c2a405d583f",
+      "native_sha256": "760c533a83f5b1981f4bb4e85b929ec94382f9dd9ce469388c5b1ee8a12851da",
+      "sketch_count": 110,
+      "feature_count": 262,
+      "all_sketches_dof_zero": true,
+      "step_sha256": "6ae5dcde965154aa8745d274938be8ba69e66e4c67270ea4708b5deecaf4531d",
+      "raw_step_sha256": "5c93a12204c59affe22dd1add68ce3b417b4eb103f70b435dcf51183b56e2d05",
+      "groups_sha256": "c348f9a877d02e7e907207627f709e08d0e9b1989f00e166c6f48802b9e5f74b",
+      "mesh_sha256": "7a8148d27343e3ead31064739deefe38bc037a5a9109c160f2dff1433697c597",
+      "mesh_report": "fit-tests/print-layout-mesh-report.json"
+    },
+    {
+      "name": "Full enclosure print layout",
+      "path": "print-layout.json",
+      "native": "print-layout.solidcraft",
+      "step": "print-layout.step",
+      "original_step": null,
+      "printable": true,
+      "expected_body_count": 15,
+      "body_names": [
+        "body",
+        "lid",
+        "desk_bracket",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "inspection": "print-layout-inspection.json",
+      "frozen_reference": {
+        "body": {
+          "volume_mm3": 46477.438668088485,
+          "area_mm2": 35608.21768583918,
+          "center_of_mass": [
+            48.84420018801244,
+            47.269324868686425,
+            11.977557908629263
+          ],
+          "bbox": {
+            "min": [
+              -1.7763568394002505e-15,
+              0.0,
+              0.0
+            ],
+            "max": [
+              94.3,
+              95.20000000000002,
+              32.00000000000003
+            ]
+          }
+        },
+        "lid": {
+          "volume_mm3": 14188.599539901365,
+          "area_mm2": 14377.524771926086,
+          "center_of_mass": [
+            137.36964554875783,
+            46.579342858528356,
+            1.265380431437677
+          ],
+          "bbox": {
+            "min": [
+              102.30000000000001,
+              -6.106226635438361e-16,
+              -2.886579864025407e-15
+            ],
+            "max": [
+              172.60000000000002,
+              92.80000000000001,
+              4.400000000000013
+            ]
+          }
+        },
+        "desk_bracket": {
+          "volume_mm3": 22162.354153740187,
+          "area_mm2": 14100.02326755182,
+          "center_of_mass": [
+            57.150000000000006,
+            145.60000000000002,
+            8.703708297963068
+          ],
+          "bbox": {
+            "min": [
+              0.0,
+              103.20000000000002,
+              -2.755455298081545e-16
+            ],
+            "max": [
+              114.3,
+              188.0,
+              32.20000000000002
+            ]
+          }
+        },
+        "pcb_clamp_left_front": {
+          "volume_mm3": 134.64159446225105,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            127.30089846322905,
+            107.20000000000002,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              122.30000000000001,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              131.85000000000002,
+              111.20000000000002,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_left_rear": {
+          "volume_mm3": 134.64159446225105,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            144.85089846322902,
+            107.20000000000002,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              139.85,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              149.4,
+              111.20000000000002,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_right_front": {
+          "volume_mm3": 134.64159446225108,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            161.94910153677094,
+            107.20000000000002,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              157.39999999999998,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              166.95,
+              111.20000000000002,
+              2.0
+            ]
+          }
+        },
+        "pcb_clamp_right_rear": {
+          "volume_mm3": 134.64159446225105,
+          "area_mm2": 226.2044245066616,
+          "center_of_mass": [
+            179.49910153677095,
+            107.20000000000002,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              174.95,
+              103.20000000000002,
+              0.0
+            ],
+            "max": [
+              184.5,
+              111.20000000000002,
+              2.0
+            ]
+          }
+        },
+        "reset_frame": {
+          "volume_mm3": 1957.7478146545627,
+          "area_mm2": 1884.7945834485467,
+          "center_of_mass": [
+            207.42344155012586,
+            110.20000000000002,
+            6.377841460476894
+          ],
+          "bbox": {
+            "min": [
+              192.5,
+              103.20000000000002,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              215.70000000000002,
+              117.20000000000002,
+              11.800000000000008
+            ]
+          }
+        },
+        "reset_slider": {
+          "volume_mm3": 2900.1351658626972,
+          "area_mm2": 1920.561783971681,
+          "center_of_mass": [
+            22.85211560365243,
+            207.9903507562372,
+            10.417133335056743
+          ],
+          "bbox": {
+            "min": [
+              -8.881784197001252e-16,
+              196.0,
+              -1.0164568432923028e-15
+            ],
+            "max": [
+              36.05,
+              215.5,
+              21.0
+            ]
+          }
+        },
+        "reset_rear_keeper": {
+          "volume_mm3": 631.0378267094023,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            54.57096778529332,
+            203.0,
+            1.2772033750402088
+          ],
+          "bbox": {
+            "min": [
+              44.05000000000001,
+              196.0,
+              0.0
+            ],
+            "max": [
+              64.85000000000001,
+              210.0,
+              4.85
+            ]
+          }
+        },
+        "reset_moving_magnet_keeper": {
+          "volume_mm3": 16.809999999999974,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            73.87499999999999,
+            198.05,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              72.85,
+              196.0,
+              0.0
+            ],
+            "max": [
+              74.89999999999999,
+              200.1,
+              2.0
+            ]
+          }
+        },
+        "boot_frame": {
+          "volume_mm3": 1913.0318146545626,
+          "area_mm2": 1814.1945834485468,
+          "center_of_mass": [
+            98.07907797426118,
+            202.8527411839981,
+            6.313158405911153
+          ],
+          "bbox": {
+            "min": [
+              82.89999999999998,
+              196.0,
+              -2.220446049250313e-15
+            ],
+            "max": [
+              106.1,
+              210.0,
+              11.800000000000008
+            ]
+          }
+        },
+        "boot_slider": {
+          "volume_mm3": 2703.0122783532015,
+          "area_mm2": 1830.1182145718312,
+          "center_of_mass": [
+            137.6058615058894,
+            202.16135761700505,
+            10.282315818518512
+          ],
+          "bbox": {
+            "min": [
+              114.1,
+              196.0,
+              -2.3869795029440866e-15
+            ],
+            "max": [
+              150.14999999999998,
+              208.5,
+              21.0
+            ]
+          }
+        },
+        "boot_rear_keeper": {
+          "volume_mm3": 631.0378267094025,
+          "area_mm2": 802.4439810310871,
+          "center_of_mass": [
+            168.6709677852933,
+            203.0,
+            1.2772033750402088
+          ],
+          "bbox": {
+            "min": [
+              158.14999999999998,
+              196.0,
+              0.0
+            ],
+            "max": [
+              178.95,
+              210.0,
+              4.85
+            ]
+          }
+        },
+        "boot_moving_magnet_keeper": {
+          "volume_mm3": 16.810000000000013,
+          "area_mm2": 41.40999999999998,
+          "center_of_mass": [
+            187.97499999999997,
+            198.05,
+            1.0
+          ],
+          "bbox": {
+            "min": [
+              186.94999999999996,
+              196.0,
+              0.0
+            ],
+            "max": [
+              188.99999999999997,
+              200.1,
+              2.0
+            ]
+          }
+        }
+      },
+      "mesh": "print-layout.3mf",
+      "build_script": "print-layout-build.json",
+      "reference_step": "solidcraft/revision-014/references/print-layout.step",
+      "groups": "print-layout-groups.json",
+      "raw_step": "print-layout-native.step",
+      "native_body_names": [
+        "lid",
+        "body",
+        "body_pcb_-1_-1_support",
+        "body_pcb_-1_1_support",
+        "body_pcb_1_-1_support",
+        "body_pcb_1_1_support",
+        "body_lid_corner_-1_-1_support",
+        "body_lid_corner_-1_1_support",
+        "body_lid_corner_1_-1_support",
+        "body_lid_corner_1_1_support",
+        "body_reset_mounting_pad",
+        "body_boot_mounting_pad",
+        "body_cable_cradle_stock",
+        "desk_bracket",
+        "pcb_clamp_left_front",
+        "pcb_clamp_left_rear",
+        "pcb_clamp_right_front",
+        "pcb_clamp_right_rear",
+        "reset_frame",
+        "reset_slider",
+        "reset_rear_keeper",
+        "reset_moving_magnet_keeper",
+        "boot_frame",
+        "boot_slider",
+        "boot_rear_keeper",
+        "boot_moving_magnet_keeper"
+      ],
+      "expected_native_body_count": 26,
+      "sketch_count": 199,
+      "feature_count": 502,
+      "all_sketches_dof_zero": true,
+      "design_sha256": "e88460aa6feac131af049747926c849364dd539d97c29ee82528fd9f309c9d1b",
+      "native_sha256": "5dcb0f4394850899315ec2eaf4c8d43c0fc737983dacd07bec0b614a2fc2c5b1",
+      "step_sha256": "8328a438f037cd35d22a31515948e57f92660e8874dcb43ae4ff889de4c0a0c6",
+      "raw_step_sha256": "77a405003220891d000750a5a29c573c7fb4c5936f2ace03428ca9d538fe2b77",
+      "groups_sha256": "5cfcb1f276cd364f274ac5a067797ccaeef57fb3224e9d95c5cb28c6b286f519",
+      "mesh_sha256": "a7b65f11cd75fa62937e03a197e891072337e9b53b12523ac07a70e795360b6e",
+      "mesh_report": "print-layout-mesh-report.json"
+    }
+  ],
+  "physical_fit_tested": false,
+  "native_shell_strategy": "Editable structural bodies; export-only OCCT union produces one solid per printed part. No imported features.",
+  "status": "validated",
+  "generation_source_files": {
+    "solidcraft/native/scripts/export_assembly.py": "9897be7864a9c265902b33f5c48e57dfa7022a894b3542f5cb29564fd3e4bc63",
+    "solidcraft/native/scripts/bore_mesh.py": "7dd761276461b3e03ff46488fac6f0a76ee0177a8d6aab853b780165162a23b0",
+    "solidcraft/native/scripts/cad_mesh.py": "99dc98867fdff50fc78ff1aee6980a8f4069dc6d360c2613ca57d458cfdc83a0",
+    "solidcraft/native/scripts/fuse_exports.py": "5033faa46d7e4bf1a26957a5ab450bf5e560678421cd4210375433309518b415",
+    "solidcraft/native/scripts/walk_parameters.py": "bf8a00c5f16a4dec1319a041e9f13e7ef8928c2ef259a91ac427d9696ea4e087",
+    "solidcraft/native/scripts/validate_project.py": "e3add9b4b67985efe6320f3d8418e909ad6a571ecf1ee498d84528a140bda897",
+    "solidcraft/native/scripts/build_project.py": "e2657e3e35aee367dea9e620d0468e01ba76a5773fa9a822328daf570d4f7674",
+    "solidcraft/native/scripts/parameter_ranges.py": "d716e0e80dcd2e3360b4b52d6fb39fceff4ba9d44032563fbfd4f3a2adb9f6df",
+    "solidcraft/native/scripts/build_native.py": "b5ee206a6a28392d62a7cbe631ad7b1357c414f038dbdd2a76115d479fe81c72",
+    "solidcraft/native/scripts/enclosure_features.py": "1563504d7b5eaf9db6886548902f2d1c8d2084b8fe1c34972ae00eef858324a9",
+    "solidcraft/native/scripts/native_builder.py": "62591c856917dc34ff165b29969672385b5c6a60f2730c4cc5cf10abe6c5e75f"
+  },
+  "validation_report": "validation.json",
+  "parameter_validation": "parameter-checks/enclosure/validation.json",
+  "single_assembly_export_validation": "assembly-export-validation.json",
+  "edited_body_export_validation": "export-smoke-validation.json"
+}

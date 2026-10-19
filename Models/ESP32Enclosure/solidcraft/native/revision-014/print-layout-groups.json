@@ -1,0 +1,58 @@
+{
+  "lid": [
+    "lid"
+  ],
+  "body": [
+    "body",
+    "body_pcb_-1_-1_support",
+    "body_pcb_-1_1_support",
+    "body_pcb_1_-1_support",
+    "body_pcb_1_1_support",
+    "body_lid_corner_-1_-1_support",
+    "body_lid_corner_-1_1_support",
+    "body_lid_corner_1_-1_support",
+    "body_lid_corner_1_1_support",
+    "body_reset_mounting_pad",
+    "body_boot_mounting_pad",
+    "body_cable_cradle_stock"
+  ],
+  "desk_bracket": [
+    "desk_bracket"
+  ],
+  "pcb_clamp_left_front": [
+    "pcb_clamp_left_front"
+  ],
+  "pcb_clamp_left_rear": [
+    "pcb_clamp_left_rear"
+  ],
+  "pcb_clamp_right_front": [
+    "pcb_clamp_right_front"
+  ],
+  "pcb_clamp_right_rear": [
+    "pcb_clamp_right_rear"
+  ],
+  "reset_frame": [
+    "reset_frame"
+  ],
+  "reset_slider": [
+    "reset_slider"
+  ],
+  "reset_rear_keeper": [
+    "reset_rear_keeper"
+  ],
+  "reset_moving_magnet_keeper": [
+    "reset_moving_magnet_keeper"
+  ],
+  "boot_frame": [
+    "boot_frame"
+  ],
+  "boot_slider": [
+    "boot_slider"
+  ],
+  "boot_rear_keeper": [
+    "boot_rear_keeper"
+  ],
+  "boot_moving_magnet_keeper": [
+    "boot_moving_magnet_keeper"
+  ]
+}

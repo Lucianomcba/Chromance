@@ -1,0 +1,2916 @@
+{
+  "format": "solidcraft/27",
+  "name": "boot_frame",
+  "units": "mm",
+  "params": [
+    {
+      "name": "pcb_width",
+      "expr": "49.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 48.8 to 49.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_length",
+      "expr": "70.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 70 to 70.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_thickness",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "solder_clearance",
+      "expr": "6.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6.6 to 6.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "component_clearance",
+      "expr": "22.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 22 to 22 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "side_margin",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_margin",
+      "expr": "9.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "wall",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.3 to 2.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "floor_thickness",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_thickness",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_fit_clearance",
+      "expr": "0.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "lid_skirt_depth",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "left_access_length",
+      "expr": "60.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 60 to 60 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "left_access_start_above_pcb",
+      "expr": "-1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: -1 to -1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_cable_width",
+      "expr": "24.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 24 to 24 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_cable_height",
+      "expr": "16.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "clamp_y",
+      "expr": "17.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 17 to 17 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_edge_overlap",
+      "expr": "1.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1.3 to 1.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_vertical_play",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "m3_clearance",
+      "expr": "3.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.4 to 3.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "desk_screw_clearance",
+      "expr": "4.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_plate_thickness",
+      "expr": "3.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.2 to 3.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_clearance_above_body",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "corner_radius",
+      "expr": "3.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3 to 3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "edge_bevel",
+      "expr": "0.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_projection",
+      "expr": "1.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1.2 to 1.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_bottom",
+      "expr": "3.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.6 to 3.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_height",
+      "expr": "4.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.8 to 4.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "vent_angle",
+      "expr": "25.0 deg",
+      "unit": "deg",
+      "comment": "Allowed range: 25 to 25 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_vent_width",
+      "expr": "2.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.6 to 2.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "accent_depth",
+      "expr": "0.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_inset_from_left_pcb_edge",
+      "expr": "3.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.3 to 3.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_switch_height_above_pcb",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_switch_height_above_pcb",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_stroke",
+      "expr": "0.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_guide_clearance",
+      "expr": "0.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "modeled_switch_depression",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_arm_height_above_pcb",
+      "expr": "9.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9.2 to 9.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_insert_bore_depth",
+      "expr": "4.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.4 to 4.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_contact_screw_length",
+      "expr": "12.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_contact_screw_length",
+      "expr": "12.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "desk_gap_above_case_floor",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_leg_width_y",
+      "expr": "8.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.6 to 8.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_belt_clearance",
+      "expr": "0.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.6 to 0.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_root_gusset_height",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "finger_pad_extension",
+      "expr": "7.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6.8 to 7.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_bore_depth",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_screw_length",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_bore_depth",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_screw_length",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_boss_diameter",
+      "expr": "8.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.8 to 8.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_screw_offset_from_edge",
+      "expr": "4.9 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.9 to 4.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_projection",
+      "expr": "8.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.4 to 8.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_pad_height",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_support_angle",
+      "expr": "45.0 deg",
+      "unit": "deg",
+      "comment": "Allowed range: 45 to 45 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_wall_overlap",
+      "expr": "0.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_saddle_projection",
+      "expr": "7.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 7 to 7 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_saddle_wall_overlap",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_diameter_provisional",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_width_provisional",
+      "expr": "2.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.5 to 2.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_thickness_provisional",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_side_clearance",
+      "expr": "0.35 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.35 to 0.35 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_vertical_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_floor_below_sill",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_width_provisional",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_length_provisional",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_height_provisional",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_radial_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.15 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_side_wall",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_floor_above_tunnel",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_fit_width_extra",
+      "expr": "0.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.6 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "reset_button_from_bottom",
+      "expr": "30.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 30 to 30 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_button_from_bottom",
+      "expr": "16.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_housing_y",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_housing_y",
+      "expr": "-21.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: -21 to -21 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_arm_elbow_inset",
+      "expr": "4.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_collar_flat_offset",
+      "expr": "2.9 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.9 to 2.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_width",
+      "expr": "10.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 10 to 10 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_thickness",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_projection",
+      "expr": "20.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 20 to 20 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_underside_above_pcb",
+      "expr": "9.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_center_from_bottom",
+      "expr": "23.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 23 to 23 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_cable_diameter",
+      "expr": "3.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.5 to 3.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_fit_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "retention_width",
+      "expr": "(pcb_width)+(board_fit_width_extra)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "cavity_width",
+      "expr": "(retention_width)+((2)*(side_margin))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "cavity_length",
+      "expr": "(pcb_length)+((2)*(end_margin))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "shell_width",
+      "expr": "(cavity_width)+((2)*(wall))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "shell_length",
+      "expr": "(cavity_length)+((2)*(wall))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "board_bottom",
+      "expr": "(floor_thickness)+(solder_clearance)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "board_top",
+      "expr": "(board_bottom)+(pcb_thickness)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "case_height",
+      "expr": "(board_top)+(component_clearance)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_height",
+      "expr": "(board_top)+(board_vertical_play)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lid_top",
+      "expr": "(case_height)+(lid_thickness)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "plate_height",
+      "expr": "(case_height)+(bracket_clearance_above_body)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "mount_ceiling",
+      "expr": "(plate_height)-(desk_gap_above_case_floor)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "mount_interface",
+      "expr": "(mount_ceiling)-((case_height)-(5))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lug_y",
+      "expr": "((shell_length)/(2))-(11)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lug_x",
+      "expr": "((shell_width)/(2))+(6)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_screw_x",
+      "expr": "((retention_width)/(2))+(pcb_clamp_screw_offset_from_edge)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_inner",
+      "expr": "((pcb_width)/(2))-(board_edge_overlap)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_outer",
+      "expr": "((retention_width)/(2))+(8)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_width",
+      "expr": "(clamp_outer)-(clamp_inner)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_center",
+      "expr": "((clamp_inner)+(clamp_outer))/(2)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "button_face",
+      "expr": "((-(shell_width))/(2))-(3.6)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "button_tip_x",
+      "expr": "((-(pcb_width))/(2))+(button_inset_from_left_pcb_edge)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_tip_y",
+      "expr": "(boot_button_from_bottom)-((pcb_length)/(2))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_arm_base",
+      "expr": "(board_top)+(button_arm_height_above_pcb)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_slider_width",
+      "expr": "(((button_face)-(2.4))-(button_guide_clearance))-(((button_face)-(11.8))+(button_guide_clearance))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_magnet_x",
+      "expr": "(button_face)-(7.2)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_guide_floor",
+      "expr": "(11.2)+((boot_arm_base)-(19.2))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_slider_bottom",
+      "expr": "(13)+((boot_arm_base)-(19.2))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_fixed_magnet_bottom",
+      "expr": "(8.2)+((boot_arm_base)-(19.2))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_moving_magnet_bottom",
+      "expr": "(boot_slider_bottom)+(0.8)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "boot_boss_top",
+      "expr": "max((boot_arm_base)+(4.8),(((boot_arm_base)-(0.8))+(button_contact_insert_length))+(1.4))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "d2",
+      "expr": "(200)+(((((button_face)-(11.8))+(button_face))/(2))-(5.9))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d3",
+      "expr": "(200)+((boot_housing_y)-(7.0))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d4",
+      "expr": "(200)+(((((button_face)-(11.8))+(button_face))/(2))+(5.9))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d5",
+      "expr": "(200)+((boot_housing_y)-(7.0))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d6",
+      "expr": "(200)+(((((button_face)-(11.8))+(button_face))/(2))+(5.9))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d7",
+      "expr": "(200)+((boot_housing_y)+(7.0))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d8",
+      "expr": "(200)+(((((button_face)-(11.8))+(button_face))/(2))-(5.9))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d9",
+      "expr": "(200)+((boot_housing_y)+(7.0))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d12",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d13",
+      "expr": "(200)+((boot_housing_y)-(4.3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d14",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d15",
+      "expr": "(200)+((boot_housing_y)-(4.3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d16",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d17",
+      "expr": "(200)+((boot_housing_y)+(4.3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d18",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d19",
+      "expr": "(200)+((boot_housing_y)+(4.3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d22",
+      "expr": "(200)+(((button_face)-(5.9))-(6.1))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d23",
+      "expr": "(200)+((boot_housing_y)-(5.6))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d24",
+      "expr": "(200)+(((button_face)-(5.9))+(6.1))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d25",
+      "expr": "(200)+((boot_housing_y)-(5.6))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d26",
+      "expr": "(200)+(((button_face)-(5.9))+(6.1))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d27",
+      "expr": "(200)+((boot_housing_y)+(5.6))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d28",
+      "expr": "(200)+(((button_face)-(5.9))-(6.1))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d29",
+      "expr": "(200)+((boot_housing_y)+(5.6))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d32",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d33",
+      "expr": "(200)+(((boot_housing_y)+(-5.8))-(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d34",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d35",
+      "expr": "(200)+(((boot_housing_y)+(-5.8))-(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d36",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d37",
+      "expr": "(200)+(((boot_housing_y)+(-5.8))+(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d38",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d39",
+      "expr": "(200)+(((boot_housing_y)+(-5.8))+(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d42",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d43",
+      "expr": "(200)+(((boot_housing_y)+(5.8))-(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d44",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d45",
+      "expr": "(200)+(((boot_housing_y)+(5.8))-(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d46",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d47",
+      "expr": "(200)+(((boot_housing_y)+(5.8))+(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d48",
+      "expr": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d49",
+      "expr": "(200)+(((boot_housing_y)+(5.8))+(1.5))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d52",
+      "expr": "3.4",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d53",
+      "expr": "(200)+((boot_housing_y)+(-3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d54",
+      "expr": "(200)+(5)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d57",
+      "expr": "3.4",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d58",
+      "expr": "(200)+((boot_housing_y)+(3))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d59",
+      "expr": "(200)+(5)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d62",
+      "expr": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))-(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d63",
+      "expr": "(200)+((boot_housing_y)-(2.15))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d64",
+      "expr": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))+(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d65",
+      "expr": "(200)+((boot_housing_y)-(2.15))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d66",
+      "expr": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))+(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d67",
+      "expr": "(200)+((boot_housing_y)+(2.15))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d68",
+      "expr": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))-(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d69",
+      "expr": "(200)+((boot_housing_y)+(2.15))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d72",
+      "expr": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))-(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d73",
+      "expr": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))-(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d74",
+      "expr": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))+(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d75",
+      "expr": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))-(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d76",
+      "expr": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))+(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d77",
+      "expr": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))+(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d78",
+      "expr": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))-(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d79",
+      "expr": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))+(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "boot_frame_stock_profile",
+      "suppressed": false,
+      "param_names": [
+        "d1"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "2.4"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.55000000000001,
+              -28.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -38.75,
+              -28.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -38.75,
+              -14.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.55000000000001,
+              -14.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.45,
+            "param": "d2"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 172.0,
+            "param": "d3"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 161.25,
+            "param": "d4"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 172.0,
+            "param": "d5"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 161.25,
+            "param": "d6"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 186.0,
+            "param": "d7"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.45,
+            "param": "d8"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 186.0,
+            "param": "d9"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "boot_frame_stock",
+      "suppressed": false,
+      "body_names": [
+        "boot_frame"
+      ],
+      "param_names": [
+        "d10"
+      ],
+      "type": "extrude",
+      "sketch": 1,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "((boot_arm_base)+(6.4))-(2.4)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 3,
+      "name": "boot_frame_guide_channel_profile",
+      "suppressed": false,
+      "param_names": [
+        "d11"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "boot_guide_floor"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.650000000000006,
+              -25.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -41.150000000000006,
+              -25.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -41.150000000000006,
+              -16.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.650000000000006,
+              -16.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.35,
+            "param": "d12"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 174.7,
+            "param": "d13"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 158.85,
+            "param": "d14"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 174.7,
+            "param": "d15"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 158.85,
+            "param": "d16"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 183.3,
+            "param": "d17"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.35,
+            "param": "d18"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 183.3,
+            "param": "d19"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "boot_frame_guide_channel",
+      "suppressed": false,
+      "param_names": [
+        "d20"
+      ],
+      "type": "extrude",
+      "sketch": 3,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "30",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "boot_frame_arm_sill_profile",
+      "suppressed": false,
+      "param_names": [
+        "d21"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(boot_arm_base)-(button_stroke)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.75,
+              -26.599999999999994
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -38.55000000000001,
+              -26.599999999999994
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -38.55000000000001,
+              -15.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.75,
+              -15.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.25,
+            "param": "d22"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 173.4,
+            "param": "d23"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 161.45,
+            "param": "d24"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 173.4,
+            "param": "d25"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 161.45,
+            "param": "d26"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 184.6,
+            "param": "d27"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.25,
+            "param": "d28"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 184.6,
+            "param": "d29"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "boot_frame_arm_sill",
+      "suppressed": false,
+      "param_names": [
+        "d30"
+      ],
+      "type": "extrude",
+      "sketch": 5,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "30",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "boot_frame_pad_stop_-1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d31"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((boot_arm_base)+(4.8))-(button_stroke)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.650000000000006,
+              -28.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -41.150000000000006,
+              -28.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -41.150000000000006,
+              -25.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.650000000000006,
+              -25.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.35,
+            "param": "d32"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 171.7,
+            "param": "d33"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 158.85,
+            "param": "d34"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 171.7,
+            "param": "d35"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 158.85,
+            "param": "d36"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 174.7,
+            "param": "d37"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.35,
+            "param": "d38"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 174.7,
+            "param": "d39"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "boot_frame_pad_stop_-1",
+      "suppressed": false,
+      "param_names": [
+        "d40"
+      ],
+      "type": "extrude",
+      "sketch": 7,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "20",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "boot_frame_pad_stop_1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d41"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((boot_arm_base)+(4.8))-(button_stroke)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.650000000000006,
+              -16.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -41.150000000000006,
+              -16.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -41.150000000000006,
+              -13.699999999999989
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.650000000000006,
+              -13.699999999999989
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.35,
+            "param": "d42"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 183.3,
+            "param": "d43"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 158.85,
+            "param": "d44"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 183.3,
+            "param": "d45"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 158.85,
+            "param": "d46"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 186.3,
+            "param": "d47"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.35,
+            "param": "d48"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 186.3,
+            "param": "d49"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "boot_frame_pad_stop_1",
+      "suppressed": false,
+      "param_names": [
+        "d50"
+      ],
+      "type": "extrude",
+      "sketch": 9,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "20",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "boot_frame_mount_hole_0_profile",
+      "suppressed": false,
+      "param_names": [
+        "d51"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "YZ"
+        },
+        "distance": "((button_face)-(14.2))-(0.2)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -24.0,
+              5.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d52"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 176.0,
+            "param": "d53"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 205.0,
+            "param": "d54"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "boot_frame_mount_hole_0",
+      "suppressed": false,
+      "param_names": [
+        "d55"
+      ],
+      "type": "extrude",
+      "sketch": 11,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "15",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "boot_frame_mount_hole_1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d56"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "YZ"
+        },
+        "distance": "((button_face)-(14.2))-(0.2)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -18.0,
+              5.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d57"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 182.0,
+            "param": "d58"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 205.0,
+            "param": "d59"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "boot_frame_mount_hole_1",
+      "suppressed": false,
+      "param_names": [
+        "d60"
+      ],
+      "type": "extrude",
+      "sketch": 13,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "15",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "boot_frame_fixed_magnet_channel_profile",
+      "suppressed": false,
+      "param_names": [
+        "d61"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "boot_fixed_magnet_bottom"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -50.75,
+              -23.150000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -43.80000000000001,
+              -23.150000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -43.80000000000001,
+              -18.849999999999994
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -50.75,
+              -18.849999999999994
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 149.25,
+            "param": "d62"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 176.85,
+            "param": "d63"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 156.2,
+            "param": "d64"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 176.85,
+            "param": "d65"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 156.2,
+            "param": "d66"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 181.15,
+            "param": "d67"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 149.25,
+            "param": "d68"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 181.15,
+            "param": "d69"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "boot_frame_fixed_magnet_channel",
+      "suppressed": false,
+      "param_names": [
+        "d70"
+      ],
+      "type": "extrude",
+      "sketch": 15,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "2.2",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "boot_frame_usb_open_rail_profile",
+      "suppressed": false,
+      "param_names": [
+        "d71"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((board_top)+(usb_plug_underside_above_pcb))-(usb_fit_clearance)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -44.69999999999999,
+              -17.19999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -24.30000000000001,
+              -17.19999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -24.30000000000001,
+              -6.800000000000011
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -44.69999999999999,
+              -6.800000000000011
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 155.3,
+            "param": "d72"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 182.8,
+            "param": "d73"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 175.7,
+            "param": "d74"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 182.8,
+            "param": "d75"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 175.7,
+            "param": "d76"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 193.2,
+            "param": "d77"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 155.3,
+            "param": "d78"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 193.2,
+            "param": "d79"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "boot_frame_usb_open_rail",
+      "suppressed": false,
+      "param_names": [
+        "d80"
+      ],
+      "type": "extrude",
+      "sketch": 17,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "((max((((board_top)+(usb_plug_underside_above_pcb))+(usb_plug_thickness))+(usb_fit_clearance),(boot_arm_base)+(6.4)))+(0.1))-(((board_top)+(usb_plug_underside_above_pcb))-(usb_fit_clearance))",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "boot_frame"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "boot_frame_print_rotation",
+      "suppressed": false,
+      "param_names": [
+        "d81",
+        "d82",
+        "d83",
+        "d84"
+      ],
+      "type": "move",
+      "bodies": [
+        "boot_frame"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "angle": "-90 deg"
+    },
+    {
+      "id": 20,
+      "name": "boot_frame_on_bed",
+      "suppressed": false,
+      "param_names": [
+        "d85",
+        "d86",
+        "d87"
+      ],
+      "type": "move",
+      "bodies": [
+        "boot_frame"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "-((button_face)-(11.8))"
+      ]
+    }
+  ],
+  "next_id": 21,
+  "favorites": [
+    "board_fit_width_extra",
+    "button_contact_insert_pilot_diameter",
+    "button_guide_clearance",
+    "cable_cradle_radial_clearance",
+    "finger_pad_extension",
+    "lid_fit_clearance",
+    "pcb_insert_pilot_diameter",
+    "pcb_length",
+    "pcb_width",
+    "usb_fit_clearance",
+    "wall"
+  ]
+}

@@ -1,5 +1,11 @@
 # ESP32 enclosure in SolidCraft
 
+The current project is the **[native parametric feature-history rebuild](native/README.md)**.
+Open [the native enclosure](native/revision-014/enclosure.solidcraft) to edit its
+sketches, dimensions and features. Printable exports and quick fit prints are included.
+
+## Preserved imported-solid conversion
+
 Open **[enclosure.solidcraft](revision-014/enclosure.solidcraft)** for the complete
 revision 014 enclosure with 15 named bodies. Individual printable parts, the
 board/button fit jig, and print layouts are included below.

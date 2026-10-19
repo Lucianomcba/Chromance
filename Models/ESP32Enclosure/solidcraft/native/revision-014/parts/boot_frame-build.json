@@ -1,0 +1,2525 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_width",
+        "expression": "49.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 48.8 to 49.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "pcb_width",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_length",
+        "expression": "70.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 70 to 70.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "pcb_length",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_thickness",
+        "expression": "1.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "solder_clearance",
+        "expression": "6.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6.6 to 6.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "component_clearance",
+        "expression": "22.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 22 to 22 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "side_margin",
+        "expression": "8.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "end_margin",
+        "expression": "9.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "wall",
+        "expression": "2.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.3 to 2.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "wall",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "floor_thickness",
+        "expression": "2.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_thickness",
+        "expression": "2.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_fit_clearance",
+        "expression": "0.3 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "lid_fit_clearance",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_skirt_depth",
+        "expression": "2.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "left_access_length",
+        "expression": "60.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 60 to 60 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "left_access_start_above_pcb",
+        "expression": "-1.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: -1 to -1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "end_cable_width",
+        "expression": "24.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 24 to 24 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "end_cable_height",
+        "expression": "16.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_y",
+        "expression": "17.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 17 to 17 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "board_edge_overlap",
+        "expression": "1.3 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1.3 to 1.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "board_vertical_play",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "m3_clearance",
+        "expression": "3.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.4 to 3.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "desk_screw_clearance",
+        "expression": "4.5 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "bracket_plate_thickness",
+        "expression": "3.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.2 to 3.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "bracket_clearance_above_body",
+        "expression": "8.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "corner_radius",
+        "expression": "3.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3 to 3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "edge_bevel",
+        "expression": "0.8 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "belt_projection",
+        "expression": "1.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1.2 to 1.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "belt_bottom",
+        "expression": "3.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.6 to 3.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "belt_height",
+        "expression": "4.8 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.8 to 4.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "vent_angle",
+        "expression": "25.0 deg",
+        "unit": "deg",
+        "comment": "Allowed range: 25 to 25 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_vent_width",
+        "expression": "2.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.6 to 2.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "accent_depth",
+        "expression": "0.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_inset_from_left_pcb_edge",
+        "expression": "3.3 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.3 to 3.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "reset_switch_height_above_pcb",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_switch_height_above_pcb",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_stroke",
+        "expression": "0.8 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_guide_clearance",
+        "expression": "0.3 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "button_guide_clearance",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "modeled_switch_depression",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_arm_height_above_pcb",
+        "expression": "9.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 9.2 to 9.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_insert_pilot_diameter",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_insert_bore_depth",
+        "expression": "4.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.4 to 4.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "reset_contact_screw_length",
+        "expression": "12.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_contact_screw_length",
+        "expression": "12.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_contact_insert_outer_diameter",
+        "expression": "4.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_contact_insert_pilot_diameter",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "button_contact_insert_pilot_diameter",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_contact_insert_length",
+        "expression": "5.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "desk_gap_above_case_floor",
+        "expression": "2.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "bracket_leg_width_y",
+        "expression": "8.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8.6 to 8.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "bracket_belt_clearance",
+        "expression": "0.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.6 to 0.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "bracket_root_gusset_height",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "finger_pad_extension",
+        "expression": "7.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6.8 to 7.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "finger_pad_extension",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_insert_outer_diameter",
+        "expression": "4.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_insert_length",
+        "expression": "5.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_insert_pilot_diameter",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_insert_bore_depth",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_screw_length",
+        "expression": "8.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_insert_outer_diameter",
+        "expression": "4.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_insert_length",
+        "expression": "5.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_insert_pilot_diameter",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "pcb_insert_pilot_diameter",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_insert_bore_depth",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_clamp_screw_length",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_clamp_boss_diameter",
+        "expression": "8.8 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8.8 to 8.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "pcb_clamp_screw_offset_from_edge",
+        "expression": "4.9 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.9 to 4.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_corner_projection",
+        "expression": "8.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8.4 to 8.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_corner_pad_height",
+        "expression": "8.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_corner_support_angle",
+        "expression": "45.0 deg",
+        "unit": "deg",
+        "comment": "Allowed range: 45 to 45 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_corner_wall_overlap",
+        "expression": "0.4 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_saddle_projection",
+        "expression": "7.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 7 to 7 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_saddle_wall_overlap",
+        "expression": "1.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_diameter_provisional",
+        "expression": "8.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_width_provisional",
+        "expression": "2.5 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.5 to 2.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_thickness_provisional",
+        "expression": "1.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_slot_side_clearance",
+        "expression": "0.35 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.35 to 0.35 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_slot_vertical_clearance",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_slot_floor_below_sill",
+        "expression": "1.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_head_width_provisional",
+        "expression": "5.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_head_length_provisional",
+        "expression": "5.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "zip_tie_head_height_provisional",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_cradle_radial_clearance",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.15 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "cable_cradle_radial_clearance",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_cradle_side_wall",
+        "expression": "2.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cable_cradle_floor_above_tunnel",
+        "expression": "2.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "board_fit_width_extra",
+        "expression": "0.5 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.4 to 0.6 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "board_fit_width_extra",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "reset_button_from_bottom",
+        "expression": "30.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 30 to 30 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_button_from_bottom",
+        "expression": "16.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "reset_housing_y",
+        "expression": "4.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_housing_y",
+        "expression": "-21.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: -21 to -21 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_arm_elbow_inset",
+        "expression": "4.5 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_contact_collar_flat_offset",
+        "expression": "2.9 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 2.9 to 2.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_plug_width",
+        "expression": "10.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 10 to 10 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_plug_thickness",
+        "expression": "6.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_plug_projection",
+        "expression": "20.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 20 to 20 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_plug_underside_above_pcb",
+        "expression": "9.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_center_from_bottom",
+        "expression": "23.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 23 to 23 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_cable_diameter",
+        "expression": "3.5 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 3.5 to 3.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "usb_fit_clearance",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Allowed range: 0.2 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "usb_fit_clearance",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "retention_width",
+        "expression": "(pcb_width)+(board_fit_width_extra)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cavity_width",
+        "expression": "(retention_width)+((2)*(side_margin))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "cavity_length",
+        "expression": "(pcb_length)+((2)*(end_margin))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "shell_width",
+        "expression": "(cavity_width)+((2)*(wall))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "shell_length",
+        "expression": "(cavity_length)+((2)*(wall))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "board_bottom",
+        "expression": "(floor_thickness)+(solder_clearance)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "board_top",
+        "expression": "(board_bottom)+(pcb_thickness)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "case_height",
+        "expression": "(board_top)+(component_clearance)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_height",
+        "expression": "(board_top)+(board_vertical_play)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lid_top",
+        "expression": "(case_height)+(lid_thickness)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "plate_height",
+        "expression": "(case_height)+(bracket_clearance_above_body)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "mount_ceiling",
+        "expression": "(plate_height)-(desk_gap_above_case_floor)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "mount_interface",
+        "expression": "(mount_ceiling)-((case_height)-(5))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lug_y",
+        "expression": "((shell_length)/(2))-(11)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "lug_x",
+        "expression": "((shell_width)/(2))+(6)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_screw_x",
+        "expression": "((retention_width)/(2))+(pcb_clamp_screw_offset_from_edge)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_inner",
+        "expression": "((pcb_width)/(2))-(board_edge_overlap)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_outer",
+        "expression": "((retention_width)/(2))+(8)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_width",
+        "expression": "(clamp_outer)-(clamp_inner)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "clamp_center",
+        "expression": "((clamp_inner)+(clamp_outer))/(2)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_face",
+        "expression": "((-(shell_width))/(2))-(3.6)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "button_tip_x",
+        "expression": "((-(pcb_width))/(2))+(button_inset_from_left_pcb_edge)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_tip_y",
+        "expression": "(boot_button_from_bottom)-((pcb_length)/(2))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_arm_base",
+        "expression": "(board_top)+(button_arm_height_above_pcb)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_slider_width",
+        "expression": "(((button_face)-(2.4))-(button_guide_clearance))-(((button_face)-(11.8))+(button_guide_clearance))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_magnet_x",
+        "expression": "(button_face)-(7.2)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_guide_floor",
+        "expression": "(11.2)+((boot_arm_base)-(19.2))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_slider_bottom",
+        "expression": "(13)+((boot_arm_base)-(19.2))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_fixed_magnet_bottom",
+        "expression": "(8.2)+((boot_arm_base)-(19.2))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_moving_magnet_bottom",
+        "expression": "(boot_slider_bottom)+(0.8)",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "boot_boss_top",
+        "expression": "max((boot_arm_base)+(4.8),(((boot_arm_base)-(0.8))+(button_contact_insert_length))+(1.4))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 2.4,
+        "name": "boot_frame_stock_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.55,
+            -28.0
+          ],
+          [
+            -38.75,
+            -28.0
+          ],
+          [
+            -38.75,
+            -14.0
+          ],
+          [
+            -50.55,
+            -14.0
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((((button_face)-(11.8))+(button_face))/(2))-(5.9))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(7.0))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((((button_face)-(11.8))+(button_face))/(2))+(5.9))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(7.0))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((((button_face)-(11.8))+(button_face))/(2))+(5.9))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(7.0))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((((button_face)-(11.8))+(button_face))/(2))-(5.9))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(7.0))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "((boot_arm_base)+(6.4))-(2.4)",
+        "direction": "positive",
+        "name": "boot_frame_stock",
+        "operation": "new",
+        "body_name": "boot_frame"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "boot_guide_floor",
+        "name": "boot_frame_guide_channel_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.65,
+            -25.3
+          ],
+          [
+            -41.15,
+            -25.3
+          ],
+          [
+            -41.15,
+            -16.7
+          ],
+          [
+            -50.65,
+            -16.7
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(4.3))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(4.3))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(4.3))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(4.3))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 30,
+        "direction": "positive",
+        "name": "boot_frame_guide_channel",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "(boot_arm_base)-(button_stroke)",
+        "name": "boot_frame_arm_sill_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.75,
+            -26.6
+          ],
+          [
+            -38.55,
+            -26.6
+          ],
+          [
+            -38.55,
+            -15.4
+          ],
+          [
+            -50.75,
+            -15.4
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((button_face)-(5.9))-(6.1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(5.6))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((button_face)-(5.9))+(6.1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(5.6))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((button_face)-(5.9))+(6.1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(5.6))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((button_face)-(5.9))-(6.1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(5.6))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 30,
+        "direction": "positive",
+        "name": "boot_frame_arm_sill",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "((boot_arm_base)+(4.8))-(button_stroke)",
+        "name": "boot_frame_pad_stop_-1_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.65,
+            -28.3
+          ],
+          [
+            -41.15,
+            -28.3
+          ],
+          [
+            -41.15,
+            -25.3
+          ],
+          [
+            -50.65,
+            -25.3
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(-5.8))-(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(-5.8))-(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(-5.8))+(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(-5.8))+(1.5))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20,
+        "direction": "positive",
+        "name": "boot_frame_pad_stop_-1",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "((boot_arm_base)+(4.8))-(button_stroke)",
+        "name": "boot_frame_pad_stop_1_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.65,
+            -16.7
+          ],
+          [
+            -41.15,
+            -16.7
+          ],
+          [
+            -41.15,
+            -13.7
+          ],
+          [
+            -50.65,
+            -13.7
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(5.8))-(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(5.8))-(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))+(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(5.8))+(1.5))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((button_face)-(11.8))+(4.65))-(4.75))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(((boot_housing_y)+(5.8))+(1.5))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 20,
+        "direction": "positive",
+        "name": "boot_frame_pad_stop_1",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "YZ",
+        "offset": "((button_face)-(14.2))-(0.2)",
+        "name": "boot_frame_mount_hole_0_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          -24.0,
+          5.0
+        ],
+        "radius": 1.7,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "c1"
+        ],
+        "type": "diameter",
+        "value": 3.4
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((boot_housing_y)+(-3))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "vertical",
+        "value": "(200)+(5)"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 15,
+        "name": "boot_frame_mount_hole_0",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "YZ",
+        "offset": "((button_face)-(14.2))-(0.2)",
+        "name": "boot_frame_mount_hole_1_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          -18.0,
+          5.0
+        ],
+        "radius": 1.7,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "c1"
+        ],
+        "type": "diameter",
+        "value": 3.4
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((boot_housing_y)+(3))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "vertical",
+        "value": "(200)+(5)"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 15,
+        "name": "boot_frame_mount_hole_1",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "boot_fixed_magnet_bottom",
+        "name": "boot_frame_fixed_magnet_channel_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -50.74999999999999,
+            -23.15
+          ],
+          [
+            -43.800000000000004,
+            -23.15
+          ],
+          [
+            -43.800000000000004,
+            -18.85
+          ],
+          [
+            -50.74999999999999,
+            -18.85
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))-(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(2.15))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))+(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)-(2.15))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))+(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(2.15))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((boot_magnet_x)+(2.15))+((button_face)-(11.8)))-(0.2))/(2))-(((((boot_magnet_x)+(2.15))-((button_face)-(11.8)))+(0.2))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((boot_housing_y)+(2.15))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 2.2,
+        "direction": "positive",
+        "name": "boot_frame_fixed_magnet_channel",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "((board_top)+(usb_plug_underside_above_pcb))-(usb_fit_clearance)",
+        "name": "boot_frame_usb_open_rail_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -44.7,
+            -17.2
+          ],
+          [
+            -24.299999999999997,
+            -17.2
+          ],
+          [
+            -24.299999999999997,
+            -6.800000000000001
+          ],
+          [
+            -44.7,
+            -6.800000000000001
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))-(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))-(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))+(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))-(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))+(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))+(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(pcb_width))/(2))+(usb_fit_clearance))+((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2))-(((((-(pcb_width))/(2))+(usb_fit_clearance))-((((-(pcb_width))/(2))-(usb_plug_projection))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))+(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2))+(((((((-(pcb_length))/(2))+(usb_center_from_bottom))+((usb_plug_width)/(2)))+(usb_fit_clearance))-(((((-(pcb_length))/(2))+(usb_center_from_bottom))-((usb_plug_width)/(2)))-(usb_fit_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "((max((((board_top)+(usb_plug_underside_above_pcb))+(usb_plug_thickness))+(usb_fit_clearance),(boot_arm_base)+(6.4)))+(0.1))-(((board_top)+(usb_plug_underside_above_pcb))-(usb_fit_clearance))",
+        "direction": "positive",
+        "name": "boot_frame_usb_open_rail",
+        "operation": "cut",
+        "targets": [
+          "boot_frame"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_print_rotation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "angle": "-90 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_on_bed",
+        "translate": [
+          0,
+          0,
+          "-((button_face)-(11.8))"
+        ]
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-014/parts/boot_frame.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "status": "passed",
+  "workflow": "Single native mounted assembly -> production print poses and matching quick fit geometry",
+  "printed_parts": {
+    "lid": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 14188.599540541063,
+          "expected_volume_mm3": 14188.599539902181,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000001743773246e-07
+        }
+      ]
+    },
+    "body": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 46482.85445753692,
+          "expected_volume_mm3": 46477.43866808932,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000999850490189e-07
+        }
+      ]
+    },
+    "desk_bracket": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 22162.35419709234,
+          "expected_volume_mm3": 22162.35415373756,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000010064459275e-07
+        }
+      ]
+    },
+    "pcb_clamp_left_front": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 134.6415944622504,
+          "expected_volume_mm3": 134.641594462251,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000694176947e-07
+        }
+      ]
+    },
+    "pcb_clamp_left_rear": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 134.64159446225293,
+          "expected_volume_mm3": 134.641594462251,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000710542735e-07
+        }
+      ]
+    },
+    "pcb_clamp_right_front": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 134.6415944622493,
+          "expected_volume_mm3": 134.6415944622497,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000694176947e-07
+        }
+      ]
+    },
+    "pcb_clamp_right_rear": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 134.6415944622518,
+          "expected_volume_mm3": 134.6415944622497,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000710542735e-07
+        }
+      ]
+    },
+    "reset_frame": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 1957.7478146545475,
+          "expected_volume_mm3": 1957.747814654494,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000001421085471e-07
+        }
+      ]
+    },
+    "reset_slider": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 2900.135165854553,
+          "expected_volume_mm3": 2900.1351658628073,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000472132342e-07
+        }
+      ]
+    },
+    "reset_rear_keeper": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 631.037826709401,
+          "expected_volume_mm3": 631.0378267093934,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000001421085471e-07
+        }
+      ]
+    },
+    "reset_moving_magnet_keeper": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 16.810000000000034,
+          "expected_volume_mm3": 16.809999999999988,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 7.105427357601002e-15
+        }
+      ]
+    },
+    "boot_frame": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 1913.0318146530685,
+          "expected_volume_mm3": 1913.031814654498,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000001182675078e-07
+        }
+      ]
+    },
+    "boot_slider": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 2703.0122783654615,
+          "expected_volume_mm3": 2703.012278352786,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000000472132342e-07
+        }
+      ]
+    },
+    "boot_rear_keeper": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 631.037826709401,
+          "expected_volume_mm3": 631.0378267093934,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 1.0000001421085471e-07
+        }
+      ]
+    },
+    "boot_moving_magnet_keeper": {
+      "status": "passed",
+      "solid_count": 1,
+      "xor_mm3": 0,
+      "tolerance_mm3": 0.001,
+      "bodies": [
+        {
+          "actual_volume_mm3": 16.81000000000004,
+          "expected_volume_mm3": 16.80999999999999,
+          "only_actual_mm3": 0,
+          "only_expected_mm3": 0,
+          "xor_mm3": 0,
+          "bounds_max_difference_mm": 7.549516567451064e-15
+        }
+      ]
+    }
+  },
+  "fit_assembly_matches_test009": {
+    "status": "passed",
+    "solid_count": 13,
+    "xor_mm3": 0,
+    "tolerance_mm3": 0.001,
+    "bodies": [
+      {
+        "actual_volume_mm3": 19933.53488293864,
+        "expected_volume_mm3": 19933.35999445193,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000090938367947e-07
+      },
+      {
+        "actual_volume_mm3": 134.6415944622504,
+        "expected_volume_mm3": 134.641594462251,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000649768026e-07
+      },
+      {
+        "actual_volume_mm3": 134.6415944622529,
+        "expected_volume_mm3": 134.641594462251,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000649768026e-07
+      },
+      {
+        "actual_volume_mm3": 134.6415944622493,
+        "expected_volume_mm3": 134.6415944622497,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000649768026e-07
+      },
+      {
+        "actual_volume_mm3": 134.6415944622518,
+        "expected_volume_mm3": 134.6415944622497,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000649768026e-07
+      },
+      {
+        "actual_volume_mm3": 1957.7478146545466,
+        "expected_volume_mm3": 1957.7478146544943,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.000000082740371e-07
+      },
+      {
+        "actual_volume_mm3": 2900.135165854553,
+        "expected_volume_mm3": 2900.1351658628064,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000116860974e-07
+      },
+      {
+        "actual_volume_mm3": 631.037826709401,
+        "expected_volume_mm3": 631.037826709393,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.000000082740371e-07
+      },
+      {
+        "actual_volume_mm3": 16.810000000000034,
+        "expected_volume_mm3": 16.809999999999988,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 7.105427357601002e-15
+      },
+      {
+        "actual_volume_mm3": 1913.0318146530694,
+        "expected_volume_mm3": 1913.0318146544976,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000001182675078e-07
+      },
+      {
+        "actual_volume_mm3": 2703.0122783654615,
+        "expected_volume_mm3": 2703.012278352785,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000000116860974e-07
+      },
+      {
+        "actual_volume_mm3": 631.037826709401,
+        "expected_volume_mm3": 631.0378267093931,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0000001182675078e-07
+      },
+      {
+        "actual_volume_mm3": 16.81000000000004,
+        "expected_volume_mm3": 16.80999999999999,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 7.105427357601002e-15
+      }
+    ]
+  },
+  "print_mesh_checks": {
+    "production_print": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 15,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090818023,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    },
+    "fit_print": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 13,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090818023,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    },
+    "replacement_print": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 3,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090924604,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "physical_fit_tested": false
+}

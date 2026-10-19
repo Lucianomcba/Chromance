@@ -1,0 +1,1655 @@
+{
+  "status": "passed",
+  "conversion_kind": "native parametric feature history",
+  "parametric_feature_history_rebuilt": true,
+  "physical_fit_tested": false,
+  "documents": [
+    {
+      "path": "enclosure.json",
+      "sketches_dof_zero": 199,
+      "feature_count": 493,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 15,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.59954054106,
+            "expected_volume_mm3": 14188.599539902174,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 46482.854457536974,
+            "expected_volume_mm3": 46477.43866808932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000999850490189e-07
+          },
+          {
+            "actual_volume_mm3": 22162.35419709234,
+            "expected_volume_mm3": 22162.354153737564,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000010064459275e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.64159446225102,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446224926,
+            "expected_volume_mm3": 134.64159446224974,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225182,
+            "expected_volume_mm3": 134.64159446224974,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545473,
+            "expected_volume_mm3": 1957.7478146544938,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2900.135165854553,
+            "expected_volume_mm3": 2900.1351658628078,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000294496658e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.81000000000003,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          },
+          {
+            "actual_volume_mm3": 1913.031814653069,
+            "expected_volume_mm3": 1913.031814654497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2703.0122783654615,
+            "expected_volume_mm3": 2703.0122783527854,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.810000000000038,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 15,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.59954054106,
+            "expected_volume_mm3": 14188.599539902174,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 46482.854457536974,
+            "expected_volume_mm3": 46477.43866808932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000999850490189e-07
+          },
+          {
+            "actual_volume_mm3": 22162.35419709234,
+            "expected_volume_mm3": 22162.354153737564,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000010064459275e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.64159446225102,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446224926,
+            "expected_volume_mm3": 134.64159446224974,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225182,
+            "expected_volume_mm3": 134.64159446224974,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545473,
+            "expected_volume_mm3": 1957.7478146544938,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2900.135165854553,
+            "expected_volume_mm3": 2900.1351658628078,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000294496658e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.81000000000003,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          },
+          {
+            "actual_volume_mm3": 1913.031814653069,
+            "expected_volume_mm3": 1913.031814654497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2703.0122783654615,
+            "expected_volume_mm3": 2703.0122783527854,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.810000000000038,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "native_body_count": 26,
+      "printed_part_count": 15,
+      "native_opens_without_external_files": true
+    },
+    {
+      "path": "parts/body.json",
+      "sketches_dof_zero": 87,
+      "feature_count": 197,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 46482.8544573791,
+            "expected_volume_mm3": 46477.43866808932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000999850490189e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 46482.8544573791,
+            "expected_volume_mm3": 46477.43866808932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000999850490189e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000090905061256e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 12,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/body-mesh-report.json"
+    },
+    {
+      "path": "parts/lid.json",
+      "sketches_dof_zero": 28,
+      "feature_count": 94,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.59954054106,
+            "expected_volume_mm3": 14188.599539902181,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001537946446e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.59954054106,
+            "expected_volume_mm3": 14188.599539902181,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001537946446e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.000000082740371e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/lid-mesh-report.json"
+    },
+    {
+      "path": "parts/desk_bracket.json",
+      "sketches_dof_zero": 23,
+      "feature_count": 48,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 22162.354197092296,
+            "expected_volume_mm3": 22162.35415373756,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000010064459275e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 22162.354197092296,
+            "expected_volume_mm3": 22162.35415373756,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000010064459275e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000010064459275e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/desk_bracket-mesh-report.json"
+    },
+    {
+      "path": "parts/pcb_clamp_left_front.json",
+      "sketches_dof_zero": 2,
+      "feature_count": 5,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/pcb_clamp_left_front-mesh-report.json"
+    },
+    {
+      "path": "parts/pcb_clamp_left_rear.json",
+      "sketches_dof_zero": 2,
+      "feature_count": 5,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/pcb_clamp_left_rear-mesh-report.json"
+    },
+    {
+      "path": "parts/pcb_clamp_right_front.json",
+      "sketches_dof_zero": 2,
+      "feature_count": 5,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622518,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622518,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/pcb_clamp_right_front-mesh-report.json"
+    },
+    {
+      "path": "parts/pcb_clamp_right_rear.json",
+      "sketches_dof_zero": 2,
+      "feature_count": 5,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622493,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 134.6415944622493,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/pcb_clamp_right_rear-mesh-report.json"
+    },
+    {
+      "path": "parts/reset_frame.json",
+      "sketches_dof_zero": 8,
+      "feature_count": 18,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 1957.7478146545473,
+            "expected_volume_mm3": 1957.747814654494,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000960630473e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 1957.7478146545473,
+            "expected_volume_mm3": 1957.747814654494,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000960630473e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/reset_frame-mesh-report.json"
+    },
+    {
+      "path": "parts/reset_slider.json",
+      "sketches_dof_zero": 12,
+      "feature_count": 30,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2900.1351658547355,
+            "expected_volume_mm3": 2900.1351658628073,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000472132342e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2900.1351658547355,
+            "expected_volume_mm3": 2900.1351658628073,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000472132342e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 2.4776717847174723e-05,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/reset_slider-mesh-report.json"
+    },
+    {
+      "path": "parts/reset_rear_keeper.json",
+      "sketches_dof_zero": 5,
+      "feature_count": 12,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 631.0378267093953,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001227083999e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 631.0378267093953,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001227083999e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/reset_rear_keeper-mesh-report.json"
+    },
+    {
+      "path": "parts/reset_moving_magnet_keeper.json",
+      "sketches_dof_zero": 1,
+      "feature_count": 3,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 16.810000000000034,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 16.810000000000034,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/reset_moving_magnet_keeper-mesh-report.json"
+    },
+    {
+      "path": "parts/boot_frame.json",
+      "sketches_dof_zero": 9,
+      "feature_count": 20,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 1913.0318146544519,
+            "expected_volume_mm3": 1913.031814654498,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000960630473e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 1913.0318146544519,
+            "expected_volume_mm3": 1913.031814654498,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000960630473e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/boot_frame-mesh-report.json"
+    },
+    {
+      "path": "parts/boot_slider.json",
+      "sketches_dof_zero": 12,
+      "feature_count": 30,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2703.01227836534,
+            "expected_volume_mm3": 2703.012278352786,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000617400862666e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2703.01227836534,
+            "expected_volume_mm3": 2703.012278352786,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000617400862666e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0005321876091564093,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/boot_slider-mesh-report.json"
+    },
+    {
+      "path": "parts/boot_rear_keeper.json",
+      "sketches_dof_zero": 5,
+      "feature_count": 12,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 631.0378267093911,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001227083999e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 631.0378267093911,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000001227083999e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000000116860974e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/boot_rear_keeper-mesh-report.json"
+    },
+    {
+      "path": "parts/boot_moving_magnet_keeper.json",
+      "sketches_dof_zero": 1,
+      "feature_count": 3,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 16.810000000000038,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 16.810000000000038,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 1,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "parts/boot_moving_magnet_keeper-mesh-report.json"
+    },
+    {
+      "path": "fit-tests/button_fit_frame.json",
+      "sketches_dof_zero": 49,
+      "feature_count": 101,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 19933.499382639202,
+            "expected_volume_mm3": 19933.35999445193,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000090949470177e-07
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 19933.499382639202,
+            "expected_volume_mm3": 19933.35999445193,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000090949470177e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 1,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 1.0000090938367947e-07,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 8,
+      "printed_part_count": 1,
+      "native_opens_without_external_files": true,
+      "mesh_report": "fit-tests/button_fit_frame-mesh-report.json"
+    },
+    {
+      "path": "fit-tests/assembly.json",
+      "sketches_dof_zero": 110,
+      "feature_count": 231,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 13,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 19933.499382639202,
+            "expected_volume_mm3": 19933.35999445193,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000090949470177e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622518,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622493,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545468,
+            "expected_volume_mm3": 1957.7478146544943,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2900.135165854563,
+            "expected_volume_mm3": 2900.1351658628064,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267094007,
+            "expected_volume_mm3": 631.037826709393,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.810000000000034,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          },
+          {
+            "actual_volume_mm3": 1913.0318146530685,
+            "expected_volume_mm3": 1913.0318146544976,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2703.012278365396,
+            "expected_volume_mm3": 2703.012278352785,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000617400862666e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093931,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.81000000000004,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "exact_original": {
+        "status": "passed",
+        "solid_count": 13,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 19933.499382639202,
+            "expected_volume_mm3": 19933.35999445193,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000090949470177e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622529,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225037,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622518,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 134.6415944622493,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545468,
+            "expected_volume_mm3": 1957.7478146544943,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2900.135165854563,
+            "expected_volume_mm3": 2900.1351658628064,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000000116860974e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267094007,
+            "expected_volume_mm3": 631.037826709393,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.810000000000034,
+            "expected_volume_mm3": 16.809999999999988,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          },
+          {
+            "actual_volume_mm3": 1913.0318146530685,
+            "expected_volume_mm3": 1913.0318146544976,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2703.012278365396,
+            "expected_volume_mm3": 2703.012278352785,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000617400862666e-07
+          },
+          {
+            "actual_volume_mm3": 631.037826709401,
+            "expected_volume_mm3": 631.0378267093931,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.81000000000004,
+            "expected_volume_mm3": 16.80999999999999,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 7.105427357601002e-15
+          }
+        ]
+      },
+      "native_body_count": 20,
+      "printed_part_count": 13,
+      "native_opens_without_external_files": true
+    },
+    {
+      "path": "fit-tests/replacements-only.json",
+      "sketches_dof_zero": 33,
+      "feature_count": 83,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 3,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2900.135165854736,
+            "expected_volume_mm3": 2900.1351658628073,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000002131628207e-07
+          },
+          {
+            "actual_volume_mm3": 2703.012278365402,
+            "expected_volume_mm3": 2703.012278352785,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 1913.031814654481,
+            "expected_volume_mm3": 1913.0318146544973,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 3,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0005321876090924604,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 3,
+      "printed_part_count": 3,
+      "native_opens_without_external_files": true,
+      "mesh_report": "fit-tests/replacements-only-mesh-report.json"
+    },
+    {
+      "path": "fit-tests/print-layout.json",
+      "sketches_dof_zero": 110,
+      "feature_count": 262,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 13,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 19933.499170215582,
+            "expected_volume_mm3": 19933.359994451916,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225054,
+            "expected_volume_mm3": 134.641594462251,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000900374507182e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225054,
+            "expected_volume_mm3": 134.64159446225096,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446224923,
+            "expected_volume_mm3": 134.6415944622497,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000898953421711e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446224946,
+            "expected_volume_mm3": 134.64159446224977,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          },
+          {
+            "actual_volume_mm3": 1957.747814654574,
+            "expected_volume_mm3": 1957.747814654494,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          },
+          {
+            "actual_volume_mm3": 2900.135165854493,
+            "expected_volume_mm3": 2900.1351658628064,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000002131628207e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267093952,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.999999406318238e-08
+          },
+          {
+            "actual_volume_mm3": 16.81000000000007,
+            "expected_volume_mm3": 16.81000000000002,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 0.0
+          },
+          {
+            "actual_volume_mm3": 1913.0318146544814,
+            "expected_volume_mm3": 1913.031814654498,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 2703.012278365655,
+            "expected_volume_mm3": 2703.0122783527845,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267093963,
+            "expected_volume_mm3": 631.0378267093936,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 16.81000000000007,
+            "expected_volume_mm3": 16.81000000000002,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 0.0
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 13,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0005321876091528566,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 20,
+      "printed_part_count": 13,
+      "native_opens_without_external_files": true,
+      "mesh_report": "fit-tests/print-layout-mesh-report.json"
+    },
+    {
+      "path": "print-layout.json",
+      "sketches_dof_zero": 199,
+      "feature_count": 502,
+      "no_import_features": true,
+      "exact_reference": {
+        "status": "passed",
+        "solid_count": 15,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.599540541212,
+            "expected_volume_mm3": 14188.599539902189,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 46482.8507876708,
+            "expected_volume_mm3": 46477.43866808934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0001531397231303e-07
+          },
+          {
+            "actual_volume_mm3": 22162.35419709275,
+            "expected_volume_mm3": 22162.354153737557,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000006511745596e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225284,
+            "expected_volume_mm3": 134.64159446225108,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225304,
+            "expected_volume_mm3": 134.64159446225108,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225148,
+            "expected_volume_mm3": 134.64159446224983,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          },
+          {
+            "actual_volume_mm3": 134.64159446225196,
+            "expected_volume_mm3": 134.64159446224983,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1e-07
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545745,
+            "expected_volume_mm3": 1957.7478146544945,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.999999822364316e-08
+          },
+          {
+            "actual_volume_mm3": 2900.1351658544527,
+            "expected_volume_mm3": 2900.135165862806,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.0000002248489182e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267093952,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.999999406318238e-08
+          },
+          {
+            "actual_volume_mm3": 16.81000000000007,
+            "expected_volume_mm3": 16.81000000000006,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 2.842170943040401e-14
+          },
+          {
+            "actual_volume_mm3": 1913.0318146544805,
+            "expected_volume_mm3": 1913.0318146544976,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.999999761589606e-08
+          },
+          {
+            "actual_volume_mm3": 2703.0122783656766,
+            "expected_volume_mm3": 2703.012278352784,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.000000082740371e-07
+          },
+          {
+            "actual_volume_mm3": 631.0378267093963,
+            "expected_volume_mm3": 631.0378267093934,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.999999406318238e-08
+          },
+          {
+            "actual_volume_mm3": 16.81000000000007,
+            "expected_volume_mm3": 16.81000000000006,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 2.842170943040401e-14
+          }
+        ]
+      },
+      "mesh": {
+        "status": "passed",
+        "units": "mm",
+        "connected_bodies": 15,
+        "watertight": true,
+        "maximum_step_bounds_difference_mm": 0.0005321876091386457,
+        "bounds_tolerance_mm": 0.05,
+        "volume_relative_tolerance": 0.005
+      },
+      "native_body_count": 26,
+      "printed_part_count": 15,
+      "native_opens_without_external_files": true,
+      "mesh_report": "print-layout-mesh-report.json"
+    }
+  ],
+  "document_count": 21,
+  "artifact_sha256_verified": true,
+  "native_cli_version": "0.16.2",
+  "manufacturing_export": "OCCT union of native structural bodies; evaluated native blind-bore retessellation; independent Manifold topology check"
+}

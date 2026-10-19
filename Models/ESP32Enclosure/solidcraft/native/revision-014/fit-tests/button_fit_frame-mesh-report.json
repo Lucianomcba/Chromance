@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "units": "mm",
+  "linear_deflection_mm": 0.02,
+  "angular_deflection_rad": 0.1,
+  "parts": {
+    "button_fit_frame": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": [
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": -38.75,
+          "center_yz_mm": [
+            7.0,
+            5.0
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845430891553e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": -38.75,
+          "center_yz_mm": [
+            1.0,
+            5.0
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.22584544421423e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": -38.75,
+          "center_yz_mm": [
+            -18.0,
+            5.0
+          ],
+          "native_cylindrical_faces_replaced": 2,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845706226863e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 1.212363542890671e-13
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": -38.75,
+          "center_yz_mm": [
+            -24.0,
+            5.0
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845135572229e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        }
+      ]
+    }
+  }
+}

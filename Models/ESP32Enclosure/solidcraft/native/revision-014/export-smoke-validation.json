@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "native_edit": {
+    "parameter": "board_fit_width_extra",
+    "from_mm": 0.5,
+    "to_mm": 0.6
+  },
+  "workflow": "parameters.change on saved native body -> public fuse_exports.py -> actual STEP and 3MF",
+  "exact_original_reference": {
+    "status": "passed",
+    "solid_count": 1,
+    "xor_mm3": 0,
+    "tolerance_mm3": 0.001,
+    "bodies": [
+      {
+        "actual_volume_mm3": 46530.70068191658,
+        "expected_volume_mm3": 46525.278668088955,
+        "only_actual_mm3": 0,
+        "only_expected_mm3": 0,
+        "xor_mm3": 0,
+        "bounds_max_difference_mm": 1.0014024809379407e-07
+      }
+    ]
+  },
+  "mesh": {
+    "status": "passed",
+    "units": "mm",
+    "connected_bodies": 1,
+    "watertight": true,
+    "maximum_step_bounds_difference_mm": 1.0000132760469284e-07,
+    "bounds_tolerance_mm": 0.05,
+    "volume_relative_tolerance": 0.005
+  },
+  "physical_fit_tested": false
+}

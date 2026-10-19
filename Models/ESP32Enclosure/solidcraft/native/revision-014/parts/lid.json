@@ -1,0 +1,7401 @@
+{
+  "format": "solidcraft/27",
+  "name": "lid",
+  "units": "mm",
+  "params": [
+    {
+      "name": "pcb_width",
+      "expr": "49.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 48.8 to 49.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_length",
+      "expr": "70.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 70 to 70.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_thickness",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "solder_clearance",
+      "expr": "6.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6.6 to 6.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "component_clearance",
+      "expr": "22.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 22 to 22 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "side_margin",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_margin",
+      "expr": "9.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "wall",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.3 to 2.5 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "floor_thickness",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_thickness",
+      "expr": "2.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.4 to 2.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_fit_clearance",
+      "expr": "0.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "lid_skirt_depth",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "left_access_length",
+      "expr": "60.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 60 to 60 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "left_access_start_above_pcb",
+      "expr": "-1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: -1 to -1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_cable_width",
+      "expr": "24.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 24 to 24 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "end_cable_height",
+      "expr": "16.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "clamp_y",
+      "expr": "17.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 17 to 17 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_edge_overlap",
+      "expr": "1.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1.3 to 1.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_vertical_play",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "m3_clearance",
+      "expr": "3.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.4 to 3.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "desk_screw_clearance",
+      "expr": "4.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_plate_thickness",
+      "expr": "3.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.2 to 3.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_clearance_above_body",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "corner_radius",
+      "expr": "3.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3 to 3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "edge_bevel",
+      "expr": "0.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_projection",
+      "expr": "1.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1.2 to 1.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_bottom",
+      "expr": "3.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.6 to 3.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "belt_height",
+      "expr": "4.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.8 to 4.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "vent_angle",
+      "expr": "25.0 deg",
+      "unit": "deg",
+      "comment": "Allowed range: 25 to 25 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_vent_width",
+      "expr": "2.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.6 to 2.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "accent_depth",
+      "expr": "0.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_inset_from_left_pcb_edge",
+      "expr": "3.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.3 to 3.3 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_switch_height_above_pcb",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_switch_height_above_pcb",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_stroke",
+      "expr": "0.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.8 to 0.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_guide_clearance",
+      "expr": "0.3 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.25 to 0.35 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "modeled_switch_depression",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_arm_height_above_pcb",
+      "expr": "9.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9.2 to 9.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_insert_bore_depth",
+      "expr": "4.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.4 to 4.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_contact_screw_length",
+      "expr": "12.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_contact_screw_length",
+      "expr": "12.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 12 to 12 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "button_contact_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "desk_gap_above_case_floor",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_leg_width_y",
+      "expr": "8.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.6 to 8.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_belt_clearance",
+      "expr": "0.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.6 to 0.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "bracket_root_gusset_height",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "finger_pad_extension",
+      "expr": "7.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6.8 to 7.2 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_insert_bore_depth",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_screw_length",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_outer_diameter",
+      "expr": "4.6 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.6 to 4.6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_length",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_pilot_diameter",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.9 to 4.1 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "pcb_insert_bore_depth",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_screw_length",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_boss_diameter",
+      "expr": "8.8 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.8 to 8.8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "pcb_clamp_screw_offset_from_edge",
+      "expr": "4.9 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.9 to 4.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_projection",
+      "expr": "8.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8.4 to 8.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_pad_height",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_support_angle",
+      "expr": "45.0 deg",
+      "unit": "deg",
+      "comment": "Allowed range: 45 to 45 deg; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "lid_corner_wall_overlap",
+      "expr": "0.4 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_saddle_projection",
+      "expr": "7.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 7 to 7 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_saddle_wall_overlap",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_diameter_provisional",
+      "expr": "8.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 8 to 8 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_width_provisional",
+      "expr": "2.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.5 to 2.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_thickness_provisional",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_side_clearance",
+      "expr": "0.35 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.35 to 0.35 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_vertical_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_slot_floor_below_sill",
+      "expr": "1.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 1 to 1 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_width_provisional",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_length_provisional",
+      "expr": "5.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 5 to 5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "zip_tie_head_height_provisional",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_radial_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.15 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_side_wall",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "cable_cradle_floor_above_tunnel",
+      "expr": "2.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2 to 2 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "board_fit_width_extra",
+      "expr": "0.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.4 to 0.6 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "reset_button_from_bottom",
+      "expr": "30.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 30 to 30 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_button_from_bottom",
+      "expr": "16.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 16 to 16 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "reset_housing_y",
+      "expr": "4.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4 to 4 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "boot_housing_y",
+      "expr": "-21.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: -21 to -21 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_arm_elbow_inset",
+      "expr": "4.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 4.5 to 4.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "button_contact_collar_flat_offset",
+      "expr": "2.9 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 2.9 to 2.9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_width",
+      "expr": "10.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 10 to 10 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_thickness",
+      "expr": "6.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 6 to 6 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_projection",
+      "expr": "20.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 20 to 20 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_plug_underside_above_pcb",
+      "expr": "9.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 9 to 9 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_center_from_bottom",
+      "expr": "23.0 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 23 to 23 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_cable_diameter",
+      "expr": "3.5 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 3.5 to 3.5 mm; vary one input at a time from defaults. Measured/hardware or design reference; nominal value only is validated.",
+      "model": false
+    },
+    {
+      "name": "usb_fit_clearance",
+      "expr": "0.2 mm",
+      "unit": "mm",
+      "comment": "Allowed range: 0.2 to 0.25 mm; vary one input at a time from defaults. Native edit range; verify the saved validation report before printing.",
+      "model": false
+    },
+    {
+      "name": "retention_width",
+      "expr": "(pcb_width)+(board_fit_width_extra)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "cavity_width",
+      "expr": "(retention_width)+((2)*(side_margin))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "cavity_length",
+      "expr": "(pcb_length)+((2)*(end_margin))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "shell_width",
+      "expr": "(cavity_width)+((2)*(wall))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "shell_length",
+      "expr": "(cavity_length)+((2)*(wall))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "board_bottom",
+      "expr": "(floor_thickness)+(solder_clearance)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "board_top",
+      "expr": "(board_bottom)+(pcb_thickness)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "case_height",
+      "expr": "(board_top)+(component_clearance)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_height",
+      "expr": "(board_top)+(board_vertical_play)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lid_top",
+      "expr": "(case_height)+(lid_thickness)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "plate_height",
+      "expr": "(case_height)+(bracket_clearance_above_body)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "mount_ceiling",
+      "expr": "(plate_height)-(desk_gap_above_case_floor)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "mount_interface",
+      "expr": "(mount_ceiling)-((case_height)-(5))",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lug_y",
+      "expr": "((shell_length)/(2))-(11)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "lug_x",
+      "expr": "((shell_width)/(2))+(6)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_screw_x",
+      "expr": "((retention_width)/(2))+(pcb_clamp_screw_offset_from_edge)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_inner",
+      "expr": "((pcb_width)/(2))-(board_edge_overlap)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_outer",
+      "expr": "((retention_width)/(2))+(8)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_width",
+      "expr": "(clamp_outer)-(clamp_inner)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "clamp_center",
+      "expr": "((clamp_inner)+(clamp_outer))/(2)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "button_face",
+      "expr": "((-(shell_width))/(2))-(3.6)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "button_tip_x",
+      "expr": "((-(pcb_width))/(2))+(button_inset_from_left_pcb_edge)",
+      "unit": "mm",
+      "comment": "Derived expression; follows its driving parameters.",
+      "model": false
+    },
+    {
+      "name": "d2",
+      "expr": "(200)+((0)-(((cavity_width)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d3",
+      "expr": "(200)+((0)-(((cavity_length)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d4",
+      "expr": "(200)+((0)+(((cavity_width)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d5",
+      "expr": "(200)+((0)-(((cavity_length)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d6",
+      "expr": "(200)+((0)+(((cavity_width)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d7",
+      "expr": "(200)+((0)+(((cavity_length)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d8",
+      "expr": "(200)+((0)-(((cavity_width)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d9",
+      "expr": "(200)+((0)+(((cavity_length)-((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d12",
+      "expr": "(200)+((0)-((((cavity_width)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d13",
+      "expr": "(200)+((0)-((((cavity_length)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d14",
+      "expr": "(200)+((0)+((((cavity_width)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d15",
+      "expr": "(200)+((0)-((((cavity_length)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d16",
+      "expr": "(200)+((0)+((((cavity_width)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d17",
+      "expr": "(200)+((0)+((((cavity_length)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d18",
+      "expr": "(200)+((0)-((((cavity_width)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d19",
+      "expr": "(200)+((0)+((((cavity_length)-((2)*(lid_fit_clearance)))-(2.4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d22",
+      "expr": "9.6",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d23",
+      "expr": "(200)+((-1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d24",
+      "expr": "(200)+((-1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d27",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d28",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d29",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d30",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d31",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d32",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d33",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d34",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d37",
+      "expr": "9.6",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d38",
+      "expr": "(200)+((-1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d39",
+      "expr": "(200)+((1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d42",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d43",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d44",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d45",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d46",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d47",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d48",
+      "expr": "(200)+(((-1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d49",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d52",
+      "expr": "9.6",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d53",
+      "expr": "(200)+((1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d54",
+      "expr": "(200)+((-1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d57",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d58",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d59",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d60",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d61",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d62",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d63",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d64",
+      "expr": "(200)+(((-1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d67",
+      "expr": "9.6",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d68",
+      "expr": "(200)+((1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d69",
+      "expr": "(200)+((1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d72",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d73",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d74",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d75",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d76",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d77",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d78",
+      "expr": "(200)+(((1)*(((cavity_width)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))-((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d79",
+      "expr": "(200)+(((1)*(((cavity_length)/(2))+(((lid_corner_wall_overlap)-(lid_corner_projection))/(2))))+((((lid_corner_projection)+(lid_corner_wall_overlap))+((2)*(lid_fit_clearance)))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d82",
+      "expr": "(200)+(((-(cavity_width))/(2))-(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d83",
+      "expr": "(200)+((0)-(((left_access_length)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d84",
+      "expr": "(200)+(((-(cavity_width))/(2))+(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d85",
+      "expr": "(200)+((0)-(((left_access_length)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d86",
+      "expr": "(200)+(((-(cavity_width))/(2))+(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d87",
+      "expr": "(200)+((0)+(((left_access_length)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d88",
+      "expr": "(200)+(((-(cavity_width))/(2))-(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d89",
+      "expr": "(200)+((0)+(((left_access_length)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d92",
+      "expr": "(200)+((0)-(((end_cable_width)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d93",
+      "expr": "(200)+(((cavity_length)/(2))-(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d94",
+      "expr": "(200)+((0)+(((end_cable_width)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d95",
+      "expr": "(200)+(((cavity_length)/(2))-(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d96",
+      "expr": "(200)+((0)+(((end_cable_width)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d97",
+      "expr": "(200)+(((cavity_length)/(2))+(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d98",
+      "expr": "(200)+((0)-(((end_cable_width)+(0.6))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d99",
+      "expr": "(200)+(((cavity_length)/(2))+(((wall)+(4))/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d102",
+      "expr": "(200)+((0)-((shell_width)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d103",
+      "expr": "(200)+((0)-((shell_length)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d104",
+      "expr": "(200)+((0)+((shell_width)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d105",
+      "expr": "(200)+((0)-((shell_length)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d106",
+      "expr": "(200)+((0)+((shell_width)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d107",
+      "expr": "(200)+((0)+((shell_length)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d108",
+      "expr": "(200)+((0)-((shell_width)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d109",
+      "expr": "(200)+((0)+((shell_length)/(2)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d114",
+      "expr": "(2)*((m3_clearance)/(2))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d115",
+      "expr": "(200)+((-1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d116",
+      "expr": "(200)+((-1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d119",
+      "expr": "(2)*((m3_clearance)/(2))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d120",
+      "expr": "(200)+((-1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d121",
+      "expr": "(200)+((1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d124",
+      "expr": "(2)*((m3_clearance)/(2))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d125",
+      "expr": "(200)+((1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d126",
+      "expr": "(200)+((-1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d129",
+      "expr": "(2)*((m3_clearance)/(2))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d130",
+      "expr": "(200)+((1)*(((cavity_width)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d131",
+      "expr": "(200)+((1)*(((cavity_length)/(2))-(4)))",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d133",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d134",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d135",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d144",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d145",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d146",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d155",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d156",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d157",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d166",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d167",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d168",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d177",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d178",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d179",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d188",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d189",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d190",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d199",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d200",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d201",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d210",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d211",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d212",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d221",
+      "expr": "29",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d222",
+      "expr": "lid_vent_width",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d223",
+      "expr": "((29)-(lid_vent_width))/(2)",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d232",
+      "expr": "45",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d233",
+      "expr": "0.8",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d234",
+      "expr": "22.1",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d243",
+      "expr": "45",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d244",
+      "expr": "0.8",
+      "unit": "mm",
+      "model": true
+    },
+    {
+      "name": "d245",
+      "expr": "22.1",
+      "unit": "mm",
+      "model": true
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "name": "lid_skirt_stock_profile",
+      "suppressed": false,
+      "param_names": [
+        "d1"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(case_height)-(lid_skirt_depth)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -32.44999999999999,
+              -43.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              32.44999999999999,
+              -43.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              32.44999999999999,
+              43.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -32.44999999999999,
+              43.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 167.55,
+            "param": "d2"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 156.3,
+            "param": "d3"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 232.45,
+            "param": "d4"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 156.3,
+            "param": "d5"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 232.45,
+            "param": "d6"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 243.7,
+            "param": "d7"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 167.55,
+            "param": "d8"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 243.7,
+            "param": "d9"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "lid_skirt_stock",
+      "suppressed": false,
+      "body_names": [
+        "lid_skirt_body"
+      ],
+      "param_names": [
+        "d10"
+      ],
+      "type": "extrude",
+      "sketch": 1,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "lid_skirt_depth",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 3,
+      "name": "lid_skirt_inner_cut_profile",
+      "suppressed": false,
+      "param_names": [
+        "d11"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -31.25,
+              -42.5
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              31.25,
+              -42.5
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              31.25,
+              42.5
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -31.25,
+              42.5
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 168.75,
+            "param": "d12"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 157.5,
+            "param": "d13"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 231.25,
+            "param": "d14"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 157.5,
+            "param": "d15"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 231.25,
+            "param": "d16"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 242.5,
+            "param": "d17"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 168.75,
+            "param": "d18"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 242.5,
+            "param": "d19"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "lid_skirt_inner_cut",
+      "suppressed": false,
+      "param_names": [
+        "d20"
+      ],
+      "type": "extrude",
+      "sketch": 3,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 5,
+      "name": "lid_corner_-1_-1_skirt_clearance_profile",
+      "suppressed": false,
+      "param_names": [
+        "d21"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -28.75,
+              -40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 4.8,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 9.6,
+            "param": "d22"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 171.25,
+            "param": "d23"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 160.0,
+            "param": "d24"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "lid_corner_-1_-1_skirt_clearance",
+      "suppressed": false,
+      "param_names": [
+        "d25"
+      ],
+      "type": "extrude",
+      "sketch": 5,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 7,
+      "name": "lid_corner_-1_-1_skirt_trim_profile",
+      "suppressed": false,
+      "param_names": [
+        "d26"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.1)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -33.44999999999999,
+              -44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -24.05000000000001,
+              -44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -24.05000000000001,
+              -35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -33.44999999999999,
+              -35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 166.55,
+            "param": "d27"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 155.3,
+            "param": "d28"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 175.95,
+            "param": "d29"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 155.3,
+            "param": "d30"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 175.95,
+            "param": "d31"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 164.7,
+            "param": "d32"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 166.55,
+            "param": "d33"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 164.7,
+            "param": "d34"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "lid_corner_-1_-1_skirt_trim",
+      "suppressed": false,
+      "param_names": [
+        "d35"
+      ],
+      "type": "extrude",
+      "sketch": 7,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(0.2)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 9,
+      "name": "lid_corner_-1_1_skirt_clearance_profile",
+      "suppressed": false,
+      "param_names": [
+        "d36"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -28.75,
+              40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 4.8,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 9.6,
+            "param": "d37"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 171.25,
+            "param": "d38"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 240.0,
+            "param": "d39"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "lid_corner_-1_1_skirt_clearance",
+      "suppressed": false,
+      "param_names": [
+        "d40"
+      ],
+      "type": "extrude",
+      "sketch": 9,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 11,
+      "name": "lid_corner_-1_1_skirt_trim_profile",
+      "suppressed": false,
+      "param_names": [
+        "d41"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.1)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -33.44999999999999,
+              35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -24.05000000000001,
+              35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -24.05000000000001,
+              44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -33.44999999999999,
+              44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 166.55,
+            "param": "d42"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 235.3,
+            "param": "d43"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 175.95,
+            "param": "d44"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 235.3,
+            "param": "d45"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 175.95,
+            "param": "d46"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 244.7,
+            "param": "d47"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 166.55,
+            "param": "d48"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 244.7,
+            "param": "d49"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "lid_corner_-1_1_skirt_trim",
+      "suppressed": false,
+      "param_names": [
+        "d50"
+      ],
+      "type": "extrude",
+      "sketch": 11,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(0.2)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 13,
+      "name": "lid_corner_1_-1_skirt_clearance_profile",
+      "suppressed": false,
+      "param_names": [
+        "d51"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              28.75,
+              -40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 4.8,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 9.6,
+            "param": "d52"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 228.75,
+            "param": "d53"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 160.0,
+            "param": "d54"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "lid_corner_1_-1_skirt_clearance",
+      "suppressed": false,
+      "param_names": [
+        "d55"
+      ],
+      "type": "extrude",
+      "sketch": 13,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 15,
+      "name": "lid_corner_1_-1_skirt_trim_profile",
+      "suppressed": false,
+      "param_names": [
+        "d56"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.1)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              24.05000000000001,
+              -44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              33.44999999999999,
+              -44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              33.44999999999999,
+              -35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              24.05000000000001,
+              -35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 224.05,
+            "param": "d57"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 155.3,
+            "param": "d58"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 233.45,
+            "param": "d59"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 155.3,
+            "param": "d60"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 233.45,
+            "param": "d61"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 164.7,
+            "param": "d62"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 224.05,
+            "param": "d63"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 164.7,
+            "param": "d64"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "lid_corner_1_-1_skirt_trim",
+      "suppressed": false,
+      "param_names": [
+        "d65"
+      ],
+      "type": "extrude",
+      "sketch": 15,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(0.2)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 17,
+      "name": "lid_corner_1_1_skirt_clearance_profile",
+      "suppressed": false,
+      "param_names": [
+        "d66"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              28.75,
+              40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 4.8,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 9.6,
+            "param": "d67"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 228.75,
+            "param": "d68"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 240.0,
+            "param": "d69"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "lid_corner_1_1_skirt_clearance",
+      "suppressed": false,
+      "param_names": [
+        "d70"
+      ],
+      "type": "extrude",
+      "sketch": 17,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 19,
+      "name": "lid_corner_1_1_skirt_trim_profile",
+      "suppressed": false,
+      "param_names": [
+        "d71"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.1)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              24.05000000000001,
+              35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              33.44999999999999,
+              35.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              33.44999999999999,
+              44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              24.05000000000001,
+              44.69999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 224.05,
+            "param": "d72"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 235.3,
+            "param": "d73"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 233.45,
+            "param": "d74"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 235.3,
+            "param": "d75"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 233.45,
+            "param": "d76"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 244.7,
+            "param": "d77"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 224.05,
+            "param": "d78"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 244.7,
+            "param": "d79"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "lid_corner_1_1_skirt_trim",
+      "suppressed": false,
+      "param_names": [
+        "d80"
+      ],
+      "type": "extrude",
+      "sketch": 19,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(0.2)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 21,
+      "name": "lid_skirt_usb_opening_profile",
+      "suppressed": false,
+      "param_names": [
+        "d81"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -35.94999999999999,
+              -30.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              -29.55000000000001,
+              -30.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              -29.55000000000001,
+              30.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -35.94999999999999,
+              30.30000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 164.05,
+            "param": "d82"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 169.7,
+            "param": "d83"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 170.45,
+            "param": "d84"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 169.7,
+            "param": "d85"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 170.45,
+            "param": "d86"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 230.3,
+            "param": "d87"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 164.05,
+            "param": "d88"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 230.3,
+            "param": "d89"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "lid_skirt_usb_opening",
+      "suppressed": false,
+      "param_names": [
+        "d90"
+      ],
+      "type": "extrude",
+      "sketch": 21,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 23,
+      "name": "lid_skirt_cable_opening_profile",
+      "suppressed": false,
+      "param_names": [
+        "d91"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "((case_height)-(lid_skirt_depth))-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -12.300000000000011,
+              40.80000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              12.300000000000011,
+              40.80000000000001
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              12.300000000000011,
+              47.19999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -12.300000000000011,
+              47.19999999999999
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 187.7,
+            "param": "d92"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 240.8,
+            "param": "d93"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 212.3,
+            "param": "d94"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 240.8,
+            "param": "d95"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 212.3,
+            "param": "d96"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 247.2,
+            "param": "d97"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 187.7,
+            "param": "d98"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 247.2,
+            "param": "d99"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "lid_skirt_cable_opening",
+      "suppressed": false,
+      "param_names": [
+        "d100"
+      ],
+      "type": "extrude",
+      "sketch": 23,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_skirt_depth)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut"
+    },
+    {
+      "id": 25,
+      "name": "lid_plate_profile",
+      "suppressed": false,
+      "param_names": [
+        "d101"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "case_height"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "l1.start",
+            "pos": [
+              -35.150000000000006,
+              -46.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l1.end",
+            "pos": [
+              35.150000000000006,
+              -46.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l2.end",
+            "pos": [
+              35.150000000000006,
+              46.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "l3.end",
+            "pos": [
+              -35.150000000000006,
+              46.400000000000006
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l3",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "l4",
+            "type": "line",
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "fix",
+            "p": 5
+          },
+          {
+            "id": "k2",
+            "type": "distance_x",
+            "p": 5,
+            "q": 1,
+            "value": 164.85,
+            "param": "d102"
+          },
+          {
+            "id": "k3",
+            "type": "distance_y",
+            "p": 5,
+            "q": 1,
+            "value": 153.6,
+            "param": "d103"
+          },
+          {
+            "id": "k4",
+            "type": "distance_x",
+            "p": 5,
+            "q": 2,
+            "value": 235.15,
+            "param": "d104"
+          },
+          {
+            "id": "k5",
+            "type": "distance_y",
+            "p": 5,
+            "q": 2,
+            "value": 153.6,
+            "param": "d105"
+          },
+          {
+            "id": "k6",
+            "type": "distance_x",
+            "p": 5,
+            "q": 3,
+            "value": 235.15,
+            "param": "d106"
+          },
+          {
+            "id": "k7",
+            "type": "distance_y",
+            "p": 5,
+            "q": 3,
+            "value": 246.4,
+            "param": "d107"
+          },
+          {
+            "id": "k8",
+            "type": "distance_x",
+            "p": 5,
+            "q": 4,
+            "value": 164.85,
+            "param": "d108"
+          },
+          {
+            "id": "k9",
+            "type": "distance_y",
+            "p": 5,
+            "q": 4,
+            "value": 246.4,
+            "param": "d109"
+          }
+        ],
+        "counters": {
+          "k": 9,
+          "l": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "lid_plate",
+      "suppressed": false,
+      "body_names": [
+        "lid"
+      ],
+      "param_names": [
+        "d110"
+      ],
+      "type": "extrude",
+      "sketch": 25,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "lid_thickness",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 27,
+      "name": "lid_plate_corners",
+      "suppressed": false,
+      "param_names": [
+        "d111"
+      ],
+      "edge_refs": [
+        {
+          "dir": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            32.0
+          ],
+          "max": [
+            35.150000000000006,
+            46.400000000000006,
+            34.4
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            32.0
+          ],
+          "max": [
+            35.150000000000006,
+            46.400000000000006,
+            34.4
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            32.0
+          ],
+          "max": [
+            35.150000000000006,
+            46.400000000000006,
+            34.4
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            32.0
+          ],
+          "max": [
+            35.150000000000006,
+            46.400000000000006,
+            34.4
+          ]
+        }
+      ],
+      "edge_names": [
+        "F26:side:l1|F26:side:l4",
+        "F26:side:l3|F26:side:l4",
+        "F26:side:l1|F26:side:l2",
+        "F26:side:l2|F26:side:l3"
+      ],
+      "type": "fillet",
+      "edges": [
+        [
+          -35.15,
+          -46.4,
+          33.2
+        ],
+        [
+          -35.15,
+          46.4,
+          33.2
+        ],
+        [
+          35.15,
+          -46.4,
+          33.2
+        ],
+        [
+          35.15,
+          46.4,
+          33.2
+        ]
+      ],
+      "radius": "corner_radius"
+    },
+    {
+      "id": 28,
+      "name": "lid_exterior_bevel",
+      "suppressed": false,
+      "param_names": [
+        "d112"
+      ],
+      "edge_refs": [
+        {
+          "dir": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        },
+        {
+          "dir": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "min": [
+            -35.150000000000006,
+            -46.400000000000006,
+            31.999999999999993
+          ],
+          "max": [
+            35.15000000000001,
+            46.400000000000006,
+            34.40000000000001
+          ]
+        }
+      ],
+      "edge_names": [
+        "F26:side:l1|F26:top",
+        "F26:side:l3|F26:top",
+        "F26:side:l4|F26:top",
+        "F26:side:l2|F26:top",
+        "F26:top|F27:blend:F26:side:l1|F26:side:l4",
+        "F26:top|F27:blend:F26:side:l3|F26:side:l4",
+        "F26:top|F27:blend:F26:side:l1|F26:side:l2",
+        "F26:top|F27:blend:F26:side:l2|F26:side:l3"
+      ],
+      "type": "chamfer",
+      "edges": [
+        [
+          0.0,
+          -46.4,
+          34.4
+        ],
+        [
+          0.0,
+          46.4,
+          34.4
+        ],
+        [
+          -35.15,
+          0.0,
+          34.4
+        ],
+        [
+          35.15,
+          0.0,
+          34.4
+        ],
+        [
+          -34.271320343559644,
+          -45.521320343559644,
+          34.4
+        ],
+        [
+          -34.271320343559644,
+          45.521320343559644,
+          34.4
+        ],
+        [
+          34.271320343559644,
+          -45.521320343559644,
+          34.4
+        ],
+        [
+          34.271320343559644,
+          45.521320343559644,
+          34.4
+        ]
+      ],
+      "distance": "edge_bevel"
+    },
+    {
+      "id": 29,
+      "name": "lid_locating_skirt",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_skirt_body (1) (1)",
+        "lid_skirt_body (1)",
+        "lid_skirt_body (1) (3)",
+        "lid_skirt_body (1) (2)",
+        "lid_skirt_body (2)",
+        "lid_skirt_body (2) (1)"
+      ],
+      "operation": "join",
+      "keep_tools": false
+    },
+    {
+      "id": 30,
+      "name": "lid_lid_screw_-1_-1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d113"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(case_height)-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -28.75,
+              -40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d114"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 171.25,
+            "param": "d115"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 160.0,
+            "param": "d116"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 31,
+      "name": "lid_lid_screw_-1_-1",
+      "suppressed": false,
+      "param_names": [
+        "d117"
+      ],
+      "type": "extrude",
+      "sketch": 30,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "lid"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "lid_lid_screw_-1_1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d118"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(case_height)-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              -28.75,
+              40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d119"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 171.25,
+            "param": "d120"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 240.0,
+            "param": "d121"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "lid_lid_screw_-1_1",
+      "suppressed": false,
+      "param_names": [
+        "d122"
+      ],
+      "type": "extrude",
+      "sketch": 32,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "lid"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "lid_lid_screw_1_-1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d123"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(case_height)-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              28.75,
+              -40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d124"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 228.75,
+            "param": "d125"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 160.0,
+            "param": "d126"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 35,
+      "name": "lid_lid_screw_1_-1",
+      "suppressed": false,
+      "param_names": [
+        "d127"
+      ],
+      "type": "extrude",
+      "sketch": 34,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "lid"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "lid_lid_screw_1_1_profile",
+      "suppressed": false,
+      "param_names": [
+        "d128"
+      ],
+      "type": "sketch",
+      "plane": {
+        "type": "offset",
+        "base": {
+          "type": "origin",
+          "name": "XY"
+        },
+        "distance": "(case_height)-(0.5)"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "c1.center",
+            "pos": [
+              28.75,
+              40.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -200.0,
+              -200.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "c1",
+            "type": "circle",
+            "c": 1,
+            "r": 1.7,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "diameter",
+            "c": 0,
+            "value": 3.4,
+            "param": "d129"
+          },
+          {
+            "id": "k2",
+            "type": "fix",
+            "p": 2
+          },
+          {
+            "id": "k3",
+            "type": "distance_x",
+            "p": 2,
+            "q": 1,
+            "value": 228.75,
+            "param": "d130"
+          },
+          {
+            "id": "k4",
+            "type": "distance_y",
+            "p": 2,
+            "q": 1,
+            "value": 240.0,
+            "param": "d131"
+          }
+        ],
+        "counters": {
+          "c": 1,
+          "k": 4,
+          "p": 1
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "lid_lid_screw_1_1",
+      "suppressed": false,
+      "param_names": [
+        "d132"
+      ],
+      "type": "extrude",
+      "sketch": 36,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "cut",
+      "targets": [
+        "lid"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "lid_diagonal_vent_0_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d133"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d134"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d135"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "lid_diagonal_vent_0_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_0_tool"
+      ],
+      "param_names": [
+        "d136"
+      ],
+      "type": "extrude",
+      "sketch": 38,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 40,
+      "name": "lid_diagonal_vent_0_angle",
+      "suppressed": false,
+      "param_names": [
+        "d137",
+        "d138",
+        "d139",
+        "d140"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_0_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 41,
+      "name": "lid_diagonal_vent_0_position",
+      "suppressed": false,
+      "param_names": [
+        "d141",
+        "d142",
+        "d143"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_0_tool"
+      ],
+      "translate": [
+        "4",
+        "-24",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "lid_diagonal_vent_0",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_0_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 43,
+      "name": "lid_diagonal_vent_1_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d144"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d145"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d146"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "lid_diagonal_vent_1_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_1_tool"
+      ],
+      "param_names": [
+        "d147"
+      ],
+      "type": "extrude",
+      "sketch": 43,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 45,
+      "name": "lid_diagonal_vent_1_angle",
+      "suppressed": false,
+      "param_names": [
+        "d148",
+        "d149",
+        "d150",
+        "d151"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_1_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 46,
+      "name": "lid_diagonal_vent_1_position",
+      "suppressed": false,
+      "param_names": [
+        "d152",
+        "d153",
+        "d154"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_1_tool"
+      ],
+      "translate": [
+        "4",
+        "-18",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "lid_diagonal_vent_1",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_1_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 48,
+      "name": "lid_diagonal_vent_2_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d155"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d156"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d157"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 49,
+      "name": "lid_diagonal_vent_2_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_2_tool"
+      ],
+      "param_names": [
+        "d158"
+      ],
+      "type": "extrude",
+      "sketch": 48,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 50,
+      "name": "lid_diagonal_vent_2_angle",
+      "suppressed": false,
+      "param_names": [
+        "d159",
+        "d160",
+        "d161",
+        "d162"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_2_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 51,
+      "name": "lid_diagonal_vent_2_position",
+      "suppressed": false,
+      "param_names": [
+        "d163",
+        "d164",
+        "d165"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_2_tool"
+      ],
+      "translate": [
+        "4",
+        "-12",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "lid_diagonal_vent_2",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_2_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 53,
+      "name": "lid_diagonal_vent_3_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d166"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d167"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d168"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 54,
+      "name": "lid_diagonal_vent_3_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_3_tool"
+      ],
+      "param_names": [
+        "d169"
+      ],
+      "type": "extrude",
+      "sketch": 53,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 55,
+      "name": "lid_diagonal_vent_3_angle",
+      "suppressed": false,
+      "param_names": [
+        "d170",
+        "d171",
+        "d172",
+        "d173"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_3_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 56,
+      "name": "lid_diagonal_vent_3_position",
+      "suppressed": false,
+      "param_names": [
+        "d174",
+        "d175",
+        "d176"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_3_tool"
+      ],
+      "translate": [
+        "4",
+        "-6",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "lid_diagonal_vent_3",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_3_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 58,
+      "name": "lid_diagonal_vent_4_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d177"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d178"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d179"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "lid_diagonal_vent_4_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_4_tool"
+      ],
+      "param_names": [
+        "d180"
+      ],
+      "type": "extrude",
+      "sketch": 58,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 60,
+      "name": "lid_diagonal_vent_4_angle",
+      "suppressed": false,
+      "param_names": [
+        "d181",
+        "d182",
+        "d183",
+        "d184"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_4_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 61,
+      "name": "lid_diagonal_vent_4_position",
+      "suppressed": false,
+      "param_names": [
+        "d185",
+        "d186",
+        "d187"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_4_tool"
+      ],
+      "translate": [
+        "4",
+        "0",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "lid_diagonal_vent_4",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_4_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 63,
+      "name": "lid_diagonal_vent_5_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d188"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d189"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d190"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "lid_diagonal_vent_5_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_5_tool"
+      ],
+      "param_names": [
+        "d191"
+      ],
+      "type": "extrude",
+      "sketch": 63,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 65,
+      "name": "lid_diagonal_vent_5_angle",
+      "suppressed": false,
+      "param_names": [
+        "d192",
+        "d193",
+        "d194",
+        "d195"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_5_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 66,
+      "name": "lid_diagonal_vent_5_position",
+      "suppressed": false,
+      "param_names": [
+        "d196",
+        "d197",
+        "d198"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_5_tool"
+      ],
+      "translate": [
+        "4",
+        "6",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "lid_diagonal_vent_5",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_5_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 68,
+      "name": "lid_diagonal_vent_6_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d199"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d200"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d201"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 69,
+      "name": "lid_diagonal_vent_6_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_6_tool"
+      ],
+      "param_names": [
+        "d202"
+      ],
+      "type": "extrude",
+      "sketch": 68,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 70,
+      "name": "lid_diagonal_vent_6_angle",
+      "suppressed": false,
+      "param_names": [
+        "d203",
+        "d204",
+        "d205",
+        "d206"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_6_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 71,
+      "name": "lid_diagonal_vent_6_position",
+      "suppressed": false,
+      "param_names": [
+        "d207",
+        "d208",
+        "d209"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_6_tool"
+      ],
+      "translate": [
+        "4",
+        "12",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "lid_diagonal_vent_6",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_6_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 73,
+      "name": "lid_diagonal_vent_7_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d210"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d211"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d212"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 74,
+      "name": "lid_diagonal_vent_7_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_7_tool"
+      ],
+      "param_names": [
+        "d213"
+      ],
+      "type": "extrude",
+      "sketch": 73,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 75,
+      "name": "lid_diagonal_vent_7_angle",
+      "suppressed": false,
+      "param_names": [
+        "d214",
+        "d215",
+        "d216",
+        "d217"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_7_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 76,
+      "name": "lid_diagonal_vent_7_position",
+      "suppressed": false,
+      "param_names": [
+        "d218",
+        "d219",
+        "d220"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_7_tool"
+      ],
+      "translate": [
+        "4",
+        "18",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "lid_diagonal_vent_7",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_7_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 78,
+      "name": "lid_diagonal_vent_8_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              13.2,
+              -1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -13.2,
+              1.3
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              13.2,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -13.2,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 29.0,
+            "param": "d221"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 2.6,
+            "param": "d222"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 13.2,
+            "param": "d223"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 79,
+      "name": "lid_diagonal_vent_8_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_diagonal_vent_8_tool"
+      ],
+      "param_names": [
+        "d224"
+      ],
+      "type": "extrude",
+      "sketch": 78,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(lid_thickness)+(1)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 80,
+      "name": "lid_diagonal_vent_8_angle",
+      "suppressed": false,
+      "param_names": [
+        "d225",
+        "d226",
+        "d227",
+        "d228"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_8_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "-(vent_angle)"
+    },
+    {
+      "id": 81,
+      "name": "lid_diagonal_vent_8_position",
+      "suppressed": false,
+      "param_names": [
+        "d229",
+        "d230",
+        "d231"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_diagonal_vent_8_tool"
+      ],
+      "translate": [
+        "4",
+        "24",
+        "(case_height)-(0.5)"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "lid_diagonal_vent_8",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_diagonal_vent_8_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 83,
+      "name": "lid_accent_rail_0_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -22.1,
+              -0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              22.1,
+              -0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              22.1,
+              0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -22.1,
+              0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              22.1,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -22.1,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 45.0,
+            "param": "d232"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 0.8,
+            "param": "d233"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 22.1,
+            "param": "d234"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 84,
+      "name": "lid_accent_rail_0_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_accent_rail_0_tool"
+      ],
+      "param_names": [
+        "d235"
+      ],
+      "type": "extrude",
+      "sketch": 83,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(accent_depth)+(0.5)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 85,
+      "name": "lid_accent_rail_0_angle",
+      "suppressed": false,
+      "param_names": [
+        "d236",
+        "d237",
+        "d238",
+        "d239"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_accent_rail_0_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "90 deg"
+    },
+    {
+      "id": 86,
+      "name": "lid_accent_rail_0_position",
+      "suppressed": false,
+      "param_names": [
+        "d240",
+        "d241",
+        "d242"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_accent_rail_0_tool"
+      ],
+      "translate": [
+        "-23",
+        "0",
+        "((case_height)+(lid_thickness))-(accent_depth)"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "lid_accent_rail_0",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_accent_rail_0_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 88,
+      "name": "lid_accent_rail_1_profile",
+      "suppressed": false,
+      "type": "sketch",
+      "plane": {
+        "type": "origin",
+        "name": "XY"
+      },
+      "sketch": {
+        "points": [
+          {
+            "id": "origin",
+            "pos": [
+              0.0,
+              0.0
+            ],
+            "fixed": true
+          },
+          {
+            "id": "p1",
+            "pos": [
+              -22.1,
+              -0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p2",
+            "pos": [
+              22.1,
+              -0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p3",
+            "pos": [
+              22.1,
+              0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "p4",
+            "pos": [
+              -22.1,
+              0.4
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a1.center",
+            "pos": [
+              22.1,
+              0.0
+            ],
+            "fixed": false
+          },
+          {
+            "id": "a2.center",
+            "pos": [
+              -22.1,
+              0.0
+            ],
+            "fixed": false
+          }
+        ],
+        "curves": [
+          {
+            "id": "l1",
+            "type": "line",
+            "a": 1,
+            "b": 2,
+            "construction": false
+          },
+          {
+            "id": "a1",
+            "type": "arc",
+            "c": 5,
+            "a": 2,
+            "b": 3,
+            "construction": false
+          },
+          {
+            "id": "l2",
+            "type": "line",
+            "a": 3,
+            "b": 4,
+            "construction": false
+          },
+          {
+            "id": "a2",
+            "type": "arc",
+            "c": 6,
+            "a": 4,
+            "b": 1,
+            "construction": false
+          }
+        ],
+        "constraints": [
+          {
+            "id": "k1",
+            "type": "tangent",
+            "a": 0,
+            "b": 1
+          },
+          {
+            "id": "k2",
+            "type": "tangent",
+            "a": 2,
+            "b": 1
+          },
+          {
+            "id": "k3",
+            "type": "tangent",
+            "a": 0,
+            "b": 3
+          },
+          {
+            "id": "k4",
+            "type": "tangent",
+            "a": 2,
+            "b": 3
+          },
+          {
+            "id": "k5",
+            "type": "equal",
+            "a": 3,
+            "b": 1
+          },
+          {
+            "id": "k6",
+            "type": "slot_overall_length",
+            "a": 1,
+            "b": 3,
+            "value": 45.0,
+            "param": "d243"
+          },
+          {
+            "id": "k7",
+            "type": "diameter",
+            "c": 1,
+            "value": 0.8,
+            "param": "d244"
+          },
+          {
+            "id": "k8",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 5
+          },
+          {
+            "id": "k9",
+            "type": "distance_x",
+            "p": 0,
+            "q": 5,
+            "value": 22.1,
+            "param": "d245"
+          },
+          {
+            "id": "k10",
+            "type": "horizontal_points",
+            "p": 0,
+            "q": 6
+          }
+        ],
+        "counters": {
+          "a": 2,
+          "k": 10,
+          "l": 2,
+          "p": 4
+        }
+      }
+    },
+    {
+      "id": 89,
+      "name": "lid_accent_rail_1_tool_extrude",
+      "suppressed": false,
+      "body_names": [
+        "lid_accent_rail_1_tool"
+      ],
+      "param_names": [
+        "d246"
+      ],
+      "type": "extrude",
+      "sketch": 88,
+      "profiles": {
+        "type": "all"
+      },
+      "extent": {
+        "distance": "(accent_depth)+(0.5)",
+        "convention": "total_distance",
+        "direction": "positive"
+      },
+      "operation": "new_body"
+    },
+    {
+      "id": 90,
+      "name": "lid_accent_rail_1_angle",
+      "suppressed": false,
+      "param_names": [
+        "d247",
+        "d248",
+        "d249",
+        "d250"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_accent_rail_1_tool"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle": "90 deg"
+    },
+    {
+      "id": 91,
+      "name": "lid_accent_rail_1_position",
+      "suppressed": false,
+      "param_names": [
+        "d251",
+        "d252",
+        "d253"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid_accent_rail_1_tool"
+      ],
+      "translate": [
+        "-20",
+        "0",
+        "((case_height)+(lid_thickness))-(accent_depth)"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "lid_accent_rail_1",
+      "suppressed": false,
+      "type": "combine",
+      "target": "lid",
+      "tools": [
+        "lid_accent_rail_1_tool"
+      ],
+      "operation": "cut",
+      "keep_tools": false
+    },
+    {
+      "id": 93,
+      "name": "lid_print_rotation",
+      "suppressed": false,
+      "param_names": [
+        "d254",
+        "d255",
+        "d256",
+        "d257"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "0"
+      ],
+      "rotate_axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "angle": "180 deg"
+    },
+    {
+      "id": 94,
+      "name": "lid_on_bed",
+      "suppressed": false,
+      "param_names": [
+        "d258",
+        "d259",
+        "d260"
+      ],
+      "type": "move",
+      "bodies": [
+        "lid"
+      ],
+      "translate": [
+        "0",
+        "0",
+        "lid_top"
+      ]
+    }
+  ],
+  "next_id": 95,
+  "favorites": [
+    "board_fit_width_extra",
+    "button_contact_insert_pilot_diameter",
+    "button_guide_clearance",
+    "cable_cradle_radial_clearance",
+    "finger_pad_extension",
+    "lid_fit_clearance",
+    "pcb_insert_pilot_diameter",
+    "pcb_length",
+    "pcb_width",
+    "usb_fit_clearance",
+    "wall"
+  ]
+}
