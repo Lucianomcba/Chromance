@@ -1,0 +1,43 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_diameter",
+        "expression": "sqrt(reset_slider_width^2 + (12 mm)^2) + 1 mm",
+        "comment": "Derived sphere footprint spans the full pad diagonal with 0.5 mm radial margin, avoiding corner-tangent Boolean geometry. The pad clips the spherical surface; no independent circular cup boundary. Face length is the existing fixed 12 mm.",
+        "favorite": false
+      }
+    },
+    {
+      "command": "parameters.comment",
+      "params": {
+        "name": "finger_cup_depth",
+        "comment": "Allowed range 0.5..0.8 mm; default 0.6 mm center depression. Spherical dish spans the complete rectangular top. Physical comfort and print finish pending."
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/enclosure.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

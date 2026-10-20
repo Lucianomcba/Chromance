@@ -1,0 +1,339 @@
+{
+  "default_added_vs_revision016_mm3": {
+    "reset_slider": 0,
+    "boot_slider": 0
+  },
+  "status": "passed_with_inherited_alignment_and_usb_limitations",
+  "physical_comfort_tested": false,
+  "physical_fit_tested": false,
+  "derived_sphere_footprint_diameter_mm": 15.88086019019062,
+  "face_boundary": "complete rectangular top; original chamfer retained",
+  "default_cup_depth_mm": 0.6,
+  "default_geometry": {
+    "lid": {
+      "unchanged_xor_mm3": 0
+    },
+    "body": {
+      "unchanged_xor_mm3": 0
+    },
+    "desk_bracket": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_left_front": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_left_rear": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_right_front": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_right_rear": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_frame": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_slider": {
+      "oracle_xor_mm3": 0,
+      "added_volume_vs_flat_slider_mm3": 0,
+      "removed_volume_mm3": 41.06558283065806,
+      "remaining_original_flat_top_area_mm2": 0.0,
+      "measured_center_depth_mm": 0.6000000000059984
+    },
+    "reset_rear_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_moving_magnet_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_frame": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_slider": {
+      "oracle_xor_mm3": 0,
+      "added_volume_vs_flat_slider_mm3": 0,
+      "removed_volume_mm3": 41.06558391462886,
+      "remaining_original_flat_top_area_mm2": 0.0,
+      "measured_center_depth_mm": 0.6000000000059984
+    },
+    "boot_rear_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_moving_magnet_keeper": {
+      "unchanged_xor_mm3": 0
+    }
+  },
+  "motion_evidence": "Each slider is an exact subset of the uncupped revision015 slider, with only a rectangularly clipped spherical dish removed. All other parts match exactly. Pure subtraction cannot introduce new interference at any prior rigid-motion pose. Guides and stops are outside the removed cap. Prior USB/board-play collisions remain unresolved.",
+  "barrel_holder_status": "Unchanged from revision015; jack-axis alignment remains paused/provisional.",
+  "parameter_cases": [
+    {
+      "parameter": "finger_cup_depth",
+      "position": "low",
+      "value_mm": 0.5,
+      "step": "finger_cup_depth-low.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 33.95944499053621,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.5000000000000071
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 33.95944499033385,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.5000000000000071
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_depth",
+      "position": "high",
+      "value_mm": 0.8,
+      "step": "finger_cup_depth-high.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 55.57089555624452,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.8000000000000043
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 55.57089881387492,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.8000000000000043
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_depth",
+      "position": "default",
+      "value_mm": 0.6,
+      "step": "finger_cup_depth-default.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 41.06558283051663,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.600000000000044
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_vs_flat_slider_mm3": 0,
+          "removed_volume_mm3": 41.06558391450153,
+          "remaining_original_flat_top_area_mm2": 0.0,
+          "measured_center_depth_mm": 0.600000000000044
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    }
+  ],
+  "opens_without_external_files": true,
+  "no_import_features": true,
+  "sketches_dof_zero": 203,
+  "parameter_archive_members_sha256": {
+    "finger_cup_depth-default.step": "d79a0a9689d9a3176dd3ad0847b2cc14d81dbbc74719bc15d309d0ff5738483c",
+    "finger_cup_depth-high.step": "14f8dd7876e28370a947bdc8d97f4607076d293e2bc0313c1adc65477fb2046a",
+    "finger_cup_depth-low.step": "7bc037e4108fac112a897785eb96e73b4f19e4e973c11a5b12d6ce17a5c0c795",
+    "states.json": "6d00ef27a138e849e4d4aed5f53a5579d63c917f500a554e302706abc9b05ab7"
+  },
+  "flat_bed_contact_area_mm2": {
+    "reset_slider": 70.39999999999996,
+    "boot_slider": 69.74999999999999
+  },
+  "reset_slider_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/parts/reset_slider.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/parts/reset_slider.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 1,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 8.76117825399092e-07,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "boot_slider_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/parts/boot_slider.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/parts/boot_slider.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 1,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 8.157812092157712e-05,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "replacement_sliders_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/replacement-sliders.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/replacement-sliders.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 2,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 8.157812092157712e-05,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "full_print_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/print-layout.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/print-layout.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 15,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 8.15781209269062e-05,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "finger_cup_samples_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/fit-tests/finger-cup-samples.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/fit-tests/finger-cup-samples.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 3,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 1.0000600525472692e-07,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "print_orientation": "Sliders and feel coupons cup-side up (case-local +Z), rebased to Z0. Slicer supports under raised arm/contact boss and rear lug; protect guide/magnet fits. Process settings and physical finish remain unverified."
+}

@@ -1,0 +1,50 @@
+{
+  "revision": "017-rectangular-cups",
+  "base_revision": "016-finger-cups",
+  "status": "digitally_validated_physical_comfort_pending",
+  "physical_fit_tested": false,
+  "physical_comfort_tested": false,
+  "default_center_depression_mm": 0.6,
+  "validated_depth_range_mm": [
+    0.5,
+    0.8
+  ],
+  "base_native_design_sha256": "e1669840b844c38488056b66b9a2fdb5b69a97f392b7cf90248dae80cde38101",
+  "source_files": {
+    "solidcraft/native/scripts/rectangular_finger_cups.py": "8093d2d87b5d920305519bc6f68f7b9805cb586d214e195dc4985e339f922341",
+    "solidcraft/native/scripts/check_rectangular_cups.py": "5087e474f8822cdab7d511b7aba1f5efcfb589571245ae7c622a2d9625966e0f",
+    "solidcraft/native/scripts/export_rectangular_cups.py": "23e85284151eb1f10d5590fc842a87fbb5f580050d532dcc2df704bc83b008ab"
+  },
+  "artifacts": {
+    "finger-face-detail.png": "98c0ee75d4b353ff534a987ae7a03458d7eaaff33c892ee6b3895d6b19d9b966",
+    "finger-faces.png": "a9fa677debdab2128871ebda679d85a3d693c9c3970390f7ef7636c902396e0c",
+    "print-layout-mesh-report.json": "a2f0a999043b7c386d805c82a3736f9c851887cea7cf825c73b4496b0b424f3d",
+    "print-layout.3mf": "911eb299adb4e046a4132a7f53f3d106d54af7debec799df552cc8148327f2a6",
+    "print-layout.step": "1151faf36e5ad96dfe315aa1f0050e3aec204871ea18b41cb519d46423aa4296",
+    "replacement-sliders-mesh-report.json": "ead93bff662eaf992aeb5da1557c92147209da6ad8f99876cf1cbb687896c92d",
+    "replacement-sliders.3mf": "240705bbd0c265f89355ca4155cc384c2ec0e55458842c515bd9dc285d6777e9",
+    "replacement-sliders.step": "60bc1fdc224ce0df19b10bfbc6e5b2726d45f3bd2e2ae3a7c70ca8350d67f8d8",
+    "validation.json": "bff044adab1e7dc58e6a7cb3c011ef6e860edf5d8854d03f6d0ff764e39f0458",
+    "README.md": "4d7ba2a3a177acbe5049af62d001a5898b619552745174870bdabb94bb900068",
+    "enclosure.step": "3bfc5878172544c1d89f51042d27cd8ec8a99d3006e9507e683078b411ce232c",
+    "enclosure-groups.json": "f03d04dadd28b290502ec21527538b840478f4726cfd427e4593c66aef95a234",
+    "enclosure-inspection.json": "2d383a088c9b7b00771a7f6d6b16c500de4f90df3dac1100c13f801a4ccc5f41",
+    "enclosure.json": "edc116680e67bc69f5b4b8afbb04126ce62cc574039053153bf598e95f3755b8",
+    "enclosure-native.step": "b201b773d107ee863f75f7671329bebc80554b3da8f214b90b3327280e920a19",
+    "enclosure.solidcraft": "50f7c47119a88d6ca43ddb0e6da7ee8f0770eccf046b2fb86419ecd21f64cc41",
+    "expand-cups.json": "ac985fa003b4768922c1bfa5c8bd2e06e68917dfec0aaed7860ad03ee9bdd449",
+    "parts/boot_slider-mesh-report.json": "6d2c651b35e08af90ffb8ec085abcc0559823416eb46c0cd608eb2738f27ac43",
+    "parts/boot_slider.3mf": "e08db0c9733796bcd6770ab2fe62581af6a2a791718d39f92fc2c09a7032244a",
+    "parts/boot_slider.step": "43812aad7966873e319896294121185954e6841cfc712bf3aae377ff63fbfedb",
+    "parts/reset_slider-mesh-report.json": "b2727d4bc249a2368a32edcff10b31fe335721a48958be3f90e014c9f5600579",
+    "parts/reset_slider.3mf": "9b67e2ff8ad6ac95344538a5b69080ddccb65ff1a1bfe08bf1d229798a857b78",
+    "parts/reset_slider.step": "ef7534da7d0036a5df11615cd43f2415d0650b92549d62591bf05c8533ef205a",
+    "parameter-checks/verification-artifacts.zip": "07ee6137821302fb49e7e7334a6b9dd70486a27cc3a74693cdd868b76f2cefe9",
+    "parameter-checks/walk.json": "51664224f6c524eb5d6533c9684f974dee6c3e73694341b917a7485185c6b997",
+    "fit-tests/finger-cup-samples.png": "4425671c04c5ea42072ba0f50844f4d0c090e762ad516d5f32908d2d81d04973",
+    "fit-tests/finger-cup-samples-mesh-report.json": "d6c26ab53a9ba891075da2f88b2a66b9c27d7bcb772a6b0c5ab40edc4e681a5d",
+    "fit-tests/finger-cup-samples.3mf": "8d7b6f03a88d0597e90b48c3977f070aaa34372e4d62e10d589ed9b046ad82f3",
+    "fit-tests/finger-cup-samples.step": "25652a0236b3000fdb90298aba1266d60838a3696aafb32c4efad3200d1375e1",
+    "fit-tests/README.md": "a7d4f81056c8340b7aee96b15e41df0a3a06815df60890c7f432081834a29a2c"
+  }
+}

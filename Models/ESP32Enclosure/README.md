@@ -1,12 +1,12 @@
 # ESP32 desk enclosure
 
-**Latest native SolidCraft revision: [016 — finger cups](solidcraft/native/revision-016-finger-cups/README.md).**
-Both slider pads now have a shallow spherical finger dish, 7 mm across and
-0.6 mm deep. [Print the small feel/finish samples](solidcraft/native/revision-016-finger-cups/fit-tests/finger-cup-samples.3mf)
-or the [two replacement sliders](solidcraft/native/revision-016-finger-cups/replacement-sliders.3mf).
-[Open the complete parametric assembly](solidcraft/native/revision-016-finger-cups/enclosure.solidcraft).
-Earlier revisions remain preserved. The 9 mm barrel holder is unchanged, with
-its alignment still paused/provisional.
+**Latest native SolidCraft revision: [017 — full rectangular spherical cups](solidcraft/native/revision-017-rectangular-cups/README.md).**
+The spherical finger dish now spans each slider's entire rectangular top, with
+0.6 mm nominal center depression. [Print the small feel samples](solidcraft/native/revision-017-rectangular-cups/fit-tests/finger-cup-samples.3mf)
+or the [two replacement sliders](solidcraft/native/revision-017-rectangular-cups/replacement-sliders.3mf).
+[Open the parametric assembly](solidcraft/native/revision-017-rectangular-cups/enclosure.solidcraft).
+These sliders print cup-side up; review supports under the raised arm/boss.
+Earlier revisions remain preserved. Barrel-holder alignment remains paused.
 
 [Native SolidCraft workflow](solidcraft/native/README.md) includes the original
 feature-history rebuild, export helpers and validation evidence.
