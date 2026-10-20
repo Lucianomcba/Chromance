@@ -1,0 +1,184 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_diameter",
+        "expression": "8.8 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_diameter-low.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_diameter",
+        "expression": "9.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_diameter-high.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_diameter",
+        "expression": "9.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_diameter-default.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_center_y",
+        "expression": "19.8 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_center_y-low.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_center_y",
+        "expression": "20.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_center_y-high.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_center_y",
+        "expression": "20.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_center_y-default.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_radial_clearance",
+        "expression": "0.15 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_radial_clearance-low.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_radial_clearance",
+        "expression": "0.25 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_radial_clearance-high.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "side_cable_radial_clearance",
+        "expression": "0.2 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/parameter-checks/side_cable_radial_clearance-default.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

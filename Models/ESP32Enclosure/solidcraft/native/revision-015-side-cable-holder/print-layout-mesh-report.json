@@ -1,0 +1,178 @@
+{
+  "status": "passed",
+  "units": "mm",
+  "linear_deflection_mm": 0.02,
+  "angular_deflection_rad": 0.1,
+  "parts": {
+    "lid": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "body": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": [
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": 86.70000030001,
+          "center_yz_mm": [
+            29.6000001,
+            5.000000100001003
+          ],
+          "native_cylindrical_faces_replaced": 2,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845461977798e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 1.2212453270876722e-13
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": 86.70000030001,
+          "center_yz_mm": [
+            23.6000001,
+            5.000000100001003
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845390923524e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": 86.70000030001,
+          "center_yz_mm": [
+            54.600000099999995,
+            5.000000100001003
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845461977798e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        },
+        {
+          "surface": "native blind mounting-bore cutter",
+          "radius_mm": 2.0,
+          "depth_mm": 4.4,
+          "entry_x_mm": 86.70000030001,
+          "center_yz_mm": [
+            48.600000099999995,
+            5.000000100001003
+          ],
+          "native_cylindrical_faces_replaced": 1,
+          "native_cap_faces_replaced": 1,
+          "ring_vertices": 148,
+          "entry_edges_refined": 0,
+          "maximum_entry_projection_mm": 7.225845475300474e-07,
+          "maximum_native_approximated_surface_radial_error_mm": 0.0
+        }
+      ]
+    },
+    "desk_bracket": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "pcb_clamp_left_front": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "pcb_clamp_left_rear": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "pcb_clamp_right_front": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "pcb_clamp_right_rear": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "reset_frame": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "reset_slider": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "reset_rear_keeper": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "reset_moving_magnet_keeper": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "boot_frame": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "boot_slider": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "boot_rear_keeper": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    },
+    "boot_moving_magnet_keeper": {
+      "watertight": true,
+      "winding_consistent": true,
+      "manifold_check": "passed",
+      "connected_bodies": 1,
+      "cad_surface_tessellation_recoveries": []
+    }
+  }
+}

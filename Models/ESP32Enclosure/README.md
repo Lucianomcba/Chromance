@@ -1,17 +1,21 @@
 # ESP32 desk enclosure
 
-**[Native SolidCraft project](solidcraft/native/README.md):** open the
-[complete parametric enclosure](solidcraft/native/revision-014/enclosure.solidcraft),
-with rebuilt sketches, dimensions and feature history. Individual parts and
-[quick fit prints](solidcraft/native/revision-014/fit-tests/replacements-only.3mf)
-are included; the earlier source and imported-solid conversion remain preserved.
+**Latest native SolidCraft revision: [015 — side cable saddle](solidcraft/native/revision-015-side-cable-holder/README.md).**
+Open the [parametric assembly](solidcraft/native/revision-015-side-cable-holder/enclosure.solidcraft),
+print the [small saddle fit coupon](solidcraft/native/revision-015-side-cable-holder/fit-tests/side-cable-holder.3mf),
+or get the [revised body](solidcraft/native/revision-015-side-cable-holder/body.3mf).
+The original end holder remains; the second saddle sits beside the buttons.
+The incoming barrel body is 9 mm; its alignment is provisional. All earlier revisions are preserved.
+
+[Native SolidCraft workflow](solidcraft/native/README.md) includes the original
+feature-history rebuild, export helpers and validation evidence.
 
 Parametric enclosure for the pictured ESP32/perfboard controller, with console-inspired
 curves, chamfers, ventilation, an under-desk bracket and external EN/RESET and BOOT
 paddles. The [measurements](measurements/) distinguish the **49 × 70 × 1 mm
 perfboard** from the **52 mm populated ESP32 span**.
 
-**Latest: [014 — measured USB clearance](revisions/014-usb-clearance/README.md).**
+**Preserved Python CAD: [014 — measured USB clearance](revisions/014-usb-clearance/README.md).**
 Your plug is **10 mm wide, 6 mm thick**, with its underside **9 mm** and top
 **15 mm** above the perfboard. Two relieved sliders and a revised BOOT guide
 accommodate that centered plug envelope while preserving the measured button axes.

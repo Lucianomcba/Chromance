@@ -1,0 +1,674 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "side_cable_diameter",
+        "expression": "9.0 mm",
+        "unit": "mm",
+        "comment": "Measured 9 mm incoming barrel connector body. Allowed range 8.8..9.2 mm, one input at a time; physical fit pending."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "side_cable_diameter",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "side_cable_center_y",
+        "expression": "20.0 mm",
+        "unit": "mm",
+        "comment": "Case-local position beside RESET end of side opening. Allowed range 19.8..20.2 mm; one input at a time."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "side_cable_center_y",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "side_cradle_projection",
+        "expression": "7.0 mm",
+        "unit": "mm",
+        "comment": "Projection outside left wall. Nominal only: 7 mm."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "side_cradle_projection",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "side_cable_radial_clearance",
+        "expression": "0.2 mm",
+        "unit": "mm",
+        "comment": "Provisional radial fit allowance. Allowed range .15...25 mm; one input at a time."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "side_cable_radial_clearance",
+        "favorite": true
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": "(board_top)+(left_access_start_above_pcb)",
+        "name": "body_side_cable_cradle_stock_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -42.15,
+            13.3
+          ],
+          [
+            -34.15,
+            13.3
+          ],
+          [
+            -34.15,
+            26.7
+          ],
+          [
+            -42.15,
+            26.7
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))+(1))+(((-(shell_width))/(2))-(side_cradle_projection)))/(2))-(((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+((side_cable_center_y)-(((2)*((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))+(1))+(((-(shell_width))/(2))-(side_cradle_projection)))/(2))+(((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((side_cable_center_y)-(((2)*((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))+(1))+(((-(shell_width))/(2))-(side_cradle_projection)))/(2))+(((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((side_cable_center_y)+(((2)*((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))+(1))+(((-(shell_width))/(2))-(side_cradle_projection)))/(2))-(((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+((side_cable_center_y)+(((2)*((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "((((((((board_top)+(left_access_start_above_pcb))-(1))+(zip_tie_thickness_provisional))+((2)*(zip_tie_slot_vertical_clearance)))+(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))+(cable_cradle_floor_above_tunnel))+(((side_cable_diameter)/(2))+(side_cable_radial_clearance)))-((board_top)+(left_access_start_above_pcb))",
+        "direction": "positive",
+        "name": "body_side_cable_cradle_stock",
+        "operation": "new",
+        "body_name": "body_side_cable_cradle"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XZ",
+        "offset": "side_cable_center_y",
+        "name": "body_side_cable_cradle_root_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -42.15,
+            -9.0
+          ],
+          [
+            -34.15,
+            -9.0
+          ],
+          [
+            -34.15,
+            -1.0
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((-(shell_width))/(2))-(side_cradle_projection))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-((board_top)+(left_access_start_above_pcb)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((-(shell_width))/(2))+(1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-((board_top)+(left_access_start_above_pcb)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((-(shell_width))/(2))+(1))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-(((board_top)+(left_access_start_above_pcb))-((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "(2)*((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall))",
+        "direction": "symmetric",
+        "name": "body_side_cable_cradle_root",
+        "operation": "join",
+        "targets": [
+          "body_side_cable_cradle"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "YZ",
+        "offset": "(((-(shell_width))/(2))-(side_cradle_projection))-(1)",
+        "name": "body_side_cable_cradle_concave_seat_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          20.0,
+          17.7
+        ],
+        "radius": 4.7,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "c1"
+        ],
+        "type": "diameter",
+        "value": "(2)*(((side_cable_diameter)/(2))+(side_cable_radial_clearance))"
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(side_cable_center_y)"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "vertical",
+        "value": "(200)+((((((((board_top)+(left_access_start_above_pcb))-(1))+(zip_tie_thickness_provisional))+((2)*(zip_tie_slot_vertical_clearance)))+(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))+(cable_cradle_floor_above_tunnel))+(((side_cable_diameter)/(2))+(side_cable_radial_clearance)))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "((((-(shell_width))/(2))+(1))-(((-(shell_width))/(2))-(side_cradle_projection)))+(2)",
+        "name": "body_side_cable_cradle_concave_seat",
+        "operation": "cut",
+        "targets": [
+          "body_side_cable_cradle"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XZ",
+        "offset": "side_cable_center_y",
+        "name": "body_side_cable_cradle_tie_passage_profile"
+      }
+    },
+    {
+      "command": "sketch.line",
+      "params": {
+        "points": [
+          [
+            -40.25,
+            -8.0
+          ],
+          [
+            -37.05,
+            -8.0
+          ],
+          [
+            -37.05,
+            -9.4
+          ],
+          [
+            -38.65,
+            -11.0
+          ],
+          [
+            -40.25,
+            -9.4
+          ]
+        ],
+        "closed": true,
+        "infer": false,
+        "connect": false
+      }
+    },
+    {
+      "command": "sketch.point",
+      "params": {
+        "point": [
+          -200,
+          -200
+        ]
+      }
+    },
+    {
+      "command": "sketch.constraint.fix",
+      "params": {
+        "entity": "p1"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))-(side_cradle_projection))+((-(shell_width))/(2)))/(2))-(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.start"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-(((board_top)+(left_access_start_above_pcb))-(1)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))-(side_cradle_projection))+((-(shell_width))/(2)))/(2))+(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l1.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-(((board_top)+(left_access_start_above_pcb))-(1)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))-(side_cradle_projection))+((-(shell_width))/(2)))/(2))+(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l2.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-(((((board_top)+(left_access_start_above_pcb))-(1))+(zip_tie_thickness_provisional))+((2)*(zip_tie_slot_vertical_clearance))))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+(((((-(shell_width))/(2))-(side_cradle_projection))+((-(shell_width))/(2)))/(2))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l3.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-((((((board_top)+(left_access_start_above_pcb))-(1))+(zip_tie_thickness_provisional))+((2)*(zip_tie_slot_vertical_clearance)))+(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2))))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l4.end"
+        ],
+        "type": "horizontal",
+        "value": "(200)+((((((-(shell_width))/(2))-(side_cradle_projection))+((-(shell_width))/(2)))/(2))-(((zip_tie_width_provisional)+((2)*(zip_tie_slot_side_clearance)))/(2)))"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "l4.end"
+        ],
+        "type": "vertical",
+        "value": "(200)+(-(((((board_top)+(left_access_start_above_pcb))-(1))+(zip_tie_thickness_provisional))+((2)*(zip_tie_slot_vertical_clearance))))"
+      }
+    },
+    {
+      "command": "sketch.solve",
+      "params": {}
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "(2)*(((((side_cable_diameter)/(2))+(side_cable_radial_clearance))+(cable_cradle_side_wall))+(2))",
+        "direction": "symmetric",
+        "name": "body_side_cable_cradle_tie_passage",
+        "operation": "cut",
+        "targets": [
+          "body_side_cable_cradle"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "body_side_cable_cradle"
+        ],
+        "name": "body_side_cable_cradle_mounted_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "body_side_cable_cradle"
+        ],
+        "name": "body_side_cable_cradle_mounted_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/enclosure.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

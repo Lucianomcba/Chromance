@@ -1,5 +1,12 @@
 # Native parametric SolidCraft enclosure
 
+**Latest: [revision 015 — side cable saddle](revision-015-side-cable-holder/README.md).**
+It preserves this full history and appends a second concave seat with a zip-tie
+passage beside the buttons. [Open revision 015](revision-015-side-cable-holder/enclosure.solidcraft)
+or [print its small fit coupon](revision-015-side-cable-holder/fit-tests/side-cable-holder.3mf).
+The barrel body is 9 mm; its alignment is provisional. The workflow and frozen checks below describe
+the preserved revision-014 rebuild; revision 015 has its own validation report.
+
 Open **[enclosure.solidcraft](revision-014/enclosure.solidcraft)** for the mounted
 revision 014 assembly, rebuilt from native sketches, dimensions and features.
 The main document has 199 fully constrained sketches and no imported geometry.
@@ -111,6 +118,13 @@ and compare each of the 33 exported states with the original Python CAD. Large
 STEP/state check artifacts are losslessly retained in a verified ZIP next to the
 readable validation report and walk commands.
 [Frozen regression tests](test_design.py) check the original measured expectations.
+The [button motion check](revision-014/button-motion-validation.json) translates
+the exported native sliders, keepers and moving hardware through 0.8 mm in
+0.05 mm steps. Centered-board samples have no solid intersections; nominal
+USB clearance is 0.2 mm and adjuster-head/lid clearance is 0.4 mm. USB/button
+interference occurs at permitted PCB offsets (16 of 18 checked positions).
+This is a discrete OCCT check, not a native joint simulation or physical test.
+Rerun with `uv run --locked python solidcraft/native/scripts/check_button_motion.py`.
 The [single-assembly export check](revision-014/assembly-export-validation.json)
 verifies all 15 manufacturing poses and the derived fit assembly. A separate
 [edited-body export check](revision-014/export-smoke-validation.json) changes the

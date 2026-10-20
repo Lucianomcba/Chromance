@@ -1,0 +1,1020 @@
+{
+  "native_step_sha256": "7fe09b12a8d61f780c79a910f6935a3b2c166bd84b30d78156430ecdf469cb38",
+  "method": "OCCT intersections and minimum distances on translated native STEP solids; discrete sampling, not continuous collision detection",
+  "stroke_mm": 0.8,
+  "sample_spacing_mm": 0.05,
+  "physical_fit_tested": false,
+  "limitations": [
+    "No native assembly joints or contact solver are created by this check.",
+    "Actual switch height/travel, magnetic return force, friction, tolerances and flexible wiring are not verified.",
+    "PCB is a flat substrate proxy; USB is a measured rectangular envelope. Other electronic components are not detailed."
+  ],
+  "buttons": {
+    "reset": {
+      "moving_parts": [
+        "reset_slider",
+        "reset_moving_magnet_keeper",
+        "reset_moving_magnet",
+        "reset_nylon_adjuster",
+        "reset_contact_heatset_insert",
+        "reset_nylon_jam_nut"
+      ],
+      "sample_count": 17,
+      "nearby_pair_minimum_distances": {
+        "reset_slider / lid": {
+          "minimum_gap_mm": 6.299999999999997,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / body": {
+          "minimum_gap_mm": 3.962322551231792,
+          "at_travel_mm": 0.8
+        },
+        "reset_slider / desk_bracket": {
+          "minimum_gap_mm": 21.1,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / reset_frame": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.8
+        },
+        "reset_slider / reset_rear_keeper": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / reference_usb": {
+          "minimum_gap_mm": 0.1999999999999975,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 0.5999999999999961,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.5999999999999961,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "reset_moving_magnet_keeper / body": {
+          "minimum_gap_mm": 10.139033484509259,
+          "at_travel_mm": 0.8
+        },
+        "reset_moving_magnet_keeper / desk_bracket": {
+          "minimum_gap_mm": 25.06995213397908,
+          "at_travel_mm": 0.0
+        },
+        "reset_moving_magnet_keeper / reset_frame": {
+          "minimum_gap_mm": 1.9000000000000004,
+          "at_travel_mm": 0.8
+        },
+        "reset_moving_magnet_keeper / reset_rear_keeper": {
+          "minimum_gap_mm": 0.3499999999999943,
+          "at_travel_mm": 0.0
+        },
+        "reset_moving_magnet / body": {
+          "minimum_gap_mm": 6.440496875241848,
+          "at_travel_mm": 0.8
+        },
+        "reset_moving_magnet / desk_bracket": {
+          "minimum_gap_mm": 25.100000000000257,
+          "at_travel_mm": 0.0
+        },
+        "reset_moving_magnet / reset_frame": {
+          "minimum_gap_mm": 1.8999999999999986,
+          "at_travel_mm": 0.8
+        },
+        "reset_moving_magnet / reset_rear_keeper": {
+          "minimum_gap_mm": 2.5999999999999943,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / lid": {
+          "minimum_gap_mm": 0.4000000000000057,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / body": {
+          "minimum_gap_mm": 9.297657235057441,
+          "at_travel_mm": 0.8
+        },
+        "reset_nylon_adjuster / desk_bracket": {
+          "minimum_gap_mm": 23.08527669316527,
+          "at_travel_mm": 0.8
+        },
+        "reset_nylon_adjuster / reference_usb": {
+          "minimum_gap_mm": 2.3587562763149488,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 3.1219584593546488,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 3.1219584593546488,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 2.7617484674720076,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 2.7617484674720076,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 2.075262228144953,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 2.075262228144953,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 1.5955613384328224,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_adjuster / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 1.5955613384328224,
+          "at_travel_mm": 0.0
+        },
+        "reset_contact_heatset_insert / body": {
+          "minimum_gap_mm": 11.01322808079498,
+          "at_travel_mm": 0.8
+        },
+        "reset_contact_heatset_insert / desk_bracket": {
+          "minimum_gap_mm": 25.183526361492735,
+          "at_travel_mm": 0.8
+        },
+        "reset_contact_heatset_insert / reference_usb": {
+          "minimum_gap_mm": 1.5587562763149472,
+          "at_travel_mm": 0.75
+        },
+        "reset_contact_heatset_insert / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 2.3219584593546476,
+          "at_travel_mm": 0.75
+        },
+        "reset_contact_heatset_insert / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 2.3219584593546476,
+          "at_travel_mm": 0.55
+        },
+        "reset_contact_heatset_insert / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 1.961748467472007,
+          "at_travel_mm": 0.0
+        },
+        "reset_contact_heatset_insert / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 1.961748467472007,
+          "at_travel_mm": 0.0
+        },
+        "reset_contact_heatset_insert / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 1.275262228144951,
+          "at_travel_mm": 0.0
+        },
+        "reset_contact_heatset_insert / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 1.275262228144951,
+          "at_travel_mm": 0.1
+        },
+        "reset_contact_heatset_insert / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 0.7955613384328234,
+          "at_travel_mm": 0.1
+        },
+        "reset_contact_heatset_insert / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.7955613384328234,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / body": {
+          "minimum_gap_mm": 14.952688679136894,
+          "at_travel_mm": 0.8
+        },
+        "reset_nylon_jam_nut / desk_bracket": {
+          "minimum_gap_mm": 27.3092084518168,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / reference_usb": {
+          "minimum_gap_mm": 1.1078838324886464,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 1.8708003449485306,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 1.8708003449485306,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 1.4708003449485327,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 1.4708003449485327,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 0.744967320028763,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.744967320028763,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 0.34496732002876546,
+          "at_travel_mm": 0.0
+        },
+        "reset_nylon_jam_nut / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.34496732002876546,
+          "at_travel_mm": 0.0
+        },
+        "reset_slider / reset_fixed_magnet": {
+          "minimum_gap_mm": 1.900000000000004,
+          "at_travel_mm": 0.8
+        }
+      },
+      "interferences": {
+        "reset_slider / usb_shift_-0.65_0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 0.9867438398556911
+        },
+        "reset_slider / usb_shift_-0.65_0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 0.9781011737767276
+        },
+        "reset_slider / usb_shift_0.65_-0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 2.710443405143218
+        },
+        "reset_slider / usb_shift_0.65_-0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 2.665443405150041
+        },
+        "reset_slider / usb_shift_0.65_0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 6.771187244439349
+        },
+        "reset_slider / usb_shift_0.65_0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 6.611544578395587
+        }
+      }
+    },
+    "boot": {
+      "moving_parts": [
+        "boot_slider",
+        "boot_moving_magnet_keeper",
+        "boot_moving_magnet",
+        "boot_nylon_adjuster",
+        "boot_contact_heatset_insert",
+        "boot_nylon_jam_nut"
+      ],
+      "sample_count": 17,
+      "nearby_pair_minimum_distances": {
+        "boot_slider / lid": {
+          "minimum_gap_mm": 6.299999999999997,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / body": {
+          "minimum_gap_mm": 1.3999999999999915,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / desk_bracket": {
+          "minimum_gap_mm": 4.100000000000001,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / pcb_clamp_left_front": {
+          "minimum_gap_mm": 5.399999999999999,
+          "at_travel_mm": 0.8
+        },
+        "boot_slider / boot_frame": {
+          "minimum_gap_mm": 3.552713678800501e-15,
+          "at_travel_mm": 0.8
+        },
+        "boot_slider / boot_rear_keeper": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / pcb_clamp_left_front_screw": {
+          "minimum_gap_mm": 2.795498394576145,
+          "at_travel_mm": 0.8
+        },
+        "boot_slider / reference_usb": {
+          "minimum_gap_mm": 0.19999999999999574,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.0,
+          "at_travel_mm": 0.0
+        },
+        "boot_moving_magnet_keeper / body": {
+          "minimum_gap_mm": 10.0909613020817,
+          "at_travel_mm": 0.0
+        },
+        "boot_moving_magnet_keeper / desk_bracket": {
+          "minimum_gap_mm": 8.111874012828356,
+          "at_travel_mm": 0.0
+        },
+        "boot_moving_magnet_keeper / boot_frame": {
+          "minimum_gap_mm": 1.9000000000000021,
+          "at_travel_mm": 0.8
+        },
+        "boot_moving_magnet_keeper / boot_rear_keeper": {
+          "minimum_gap_mm": 0.3499999999999943,
+          "at_travel_mm": 0.0
+        },
+        "boot_moving_magnet / body": {
+          "minimum_gap_mm": 6.440496875241851,
+          "at_travel_mm": 0.8
+        },
+        "boot_moving_magnet / desk_bracket": {
+          "minimum_gap_mm": 8.100000000000001,
+          "at_travel_mm": 0.0
+        },
+        "boot_moving_magnet / boot_frame": {
+          "minimum_gap_mm": 1.900000000000004,
+          "at_travel_mm": 0.8
+        },
+        "boot_moving_magnet / boot_rear_keeper": {
+          "minimum_gap_mm": 2.5999999999999943,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / lid": {
+          "minimum_gap_mm": 0.4000000000000057,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / body": {
+          "minimum_gap_mm": 6.112487218800545,
+          "at_travel_mm": 0.8
+        },
+        "boot_nylon_adjuster / desk_bracket": {
+          "minimum_gap_mm": 17.130022627551245,
+          "at_travel_mm": 0.8
+        },
+        "boot_nylon_adjuster / reference_usb": {
+          "minimum_gap_mm": 2.358756276314948,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 2.7617484674720076,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 2.7617484674720076,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 3.1219584593546483,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 3.1219584593546483,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 1.5955613384328218,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 1.5955613384328218,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 2.0752622281449526,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_adjuster / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 2.0752622281449526,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / body": {
+          "minimum_gap_mm": 8.953351327854836,
+          "at_travel_mm": 0.8
+        },
+        "boot_contact_heatset_insert / desk_bracket": {
+          "minimum_gap_mm": 17.56133177810592,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / reference_usb": {
+          "minimum_gap_mm": 1.5587562763149476,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 1.9617484674720067,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 1.9617484674720067,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 2.3219584593546467,
+          "at_travel_mm": 0.75
+        },
+        "boot_contact_heatset_insert / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 2.3219584593546467,
+          "at_travel_mm": 0.55
+        },
+        "boot_contact_heatset_insert / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 0.795561338432824,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.795561338432824,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 1.2752622281449517,
+          "at_travel_mm": 0.0
+        },
+        "boot_contact_heatset_insert / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 1.2752622281449517,
+          "at_travel_mm": 0.1
+        },
+        "boot_nylon_jam_nut / body": {
+          "minimum_gap_mm": 12.9348234422841,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / desk_bracket": {
+          "minimum_gap_mm": 16.970352567486103,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / reference_usb": {
+          "minimum_gap_mm": 1.1078838324886495,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_-0.65_-0.4_0": {
+          "minimum_gap_mm": 1.470800344948534,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_-0.65_-0.4_0.2": {
+          "minimum_gap_mm": 1.470800344948534,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_-0.65_0.4_0": {
+          "minimum_gap_mm": 1.8708003449485322,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_-0.65_0.4_0.2": {
+          "minimum_gap_mm": 1.8708003449485322,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_0.65_-0.4_0": {
+          "minimum_gap_mm": 0.34496732002876546,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_0.65_-0.4_0.2": {
+          "minimum_gap_mm": 0.34496732002876546,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_0.65_0.4_0": {
+          "minimum_gap_mm": 0.7449673200287634,
+          "at_travel_mm": 0.0
+        },
+        "boot_nylon_jam_nut / usb_shift_0.65_0.4_0.2": {
+          "minimum_gap_mm": 0.7449673200287634,
+          "at_travel_mm": 0.0
+        },
+        "boot_slider / boot_fixed_magnet": {
+          "minimum_gap_mm": 1.9000000000000021,
+          "at_travel_mm": 0.8
+        },
+        "boot_slider / pcb_clamp_left_front_insert": {
+          "minimum_gap_mm": 7.635929965392583,
+          "at_travel_mm": 0.8
+        }
+      },
+      "interferences": {
+        "boot_slider / usb_shift_-0.65_-0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 22.17457066443181
+        },
+        "boot_slider / usb_shift_-0.65_-0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 22.174570664431805
+        },
+        "boot_slider / usb_shift_-0.65_0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 1.295999999999984
+        },
+        "boot_slider / usb_shift_-0.65_0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 1.439999999999982
+        },
+        "boot_slider / usb_shift_0.65_-0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 25.113188290093102
+        },
+        "boot_slider / usb_shift_0.65_-0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 24.953545624232326
+        },
+        "boot_slider / usb_shift_0.65_0.4_0": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 3.467974975011586
+        },
+        "boot_slider / usb_shift_0.65_0.4_0.2": {
+          "first_sample_mm": 0.0,
+          "last_sample_mm": 0.8,
+          "maximum_overlap_mm3": 3.422974975172033
+        }
+      }
+    }
+  },
+  "usb_board_positions": [
+    {
+      "board_shift_mm": [
+        -0.65,
+        -0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "boot_frame": 2.645999999999978,
+        "boot_slider": 22.003213330331416
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.5999999999999961,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 3.1219584593546488,
+        "reset_contact_heatset_insert": 2.321958459354648,
+        "reset_nylon_jam_nut": 1.8708003449485306,
+        "boot_nylon_adjuster": 2.7617484674720076,
+        "boot_contact_heatset_insert": 1.9617484674720067,
+        "boot_nylon_jam_nut": 1.470800344948534
+      }
+    },
+    {
+      "board_shift_mm": [
+        -0.65,
+        -0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "boot_frame": 2.51999999999998,
+        "boot_slider": 22.174570664431805
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.5999999999999961,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 3.1219584593546488,
+        "reset_contact_heatset_insert": 2.321958459354648,
+        "reset_nylon_jam_nut": 1.8708003449485306,
+        "boot_nylon_adjuster": 2.7617484674720076,
+        "boot_contact_heatset_insert": 1.9617484674720067,
+        "boot_nylon_jam_nut": 1.470800344948534
+      }
+    },
+    {
+      "board_shift_mm": [
+        -0.65,
+        0,
+        0
+      ],
+      "intersections_mm3": {
+        "boot_frame": 2.645999999999978,
+        "boot_slider": 1.3319999999999834
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.1999999999999975,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.927471061452575,
+        "reset_contact_heatset_insert": 2.127471061452576,
+        "reset_nylon_jam_nut": 1.6708003449485318,
+        "boot_nylon_adjuster": 2.927471061452575,
+        "boot_contact_heatset_insert": 2.1274710614525763,
+        "boot_nylon_jam_nut": 1.6708003449485322
+      }
+    },
+    {
+      "board_shift_mm": [
+        -0.65,
+        0,
+        0.2
+      ],
+      "intersections_mm3": {
+        "boot_frame": 2.51999999999998,
+        "boot_slider": 1.5119999999999802
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.1999999999999975,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.927471061452575,
+        "reset_contact_heatset_insert": 2.127471061452576,
+        "reset_nylon_jam_nut": 1.6708003449485318,
+        "boot_nylon_adjuster": 2.927471061452575,
+        "boot_contact_heatset_insert": 2.1274710614525763,
+        "boot_nylon_jam_nut": 1.6708003449485322
+      }
+    },
+    {
+      "board_shift_mm": [
+        -0.65,
+        0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "reset_slider": 0.9867438398556911,
+        "boot_frame": 2.645999999999978,
+        "boot_slider": 0.7199999999999923
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.7617484674720076,
+        "reset_contact_heatset_insert": 1.961748467472007,
+        "reset_nylon_jam_nut": 1.4708003449485327,
+        "boot_nylon_adjuster": 3.1219584593546483,
+        "boot_contact_heatset_insert": 2.3219584593546485,
+        "boot_nylon_jam_nut": 1.8708003449485322
+      }
+    },
+    {
+      "board_shift_mm": [
+        -0.65,
+        0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "reset_slider": 0.9781011737767276,
+        "boot_frame": 2.5199999999999796,
+        "boot_slider": 0.8639999999999903
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.0,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.7617484674720076,
+        "reset_contact_heatset_insert": 1.961748467472007,
+        "reset_nylon_jam_nut": 1.4708003449485327,
+        "boot_nylon_adjuster": 3.1219584593546483,
+        "boot_contact_heatset_insert": 2.3219584593546485,
+        "boot_nylon_jam_nut": 1.8708003449485322
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        -0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "boot_slider": 20.105213330308192
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.1999999999999993,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.580441152620632,
+        "reset_contact_heatset_insert": 1.7804411526206314,
+        "reset_nylon_jam_nut": 1.3078838324886453,
+        "boot_nylon_adjuster": 2.1674241641784504,
+        "boot_contact_heatset_insert": 1.3674241641784513,
+        "boot_nylon_jam_nut": 0.9078838324886513
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        -0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "boot_slider": 20.070570664419225
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.1999999999999993,
+        "boot_frame": 0.20000000000000284,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.580441152620632,
+        "reset_contact_heatset_insert": 1.7804411526206314,
+        "reset_nylon_jam_nut": 1.3078838324886453,
+        "boot_nylon_adjuster": 2.1674241641784504,
+        "boot_contact_heatset_insert": 1.3674241641784513,
+        "boot_nylon_jam_nut": 0.9078838324886513
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        0,
+        0
+      ],
+      "intersections_mm3": {},
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.1999999999999975,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.19999999999999574,
+        "reset_nylon_adjuster": 2.3587562763149488,
+        "reset_contact_heatset_insert": 1.5587562763149476,
+        "reset_nylon_jam_nut": 1.1078838324886464,
+        "boot_nylon_adjuster": 2.358756276314948,
+        "boot_contact_heatset_insert": 1.5587562763149476,
+        "boot_nylon_jam_nut": 1.1078838324886495
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        0,
+        0.2
+      ],
+      "intersections_mm3": {},
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.1999999999999975,
+        "boot_frame": 0.20000000000000284,
+        "boot_slider": 0.19999999999999574,
+        "reset_nylon_adjuster": 2.3587562763149488,
+        "reset_contact_heatset_insert": 1.5587562763149476,
+        "reset_nylon_jam_nut": 1.1078838324886464,
+        "boot_nylon_adjuster": 2.358756276314948,
+        "boot_contact_heatset_insert": 1.5587562763149476,
+        "boot_nylon_jam_nut": 1.1078838324886495
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "reset_slider": 1.7407438398364248
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.1999999999999993,
+        "reset_nylon_adjuster": 2.167424164178451,
+        "reset_contact_heatset_insert": 1.3674241641784513,
+        "reset_nylon_jam_nut": 0.9078838324886473,
+        "boot_nylon_adjuster": 2.5804411526206317,
+        "boot_contact_heatset_insert": 1.780441152620635,
+        "boot_nylon_jam_nut": 1.3078838324886493
+      }
+    },
+    {
+      "board_shift_mm": [
+        0,
+        0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "reset_slider": 1.7061011737635146
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.20000000000000284,
+        "boot_slider": 0.1999999999999993,
+        "reset_nylon_adjuster": 2.167424164178451,
+        "reset_contact_heatset_insert": 1.3674241641784513,
+        "reset_nylon_jam_nut": 0.9078838324886473,
+        "boot_nylon_adjuster": 2.5804411526206317,
+        "boot_contact_heatset_insert": 1.780441152620635,
+        "boot_nylon_jam_nut": 1.3078838324886493
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        -0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "reset_slider": 2.710443405143218,
+        "boot_slider": 25.113188290093102
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.0,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.075262228144953,
+        "reset_contact_heatset_insert": 1.275262228144951,
+        "reset_nylon_jam_nut": 0.744967320028763,
+        "boot_nylon_adjuster": 1.5955613384328218,
+        "boot_contact_heatset_insert": 0.795561338432824,
+        "boot_nylon_jam_nut": 0.34496732002876546
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        -0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "reset_slider": 2.665443405150041,
+        "boot_slider": 24.953545624232326
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 13.700000000000003,
+        "reset_slider": 0.0,
+        "boot_frame": 0.3999999999999986,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 2.075262228144953,
+        "reset_contact_heatset_insert": 1.275262228144953,
+        "reset_nylon_jam_nut": 0.744967320028763,
+        "boot_nylon_adjuster": 1.5955613384328218,
+        "boot_contact_heatset_insert": 0.795561338432824,
+        "boot_nylon_jam_nut": 0.34496732002876546
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        0,
+        0
+      ],
+      "intersections_mm3": {
+        "reset_slider": 3.754443405098963,
+        "boot_slider": 4.511974974810372
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.0,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 1.8200150602068073,
+        "reset_contact_heatset_insert": 1.0200150602068088,
+        "reset_nylon_jam_nut": 0.544967320028764,
+        "boot_nylon_adjuster": 1.820015060206806,
+        "boot_contact_heatset_insert": 1.0200150602068077,
+        "boot_nylon_jam_nut": 0.5449673200287654
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        0,
+        0.2
+      ],
+      "intersections_mm3": {
+        "reset_slider": 3.6734434050837077,
+        "boot_slider": 4.430974974903799
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.100000000000001,
+        "reset_slider": 0.0,
+        "boot_frame": 0.3999999999999986,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 1.8200150602068073,
+        "reset_contact_heatset_insert": 1.0200150602068088,
+        "reset_nylon_jam_nut": 0.544967320028764,
+        "boot_nylon_adjuster": 1.820015060206806,
+        "boot_contact_heatset_insert": 1.0200150602068077,
+        "boot_nylon_jam_nut": 0.5449673200287654
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        0.4,
+        0
+      ],
+      "intersections_mm3": {
+        "reset_slider": 6.771187244439349,
+        "boot_slider": 3.467974975011586
+      },
+      "nearby_gaps_mm": {
+        "body": 8.799999999999994,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.1999999999999993,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 1.5955613384328224,
+        "reset_contact_heatset_insert": 0.795561338432824,
+        "reset_nylon_jam_nut": 0.34496732002876546,
+        "boot_nylon_adjuster": 2.0752622281449526,
+        "boot_contact_heatset_insert": 1.2752622281449517,
+        "boot_nylon_jam_nut": 0.7449673200287634
+      }
+    },
+    {
+      "board_shift_mm": [
+        0.65,
+        0.4,
+        0.2
+      ],
+      "intersections_mm3": {
+        "reset_slider": 6.611544578395587,
+        "boot_slider": 3.422974975172033
+      },
+      "nearby_gaps_mm": {
+        "body": 8.999999999999993,
+        "desk_bracket": 14.5,
+        "reset_slider": 0.0,
+        "boot_frame": 0.3999999999999986,
+        "boot_slider": 0.0,
+        "reset_nylon_adjuster": 1.5955613384328224,
+        "reset_contact_heatset_insert": 0.7955613384328234,
+        "reset_nylon_jam_nut": 0.34496732002876546,
+        "boot_nylon_adjuster": 2.0752622281449526,
+        "boot_contact_heatset_insert": 1.275262228144952,
+        "boot_nylon_jam_nut": 0.7449673200287634
+      }
+    }
+  ],
+  "provisional_switch_contact": {
+    "idle_gap_mm": 0.6000000000000001,
+    "modeled_depression_at_stop_mm": 0.2
+  },
+  "summary": {
+    "centered_board_sampled_motion_clear": true,
+    "nominal_usb_minimum_gap_mm": 0.2,
+    "adjuster_head_lid_minimum_gap_mm": 0.4,
+    "usb_board_position_cases": 18,
+    "usb_board_position_cases_with_interference": 16,
+    "physical_fit_tested": false
+  }
+}

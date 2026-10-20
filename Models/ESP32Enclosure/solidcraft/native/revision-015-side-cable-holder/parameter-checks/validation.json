@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "sequence": "low -> high -> default, individually, one native session",
+  "cases": [
+    {
+      "parameter": "side_cable_diameter",
+      "position": "low",
+      "value_mm": 8.8,
+      "raw_step": "side_cable_diameter-low.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_diameter",
+      "position": "high",
+      "value_mm": 9.2,
+      "raw_step": "side_cable_diameter-high.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_diameter",
+      "position": "default",
+      "value_mm": 9.0,
+      "raw_step": "side_cable_diameter-default.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_center_y",
+      "position": "low",
+      "value_mm": 19.8,
+      "raw_step": "side_cable_center_y-low.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_center_y",
+      "position": "high",
+      "value_mm": 20.2,
+      "raw_step": "side_cable_center_y-high.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_center_y",
+      "position": "default",
+      "value_mm": 20.0,
+      "raw_step": "side_cable_center_y-default.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_radial_clearance",
+      "position": "low",
+      "value_mm": 0.15,
+      "raw_step": "side_cable_radial_clearance-low.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_radial_clearance",
+      "position": "high",
+      "value_mm": 0.25,
+      "raw_step": "side_cable_radial_clearance-high.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    },
+    {
+      "parameter": "side_cable_radial_clearance",
+      "position": "default",
+      "value_mm": 0.2,
+      "raw_step": "side_cable_radial_clearance-default.step",
+      "oracle_xor_mm3": 0,
+      "all_sketches_dof_zero": true
+    }
+  ],
+  "native_design_sha256": "2227e09ce3b7a9750b4b95f31e689cea13815467ea16f99c9df20a28415d6e7f",
+  "archive_sha256": "28c6acc298bcb5634f7bb70151b23c348d8124bda01f7c1d284422a3ded5b315",
+  "archive_members_sha256": {
+    "side_cable_radial_clearance-default.step": "95060e9a85a388c9a978a10c45243b9631cc68797f4e021494664465dab5ca8e",
+    "side_cable_radial_clearance-high.step": "58bbeec174b54fa8cf8bd5c54b6d2343178a4340a27f0cd51856c157e4a94198",
+    "side_cable_radial_clearance-low.step": "b72d90f5b74fb9efc1fe051ebf6866bff0c8653871ef2f1df803f7030f706087",
+    "side_cable_center_y-default.step": "038b7013efe60bbb79987f800066d98d0ee1ed2de793c645c041dea3f89117a7",
+    "side_cable_center_y-high.step": "8981d5a71b579d66cb527ac16340feacbb0f29d8edf071d7fa689552d22f3564",
+    "side_cable_center_y-low.step": "ab1d6f69543a8f83c602685b0fcbcfbef3160014f1951f0e0cdc863cce9f3ffb",
+    "side_cable_diameter-default.step": "e23b6f09ab1cac5964d0f103438d9639e8e8a24cee550987d5abbc85fc8b9b4a",
+    "side_cable_diameter-high.step": "dd9db574892bc87365b6909032592bbddf52c0052b23109e066a72d702affc0f",
+    "side_cable_diameter-low.step": "b1306c93e2bc0388339b88e8c2d7d6d54d31a1e3d7cc18814e796d0d42ca4287",
+    "states.json": "a34371dfa9e2bf14f764983eb699bc028b5635f2859b6bd7e75198bd900e4056"
+  },
+  "physical_fit_tested": false
+}

@@ -1,0 +1,87 @@
+{
+  "status": "passed_with_inherited_usb_board_play_interference",
+  "physical_fit_tested": false,
+  "measured_barrel_body_diameter_mm": 9.0,
+  "connector_alignment_physically_verified": false,
+  "native_step_sha256": "43c90d0ec9cae86821dcaf441bd27b1b6d0d969cbff428fbc7f762c1b9e82eb7",
+  "native_sketch_count": 203,
+  "native_sketches_dof_zero": true,
+  "unmodified_parts_xor_mm3": {
+    "lid": 0,
+    "desk_bracket": 0,
+    "pcb_clamp_left_front": 0,
+    "pcb_clamp_left_rear": 0,
+    "pcb_clamp_right_front": 0,
+    "pcb_clamp_right_rear": 0,
+    "reset_frame": 0,
+    "reset_slider": 0,
+    "reset_rear_keeper": 0,
+    "reset_moving_magnet_keeper": 0,
+    "boot_frame": 0,
+    "boot_slider": 0,
+    "boot_rear_keeper": 0,
+    "boot_moving_magnet_keeper": 0
+  },
+  "body_removed_volume_mm3": 0,
+  "cradle_oracle_xor_mm3": 0,
+  "attachment_overlap_mm3": 158.38799999999935,
+  "body_volume_added_mm3": 831.1714038284335,
+  "new_cradle_interferences": {},
+  "moving_part_minimum_gap_mm": {
+    "reset_slider": 5.147815070493515,
+    "reset_moving_magnet_keeper": 9.410765112359362,
+    "boot_slider": 28.942054177269462,
+    "boot_moving_magnet_keeper": 32.80339159294357
+  },
+  "cable_tie_collisions": {
+    "cable_reference": {},
+    "loose_tie_route": {},
+    "tie_head_reference": {}
+  },
+  "hardware_check": {
+    "hardware_proxy_count": 34,
+    "moving_hardware_sample_count": 17,
+    "interferences": {},
+    "minimum_gap_mm": 1.75,
+    "pairs_within_3mm": {
+      "new_cradle / pcb_clamp_left_rear_insert": 2.2000000000000064,
+      "new_cradle / pcb_clamp_left_rear_screw": 1.75,
+      "cable_reference / pcb_clamp_left_rear_screw": 1.75
+    }
+  },
+  "body_print_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/body.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/body.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 1,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 1.0000090061291757e-07,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "full_print_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/print-layout.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-015-side-cable-holder/print-layout.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 15,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090818023,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "coupon_disconnected_mount_fragments_omitted": 1,
+  "inherited_issue": "Revision014 nominal USB envelope clears; allowed PCB offsets produce USB/button interference. No corrective change is made in this holder revision.",
+  "portability": {
+    "no_import_features": true,
+    "native_body_count": 27,
+    "opens_without_external_files": true
+  },
+  "release_status": "draft_pending_barrel_jack_axis_measurements",
+  "connector_reference_scope": "Measured 9 mm diameter is applied only across the exterior saddle. Connector length, inner projection, actual jack axis and insertion/removal path remain unmeasured."
+}
