@@ -5,35 +5,48 @@ The spherical surface spans the entire rectangular finger face, with 0.6 mm
 nominal center depression. [Open revision 017](revision-017-rectangular-cups/enclosure.solidcraft),
 [print the two sliders](revision-017-rectangular-cups/replacement-sliders.3mf), or
 [compare small feel samples](revision-017-rectangular-cups/fit-tests/finger-cup-samples.3mf).
+Editable revision-017 [RESET](revision-017-rectangular-cups/parts/reset_slider.solidcraft),
+[BOOT](revision-017-rectangular-cups/parts/boot_slider.solidcraft),
+[replacement layout](revision-017-rectangular-cups/replacement-sliders.solidcraft) and
+[full print layout](revision-017-rectangular-cups/print-layout.solidcraft) files are included.
 Print cup-side up and review supports beneath raised arms/bosses.
 The workflow and frozen checks below describe the preserved revision-014 rebuild;
 newer revisions have separate validation reports. Barrel-holder alignment remains paused.
 
-Open **[enclosure.solidcraft](revision-014/enclosure.solidcraft)** for the mounted
-revision 014 assembly, rebuilt from native sketches, dimensions and features.
-The main document has 199 fully constrained sketches and no imported geometry.
-The preserved Python revisions and [earlier imported conversion](../revision-014/)
-remain available as references.
+Open **[enclosure.solidcraft](revision-017-rectangular-cups/enclosure.solidcraft)**
+for the current mounted revision-017 assembly. It has 203 fully constrained
+sketches and native spherical-cut features, with no imported geometry. The
+individual slider and layout files below preserve the editable source history.
 
-| File | Use |
+| Current revision-017 file | Use |
 | --- | --- |
-| [Complete enclosure](revision-014/enclosure.solidcraft) | Edit the mounted assembly in SolidCraft |
-| [Readable native source](revision-014/enclosure.json) | Same evaluated history, suitable for git diffs and scripted edits |
-| [Individual parts](revision-014/parts/) | Native documents, single-solid STEP and printable 3MF files |
-| [Quick three-piece print](revision-014/fit-tests/replacements-only.3mf) | RESET slider, BOOT slider and BOOT frame |
-| [Quick-print history](revision-014/fit-tests/replacements-only.solidcraft) | Editable native source for those three pieces |
-| [Complete fit print](revision-014/fit-tests/print-layout.3mf) | Low board-registration frame, four clamps and both cartridges |
-| [Fit assembly](revision-014/fit-tests/assembly.solidcraft) | Inspect the 13-piece fit setup |
-| [Full print layout](revision-014/print-layout.3mf) | All 15 printed parts; split across plates as needed |
-| [Assembly STEP](revision-014/enclosure.step) | Fifteen physical solids, including for Fusion import |
+| [Complete enclosure](revision-017-rectangular-cups/enclosure.solidcraft) | Mounted assembly in SolidCraft |
+| [Readable native source](revision-017-rectangular-cups/enclosure.json) | Same history for git diffs and scripted edits |
+| [RESET slider](revision-017-rectangular-cups/parts/reset_slider.solidcraft) | Individual native slider, cup-side-up print pose |
+| [BOOT slider](revision-017-rectangular-cups/parts/boot_slider.solidcraft) | Individual native slider, cup-side-up print pose |
+| [Replacement slider layout](revision-017-rectangular-cups/replacement-sliders.solidcraft) | Editable layout of both updated sliders |
+| [Full native print layout](revision-017-rectangular-cups/print-layout.solidcraft) | Editable layout containing all 15 printed parts |
+| [Replacement slider 3MF](revision-017-rectangular-cups/replacement-sliders.3mf) | Both updated sliders for slicing |
+| [Full print-layout 3MF](revision-017-rectangular-cups/print-layout.3mf) | All 15 printed parts; split across plates as needed |
+| [Feel samples](revision-017-rectangular-cups/fit-tests/finger-cup-samples.3mf) | Compare 0.5, 0.6 and 0.8 mm center depression |
+| [Assembly STEP](revision-017-rectangular-cups/enclosure.step) | Fifteen physical solids, including for Fusion import |
 
-![Native assembly](revision-014/enclosure.png)
+![Current spherical finger faces](revision-017-rectangular-cups/finger-faces.png)
 
-![Body interior](revision-014/interior.png)
+Use [revision 017's export/printing instructions](revision-017-rectangular-cups/README.md).
+Its sliders print cup-side up, with slicer support review under raised arms/bosses.
+The older generic exporter uses the earlier slider orientation. Individual files
+and layouts are saved snapshots; regenerate them when the master changes.
 
-![Quick replacement print](revision-014/fit-tests/replacements-only.png)
+## Historical revision-014 workflow and evidence
 
-## Editing and exporting
+The remaining workflow documents the original native rebuild. Its files are
+preserved for comparison: [native revision 014](revision-014/),
+[earlier imported conversion](../revision-014/), and the original Python sources.
+The revision-014 quick USB fit test and its three-piece replacement set are
+historical fit artifacts, not the current spherical-slider print files.
+
+## Revision-014 editing and exporting
 
 The Parameters table contains the original measured and hardware inputs, plus
 named derived dimensions. Eleven driving parameters are favourites. Their comments
@@ -108,7 +121,7 @@ Save both JSON and `.solidcraft` copies after an accepted edit. Update the group
 file if adding or renaming bodies. Plate arrangement moves preserve the original
 default layout; they do not automatically repack after large design changes.
 
-## Verification and rebuilding
+## Revision-014 verification and rebuilding
 
 [Validation](revision-014/validation.json) checks every exported solid against the
 preserved revision 014/test 009 geometry with a maximum symmetric-difference

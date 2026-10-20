@@ -1,8 +1,11 @@
 # ESP32 enclosure in SolidCraft
 
 The current project is the **[native parametric feature-history rebuild](native/README.md)**.
-Open [the native enclosure](native/revision-014/enclosure.solidcraft) to edit its
-sketches, dimensions and features. Printable exports and quick fit prints are included.
+Open [the native enclosure](native/revision-017-rectangular-cups/enclosure.solidcraft) to edit its
+sketches, dimensions and full rectangular spherical button faces.
+Current [individual sliders](native/revision-017-rectangular-cups/parts/),
+[native print layout](native/revision-017-rectangular-cups/print-layout.solidcraft),
+printable exports and quick feel samples are included.
 
 ## Preserved imported-solid conversion
 
@@ -10,7 +13,7 @@ Open **[enclosure.solidcraft](revision-014/enclosure.solidcraft)** for the compl
 revision 014 enclosure with 15 named bodies. Individual printable parts, the
 board/button fit jig, and print layouts are included below.
 
-This conversion preserves the current engineering geometry as **editable imported
+This conversion preserves revision-014 engineering geometry as **editable imported
 solid features**. It does not recreate the original Python sketches, expressions
 or parametric feature history. Add direct-edit and new modeling features in
 SolidCraft; use the preserved [Python source](../revisions/014-usb-clearance/model.py)
@@ -23,7 +26,7 @@ git diffs and scripted edits. Treat those JSON documents as the source for
 subsequent SolidCraft edits, then save an updated `.solidcraft` copy for opening
 in the app. The existing Python revisions remain preserved.
 
-## Open and print
+## Archived revision-014 files
 
 | File | Purpose |
 | --- | --- |

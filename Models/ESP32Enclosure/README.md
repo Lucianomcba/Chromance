@@ -54,24 +54,27 @@ tie dimensions and retention performance remain unverified.
 
 ## Open or print
 
+- [Current SolidCraft assembly](solidcraft/native/revision-017-rectangular-cups/enclosure.solidcraft)
+  and [readable JSON history](solidcraft/native/revision-017-rectangular-cups/enclosure.json):
+  the editable parametric master with full rectangular spherical finger faces.
+- Individual native sliders: [RESET](solidcraft/native/revision-017-rectangular-cups/parts/reset_slider.solidcraft)
+  and [BOOT](solidcraft/native/revision-017-rectangular-cups/parts/boot_slider.solidcraft).
+- [Native replacement layout](solidcraft/native/revision-017-rectangular-cups/replacement-sliders.solidcraft)
+  and [full native print layout](solidcraft/native/revision-017-rectangular-cups/print-layout.solidcraft).
+- [Current assembly STEP](solidcraft/native/revision-017-rectangular-cups/enclosure.step):
+  15 physical solids for Fusion 360, FreeCAD or other CAD programs.
+- [Replacement sliders, 3MF](solidcraft/native/revision-017-rectangular-cups/replacement-sliders.3mf),
+  [all 15 parts, print-layout 3MF](solidcraft/native/revision-017-rectangular-cups/print-layout.3mf),
+  and [individual updated slider STEP/3MF files](solidcraft/native/revision-017-rectangular-cups/parts/).
+- [Quick feel samples](solidcraft/native/revision-017-rectangular-cups/fit-tests/finger-cup-samples.3mf),
+  [printing/validation notes](solidcraft/native/revision-017-rectangular-cups/README.md)
+  and [current finger-face preview](solidcraft/native/revision-017-rectangular-cups/finger-face-detail.png).
+  Print these sliders cup-side up; review supports under the raised arm/contact boss.
 - [Illustrated button assembly guide](assembly-guides/014-buttons/README.md):
-  current printed parts, short mounting inserts, magnet polarity, keeper
-  installation and nylon contact adjustment. Check actual board position,
-  switch height and USB plug clearance with the quick print.
-- [Assembly STEP](revisions/014-usb-clearance/assembly.step): 15 printable
-  solids in assembly position; open/import in Fusion 360 or FreeCAD. The editable
-  parametric master is Python, not a Fusion timeline.
-- [Body 3MF](revisions/014-usb-clearance/parts/body.3mf),
-  [lid 3MF](revisions/014-usb-clearance/parts/lid.3mf), and
-  [desk bracket 3MF](revisions/014-usb-clearance/parts/desk_bracket.3mf).
-- [Individual STEP/3MF parts](revisions/014-usb-clearance/parts/) and
-  [full print-layout 3MF](revisions/014-usb-clearance/print-layout.3mf).
-- [Cable/tie routing](revisions/014-usb-clearance/cable-routing.png),
-  [lid clearance](revisions/014-usb-clearance/cable-closure.png),
-  [mounted view](revisions/014-usb-clearance/under-desk.png), and
-  [interior](revisions/014-usb-clearance/interior.png).
-- [Revision guide](revisions/014-usb-clearance/README.md) and
-  [design/validation notes](revisions/014-usb-clearance/design-notes.md).
+  unchanged hardware interfaces, magnet polarity, keeper installation and nylon
+  contact adjustment. Use revision 017's newer printing pose above.
+- [Preserved revision-014 source and illustrations](revisions/014-usb-clearance/README.md).
+  These are archival files; use the current revision-017 links above for the new buttons.
 
 These files carry geometry in millimeters, without verified printer or filament
 profiles. Reference electronics/cable/tie/desk solids are excluded from printing.

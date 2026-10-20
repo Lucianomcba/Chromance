@@ -8,11 +8,13 @@ Earlier revisions are preserved.
 
 - [Editable SolidCraft assembly](enclosure.solidcraft) / [JSON history](enclosure.json)
 - [Close-up of the finger face](finger-face-detail.png) / [complete sliders](finger-faces.png)
-- [Two replacement sliders, printable 3MF](replacement-sliders.3mf)
+- [Two replacement sliders, printable 3MF](replacement-sliders.3mf) / [editable SolidCraft layout](replacement-sliders.solidcraft)
 - [Quick feel samples: 0.5 / 0.6 / 0.8 mm](fit-tests/finger-cup-samples.3mf)
-- [Assembly STEP](enclosure.step) / [individual sliders](parts/)
-- [Full print layout](print-layout.3mf)
-- [Validation report](validation.json)
+- [Assembly STEP](enclosure.step)
+- Editable individual sliders: [RESET](parts/reset_slider.solidcraft) / [BOOT](parts/boot_slider.solidcraft)
+- [Individual slider STEP/3MF files](parts/)
+- [Full print layout, 3MF](print-layout.3mf) / [editable SolidCraft layout](print-layout.solidcraft)
+- [Geometry and mesh validation](validation.json) / [native document verification](native-document-validation.json)
 
 The existing spherical-cut features are edited through their native parameters.
 `finger_cup_depth` is the adjustable input (0.5–0.8 mm, default 0.6 mm).
@@ -71,6 +73,14 @@ uv run --locked python solidcraft/native/scripts/check_rectangular_cups.py
 uv run --locked python solidcraft/native/scripts/export_rectangular_cups.py
 ```
 
-The scripts share the same `BASE`/`OUT`. Actual native parameter-state STEP and
+The scripts share the same `BASE`/`OUT`.
+Run `uv run --locked python solidcraft/native/scripts/package_current_native.py`
+to generate the matching individual-slider and print-layout native documents.
+Their terminal remove/move features isolate parts and set the manufacturing pose
+while preserving the full editable source history. The nominal plate positions
+are fixed layout placements; regenerate the layout after large dimension edits.
+The `*-groups.json` sidecars support export through the existing fusion helper.
+The packager refuses to overwrite existing native documents. Choose a fresh
+revision/destination when rebuilding them. Actual native parameter-state STEP and
 inspection files are kept in a hash-verified ZIP under `parameter-checks/`.
 Existing unrelated parameter ranges and combinations are not re-certified here.

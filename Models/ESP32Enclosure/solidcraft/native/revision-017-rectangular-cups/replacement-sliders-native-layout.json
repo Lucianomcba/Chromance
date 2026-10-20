@@ -1,0 +1,173 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "solid.remove",
+      "params": {
+        "bodies": [
+          "lid",
+          "body",
+          "body_pcb_-1_-1_support",
+          "body_pcb_-1_1_support",
+          "body_pcb_1_-1_support",
+          "body_pcb_1_1_support",
+          "body_lid_corner_-1_-1_support",
+          "body_lid_corner_-1_1_support",
+          "body_lid_corner_1_-1_support",
+          "body_lid_corner_1_1_support",
+          "body_reset_mounting_pad",
+          "body_boot_mounting_pad",
+          "body_cable_cradle_stock",
+          "body_side_cable_cradle",
+          "desk_bracket",
+          "pcb_clamp_left_front",
+          "pcb_clamp_left_rear",
+          "pcb_clamp_right_front",
+          "pcb_clamp_right_rear",
+          "reset_frame",
+          "reset_rear_keeper",
+          "reset_moving_magnet_keeper",
+          "boot_frame",
+          "boot_rear_keeper",
+          "boot_moving_magnet_keeper"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_upright_print_pose",
+        "translate": [
+          0,
+          0,
+          "-(reset_slider_bottom)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_upright_print_pose",
+        "translate": [
+          0,
+          0,
+          "-(boot_slider_bottom)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_nominal_plate_position",
+        "translate": [
+          52.75,
+          9.5000001,
+          0.0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_nominal_plate_position",
+        "translate": [
+          96.8000001,
+          27.0000001,
+          2.7610131682735413e-28
+        ]
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/replacement-sliders.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

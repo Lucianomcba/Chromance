@@ -1,0 +1,965 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "lid"
+        ],
+        "name": "lid_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "lid"
+        ],
+        "name": "lid_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "lid"
+        ],
+        "name": "lid_document_print_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "lid"
+        ],
+        "name": "lid_document_print_height",
+        "translate": [
+          0,
+          0,
+          "lid_top"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "body",
+          "body_pcb_-1_-1_support",
+          "body_pcb_-1_1_support",
+          "body_pcb_1_-1_support",
+          "body_pcb_1_1_support",
+          "body_lid_corner_-1_-1_support",
+          "body_lid_corner_-1_1_support",
+          "body_lid_corner_1_-1_support",
+          "body_lid_corner_1_1_support",
+          "body_reset_mounting_pad",
+          "body_boot_mounting_pad",
+          "body_cable_cradle_stock",
+          "body_side_cable_cradle"
+        ],
+        "name": "body_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "body",
+          "body_pcb_-1_-1_support",
+          "body_pcb_-1_1_support",
+          "body_pcb_1_-1_support",
+          "body_pcb_1_1_support",
+          "body_lid_corner_-1_-1_support",
+          "body_lid_corner_-1_1_support",
+          "body_lid_corner_1_-1_support",
+          "body_lid_corner_1_1_support",
+          "body_reset_mounting_pad",
+          "body_boot_mounting_pad",
+          "body_cable_cradle_stock",
+          "body_side_cable_cradle"
+        ],
+        "name": "body_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "desk_bracket"
+        ],
+        "name": "desk_bracket_document_print_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "desk_bracket"
+        ],
+        "name": "desk_bracket_document_print_height",
+        "translate": [
+          0,
+          0,
+          "(plate_height)+(bracket_plate_thickness)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_front"
+        ],
+        "name": "pcb_clamp_left_front_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_front"
+        ],
+        "name": "pcb_clamp_left_front_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_front"
+        ],
+        "name": "pcb_clamp_left_front_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-(clamp_height)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_rear"
+        ],
+        "name": "pcb_clamp_left_rear_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_rear"
+        ],
+        "name": "pcb_clamp_left_rear_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_rear"
+        ],
+        "name": "pcb_clamp_left_rear_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-(clamp_height)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_front"
+        ],
+        "name": "pcb_clamp_right_front_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_front"
+        ],
+        "name": "pcb_clamp_right_front_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_front"
+        ],
+        "name": "pcb_clamp_right_front_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-(clamp_height)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_rear"
+        ],
+        "name": "pcb_clamp_right_rear_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_rear"
+        ],
+        "name": "pcb_clamp_right_rear_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_rear"
+        ],
+        "name": "pcb_clamp_right_rear_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-(clamp_height)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_frame"
+        ],
+        "name": "reset_frame_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_frame"
+        ],
+        "name": "reset_frame_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_frame"
+        ],
+        "name": "reset_frame_document_print_rotation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "angle": "-90 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_frame"
+        ],
+        "name": "reset_frame_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-((button_face)-(11.8))"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_upright_print_pose",
+        "translate": [
+          0,
+          0,
+          "-(reset_slider_bottom)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_rear_keeper"
+        ],
+        "name": "reset_rear_keeper_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_rear_keeper"
+        ],
+        "name": "reset_rear_keeper_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_rear_keeper"
+        ],
+        "name": "reset_rear_keeper_document_print_rotation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "angle": "-90 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_rear_keeper"
+        ],
+        "name": "reset_rear_keeper_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-((button_face)-(14.2))"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_moving_magnet_keeper"
+        ],
+        "name": "reset_moving_magnet_keeper_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_moving_magnet_keeper"
+        ],
+        "name": "reset_moving_magnet_keeper_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_moving_magnet_keeper"
+        ],
+        "name": "reset_moving_magnet_keeper_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "(-(reset_moving_magnet_bottom))-(0.1)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_document_print_rotation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "angle": "-90 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-((button_face)-(11.8))"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_upright_print_pose",
+        "translate": [
+          0,
+          0,
+          "-(boot_slider_bottom)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_rear_keeper"
+        ],
+        "name": "boot_rear_keeper_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_rear_keeper"
+        ],
+        "name": "boot_rear_keeper_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_rear_keeper"
+        ],
+        "name": "boot_rear_keeper_document_print_rotation",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "angle": "-90 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_rear_keeper"
+        ],
+        "name": "boot_rear_keeper_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "-((button_face)-(14.2))"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_moving_magnet_keeper"
+        ],
+        "name": "boot_moving_magnet_keeper_document_case_rotation",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "angle": "180 deg"
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_moving_magnet_keeper"
+        ],
+        "name": "boot_moving_magnet_keeper_document_case_height",
+        "translate": [
+          0,
+          0,
+          "mount_ceiling"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_moving_magnet_keeper"
+        ],
+        "name": "boot_moving_magnet_keeper_document_on_bed",
+        "translate": [
+          0,
+          0,
+          "(-(boot_moving_magnet_bottom))-(0.1)"
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "lid"
+        ],
+        "name": "lid_nominal_plate_position",
+        "translate": [
+          35.1500001,
+          46.40000010000001,
+          1.0000000161269895e-07
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "body",
+          "body_pcb_-1_-1_support",
+          "body_pcb_-1_1_support",
+          "body_pcb_1_-1_support",
+          "body_pcb_1_1_support",
+          "body_lid_corner_-1_-1_support",
+          "body_lid_corner_-1_1_support",
+          "body_lid_corner_1_-1_support",
+          "body_lid_corner_1_1_support",
+          "body_reset_mounting_pad",
+          "body_boot_mounting_pad",
+          "body_cable_cradle_stock",
+          "body_side_cable_cradle"
+        ],
+        "name": "body_nominal_plate_position",
+        "translate": [
+          125.45000030001,
+          47.6000001,
+          1.0000100303386716e-07
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "desk_bracket"
+        ],
+        "name": "desk_bracket_nominal_plate_position",
+        "translate": [
+          57.1500001,
+          145.60000030000003,
+          9.999999406318238e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_front"
+        ],
+        "name": "pcb_clamp_left_front_nominal_plate_position",
+        "translate": [
+          155.0500003,
+          124.20000030000001,
+          9.999999761589606e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_left_rear"
+        ],
+        "name": "pcb_clamp_left_rear_nominal_plate_position",
+        "translate": [
+          172.6000005,
+          90.20000030000001,
+          9.999999761589606e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_front"
+        ],
+        "name": "pcb_clamp_right_front_nominal_plate_position",
+        "translate": [
+          134.2000007,
+          124.20000030000001,
+          9.999999761589606e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "pcb_clamp_right_rear"
+        ],
+        "name": "pcb_clamp_right_rear_nominal_plate_position",
+        "translate": [
+          151.7500009,
+          90.20000030000001,
+          9.999999761589606e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_frame"
+        ],
+        "name": "reset_frame_nominal_plate_position",
+        "translate": [
+          218.1000011,
+          106.2000003,
+          9.999999406318238e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_slider"
+        ],
+        "name": "reset_slider_nominal_plate_position",
+        "translate": [
+          52.75,
+          205.5000005,
+          0.0
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_rear_keeper"
+        ],
+        "name": "reset_rear_keeper_nominal_plate_position",
+        "translate": [
+          67.2500002,
+          199.0000005,
+          9.999998695775503e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "reset_moving_magnet_keeper"
+        ],
+        "name": "reset_moving_magnet_keeper_nominal_plate_position",
+        "translate": [
+          123.05000029999998,
+          194.0500004,
+          1.4475597610805567e-28
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_frame"
+        ],
+        "name": "boot_frame_nominal_plate_position",
+        "translate": [
+          108.50000040000002,
+          224.00000050000003,
+          9.998999672689024e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_slider"
+        ],
+        "name": "boot_slider_nominal_plate_position",
+        "translate": [
+          166.8500005,
+          223.0000005,
+          2.7610131682735413e-28
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_rear_keeper"
+        ],
+        "name": "boot_rear_keeper_nominal_plate_position",
+        "translate": [
+          181.3500007,
+          224.00000050000003,
+          9.999998695775503e-08
+        ]
+      }
+    },
+    {
+      "command": "solid.move",
+      "params": {
+        "bodies": [
+          "boot_moving_magnet_keeper"
+        ],
+        "name": "boot_moving_magnet_keeper_nominal_plate_position",
+        "translate": [
+          237.1500008,
+          219.0500004,
+          1.4515040656066617e-28
+        ]
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-017-rectangular-cups/print-layout.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

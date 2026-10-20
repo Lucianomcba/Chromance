@@ -13,9 +13,23 @@
   "source_files": {
     "solidcraft/native/scripts/rectangular_finger_cups.py": "8093d2d87b5d920305519bc6f68f7b9805cb586d214e195dc4985e339f922341",
     "solidcraft/native/scripts/check_rectangular_cups.py": "5087e474f8822cdab7d511b7aba1f5efcfb589571245ae7c622a2d9625966e0f",
-    "solidcraft/native/scripts/export_rectangular_cups.py": "23e85284151eb1f10d5590fc842a87fbb5f580050d532dcc2df704bc83b008ab"
+    "solidcraft/native/scripts/export_rectangular_cups.py": "23e85284151eb1f10d5590fc842a87fbb5f580050d532dcc2df704bc83b008ab",
+    "solidcraft/native/scripts/package_current_native.py": "900c4a1727b94b92f1b006d3c98640d3c969d931d7998f58cfb0e5820e2fb7d7"
   },
   "artifacts": {
+    "print-layout-groups.json": "f03d04dadd28b290502ec21527538b840478f4726cfd427e4593c66aef95a234",
+    "replacement-sliders-groups.json": "bf4804d52ea952c6d4e1734671e703643a098e3ee104470dfd2a6d78be134e2a",
+    "native-document-validation.json": "f6bf1f42058709798ab1165a3e03349ea2b9737ecbff04652b0f21655480f5ef",
+    "print-layout-native-inspection.json": "40c3365c3fd4e46071e14dc1f4aeba336f13aa5bf7f6c7fa327d71a1e7244070",
+    "print-layout.json": "ab17a4687f2674a6584f6bb836fd9b905d5d04fa72d0482fecb71ec1781b36c0",
+    "print-layout-native.step": "a39e1caf1ce69d56bc57ce7eee8b7871b6265d0f7cb91f6aa5c1f32137ef5235",
+    "print-layout.solidcraft": "1ea6ae1c923e376923390c8b0af3f85330ba5c1ef71e8d9e870885c1fed6a42d",
+    "replacement-sliders-native-inspection.json": "47af93a6ff1253663d5adbb3917a41b3550af8e7560392ef17609c5a23c33bf2",
+    "replacement-sliders.json": "9437c2fc0d31a63aca17f71e461df001355273ea8d210c189e6674718d674761",
+    "replacement-sliders-native.step": "1ebe2711d53924eacaf849e53632934dc0478f5801c55e63cce92de8e6c9a04d",
+    "replacement-sliders.solidcraft": "1d2a7319fb84ccd80509c8263558a97e91bc2567cba2767e7058eafdaa1d2c9a",
+    "print-layout-native-layout.json": "b23d2b860c72e019570ca06bc4be665e2238f3bc26dfcf8d1041c80d1b75630e",
+    "replacement-sliders-native-layout.json": "d043837e90732a8a11db00361a82feb8b81fcc1bf6271528f49c0930527e10c2",
     "finger-face-detail.png": "98c0ee75d4b353ff534a987ae7a03458d7eaaff33c892ee6b3895d6b19d9b966",
     "finger-faces.png": "a9fa677debdab2128871ebda679d85a3d693c9c3970390f7ef7636c902396e0c",
     "print-layout-mesh-report.json": "a2f0a999043b7c386d805c82a3736f9c851887cea7cf825c73b4496b0b424f3d",
@@ -25,7 +39,7 @@
     "replacement-sliders.3mf": "240705bbd0c265f89355ca4155cc384c2ec0e55458842c515bd9dc285d6777e9",
     "replacement-sliders.step": "60bc1fdc224ce0df19b10bfbc6e5b2726d45f3bd2e2ae3a7c70ca8350d67f8d8",
     "validation.json": "bff044adab1e7dc58e6a7cb3c011ef6e860edf5d8854d03f6d0ff764e39f0458",
-    "README.md": "4d7ba2a3a177acbe5049af62d001a5898b619552745174870bdabb94bb900068",
+    "README.md": "6118ec6a5642084841d025477e92c5f804d8a848ebf0a9d9c5cdc5f8236e55c3",
     "enclosure.step": "3bfc5878172544c1d89f51042d27cd8ec8a99d3006e9507e683078b411ce232c",
     "enclosure-groups.json": "f03d04dadd28b290502ec21527538b840478f4726cfd427e4593c66aef95a234",
     "enclosure-inspection.json": "2d383a088c9b7b00771a7f6d6b16c500de4f90df3dac1100c13f801a4ccc5f41",
@@ -33,6 +47,18 @@
     "enclosure-native.step": "b201b773d107ee863f75f7671329bebc80554b3da8f214b90b3327280e920a19",
     "enclosure.solidcraft": "50f7c47119a88d6ca43ddb0e6da7ee8f0770eccf046b2fb86419ecd21f64cc41",
     "expand-cups.json": "ac985fa003b4768922c1bfa5c8bd2e06e68917dfec0aaed7860ad03ee9bdd449",
+    "parts/boot_slider-groups.json": "008df1efa050248f41217444948574ede82c94126ca2ae591b34a87e2c4589a8",
+    "parts/reset_slider-groups.json": "f3fb8f7a95d583303797515d505f6156587351cd13031d672ba18fd87b27006e",
+    "parts/boot_slider-native-inspection.json": "98393d6db75c92ff46daa98174fd31e43a0a293599572691c4662e79b02292db",
+    "parts/boot_slider.json": "982032171780d78c5f9e0e8f332472fbda901008b70eb69ebc3c3d15d9c013ef",
+    "parts/boot_slider-native.step": "5f6bd9ef01f7b157753374f1025743db3fdac995d06ddba1dd18dc07206a1d53",
+    "parts/reset_slider-native-inspection.json": "d7f334e296aa27e8cddf8bff8337cb2c760e4a2b553be6db17b7c51fb2c108dc",
+    "parts/reset_slider.json": "d48adba57455f5ae6eaf763e81ae010a14310f599221b88f0afc61e75d2f80bb",
+    "parts/reset_slider-native.step": "dc6044ba45bec7621d0bb2e9873935e059d92cd74154e2ca43c3ee42fd83b49d",
+    "parts/boot_slider.solidcraft": "58af750a4157c605fde2e2d35ddc41a9e95e72a3459daf4179f874a4b35a211c",
+    "parts/reset_slider.solidcraft": "3901b844f19ad01f6e7b89b61038c0cff1837cb86872914cf17c15426adc1889",
+    "parts/boot_slider-native-layout.json": "eb90a5246d6637e6727ae842cb6344c442af6122a3e783ba646b8fae69777ac7",
+    "parts/reset_slider-native-layout.json": "b2d929ecd87ffcead3be759b431477db9daa3a7ea3636c2a247437d10a4938e6",
     "parts/boot_slider-mesh-report.json": "6d2c651b35e08af90ffb8ec085abcc0559823416eb46c0cd608eb2738f27ac43",
     "parts/boot_slider.3mf": "e08db0c9733796bcd6770ab2fe62581af6a2a791718d39f92fc2c09a7032244a",
     "parts/boot_slider.step": "43812aad7966873e319896294121185954e6841cfc712bf3aae377ff63fbfedb",
@@ -46,5 +72,6 @@
     "fit-tests/finger-cup-samples.3mf": "8d7b6f03a88d0597e90b48c3977f070aaa34372e4d62e10d589ed9b046ad82f3",
     "fit-tests/finger-cup-samples.step": "25652a0236b3000fdb90298aba1266d60838a3696aafb32c4efad3200d1375e1",
     "fit-tests/README.md": "a7d4f81056c8340b7aee96b15e41df0a3a06815df60890c7f432081834a29a2c"
-  }
+  },
+  "native_document_validation": "native-document-validation.json"
 }

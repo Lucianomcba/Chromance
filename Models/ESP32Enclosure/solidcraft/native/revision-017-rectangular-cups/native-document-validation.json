@@ -1,0 +1,231 @@
+{
+  "status": "passed",
+  "source_native_sha256": "50f7c47119a88d6ca43ddb0e6da7ee8f0770eccf046b2fb86419ecd21f64cc41",
+  "documents": [
+    {
+      "path": "parts/reset_slider.solidcraft",
+      "native_sha256": "3901b844f19ad01f6e7b89b61038c0cff1837cb86872914cf17c15426adc1889",
+      "readable_json_sha256": "d48adba57455f5ae6eaf763e81ae010a14310f599221b88f0afc61e75d2f80bb",
+      "physical_parts": 1,
+      "native_bodies": 1,
+      "sketches_dof_zero": 203,
+      "no_import_features": true,
+      "opens_without_external_files": true,
+      "exact_step_match": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2859.06958302409,
+            "expected_volume_mm3": 2859.069583023903,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.7763568394002505e-15
+          }
+        ]
+      }
+    },
+    {
+      "path": "parts/boot_slider.solidcraft",
+      "native_sha256": "58af750a4157c605fde2e2d35ddc41a9e95e72a3459daf4179f874a4b35a211c",
+      "readable_json_sha256": "982032171780d78c5f9e0e8f332472fbda901008b70eb69ebc3c3d15d9c013ef",
+      "physical_parts": 1,
+      "native_bodies": 1,
+      "sketches_dof_zero": 203,
+      "no_import_features": true,
+      "opens_without_external_files": true,
+      "exact_step_match": {
+        "status": "passed",
+        "solid_count": 1,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2661.946694450903,
+            "expected_volume_mm3": 2661.946694450838,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 6.396660978680302e-12
+          }
+        ]
+      }
+    },
+    {
+      "path": "replacement-sliders.solidcraft",
+      "native_sha256": "1d2a7319fb84ccd80509c8263558a97e91bc2567cba2767e7058eafdaa1d2c9a",
+      "readable_json_sha256": "9437c2fc0d31a63aca17f71e461df001355273ea8d210c189e6674718d674761",
+      "physical_parts": 2,
+      "native_bodies": 2,
+      "sketches_dof_zero": 203,
+      "no_import_features": true,
+      "opens_without_external_files": true,
+      "exact_step_match": {
+        "status": "passed",
+        "solid_count": 2,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 2859.069583024409,
+            "expected_volume_mm3": 2859.0695830239024,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.304023721284466e-13
+          },
+          {
+            "actual_volume_mm3": 2661.946694450978,
+            "expected_volume_mm3": 2661.946694450837,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.339550858072471e-13
+          }
+        ]
+      }
+    },
+    {
+      "path": "print-layout.solidcraft",
+      "native_sha256": "1ea6ae1c923e376923390c8b0af3f85330ba5c1ef71e8d9e870885c1fed6a42d",
+      "readable_json_sha256": "ab17a4687f2674a6584f6bb836fd9b905d5d04fa72d0482fecb71ec1781b36c0",
+      "physical_parts": 15,
+      "native_bodies": 27,
+      "sketches_dof_zero": 203,
+      "no_import_features": true,
+      "opens_without_external_files": true,
+      "exact_step_match": {
+        "status": "passed",
+        "solid_count": 15,
+        "xor_mm3": 0,
+        "tolerance_mm3": 0.001,
+        "bodies": [
+          {
+            "actual_volume_mm3": 14188.599540540097,
+            "expected_volume_mm3": 14188.599540541069,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.108624468950438e-14
+          },
+          {
+            "actual_volume_mm3": 47314.02585690876,
+            "expected_volume_mm3": 47314.02586136531,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 5.144329406903125e-12
+          },
+          {
+            "actual_volume_mm3": 22162.354197092824,
+            "expected_volume_mm3": 22162.354197092216,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.947598300641403e-14
+          },
+          {
+            "actual_volume_mm3": 134.64159446225287,
+            "expected_volume_mm3": 134.6415944622504,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.551390255994865e-15
+          },
+          {
+            "actual_volume_mm3": 134.64159446225358,
+            "expected_volume_mm3": 134.64159446225295,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 5.773159728050814e-15
+          },
+          {
+            "actual_volume_mm3": 134.64159446225176,
+            "expected_volume_mm3": 134.64159446224932,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.551390255994865e-15
+          },
+          {
+            "actual_volume_mm3": 134.64159446225247,
+            "expected_volume_mm3": 134.64159446225185,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 5.773159728050814e-15
+          },
+          {
+            "actual_volume_mm3": 1957.7478146545807,
+            "expected_volume_mm3": 1957.747814654548,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 2.842170943040401e-14
+          },
+          {
+            "actual_volume_mm3": 2859.0695830241293,
+            "expected_volume_mm3": 2859.069583023902,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.410605131648481e-13
+          },
+          {
+            "actual_volume_mm3": 631.0378267093985,
+            "expected_volume_mm3": 631.0378267094009,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 1.796512887029184e-14
+          },
+          {
+            "actual_volume_mm3": 16.809999999999967,
+            "expected_volume_mm3": 16.810000000000045,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 2.842170943040401e-14
+          },
+          {
+            "actual_volume_mm3": 1913.0318146544819,
+            "expected_volume_mm3": 1913.031814653069,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 9.345313026773976e-12
+          },
+          {
+            "actual_volume_mm3": 2661.9466944506794,
+            "expected_volume_mm3": 2661.946694450838,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 6.338041202980094e-12
+          },
+          {
+            "actual_volume_mm3": 631.0378267094012,
+            "expected_volume_mm3": 631.0378267094011,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 3.552767231135102e-14
+          },
+          {
+            "actual_volume_mm3": 16.810000000000016,
+            "expected_volume_mm3": 16.81000000000001,
+            "only_actual_mm3": 0,
+            "only_expected_mm3": 0,
+            "xor_mm3": 0,
+            "bounds_max_difference_mm": 2.842170943040401e-14
+          }
+        ]
+      }
+    }
+  ],
+  "physical_fit_tested": false
+}
