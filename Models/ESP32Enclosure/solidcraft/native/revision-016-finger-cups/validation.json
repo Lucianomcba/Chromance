@@ -1,0 +1,507 @@
+{
+  "status": "passed_with_inherited_alignment_and_usb_limitations",
+  "physical_comfort_tested": false,
+  "physical_fit_tested": false,
+  "default_cup_diameter_mm": 7.0,
+  "default_cup_depth_mm": 0.6,
+  "default_geometry": {
+    "lid": {
+      "unchanged_xor_mm3": 0
+    },
+    "body": {
+      "unchanged_xor_mm3": 0
+    },
+    "desk_bracket": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_left_front": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_left_rear": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_right_front": {
+      "unchanged_xor_mm3": 0
+    },
+    "pcb_clamp_right_rear": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_frame": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_slider": {
+      "oracle_xor_mm3": 0,
+      "added_volume_mm3": 0,
+      "removed_volume_mm3": 11.658581175271138,
+      "analytic_spherical_cap_volume_mm3": 11.658450337471724
+    },
+    "reset_rear_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "reset_moving_magnet_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_frame": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_slider": {
+      "oracle_xor_mm3": 0,
+      "added_volume_mm3": 0,
+      "removed_volume_mm3": 11.658677791228001,
+      "analytic_spherical_cap_volume_mm3": 11.658450337471724
+    },
+    "boot_rear_keeper": {
+      "unchanged_xor_mm3": 0
+    },
+    "boot_moving_magnet_keeper": {
+      "unchanged_xor_mm3": 0
+    }
+  },
+  "motion_evidence": "Each changed slider is an exact subset of the prior slider, with only the analytic finger-face spherical cap removed. All other parts match exactly. Pure subtraction cannot introduce new interference at any prior rigid-motion pose. Guides and stops are outside the removed cap. Prior USB/board-play collisions remain unresolved.",
+  "barrel_holder_status": "Unchanged from revision015; jack-axis alignment remains paused/provisional.",
+  "parameter_cases": [
+    {
+      "parameter": "finger_cup_depth",
+      "position": "low",
+      "value_mm": 0.4,
+      "step": "finger_cup_depth-low.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 7.73062585878597,
+          "analytic_spherical_cap_volume_mm3": 7.730412322933285
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 7.730551765037944,
+          "analytic_spherical_cap_volume_mm3": 7.730412322933285
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_depth",
+      "position": "high",
+      "value_mm": 0.8,
+      "step": "finger_cup_depth-high.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 15.662152370075546,
+          "analytic_spherical_cap_volume_mm3": 15.661886575696318
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 5.201383415176508e-05,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 15.662198083013209,
+          "analytic_spherical_cap_volume_mm3": 15.661886575696318
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_depth",
+      "position": "default",
+      "value_mm": 0.6,
+      "step": "finger_cup_depth-default.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 11.658581175326617,
+          "analytic_spherical_cap_volume_mm3": 11.658450337471724
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 11.658677791183436,
+          "analytic_spherical_cap_volume_mm3": 11.658450337471724
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_diameter",
+      "position": "low",
+      "value_mm": 6.5,
+      "step": "finger_cup_diameter-low.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 1.1092610192164898e-05,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 10.068108388137716,
+          "analytic_spherical_cap_volume_mm3": 10.06801905659189
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 10.068238093926993,
+          "analytic_spherical_cap_volume_mm3": 10.06801905659189
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_diameter",
+      "position": "high",
+      "value_mm": 7.5,
+      "step": "finger_cup_diameter-high.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 13.366959528284042,
+          "analytic_spherical_cap_volume_mm3": 13.366691342861174
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 13.366950879013984,
+          "analytic_spherical_cap_volume_mm3": 13.366691342861174
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    },
+    {
+      "parameter": "finger_cup_diameter",
+      "position": "default",
+      "value_mm": 7.0,
+      "step": "finger_cup_diameter-default.step",
+      "geometry": {
+        "lid": {
+          "unchanged_xor_mm3": 0
+        },
+        "body": {
+          "unchanged_xor_mm3": 0
+        },
+        "desk_bracket": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_left_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_front": {
+          "unchanged_xor_mm3": 0
+        },
+        "pcb_clamp_right_rear": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 11.658581175326617,
+          "analytic_spherical_cap_volume_mm3": 11.658450337471724
+        },
+        "reset_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "reset_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_frame": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_slider": {
+          "oracle_xor_mm3": 0,
+          "added_volume_mm3": 0,
+          "removed_volume_mm3": 11.658677791183436,
+          "analytic_spherical_cap_volume_mm3": 11.658450337471724
+        },
+        "boot_rear_keeper": {
+          "unchanged_xor_mm3": 0
+        },
+        "boot_moving_magnet_keeper": {
+          "unchanged_xor_mm3": 0
+        }
+      },
+      "timeline_clean": true,
+      "sketches_dof_zero": true
+    }
+  ],
+  "reset_slider_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parts/reset_slider.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parts/reset_slider.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 1,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 2.4776717975072415e-05,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "boot_slider_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parts/boot_slider.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parts/boot_slider.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 1,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090924604,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "replacement_sliders_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/replacement-sliders.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/replacement-sliders.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 2,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090924604,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "full_print_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/print-layout.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/print-layout.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 15,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 0.0005321876090818023,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "finger_cup_samples_export": {
+    "step": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/fit-tests/finger-cup-samples.step",
+    "mesh": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/fit-tests/finger-cup-samples.3mf",
+    "checks": {
+      "status": "passed",
+      "units": "mm",
+      "connected_bodies": 4,
+      "watertight": true,
+      "maximum_step_bounds_difference_mm": 1e-07,
+      "bounds_tolerance_mm": 0.05,
+      "volume_relative_tolerance": 0.005
+    }
+  },
+  "opens_without_external_files": true,
+  "no_import_features": true,
+  "sketches_dof_zero": 203,
+  "parameter_archive_members_sha256": {
+    "finger_cup_diameter-default.step": "0e925864016b20e1da3a6d575d6ef1a86aac8f01b488f29d59322c1dab3ee129",
+    "finger_cup_diameter-high.step": "59b503dc99fe8d513dc2b5c83c4034b41704636e589a78ec9c8f4efb80a6051e",
+    "finger_cup_diameter-low.step": "a7450424500eabe045cc5cdc6dc2686817182079ba251227c295eb6d54a4c42a",
+    "finger_cup_depth-default.step": "32204aac74987c13774862ea360840de81f8a10527f3445bb77be60070ea160b",
+    "finger_cup_depth-high.step": "1ba0bb1c38097b2c431d9d7da4170431533e190bb587ab85645b2022e67b81a6",
+    "finger_cup_depth-low.step": "d34b5a7d7341cf03ee2ea008b2da8ce8e84d5dcff8090c356520ee0efb0cd961",
+    "states.json": "bdfa2f3b0bc97a57e3d9ab767036c335191d5b8a40925c491ba1a68f380a143f"
+  }
+}

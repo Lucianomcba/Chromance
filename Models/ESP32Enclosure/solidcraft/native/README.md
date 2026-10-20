@@ -1,11 +1,13 @@
 # Native parametric SolidCraft enclosure
 
-**Latest: [revision 015 — side cable saddle](revision-015-side-cable-holder/README.md).**
-It preserves this full history and appends a second concave seat with a zip-tie
-passage beside the buttons. [Open revision 015](revision-015-side-cable-holder/enclosure.solidcraft)
-or [print its small fit coupon](revision-015-side-cable-holder/fit-tests/side-cable-holder.3mf).
-The barrel body is 9 mm; its alignment is provisional. The workflow and frozen checks below describe
-the preserved revision-014 rebuild; revision 015 has its own validation report.
+**Latest: [revision 016 — finger cups](revision-016-finger-cups/README.md).**
+Both slider finger faces have a 7 mm diameter, 0.6 mm deep spherical dish.
+[Open revision 016](revision-016-finger-cups/enclosure.solidcraft),
+[print the two sliders](revision-016-finger-cups/replacement-sliders.3mf), or
+[compare small cup-depth samples](revision-016-finger-cups/fit-tests/finger-cup-samples.3mf).
+The barrel holder retains its paused/provisional revision-015 placement.
+The workflow and frozen checks below describe the preserved revision-014 rebuild;
+newer revisions have separate validation reports.
 
 Open **[enclosure.solidcraft](revision-014/enclosure.solidcraft)** for the mounted
 revision 014 assembly, rebuilt from native sketches, dimensions and features.

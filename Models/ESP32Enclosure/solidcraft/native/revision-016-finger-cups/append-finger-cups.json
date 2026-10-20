@@ -1,0 +1,100 @@
+{
+  "commands": [
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": false,
+        "sketches": false
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "finger_cup_depth",
+        "expression": "0.6 mm",
+        "unit": "mm",
+        "comment": "Allowed range 0.4..0.8 mm, one new input at a time from defaults. Shallow spherical dish; physical comfort and finish pending."
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "finger_cup_diameter",
+        "expression": "7.0 mm",
+        "unit": "mm",
+        "comment": "Allowed range 6.5..7.5 mm, one new input at a time. Fits within the chamfered 7.8 mm-wide pad face."
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "finger_cup_depth",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.favorite",
+      "params": {
+        "name": "finger_cup_diameter",
+        "favorite": true
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "finger_cup_radius",
+        "expression": "((((finger_cup_diameter)*(finger_cup_diameter))/(4))+((finger_cup_depth)*(finger_cup_depth)))/((2)*(finger_cup_depth))",
+        "unit": "mm",
+        "comment": "Derived expression; follows its driving parameters."
+      }
+    },
+    {
+      "command": "solid.sphere",
+      "params": {
+        "radius": "finger_cup_radius",
+        "center": [
+          "(button_face)-(7.1)",
+          "-(reset_housing_y)",
+          "(mount_ceiling)-(((((reset_arm_base)+(7.8))+(finger_pad_extension))+(finger_cup_radius))-(finger_cup_depth))"
+        ],
+        "operation": "cut",
+        "targets": [
+          "reset_slider"
+        ],
+        "name": "reset_spherical_finger_cup"
+      }
+    },
+    {
+      "command": "solid.sphere",
+      "params": {
+        "radius": "finger_cup_radius",
+        "center": [
+          "(button_face)-(7.1)",
+          "-(boot_housing_y)",
+          "(mount_ceiling)-(((((boot_arm_base)+(7.8))+(finger_pad_extension))+(finger_cup_radius))-(finger_cup_depth))"
+        ],
+        "operation": "cut",
+        "targets": [
+          "boot_slider"
+        ],
+        "name": "boot_spherical_finger_cup"
+      }
+    },
+    {
+      "command": "file.save",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/enclosure.solidcraft",
+        "compression": "compact",
+        "cache": true,
+        "preview": true
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

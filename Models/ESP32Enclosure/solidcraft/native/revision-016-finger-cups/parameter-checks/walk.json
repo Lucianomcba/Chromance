@@ -1,0 +1,124 @@
+{
+  "commands": [
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_depth",
+        "expression": "0.4 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_depth-low.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_depth",
+        "expression": "0.8 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_depth-high.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_depth",
+        "expression": "0.6 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_depth-default.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_diameter",
+        "expression": "6.5 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_diameter-low.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_diameter",
+        "expression": "7.5 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_diameter-high.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    },
+    {
+      "command": "parameters.change",
+      "params": {
+        "name": "finger_cup_diameter",
+        "expression": "7.0 mm"
+      }
+    },
+    {
+      "command": "file.export",
+      "params": {
+        "path": "/tmp/chromance-model-review-20261019/Models/ESP32Enclosure/solidcraft/native/revision-016-finger-cups/parameter-checks/finger_cup_diameter-default.step"
+      }
+    },
+    {
+      "command": "document.inspect",
+      "params": {
+        "measure": true,
+        "sketches": true
+      }
+    }
+  ]
+}

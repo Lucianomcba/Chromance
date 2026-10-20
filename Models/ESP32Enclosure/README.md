@@ -1,11 +1,12 @@
 # ESP32 desk enclosure
 
-**Latest native SolidCraft revision: [015 — side cable saddle](solidcraft/native/revision-015-side-cable-holder/README.md).**
-Open the [parametric assembly](solidcraft/native/revision-015-side-cable-holder/enclosure.solidcraft),
-print the [small saddle fit coupon](solidcraft/native/revision-015-side-cable-holder/fit-tests/side-cable-holder.3mf),
-or get the [revised body](solidcraft/native/revision-015-side-cable-holder/body.3mf).
-The original end holder remains; the second saddle sits beside the buttons.
-The incoming barrel body is 9 mm; its alignment is provisional. All earlier revisions are preserved.
+**Latest native SolidCraft revision: [016 — finger cups](solidcraft/native/revision-016-finger-cups/README.md).**
+Both slider pads now have a shallow spherical finger dish, 7 mm across and
+0.6 mm deep. [Print the small feel/finish samples](solidcraft/native/revision-016-finger-cups/fit-tests/finger-cup-samples.3mf)
+or the [two replacement sliders](solidcraft/native/revision-016-finger-cups/replacement-sliders.3mf).
+[Open the complete parametric assembly](solidcraft/native/revision-016-finger-cups/enclosure.solidcraft).
+Earlier revisions remain preserved. The 9 mm barrel holder is unchanged, with
+its alignment still paused/provisional.
 
 [Native SolidCraft workflow](solidcraft/native/README.md) includes the original
 feature-history rebuild, export helpers and validation evidence.

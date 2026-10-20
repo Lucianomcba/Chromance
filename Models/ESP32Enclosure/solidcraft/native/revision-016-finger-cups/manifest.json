@@ -1,0 +1,43 @@
+{
+  "revision": "016-finger-cups",
+  "base_revision": "015-side-cable-holder",
+  "status": "digitally_validated_physical_comfort_pending",
+  "physical_fit_tested": false,
+  "physical_comfort_tested": false,
+  "base_native_design_sha256": "2227e09ce3b7a9750b4b95f31e689cea13815467ea16f99c9df20a28415d6e7f",
+  "source_files": {
+    "solidcraft/native/scripts/add_finger_cups.py": "644ab0439d61355a3c5d939abec3e3be8c149ca604c492439144645967b60961",
+    "solidcraft/native/scripts/check_finger_cups.py": "fb745496796d525fa8b6495697b200d4859110acfaa572977a69d61b5733fbde"
+  },
+  "artifacts": {
+    "validation.json": "576a33d3249d310f20d29ef4ce2e166eff86a648e9f63ba68aa50673d35d099e",
+    "finger-faces.png": "036baf47a1b1f92c4ce37b059cde7ea035b3270f7407d5f1e2dd93ce6f9cbfe2",
+    "print-layout-mesh-report.json": "48f34b0db9957a0c9ae02122db5c8979f4c78648aa63ddd65a69e538e4bf272e",
+    "print-layout.3mf": "769925a1627706ea2e5c124bd84fd5d7341ef681e35d2d7de4dbcca432f0d914",
+    "print-layout.step": "5805941472c27ba99c60442b18a452166b84be76e8705572b9ec818c15ae6091",
+    "replacement-sliders-mesh-report.json": "50699fd5c6c9da4b251a76e2839173fa6012f90dfd1485c2356b68192e16eab4",
+    "replacement-sliders.3mf": "7fa0d3aed5045eb5d00a8765512315b29fd1efe28428ca6259e00d2db7c51f1a",
+    "replacement-sliders.step": "258f6e39d5a1cfbb5f7db960f0f72b70a9e06fe46d64abb24638bcc37c01d739",
+    "README.md": "c992a14696e7d67ae1d2240ddfd2a6304e0cd462aced1ee4dcdc33406f0cb77f",
+    "enclosure.step": "2df7c533a975f5cdf2fd6cf5036689bc94f5b38c599e06d938b9626183716df8",
+    "enclosure-groups.json": "f03d04dadd28b290502ec21527538b840478f4726cfd427e4593c66aef95a234",
+    "enclosure-inspection.json": "14c20547f6f35df88680392bb1be3d8985eaaa28be81d80855091c9a4887a7d7",
+    "enclosure.json": "e1669840b844c38488056b66b9a2fdb5b69a97f392b7cf90248dae80cde38101",
+    "enclosure-native.step": "d5f3d022bff9f240036ce01db1180098e715c9a27eb5788125f8826c2c219176",
+    "enclosure.solidcraft": "23fa15a6f3a28072d58107dfb94454aab741dbbb2f23dc31543fe85a96c96076",
+    "append-finger-cups.json": "d5e97476e1b20c7fc893f7087de8cc3ce315e36771f2b9c13363691cb1db49b5",
+    "parts/boot_slider-mesh-report.json": "e32e97c9d0d57c7da68e7caa2266764688d37e5133d3e27b010ddef00a8ebd5a",
+    "parts/boot_slider.3mf": "be8fcc15b8762909f037dc13d9f7240bf17395d71256dcf5f6a6caa4448d3a61",
+    "parts/boot_slider.step": "f212952db41f9711bbc6f65a231275e70985d54e52b04cb088ba3f0ac19e705b",
+    "parts/reset_slider-mesh-report.json": "54cd8207c4aa8a18f41e22a86c1f8f694e276f751337fa535d78ecbe1aeddd10",
+    "parts/reset_slider.3mf": "9d19d7db5002910835b8305c0332ac95168489a6ae257d53d11eaacad96330e7",
+    "parts/reset_slider.step": "9f3c120d746ffe832643bfe5bd38de599aad672a4399c5ae434879e04f9f2c81",
+    "fit-tests/finger-cup-samples.png": "a874b4cedbd4f46a7ac35094d8549e277ef50e10ac5981e2ba8556e234760d47",
+    "fit-tests/finger-cup-samples-mesh-report.json": "78c8fcaf6da593142e87d68b64c8575284e4a89394ddb3e17a3bc1cb2244b2ae",
+    "fit-tests/finger-cup-samples.3mf": "749bc36e963a30fd91ff3fcfa2d32c5579047bb85d28a644932b5f53b487d476",
+    "fit-tests/finger-cup-samples.step": "8a17d212ce8e0758a2aec93431fa12b4d04a20b4249f22c24eb3927847e2565a",
+    "fit-tests/README.md": "4c6fa1af4cfc5794acb4217ad5066031c2aaf87fb017699c3a1b24cee64b7bee",
+    "parameter-checks/verification-artifacts.zip": "f221f9d61a34d2dc6fe7eb75eddc3f1b2463fc35ab3b1680e1ce91f87e00347f",
+    "parameter-checks/walk.json": "5abcce38cd8113f7b2563706fe0019c079e2415952ae4470486fa06f5501f5c4"
+  }
+}
